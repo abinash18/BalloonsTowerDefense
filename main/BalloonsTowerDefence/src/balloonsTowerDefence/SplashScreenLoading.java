@@ -7,6 +7,7 @@ import org.newdawn.slick.opengl.Texture;
 
 import other.StateManager;
 import other.StateManager.GameState;
+import userInterface.ProgressBar;
 import userInterface.UserInterface;
 
 public class SplashScreenLoading {
@@ -15,6 +16,7 @@ public class SplashScreenLoading {
 	private int loadingTime;
 	private float barProgress;
 	private UserInterface UI;
+	private ProgressBar prgLoading;
 	
 	public SplashScreenLoading() {
 		this.loadingBg = LoadTexture("red_tint");
@@ -22,7 +24,7 @@ public class SplashScreenLoading {
 		this.barTex = LoadTexture("slider_bar");
 		this.barBorder = LoadTexture("progressBar_border");
 		this.UI = new UserInterface();
-		UI.addProgressBar(barTex, barBorder, loadingBg, 50, HEIGHT - HEIGHT / 8 + 4, barProgress * 90, 16);
+		UI.addProgressBar("prgLoading", barTex, barBorder, loadingBg, 50, HEIGHT - HEIGHT / 8 + 4, barProgress * 90, 16);
 	}
 
 	public void tick() {
@@ -37,7 +39,7 @@ public class SplashScreenLoading {
 	}
 
 	private void tickUI(){
-		UI.
+		UI.getProgressBar("prgLoading");
 		UI.drawString(50, 50, "progress: " + barProgress);
 	}
 	

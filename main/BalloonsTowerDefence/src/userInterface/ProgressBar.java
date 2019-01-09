@@ -12,8 +12,9 @@ public class ProgressBar {
 	private int x, y;
 	private float width, height, barProgress;
 	private boolean isDone;
+	private String name;
 	
-	public ProgressBar(Texture barTexture, Texture borderTexture, Texture bgTexture, int x, int y, float width,
+	public ProgressBar(String name, Texture barTexture, Texture borderTexture, Texture bgTexture, int x, int y, float width,
 			float height) {
 		this.barTexture = barTexture;
 		this.borderTexture = borderTexture;
@@ -23,6 +24,7 @@ public class ProgressBar {
 		this.width = width;
 		this.height = height;
 		this.barProgress = 0;
+		this.name = name;
 	}
 	
 	// (totalImages - imagesToLoad.size()) / (float)totalImages)
@@ -43,6 +45,22 @@ public class ProgressBar {
 		isDone = true;
 	}
 	
+	public boolean isDone() {
+		return isDone;
+	}
+
+	public void setDone(boolean isDone) {
+		this.isDone = isDone;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public Texture getBarTexture() {
 		return barTexture;
 	}

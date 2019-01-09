@@ -58,8 +58,22 @@ public class UserInterface {
 		ListOfButtons.add(new Button(buttonTexture, nameOfButton, xPosition, yPosition, width, height));
 	}
 
-	public void addProgressBar(Texture prgTex, Texture prgBorederTex, Texture prgBgTex, int x, int y, float width, float height){
-		ListOfProgressBars.add(new ProgressBar(prgTex, prgBorederTex, prgBgTex, x, y, width, height));
+	public void addProgressBar(String name, Texture prgTex, Texture prgBorederTex, Texture prgBgTex, int x, int y, float width, float height){
+		ListOfProgressBars.add(new ProgressBar(name, prgTex, prgBorederTex, prgBgTex, x, y, width, height));
+	}
+	
+	public ProgressBar getProgressBar(String nameOfPrg) {
+
+		// Loops through the Array list and trys to match the nameOfbutton with button
+		// name
+		for (ProgressBar prg : ListOfProgressBars) {
+			// If the name matches this returns the button
+			if (prg.getName().equals(nameOfPrg)) {
+				return prg;
+			}
+		}
+		// Returns Null
+		return null;
 	}
 	
 	/**
