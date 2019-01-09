@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 import org.newdawn.slick.opengl.Texture;
 
+
 public abstract class Balloon implements Entity {
 
 	private static final int MONEY_FOR_KILL = 10;
