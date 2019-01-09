@@ -38,6 +38,7 @@ public class Slider {
 		this.pointerValue = 0;
 		calculatePos();
 
+		
 	}
 
 	public void tick() {
