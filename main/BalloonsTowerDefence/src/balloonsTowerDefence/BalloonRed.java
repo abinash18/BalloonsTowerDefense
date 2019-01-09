@@ -13,6 +13,4 @@ public class BalloonRed extends Balloon {
 		super(instanceTexture, startingFloorObject, grid, width, height, speed, health);
 	}
 
-	
-	
 }

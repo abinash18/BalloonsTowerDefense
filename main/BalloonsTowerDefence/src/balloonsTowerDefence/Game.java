@@ -20,11 +20,12 @@ public class Game {
 	private Menu pickTowerMenu;
 	private Texture menuBg;
 	private Balloon[] balloonsInGame;
+	public static final int MAX_BALLOON_TYPES = 2;
 
 	public Game(int[][] mapMatrix) {
 		this.grid = new FloorGrid(mapMatrix);
 		this.menuBg = LoadTexture("inGame_TowerPickerMenu");
-		this.balloonsInGame = new Balloon[1];
+		this.balloonsInGame = new Balloon[MAX_BALLOON_TYPES];
 		this.balloonsInGame[0] = new BalloonRed(10, 11, grid, BalloonType.RedBalloon);
 		this.roundManager = new RoundManager(balloonsInGame, 3, 3);
 		this.player = new Player(grid, roundManager);
@@ -36,8 +37,9 @@ public class Game {
 	public Game(FloorGrid grid) {
 		this.grid = grid;
 		this.menuBg = LoadTexture("inGame_TowerPickerMenu");
-		this.balloonsInGame = new Balloon[1];
+		this.balloonsInGame = new Balloon[MAX_BALLOON_TYPES];
 		this.balloonsInGame[0] = new BalloonRed(0, 1, grid, BalloonType.RedBalloon);
+		this.balloonsInGame[1] = new Balloon(0, 1, grid, BalloonType.BlueBalloon);
 		this.roundManager = new RoundManager(balloonsInGame, 3, 3);
 		this.player = new Player(grid, roundManager);
 		this.player.initialize();

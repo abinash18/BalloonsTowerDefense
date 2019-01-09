@@ -149,9 +149,9 @@ public class UserInterface {
 			menu.draw();
 		}
 		
-		for (ProgressBar prg : ListOfProgressBars) {
-			prg.tick();
-		}
+//		for (ProgressBar prg : ListOfProgressBars) {
+//			prg.tick();
+//		}
 
 	}
 

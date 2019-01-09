@@ -6,7 +6,7 @@ public enum BalloonType {
 	// instead of spawning one in its place thats next
 	RedBalloon("balloon_red", 1, 200, 0, null), 
 	// After this balloon is the red balloon
-	BlueBalloon("balloon_blue", 1, 200, 0, BalloonType.RedBalloon);
+	BlueBalloon("chocolateCookie", 1, 200, 0, BalloonType.RedBalloon);
 
 	String textureName;
 	int health, speed, regenRate;

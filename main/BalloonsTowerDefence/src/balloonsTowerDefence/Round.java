@@ -53,9 +53,15 @@ public class Round {
 	}
 
 	private void spawn() {
+		
+		int randomBalloonIndex;
+		
+		randomBalloonIndex = (int)(Game.MAX_BALLOON_TYPES * Math.random() + 0);
+		
+		// Apocalypse mode setting just for testing
 		balloonsList
-				.add(new BalloonRed(balloonTypes[0].getInstanceTexture(), balloonTypes[0].getStartTile(), balloonTypes[0].getGrid(),
-						GRID_SQUARE_SIZE, GRID_SQUARE_SIZE, balloonTypes[0].getSpeed(), balloonTypes[0].getHealth()));
+				.add(new BalloonRed(balloonTypes[randomBalloonIndex].getInstanceTexture(), balloonTypes[randomBalloonIndex].getStartTile(), balloonTypes[1].getGrid(),
+						GRID_SQUARE_SIZE, GRID_SQUARE_SIZE, balloonTypes[randomBalloonIndex].getSpeed(), balloonTypes[randomBalloonIndex].getHealth()));
 		balloonsSpawned++;
 	}
 

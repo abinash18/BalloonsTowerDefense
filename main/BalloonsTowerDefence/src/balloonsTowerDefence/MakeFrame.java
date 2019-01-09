@@ -13,6 +13,8 @@ import other.Timer;
 
 public class MakeFrame {
 
+	public static final int MAX_FRAMERATE = 200;
+	
 	/**
 	 * Constructor pre: none post: The main game loop updates every thing in it
 	 * every frame
@@ -28,7 +30,7 @@ public class MakeFrame {
 			StateManager.tick();
 			Display.update();
 			// Sync the frame rate to 60
-			Display.sync(200);
+			Display.sync(MAX_FRAMERATE);
 		}
 
 	}
