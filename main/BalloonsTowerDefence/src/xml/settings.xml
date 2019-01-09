@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+	<Main id="main">
+		<Textures id="textures">
+			<TexturePath name="RedBalloon" path="resources/red_balloon.png" />
+			<TexturePath name="BlueBalloon" path="resources/red_balloon.png" />
+			<TexturePath name="DartMonkey" path="resources/red_balloon.png" />
+			<TexturePath name="NinjaMonkey" path="resources/red_balloon.png" />
+			<TexturePath name="MenuBackGround" path="resources/red_balloon.png" />
+		</Textures>
+		<GameSettings id="GameSettings">
+			<FPS>200</FPS>
+		</GameSettings>
+		<Towers>
+			<Tower name="DartMonkey" TextureName="DartMonkey" />
+			<Tower name="NinjaMonkey" TextureName="NinjaMonkey" />
+		</Towers>
+	</Main>
+</Settings>
