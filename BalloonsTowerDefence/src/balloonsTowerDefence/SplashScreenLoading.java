@@ -21,6 +21,7 @@ public class SplashScreenLoading {
 	private LoadSettings settings;
 	private boolean isDone = false;
 
+	
 	public SplashScreenLoading() {
 		this.tasks = 4;
 		this.tasksCompleted = 0;
