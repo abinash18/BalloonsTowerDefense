@@ -1,6 +1,7 @@
 package balloonsTowerDefence;
 
-import static other.DrawInFrame.*;
+import static other.DrawInFrame.DrawQuadWithRotatedTexture;
+import static other.Timer.*;
 
 public class DartNinjaStar extends Dart {
 
@@ -10,9 +11,10 @@ public class DartNinjaStar extends Dart {
 
 //	@Override
 //	public void draw() {
-//		
-//		DrawQuadWithRotatedTexture(super.getTexture(), super.getX(), super.getY(), super.getWidth(), super.getHeight(), );
-//		
+//
+//		DrawQuadWithRotatedTexture(super.getTexture(), super.getX(), super.getY(), super.getWidth(), super.getHeight(),
+//				(float) super.getDartType().rotationRate * Delta() * 100);
+//
 //	}
 
 }

@@ -4,7 +4,7 @@
  */
 package balloonsTowerDefence;
 
-import static other.DrawInFrame.*;
+import static other.DrawInFrame.DrawQuadWithTexture;
 import static other.DrawInFrame.GRID_SQUARE_SIZE;
 import static other.DrawInFrame.isCollided;
 import static other.Timer.Delta;
@@ -66,7 +66,7 @@ public abstract class Dart implements Entity {
 	}
 
 	public void tick() {
-
+		
 		if (alive) {
 			findDirection();
 			x += xVelocity * Delta() * speed;
@@ -80,7 +80,7 @@ public abstract class Dart implements Entity {
 	}
 
 	public void draw() {
-		DrawQuadWithRotatedTexture(texture, x, y, width, height, Delta() * dartType.rotationRate);
+		DrawQuadWithTexture(texture, x, y, width, height);
 	}
 
 	public Texture getTexture() {
