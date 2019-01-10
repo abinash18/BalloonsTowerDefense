@@ -56,6 +56,7 @@ public class Game {
 
 		pickTowerMenu.addMenuButton("DartMonkey", "cannonBlueFull");
 		pickTowerMenu.addMenuButton("IceMonkey", "cannonBlueFull");
+		pickTowerMenu.addMenuButton("NinjaMonkey", "NinjaMonkey");
 
 	}
 
@@ -84,6 +85,10 @@ public class Game {
 				}
 				if (pickTowerMenu.isButtonClicked("IceMonkey")) {
 					player.pickTower(new MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
+							roundManager.getCurrentRound().getBalloonsList()));
+				}
+				if (pickTowerMenu.isButtonClicked("NinjaMonkey")) {
+					player.pickTower(new MonkeyTowerNinjaMonkey(grid.getFloor(0, 0),
 							roundManager.getCurrentRound().getBalloonsList()));
 				}
 			}

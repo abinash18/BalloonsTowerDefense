@@ -61,10 +61,16 @@ public abstract class MonkeyTower implements Entity {
 	}
 
 	public void draw() {
-		DrawQuadWithTexture(textures[0], x, y, width, height);
+		
 //		if (textures.length > 1) {
 //			for (int i = 1; i < textures.length; i++) {
-		DrawQuadWithRotatedTexture(textures[1], x, y, width, height, angle);
+		if (textures.length > 1){
+			DrawQuadWithTexture(textures[0], x, y, width, height);
+			DrawQuadWithRotatedTexture(textures[1], x, y, width, height, angle);
+		} else {
+			DrawQuadWithRotatedTexture(textures[0], x, y, width, height, angle);
+		}
+	
 //			}
 //		}
 //		

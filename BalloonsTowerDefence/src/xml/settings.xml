@@ -7,6 +7,8 @@
 			<TexturePath name="DartMonkey" path="resources/red_balloon.png" />
 			<TexturePath name="NinjaMonkey" path="resources/red_balloon.png" />
 			<TexturePath name="MenuBackGround" path="resources/red_balloon.png" />
+			<TexturePath name="NinjaMonkey" path="resources/NinjaMonkey.png" />
+			<TexturePath name="NinjaMonkey_ninjaStar_Normal" path="resources/NinjaMonkey_ninjaStarNormal.png" />
 		</Textures>
 		<GameSettings id="GameSettings">
 			<FPS>200</FPS>

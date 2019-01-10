@@ -5,7 +5,9 @@ import static other.DrawInFrame.*;
 
 public enum MonkeyTowerType {
 
-	DartMonkey(new Texture[] { LoadTexture("tower_base"), LoadTexture("tower_gun") }, DartType.NormalDart, 10, 1000, 0.3f, 50);
+	DartMonkey(new Texture[] { LoadTexture("tower_base"), LoadTexture("tower_gun") }, DartType.NormalDart, 10, 1000,
+			0.3f,
+			50), NinjaMonkey(new Texture[] { LoadTexture("NinjaMonkey") }, DartType.NinjaStar, 10, 1000, 0.3f, 50);
 
 	Texture[] textures;
 	DartType dartType;
