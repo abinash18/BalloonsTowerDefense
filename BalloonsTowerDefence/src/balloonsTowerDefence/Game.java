@@ -58,7 +58,7 @@ public class Game {
 
 		pickTowerMenu = gameUserInterface.getMenu("PickTower");
 
-		pickTowerMenu.addMenuButton("DartMonkey", "cannonBlueFull");
+		pickTowerMenu.addMenuButton("DartMonkey", "DartMonkey");
 		pickTowerMenu.addMenuButton("IceMonkey", "cannonBlueFull");
 		pickTowerMenu.addMenuButton("NinjaMonkey", "NinjaMonkey");
 

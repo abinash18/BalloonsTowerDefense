@@ -25,8 +25,8 @@ public abstract class MonkeyTower implements Entity {
 	public MonkeyTower(MonkeyTowerType type, Floor startingFloor, CopyOnWriteArrayList<Balloon> balloons) {
 		this.x = startingFloor.getxPos();
 		this.y = startingFloor.getyPos();
-		this.width = DrawInFrame.GRID_SQUARE_SIZE;
-		this.height = DrawInFrame.GRID_SQUARE_SIZE;
+		this.width = type.textures[0].getImageWidth();
+		this.height = type.textures[0].getImageHeight();
 		// this.target = target;
 		this.timeSinceLastShot = 0f;
 		this.darts = new ArrayList<Dart>();
@@ -38,8 +38,28 @@ public abstract class MonkeyTower implements Entity {
 		this.firingSpeed = type.firingSpeed;
 		this.angle = 0f;
 		this.type = type;
+		System.out.println("Image: " + type.textures[0].getImageWidth() + " " + type.textures[0].getImageHeight());
 	}
-
+	
+	public MonkeyTower(MonkeyTowerType type, Floor startingFloor, CopyOnWriteArrayList<Balloon> balloons, int width, int height) {
+		this.x = startingFloor.getxPos();
+		this.y = startingFloor.getyPos();
+		this.width = width;
+		this.height = height;
+		// this.target = target;
+		this.timeSinceLastShot = 0f;
+		this.darts = new ArrayList<Dart>();
+		this.damage = type.damage;
+		this.textures = type.textures;
+		this.balloons = balloons;
+		this.targeted = false;
+		this.range = type.range;
+		this.firingSpeed = type.firingSpeed;
+		this.angle = 0f;
+		this.type = type;
+		System.out.println("Image: " + width + " " + height);
+	}
+	
 	public void tick() {
 
 		if (!targeted) {
@@ -127,7 +147,7 @@ public abstract class MonkeyTower implements Entity {
 																				// find out how to do the math in java
 																				// aswell thank fully one had the exact
 																				// way of doing this
-		return (float) Math.toDegrees(angleTemp) - 180;
+		return (float) Math.toDegrees(angleTemp) + 90;
 	}
 
 	public float getX() {

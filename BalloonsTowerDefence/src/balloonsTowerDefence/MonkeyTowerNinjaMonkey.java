@@ -10,7 +10,7 @@ public class MonkeyTowerNinjaMonkey extends MonkeyTower {
 
 	@Override
 	public void shoot(Balloon target) {
-		super.setAngle(super.getAngle() + 270);
+		super.setAngle(super.getAngle());
 		super.darts.add(new DartNinjaStar(super.type.dartType, super.Target, super.getX(), super.getY(), 32, 32));
 		super.acquireTarget();
 	}
