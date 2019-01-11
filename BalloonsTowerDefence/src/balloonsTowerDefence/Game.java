@@ -17,7 +17,7 @@ public class Game {
 	private Player player;
 	private RoundManager roundManager;
 	private UserInterface gameUserInterface;
-	private Menu pickTowerMenu;
+	private Menu pickTowerMenu, playPauseMenu;
 	private Texture menuBg;
 	private Balloon[] balloonsInGame;
 	public static final int MAX_BALLOON_TYPES = 2;
@@ -51,7 +51,11 @@ public class Game {
 		gameUserInterface = new UserInterface();
 
 		gameUserInterface.createMenu("PickTower", 1280, 0, 192, 960, 2, 0);
+		gameUserInterface.createMenu("PlayPauseMenu", 1216, 0, 64, 64, 2, 0);
 
+		playPauseMenu = gameUserInterface.getMenu("PlayPauseMenu");
+		playPauseMenu.addMenuButton("Play", "play/pause/fastforward");
+		
 		pickTowerMenu = gameUserInterface.getMenu("PickTower");
 
 		pickTowerMenu.addMenuButton("DartMonkey", "cannonBlueFull");
