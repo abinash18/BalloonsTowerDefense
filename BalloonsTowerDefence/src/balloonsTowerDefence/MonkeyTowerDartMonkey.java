@@ -4,8 +4,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class MonkeyTowerDartMonkey extends MonkeyTower {
 
-	public MonkeyTowerDartMonkey(MonkeyTowerType dartmonkey, Floor startingFloor, CopyOnWriteArrayList<Balloon> balloonsList) {
-		super(dartmonkey, startingFloor, balloonsList);
+	public MonkeyTowerDartMonkey(Floor startingFloor, CopyOnWriteArrayList<Balloon> balloonsList) {
+		super(MonkeyTowerType.DartMonkey, startingFloor, balloonsList);
 	}
 
 	@Override

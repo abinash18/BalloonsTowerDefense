@@ -9,6 +9,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.newdawn.slick.opengl.Texture;
 
+import other.DrawInFrame;
+
 public abstract class MonkeyTower implements Entity {
 
 	private float x, y, timeSinceLastShot, firingSpeed, angle;
@@ -23,8 +25,8 @@ public abstract class MonkeyTower implements Entity {
 	public MonkeyTower(MonkeyTowerType type, Floor startingFloor, CopyOnWriteArrayList<Balloon> balloons) {
 		this.x = startingFloor.getxPos();
 		this.y = startingFloor.getyPos();
-		this.width = startingFloor.getWidth();
-		this.height = startingFloor.getHeight();
+		this.width = DrawInFrame.GRID_SQUARE_SIZE;
+		this.height = DrawInFrame.GRID_SQUARE_SIZE;
 		// this.target = target;
 		this.timeSinceLastShot = 0f;
 		this.darts = new ArrayList<Dart>();

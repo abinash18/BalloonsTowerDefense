@@ -85,11 +85,11 @@ public class Game {
 			if (mouseClicked) {
 				if (pickTowerMenu.isButtonClicked("DartMonkey")) {
 					if (roundManager.getCurrentRound() != null) {
-						player.pickTower(new MonkeyTowerDartMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
+						player.pickTower(new MonkeyTowerDartMonkey(grid.getFloor(0, 0),
 								roundManager.getCurrentRound().getBalloonsList()));
 					} else {
 						player.pickTower(
-								new MonkeyTowerDartMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0), null));
+								new MonkeyTowerDartMonkey(grid.getFloor(0, 0), null));
 					}
 
 				}
