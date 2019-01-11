@@ -39,12 +39,13 @@ import org.newdawn.slick.util.ResourceLoader;
  */
 public class DrawInFrame {
 
-	// These are defined here because every class that needs these will already have
+	// These are defined here because every class that needs these will already
+	// have
 	// imported this class
 	public static final int WIDTH = 1472, HEIGHT = 960; // base res of game
-	public static final int GRID_SQUARE_SIZE = 64; // the pixel size of each floor texture
+	public static final int GRID_SQUARE_SIZE = 64; // the pixel size of each
+													// floor texture
 
-	
 	/**
 	 * Initializes the Graphics and textures
 	 */
@@ -76,15 +77,16 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad pre: none post: A Quad
-	 * has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad pre: none post: A
+	 * Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithTexture(Texture texture, float x, float y, float width, float height) {
 
 		// binds the texture to the matrix
 		texture.bind();
 		// translates the texture to one float value of the x and y provided
-		// this is the top left of the quad and point of origin for the rest of the
+		// this is the top left of the quad and point of origin for the rest of
+		// the
 		// process
 		glTranslatef(x, y, 0);
 		// begins drawing the square
@@ -113,17 +115,19 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad pre: none post: A Quad
-	 * has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad pre: none post: A
+	 * Quad has been drawn on screen
 	 */
-	public static void DrawQuadWithColor(float red, float green, float blue, float x, float y, float width, float height) {
-		
+	public static void DrawQuadWithColor(float red, float green, float blue, float x, float y, float width,
+			float height) {
+
 		glEnable(GL_TEXTURE_2D);
 		// translates the texture to one float value of the x and y provided
-		// this is the top left of the quad and point of origin for the rest of the
+		// this is the top left of the quad and point of origin for the rest of
+		// the
 		// process
 		glTranslatef(x, y, 0);
-		//Sets the color of the quad being drawn
+		// Sets the color of the quad being drawn
 		glColor4f(1f, 1f, 1f, 1f);
 		// begins drawing the square
 		glBegin(GL_QUADS);
@@ -150,10 +154,10 @@ public class DrawInFrame {
 		glLoadIdentity();
 
 	}
-	
+
 	/**
-	 * Draws a square in the frame other wise known as a quad which has been rotated
-	 * pre: none post: A Rotated Quad has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad which has been
+	 * rotated pre: none post: A Rotated Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithRotatedTexture(Texture texture, float x, float y, float width, float height,
 			float angle) {
@@ -193,9 +197,10 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Checks if the object has collided with the other objects x and y positions
-	 * Provided for both objects including height and width pre: none post: true is
-	 * returned if the two objects have collided otherwise false is returned
+	 * Checks if the object has collided with the other objects x and y
+	 * positions Provided for both objects including height and width pre: none
+	 * post: true is returned if the two objects have collided otherwise false
+	 * is returned
 	 */
 	public static boolean isCollided(float xPos1, float yPos1, float width1, float height1, float xPos2, float yPos2,
 			float width2, float height2) {
@@ -220,8 +225,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Loads a texture from file pre: none post: the texture file is loaded provided
-	 * by the file name
+	 * Loads a texture from file pre: none post: the texture file is loaded
+	 * provided by the file name
 	 */
 	public static Texture LoadTexture(String name) {
 

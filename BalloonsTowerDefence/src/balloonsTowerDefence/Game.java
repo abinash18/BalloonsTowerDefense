@@ -6,6 +6,7 @@ import static other.DrawInFrame.LoadTexture;
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.opengl.Texture;
 
+import other.DrawInFrame;
 import other.StateManager;
 import other.Timer;
 import userInterface.UserInterface;
@@ -76,8 +77,10 @@ public class Game {
 		gameUserInterface.drawString(0, 20, StateManager.framesInLastSecond + "fps");
 		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY() + 250,
 				"Speed: x" + Timer.timeMultiplier);
-	//	gameUserInterface.drawString(pickTowerMenu.getX() - 500, pickTowerMenu.getY() + 275,
-	//			"balloons this round: " + roundManager.getBalloonsThisRound());
+				// gameUserInterface.drawString(pickTowerMenu.getX() - 500,
+				// pickTowerMenu.getY() + 275,
+				// "balloons this round: " +
+				// roundManager.getBalloonsThisRound());
 
 		// Handles Mouse input
 		if (Mouse.next()) {
@@ -88,8 +91,7 @@ public class Game {
 						player.pickTower(new MonkeyTowerDartMonkey(grid.getFloor(0, 0),
 								roundManager.getCurrentRound().getBalloonsList()));
 					} else {
-						player.pickTower(
-								new MonkeyTowerDartMonkey(grid.getFloor(0, 0), null));
+						player.pickTower(new MonkeyTowerDartMonkey(grid.getFloor(0, 0), null));
 					}
 
 				}
@@ -136,6 +138,9 @@ public class Game {
 		roundManager.tick();
 		player.tick();
 		tickUI();
+		
+		DrawInFrame.DrawCicle(500, 500, 50);
+		
 	}
 
 }
