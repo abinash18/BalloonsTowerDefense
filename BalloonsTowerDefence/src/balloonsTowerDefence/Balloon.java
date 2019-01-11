@@ -2,7 +2,9 @@ package balloonsTowerDefence;
 
 import static other.DrawInFrame.DrawQuadWithTexture;
 import static other.DrawInFrame.GRID_SQUARE_SIZE;
+import static other.DrawInFrame.HEIGHT;
 import static other.DrawInFrame.LoadTexture;
+import static other.DrawInFrame.WIDTH;
 import static other.Timer.Delta;
 
 import java.util.ArrayList;
@@ -112,6 +114,10 @@ public class Balloon implements Entity {
 		// Checks if this is the first tick of this instance of balloon if it is do
 		// nothing
 
+		if (x > WIDTH || y > HEIGHT){
+			alive = false;
+		}
+		
 		if (first) {
 			first = false;
 		} else {
@@ -137,17 +143,17 @@ public class Balloon implements Entity {
 	private boolean isTurningPointReached() {
 		// Set by default to false
 		boolean reached = false;
-
+		int range = 7;
 		Floor floor = turnigPoints.get(currentTurnPoint).getFloor();
 		// Check if position reached tile within variance of 3
 		// If the x of the balloon is 3 pixels ahead of the turnPoint then
-		if (x > floor.getxPos() - 3
+		if (x > floor.getxPos() - range
 				// If the x is between the turn points top left within 3 pixels either way then
-				&& x < floor.getxPos() + 3
+				&& x < floor.getxPos() + range
 				// If the y of the balloon is 3 pixels ahead of the turn point then
-				&& y > floor.getyPos() - 3
+				&& y > floor.getyPos() - range
 				// If the y of the turn point is between 3 pixels either way of the turn point
-				&& y < floor.getyPos() + 3) {
+				&& y < floor.getyPos() + range) {
 			// Then the turning point has been reached
 			reached = true;
 			// And the balloon is properly aligned to the grid
@@ -271,7 +277,6 @@ public class Balloon implements Entity {
 			speed = typeNew.speed;
 			return false;
 		} else {
-			alive = false;
 			return true;
 		}
 	}

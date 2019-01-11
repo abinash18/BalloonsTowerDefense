@@ -60,7 +60,7 @@ public class Round {
 		
 		// Apocalypse mode setting just for testing
 		balloonsList
-				.add(new BalloonRed(balloonTypes[randomBalloonIndex].getInstanceTexture(), balloonTypes[randomBalloonIndex].getStartTile(), balloonTypes[1].getGrid(),
+				.add(new Balloon(balloonTypes[randomBalloonIndex].getInstanceTexture(), balloonTypes[randomBalloonIndex].getStartTile(), balloonTypes[1].getGrid(),
 						GRID_SQUARE_SIZE, GRID_SQUARE_SIZE, balloonTypes[randomBalloonIndex].getSpeed(), balloonTypes[randomBalloonIndex].getHealth()));
 		balloonsSpawned++;
 	}
