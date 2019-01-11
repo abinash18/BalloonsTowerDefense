@@ -41,7 +41,7 @@ public class Player {
 	}
 
 	public void tick() {
-		
+
 		if (holdingTower) {
 			temporaryTower.setX(getFloorUnderMouse().getxPos());
 			temporaryTower.setY(getFloorUnderMouse().getyPos());
@@ -49,12 +49,14 @@ public class Player {
 //			tempTower.setY(Mouse.getY());
 			temporaryTower.draw();
 		}
-		
+
 		// System.out.println(Money + " " + LivesLeft);
 		for (MonkeyTower MonkeyTower : ListOfMonkeyTowers) {
 			MonkeyTower.tick();
 			MonkeyTower.draw();
-			MonkeyTower.reUpdateTargetList(roundManager.getCurrentRound().getBalloonsList());
+			if (roundManager.getCurrentRound() != null) {
+				MonkeyTower.reUpdateTargetList(roundManager.getCurrentRound().getBalloonsList());
+			}
 		}
 
 		// handle mouse input
@@ -67,9 +69,9 @@ public class Player {
 //			} else {
 //				System.out.println("not buildable" + changeMoneyAmount(-20) );
 //			}
-			
+
 			placeTower();
-			
+
 		}
 
 		if (Mouse.isButtonDown(1) && !MouseDownRight) { // param takes mouse button 0 for leftclick and 1 for
@@ -103,12 +105,13 @@ public class Player {
 	private Floor getFloorUnderMouse() {
 		return grid.getFloor(Mouse.getX() / GRID_SQUARE_SIZE, (HEIGHT - Mouse.getY() - 1) / GRID_SQUARE_SIZE);
 	}
-	
+
 	private void placeTower() {
 		Floor currentTile = getFloorUnderMouse();
 		if (holdingTower) {
 			Floor f = getFloorUnderMouse();
-			if (f.getFloorType().builds && !currentTile.isOccupied() && changeMoneyAmount(-temporaryTower.getType().cost)) {
+			if (f.getFloorType().builds && !currentTile.isOccupied()
+					&& changeMoneyAmount(-temporaryTower.getType().cost)) {
 //				towerList
 //						.add(new TowerCannonBlue(TowerType.CannonBlue, t, waveManager.getCurrentWave().getEnemyList()));
 				ListOfMonkeyTowers.add(temporaryTower);
@@ -120,7 +123,7 @@ public class Player {
 			}
 		}
 	}
-	
+
 	public void initialize() {
 		Money = 200;
 		LivesLeft = 100;
@@ -130,7 +133,7 @@ public class Player {
 		temporaryTower = t;
 		holdingTower = true;
 	}
-	
+
 	public static boolean changeMoneyAmount(int amount) {
 		if (Money + amount >= 0) { // checks the amount if it is greater o r equal to 0 then adds it
 			Money += amount;

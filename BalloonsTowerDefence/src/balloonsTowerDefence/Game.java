@@ -54,8 +54,8 @@ public class Game {
 		gameUserInterface.createMenu("PlayPauseMenu", 1216, 0, 64, 64, 2, 0);
 
 		playPauseMenu = gameUserInterface.getMenu("PlayPauseMenu");
-		playPauseMenu.addMenuButton("Play", "play/pause/fastforward");
-		
+		playPauseMenu.addMenuButton("Play", "playpausefastforward", 90, 90);
+
 		pickTowerMenu = gameUserInterface.getMenu("PickTower");
 
 		pickTowerMenu.addMenuButton("DartMonkey", "cannonBlueFull");
@@ -76,25 +76,56 @@ public class Game {
 		gameUserInterface.drawString(0, 20, StateManager.framesInLastSecond + "fps");
 		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY() + 250,
 				"Speed: x" + Timer.timeMultiplier);
-		gameUserInterface.drawString(pickTowerMenu.getX() - 500, pickTowerMenu.getY() + 275,
-				"balloons this round: " + roundManager.getBalloonsThisRound());
+	//	gameUserInterface.drawString(pickTowerMenu.getX() - 500, pickTowerMenu.getY() + 275,
+	//			"balloons this round: " + roundManager.getBalloonsThisRound());
 
 		// Handles Mouse input
 		if (Mouse.next()) {
 			boolean mouseClicked = Mouse.isButtonDown(0);
 			if (mouseClicked) {
 				if (pickTowerMenu.isButtonClicked("DartMonkey")) {
-					player.pickTower(new MonkeyTowerDartMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
-							roundManager.getCurrentRound().getBalloonsList()));
+					if (roundManager.getCurrentRound() != null) {
+						player.pickTower(new MonkeyTowerDartMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
+								roundManager.getCurrentRound().getBalloonsList()));
+					} else {
+						player.pickTower(
+								new MonkeyTowerDartMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0), null));
+					}
+
 				}
 				if (pickTowerMenu.isButtonClicked("IceMonkey")) {
+					if (roundManager.getCurrentRound() != null) {
+						player.pickTower(new MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
+								roundManager.getCurrentRound().getBalloonsList()));
+					} else {
+						player.pickTower(
+								new MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0), null));
+					}
 					player.pickTower(new MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
 							roundManager.getCurrentRound().getBalloonsList()));
 				}
 				if (pickTowerMenu.isButtonClicked("NinjaMonkey")) {
-					player.pickTower(new MonkeyTowerNinjaMonkey(grid.getFloor(0, 0),
-							roundManager.getCurrentRound().getBalloonsList()));
+					if (roundManager.getCurrentRound() != null) {
+						player.pickTower(new MonkeyTowerNinjaMonkey(grid.getFloor(0, 0),
+								roundManager.getCurrentRound().getBalloonsList()));
+					} else {
+						player.pickTower(new MonkeyTowerNinjaMonkey(grid.getFloor(0, 0), null));
+					}
+
 				}
+
+				// Buttons for play puase and fast forward
+				if (playPauseMenu.isButtonClicked("Play")) {
+					// if (Timer.isGamePaused()) {
+					if (roundManager.getCurrentRound() == null || roundManager.getCurrentRound().isRoundCompleted()) {
+						roundManager.beginRound();
+					} else {
+						Timer.setGamePaused();
+					}
+
+					// }
+				}
+
 			}
 		}
 

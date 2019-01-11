@@ -185,6 +185,11 @@ public class UserInterface {
 			Button b = new Button(LoadTexture(texName), buttonName, 0, 0);
 			setButton(b);
 		}
+		
+		public void addMenuButton(String buttonName, String texName, int width, int height) {
+			Button b = new Button(LoadTexture(texName), buttonName, 0, 0, width, height);
+			setButton(b);
+		}
 
 		private Button getButton(String name) {
 

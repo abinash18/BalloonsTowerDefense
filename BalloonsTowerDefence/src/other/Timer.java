@@ -99,4 +99,12 @@ public class Timer {
 	public static float grabTimeMultiplier() {
 		return (timeMultiplier);
 	}
+
+	public static boolean isGamePaused() {
+		return GamePaused;
+	}
+
+	public static void setGamePaused(boolean gamePaused) {
+		GamePaused = gamePaused;
+	}
 }

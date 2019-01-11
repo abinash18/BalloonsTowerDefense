@@ -17,17 +17,23 @@ public class RoundManager {
 		
 		this.balloonsThisRound = currentRoundNumber * balloonsPerRound * 2;
 		
-		newRound();
+		//newRound();
 
 	}
 
+	public void beginRound() {
+		newRound();
+	}
+	
 	public void tick() {
 
-		if (!currentRound.isRoundCompleted()) {
+		//if (!currentRound.isRoundCompleted()) {
+		if (currentRound != null) {
 			currentRound.tick();
-		} else {
-			newRound(); // Right when the last wave ends the new wave is created
-		}
+		} 
+		//else {
+	//		newRound(); // Right when the last wave ends the new wave is created
+	//	}
 
 	}
 

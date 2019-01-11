@@ -61,16 +61,16 @@ public abstract class MonkeyTower implements Entity {
 	}
 
 	public void draw() {
-		
+
 //		if (textures.length > 1) {
 //			for (int i = 1; i < textures.length; i++) {
-		if (textures.length > 1){
+		if (textures.length > 1) {
 			DrawQuadWithTexture(textures[0], x, y, width, height);
 			DrawQuadWithRotatedTexture(textures[1], x, y, width, height, angle);
 		} else {
 			DrawQuadWithRotatedTexture(textures[0], x, y, width, height, angle);
 		}
-	
+
 //			}
 //		}
 //		
@@ -86,17 +86,17 @@ public abstract class MonkeyTower implements Entity {
 
 		Balloon closest = null;
 		float closestDistance = 1000;
-		
-		for (Balloon balloons : balloons) {
-			if (isInRange(balloons) && findDistance(balloons) < closestDistance && balloons.getHiddenHealth() > 0) {
-				closestDistance = findDistance(balloons);
-				closest = balloons;
+		if (balloons != null) {
+			for (Balloon balloons : balloons) {
+				if (isInRange(balloons) && findDistance(balloons) < closestDistance && balloons.getHiddenHealth() > 0) {
+					closestDistance = findDistance(balloons);
+					closest = balloons;
+				}
+			}
+			if (closest != null) {
+				targeted = true;
 			}
 		}
-		if (closest != null) {
-			targeted = true;
-		}
-		
 		return closest;
 
 	}
