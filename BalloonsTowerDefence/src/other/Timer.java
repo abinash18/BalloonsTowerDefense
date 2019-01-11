@@ -76,6 +76,19 @@ public class Timer {
 			timeMultiplier += changeInMult;
 		}
 	}
+	
+	/**
+	 * Sets the timeMultiplier pre: none post: the timeMultiplier is changed to the
+	 * one supplied
+	 */
+	public static void setGameFastforward() {
+
+		if (timeMultiplier > 1){
+			timeMultiplier = 1;
+		} else {
+			timeMultiplier = 3;
+		}
+	}
 
 	/**
 	 * Sets the game to a paused or un paused state pre: none post: paused is set to

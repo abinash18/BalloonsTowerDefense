@@ -23,8 +23,8 @@ public abstract class Dart implements Entity {
 	public Dart(DartType dartType, Balloon target, float x, float y, int width, int height) {
 		this.dartType = dartType;
 		this.target = target;
-		this.x = x;
-		this.y = y;
+		this.x = x + GRID_SQUARE_SIZE / 2;
+		this.y = y + GRID_SQUARE_SIZE / 2;
 		this.width = width;
 		this.height = height;
 		this.texture = dartType.texture;

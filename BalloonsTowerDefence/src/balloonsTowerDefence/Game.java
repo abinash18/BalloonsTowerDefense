@@ -120,7 +120,7 @@ public class Game {
 					if (roundManager.getCurrentRound() == null || roundManager.getCurrentRound().isRoundCompleted()) {
 						roundManager.beginRound();
 					} else {
-						Timer.setTimeMultiplier(1);
+						Timer.setGameFastforward();
 					}
 
 					// }
