@@ -6,9 +6,9 @@ public class BalloonBlue extends Balloon {
 		super(floorX, floorY, grid, type);
 	}
 
-	@Override
-	public void kill() {
-		super.changeType();
-	}
+//	@Override
+//	public void kill() {
+//		super.changeType(BalloonType.RedBalloon);
+//	}
 
 }

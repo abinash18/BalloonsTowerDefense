@@ -9,7 +9,6 @@ import java.util.ArrayList;
 
 import org.newdawn.slick.opengl.Texture;
 
-
 public class Balloon implements Entity {
 
 	private static final int MONEY_FOR_KILL = 10;
@@ -51,7 +50,7 @@ public class Balloon implements Entity {
 		fillTurningPointArrayList();
 
 	}
-	
+
 	public Balloon(int floorX, int floorY, FloorGrid grid, BalloonType type) {
 		this.instanceTexture = LoadTexture(type.textureName);
 		this.grid = grid;
@@ -262,25 +261,29 @@ public class Balloon implements Entity {
 		return tp;
 	}
 
-	public void changeType() {
-		if (type.nextBalloonType != null) {
-			type = type.nextBalloonType;
-			instanceTexture = LoadTexture(type.textureName);
-			health = type.health;
+	private boolean changeType(BalloonType typeNew) {
+		if (typeNew.nextBalloonType != null) {
+			type = typeNew.nextBalloonType;
+			instanceTexture = LoadTexture(typeNew.textureName);
+			health = typeNew.health;
 			startingHealth = health;
 			hiddenHealth = health;
-			speed = type.speed;
+			speed = typeNew.speed;
+			return false;
 		} else {
 			alive = false;
+			return true;
 		}
 	}
-	
+
 	public void draw() {
 		DrawQuadWithTexture(instanceTexture, x, y, width, height);
 	}
 
 	public void kill() {
-		alive = false;
+		if (changeType(BalloonType.RedBalloon)) {
+			alive = false;
+		}
 	}
 
 	public void reduceHiddenHealth(float amount) {
