@@ -16,6 +16,7 @@ public class Balloon implements Entity {
 	private int width, height, moneyReward, currentTurnPoint;
 	private float speed, x, y, health, startingHealth, hiddenHealth;
 	private Texture instanceTexture;
+	public BalloonType type;
 	// private Texture healthBg, healthFg, healthBorder; //heathBar
 	private Floor startingFloorObject;
 	private boolean first, alive;
@@ -63,6 +64,7 @@ public class Balloon implements Entity {
 		this.x = startingFloorObject.getxPos();
 		this.y = startingFloorObject.getyPos();
 		this.speed = type.speed;
+		this.type = type;
 		this.first = true;
 		this.alive = true;
 		this.turnigPoints = new ArrayList<TurningPoint>();
@@ -260,11 +262,24 @@ public class Balloon implements Entity {
 		return tp;
 	}
 
+	public void changeType() {
+		if (type.nextBalloonType != null) {
+			type = type.nextBalloonType;
+			instanceTexture = LoadTexture(type.textureName);
+			health = type.health;
+			startingHealth = health;
+			hiddenHealth = health;
+			speed = type.speed;
+		} else {
+			alive = false;
+		}
+	}
+	
 	public void draw() {
 		DrawQuadWithTexture(instanceTexture, x, y, width, height);
 	}
 
-	private void kill() {
+	public void kill() {
 		alive = false;
 	}
 
