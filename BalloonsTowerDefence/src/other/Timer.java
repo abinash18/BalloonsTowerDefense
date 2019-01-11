@@ -10,8 +10,12 @@ public class Timer {
 
 	private static boolean GamePaused = false; // is the game paused
 	public static long lastGameFrame, totalTime;
-	public static float delt = 0, timeMultiplier = 1; // Time multiplier is for to fast forward the game it multiplies
-														// the delta and then that speeds up all the objects
+	public static float delt = 0, timeMultiplier = 1; // Time multiplier is for
+														// to fast forward the
+														// game it multiplies
+														// the delta and then
+														// that speeds up all
+														// the objects
 
 	/**
 	 * The current time since the game started is calculated
@@ -19,14 +23,19 @@ public class Timer {
 	public static long GrabTime() {
 		long tempTime;
 		// Gets time from Sys package
-		tempTime = Sys.getTime() * 1000 / Sys.getTimerResolution(); // * 1000 becouse time is in miliseconds
+		tempTime = Sys.getTime() * 1000 / Sys.getTimerResolution(); // * 1000
+																	// becouse
+																	// time is
+																	// in
+																	// miliseconds
 		// returns the time
 		return (tempTime);
 	}
 
 	/**
-	 * Returns the delta to move everything pre: none post: If the game var isPaused
-	 * is not true then the Delta is returned Otherwise delta is returned
+	 * Returns the delta to move everything pre: none post: If the game var
+	 * isPaused is not true then the Delta is returned Otherwise delta is
+	 * returned
 	 */
 	public static float Delta() {
 		if (GamePaused) {
@@ -51,10 +60,13 @@ public class Timer {
 	 */
 	public static float grabDelta() {
 		long timeRightNow = GrabTime(); // the time now is gotten
-		int delta = (int) (timeRightNow - lastGameFrame); // the difference is calculated
-		lastGameFrame = GrabTime(); // the last game frame is updated to the current time
+		int delta = (int) (timeRightNow - lastGameFrame); // the difference is
+															// calculated
+		lastGameFrame = GrabTime(); // the last game frame is updated to the
+									// current time
 		// System.out.println(delta * 0.01f);
-		if (delta * 0.001f > 0.05f) { // check to get the accurate value of delta in seconds
+		if (delta * 0.001f > 0.05f) { // check to get the accurate value of
+										// delta in seconds
 			return 0.05f;
 		}
 		// Returns the delta in seconds
@@ -62,13 +74,13 @@ public class Timer {
 	}
 
 	/**
-	 * Sets the timeMultiplier pre: none post: the timeMultiplier is changed to the
-	 * one supplied
+	 * Sets the timeMultiplier pre: none post: the timeMultiplier is changed to
+	 * the one supplied
 	 */
 	public static void setTimeMultiplier(float changeInMult) {
 		/*
-		 * Checks if the change is less than 10 and not equal to zero or -1 and is less
-		 * than that
+		 * Checks if the change is less than 10 and not equal to zero or -1 and
+		 * is less than that
 		 */
 		if ((timeMultiplier + changeInMult) < -1 && (timeMultiplier + changeInMult) > 10) {
 			// Magic
@@ -76,14 +88,14 @@ public class Timer {
 			timeMultiplier += changeInMult;
 		}
 	}
-	
+
 	/**
-	 * Sets the timeMultiplier pre: none post: the timeMultiplier is changed to the
-	 * one supplied
+	 * Sets the timeMultiplier pre: none post: if the time multiplier is 1 then
+	 * it is set to 3 and visa versa
 	 */
 	public static void setGameFastforward() {
 
-		if (timeMultiplier > 1){
+		if (timeMultiplier > 1) {
 			timeMultiplier = 1;
 		} else {
 			timeMultiplier = 3;
@@ -91,8 +103,8 @@ public class Timer {
 	}
 
 	/**
-	 * Sets the game to a paused or un paused state pre: none post: paused is set to
-	 * true if is false or vice versa
+	 * Sets the game to a paused or un paused state pre: none post: paused is
+	 * set to true if is false or vice versa
 	 */
 	public static void setGamePaused() {
 		if (GamePaused) {
