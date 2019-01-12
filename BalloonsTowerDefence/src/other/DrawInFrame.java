@@ -50,6 +50,7 @@ public class DrawInFrame {
 	 * Initializes the Graphics and textures
 	 */
 	public static void InitializeGL() {
+
 		// The Title of the screen is set
 		Display.setTitle("Balloons Tower Defence");
 		// Magic
@@ -77,8 +78,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad pre: none post: A
-	 * Quad has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad pre: none post: A Quad
+	 * has been drawn on screen
 	 */
 	public static void DrawQuadWithTexture(Texture texture, float x, float y, float width, float height) {
 
@@ -115,8 +116,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad pre: none post: A
-	 * Quad has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad pre: none post: A Quad
+	 * has been drawn on screen
 	 */
 	public static void DrawQuadWithColor(float red, float green, float blue, float x, float y, float width,
 			float height) {
@@ -156,8 +157,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad which has been
-	 * rotated pre: none post: A Rotated Quad has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad which has been rotated
+	 * pre: none post: A Rotated Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithRotatedTexture(Texture texture, float x, float y, float width, float height,
 			float angle) {
@@ -197,10 +198,9 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Checks if the object has collided with the other objects x and y
-	 * positions Provided for both objects including height and width pre: none
-	 * post: true is returned if the two objects have collided otherwise false
-	 * is returned
+	 * Checks if the object has collided with the other objects x and y positions
+	 * Provided for both objects including height and width pre: none post: true is
+	 * returned if the two objects have collided otherwise false is returned
 	 */
 	public static boolean isCollided(float xPos1, float yPos1, float width1, float height1, float xPos2, float yPos2,
 			float width2, float height2) {
@@ -225,8 +225,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Loads a texture from file pre: none post: the texture file is loaded
-	 * provided by the file name
+	 * Loads a texture from file pre: none post: the texture file is loaded provided
+	 * by the file name
 	 */
 	public static Texture LoadTexture(String name) {
 

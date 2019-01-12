@@ -139,7 +139,7 @@ public class Game {
 		player.tick();
 		tickUI();
 		
-		DrawInFrame.DrawCicle(500, 500, 50);
+		//DrawInFrame.DrawCicle(500, 500, 50);
 		
 	}
 

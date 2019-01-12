@@ -14,9 +14,10 @@ import org.w3c.dom.NodeList;
 public class LoadSettings {
 
 	private static final String SETTINGS_FILE_NAME = "src/xml/settings.xml";
-	private static ArrayList<Element> texturePathElements;
-	private static ArrayList<Element> towerElements;
-	private static ArrayList<Element> settings;
+	private static ArrayList<Element> texturePathElements = new ArrayList<Element>();
+	private static ArrayList<Element> towerElements = new ArrayList<Element>();
+	private static ArrayList<Element> settings = new ArrayList<Element>();
+	private static Document document;
 	private boolean isTexturesDone = false, isTowersDone = false, isGameSettingsDone = false, isDone = false,
 			isFileLoaded = false;
 
@@ -26,7 +27,7 @@ public class LoadSettings {
 		settings = new ArrayList<Element>();
 	}
 
-	public void LoadFile() {
+	public static void LoadFileXML() {
 
 		try {
 			// Load File
@@ -37,11 +38,11 @@ public class LoadSettings {
 			DocumentBuilder builder = factory.newDocumentBuilder();
 
 			// Build Document
-			Document document = builder.parse(settingsFile);
+			document = builder.parse(settingsFile);
 
 			// Normalize the XML Structure; It's just too important !!
 			document.getDocumentElement().normalize();
-			isFileLoaded = true;
+		//	isFileLoaded = true;
 			// the root node
 			Element root = document.getDocumentElement();
 			System.out.println(root.getNodeName());
@@ -61,7 +62,7 @@ public class LoadSettings {
 					System.out.println(eElement.getAttribute("name"));
 				}
 			}
-			isTexturesDone = true;
+		//	isTexturesDone = true;
 			// Node tower = document.getElementById("Towers");
 			NodeList towers = document.getElementsByTagName("Tower");
 
@@ -72,7 +73,7 @@ public class LoadSettings {
 					towerElements.add(eElement);
 				}
 			}
-			isTowersDone = true;
+		//	isTowersDone = true;
 			Node gameSettings = document.getElementById("GameSettings");
 			NodeList settingsNodeList = document.getElementsByTagName("Setting");
 
@@ -83,13 +84,43 @@ public class LoadSettings {
 					settings.add(eElement);
 				}
 			}
-			isGameSettingsDone = true;
-			isDone = true;
+		//	isGameSettingsDone = true;
+		//	isDone = true;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
+	public static Element getGameSetting(String settingTagName) {
+		Element settingElement = null;
+		for (Element sett : settings) {
+			if (sett.getTagName().equals(settingTagName)) {
+				settingElement = sett;
+			}
+		}
+		return settingElement;
+	}
+	
+	public static Element getTowerInfo(String towerTagName) {
+		Element settingElement = null;
+		for (Element tower : settings) {
+			if (tower.getTagName().equals(towerTagName)) {
+				settingElement = tower;
+			}
+		}
+		return settingElement;
+	}
+	
+	public static Element getTexture(String textureName) {
+		Element textureElement = null;
+		for (Element tex : settings) {
+			if (tex.getAttribute("name").equals(textureName)) {
+				textureElement = tex;
+			}
+		}
+		return textureElement;
+	}
+	
 	public static ArrayList<Element> getTexturePathElements() {
 		return texturePathElements;
 	}
