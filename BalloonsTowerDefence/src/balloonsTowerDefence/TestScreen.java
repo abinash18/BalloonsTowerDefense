@@ -1,7 +1,11 @@
 package balloonsTowerDefence;
 
+import static other.DrawInFrame.DrawQuadWithTexture;
+
 import org.newdawn.slick.opengl.Texture;
 
+import other.DrawInFrame;
+import other.ImageTools;
 import other.LoadSettings;
 import userInterface.Slider;
 import userInterface.UserInterface;
@@ -13,7 +17,7 @@ public class TestScreen {
 	private UserInterface UI;
 	private Menu test;
 	private Slider testSlider;
-	private Texture bg;
+	private Texture sprite, spriteBg;
 	
 	public TestScreen() {
 //		this.UI = new UserInterface();
@@ -25,8 +29,9 @@ public class TestScreen {
 //		
 //		testSlider = test.getSlider("slider");
 		
-		LoadSettings.LoadFileXML();
-		
+	//	LoadSettings.LoadFileXML();
+		sprite = ImageTools.LoadSpriteTextureFromSpriteSheet("DartMonkey", "In_Game_Custom");
+		spriteBg = ImageTools.LoadSpriteTextureFromSpriteSheet("red_tint", "In_Game_Custom");
 	}
 
 	public void tick() {
@@ -39,6 +44,9 @@ public class TestScreen {
 	}
 
 	private void draw() {
+		DrawQuadWithTexture(spriteBg, 0, 0, DrawInFrame.WIDTH, DrawInFrame.HEIGHT);
+		DrawQuadWithTexture(sprite, 0, 0, sprite.getImageWidth(), sprite.getImageHeight());
+		
 //		DrawQuadWithTexture(bg, 0, 0, WIDTH, HEIGHT);
 //		UI.drawString(0, 0, "Value: " + testSlider.getPointerValue());
 //		UI.drawString(50, 0, "Position x: " + testSlider.getPointerPos());

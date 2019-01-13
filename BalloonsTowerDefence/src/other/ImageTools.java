@@ -11,14 +11,54 @@ import static org.lwjgl.opengl.GL11.glGenTextures;
 import static org.lwjgl.opengl.GL11.glTexImage2D;
 import static org.lwjgl.opengl.GL11.glTexParameteri;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
+import javax.imageio.ImageIO;
+
 import org.lwjgl.BufferUtils;
 import org.newdawn.slick.opengl.PNGDecoder;
+import org.newdawn.slick.opengl.Texture;
+import org.newdawn.slick.util.BufferedImageUtil;
+import org.newdawn.slick.util.ResourceLoader;
+import org.w3c.dom.Element;
 
 public class ImageTools {
+
+	// private static BufferedImage spriteSheet;
+
+	public static Texture LoadSpriteTextureFromSpriteSheet(String spriteName, String spriteSheetName) {
+		BufferedImage spriteSheet = null, subImage;
+		String spriteSheetPath, spriteSheetPathFile;
+		Texture tex = null;
+		Element temp = null, tempSprite;
+
+		temp = LoadSettings.getSpriteSheet(spriteSheetName);
+		spriteSheetPath = temp.getAttribute("XMLPath");
+		System.out.println(temp.getAttribute("XMLPath"));
+		spriteSheetPathFile = temp.getAttribute("ImagePath");
+		System.out.println(temp.getAttribute("ImagePath"));
+		
+		try {
+			spriteSheet = ImageIO.read(ResourceLoader.getResourceAsStream(spriteSheetPathFile));
+			tempSprite = LoadSettings.getSpriteFromExternalXML(spriteSheetPath, spriteName);
+
+			subImage = spriteSheet.getSubimage(Integer.parseInt(tempSprite.getAttribute("x")),
+					Integer.parseInt(tempSprite.getAttribute("y")), Integer.parseInt(tempSprite.getAttribute("w")),
+					Integer.parseInt(tempSprite.getAttribute("h")));
+			//System.out.println(tempSprite.getAttribute("h"));
+			
+			tex = BufferedImageUtil.getTexture("", subImage);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return tex;
+
+	}
 
 	public static int glLoadTextureLinear(String location) {
 

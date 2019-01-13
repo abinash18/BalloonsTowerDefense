@@ -56,7 +56,7 @@ public class MainMenu {
 	}
 
 	public void tick() {
-		DrawQuadWithTexture(bg, 0, 0, 2048, 1024);
+		DrawQuadWithTexture(bg, 0, 0, 2500, 1024);
 		menuUI.drawOnScreen();
 		checkClick();
 	}

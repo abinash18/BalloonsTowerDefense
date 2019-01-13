@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Abinash Singh settings.xml I Made this to store native texture paths 
+	tower upgrade tiers and External sprite sheets also game settings -->
 <Settings>
 	<Main id="main">
+		<SpriteSheets>
+			<ExternalSpriteSheet name="In_Game"
+				ImagePath="src/resources/sprite_sheets/InGame_BTD/InGame.png"
+				XMLPath="src/resources/sprite_sheets/InGame_BTD/InGame.xml" />
+			<ExternalSpriteSheet name="In_Game_HUD"
+				ImagePath="src/resources/sprite_sheets/InGame_BTD/in_game_hud.png"
+				XMLPath="src/resources/sprite_sheets/InGame_BTD/in_game_hud.xml" />
+			<ExternalSpriteSheet name="In_Game_Custom"
+				ImagePath="src/resources/sprite_sheets/Custom_Textures/InGameCustom.png"
+				XMLPath="src/resources/sprite_sheets/Custom_Textures/In_Game_Custom.xml" />
+		</SpriteSheets>
 		<Textures id="textures">
-			<TexturePath name="RedBalloon" path="resources/red_balloon.png" />
-			<TexturePath name="BlueBalloon" path="resources/red_balloon.png" />
-			<TexturePath name="DartMonkey" path="resources/red_balloon.png" />
-			<TexturePath name="NinjaMonkey" path="resources/red_balloon.png" />
-			<TexturePath name="MenuBackGround" path="resources/red_balloon.png" />
-			<TexturePath name="NinjaMonkey" path="resources/NinjaMonkey.png" />
-			<TexturePath name="NinjaMonkey_ninjaStar_Normal" path="resources/NinjaMonkey_ninjaStarNormal.png" />
+			<TexturePath name="RedBalloon"
+				path="balloon_red" />
+			<TexturePath name="BlueBalloon"
+				path="balloon_red" />
+			<TexturePath name="DartMonkey"
+				path="balloon_red" />
+			<TexturePath name="NinjaMonkey"
+				path="balloon_red" />
+			<TexturePath name="MenuBackGround"
+				path="balloon_red" />
+			<TexturePath name="NinjaMonkey"
+				path="NinjaMonkey" />
+			<TexturePath name="NinjaMonkey_ninjaStar_Normal"
+				path="NinjaMonkey_starNormal" />
 		</Textures>
-		<GameSettings id="GameSettings">
-			<FPS>200</FPS>
+		<GameSettings>
+			<FPS id="fps">200</FPS>
 		</GameSettings>
 		<Towers>
 			<Tower name="DartMonkey" TextureName="DartMonkey" />

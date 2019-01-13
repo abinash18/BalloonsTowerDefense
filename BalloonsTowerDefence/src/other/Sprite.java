@@ -1,37 +1,23 @@
 package other;
 
+import org.newdawn.slick.opengl.Texture;
+
 public class Sprite {
 
-	private final String name;
-	private final int x, y, w, h;
-	
-	public Sprite(String name, int x, int y, int w, int h) {
-		super();
+	private String name;
+	private Texture tex;
+
+	public Sprite(String name, String path) {
 		this.name = name;
-		this.x = x;
-		this.y = y;
-		this.w = w;
-		this.h = h;
+		this.tex = DrawInFrame.LoadTexture(path);
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public int getX() {
-		return x;
+	public Texture getTex() {
+		return tex;
 	}
 
-	public int getY() {
-		return y;
-	}
-
-	public int getW() {
-		return w;
-	}
-
-	public int getH() {
-		return h;
-	}
-	
 }

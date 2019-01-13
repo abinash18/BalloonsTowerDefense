@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="InameGame" width="1664" height="4819">
+    <Cell name="ballooname_blue" x="232" y="0" w="42" h="57"/>
+    <Cell name="ballooname_red" x="192" y="0" w="40" h="54"/>
+    <Cell name="bullet" x="96" y="0" w="32" h="32"/>
+    <Cell name="bullet2" x="128" y="0" w="32" h="32"/>
+    <Cell name="buttoname_Exit" x="0" y="160" w="258" h="76"/>
+    <Cell name="buttoname_Inamestructionames" x="258" y="160" w="382" h="76"/>
+    <Cell name="buttoname_LeaderBoard" x="640" y="160" w="451" h="113"/>
+    <Cell name="buttoname_LevelEdit" x="1091" y="160" w="451" h="113"/>
+    <Cell name="buttoname_Optionames" x="456" y="273" w="482" h="113"/>
+    <Cell name="buttoname_play" x="0" y="273" w="456" h="113"/>
+    <Cell name="canamenameonameBlueFull" x="1168" y="0" w="64" h="64"/>
+    <Cell name="cherryVelvetCookie" x="1040" y="0" w="64" h="64"/>
+    <Cell name="chocolateCookie" x="1104" y="0" w="64" h="64"/>
+    <Cell name="Cog" x="938" y="273" w="300" h="300"/>
+    <Cell name="DartMonkey" x="274" y="0" w="62" h="64"/>
+    <Cell name="edit" x="0" y="1619" w="1600" h="1600"/>
+    <Cell name="grass" x="1232" y="0" w="64" h="64"/>
+    <Cell name="health_bg" x="32" y="0" w="32" h="8"/>
+    <Cell name="health_border" x="64" y="0" w="32" h="8"/>
+    <Cell name="health_foregrounamed" x="0" y="0" w="32" h="8"/>
+    <Cell name="IMG_20180806_160656_458.jpg" x="1238" y="273" w="386" h="386"/>
+    <Cell name="inameGame_FloorPickerMenameu" x="0" y="659" w="192" h="960"/>
+    <Cell name="inameGame_TowerPickerMenameu" x="192" y="659" w="192" h="960"/>
+    <Cell name="leaderboard" x="0" y="3219" w="1600" h="1600"/>
+    <Cell name="mainameMenameu_BackGrounamed" x="384" y="659" w="1280" h="960"/>
+    <Cell name="nameinamejaMonamekey" x="1296" y="0" w="64" h="64"/>
+    <Cell name="nameinamejaMonamekey_starnameormal" x="528" y="0" w="64" h="64"/>
+    <Cell name="path" x="464" y="0" w="64" h="64"/>
+    <Cell name="playpausefastforward" x="1421" y="0" w="160" h="160"/>
+    <Cell name="progressBar_border" x="400" y="0" w="64" h="64"/>
+    <Cell name="red_tint" x="336" y="0" w="64" h="64"/>
+    <Cell name="slider_bar" x="160" y="0" w="32" h="32"/>
+    <Cell name="slider_poinameter" x="1360" y="0" w="61" h="76"/>
+    <Cell name="tower_base" x="720" y="0" w="64" h="64"/>
+    <Cell name="tower_base2" x="592" y="0" w="64" h="64"/>
+    <Cell name="tower_base3" x="912" y="0" w="64" h="64"/>
+    <Cell name="tower_canamenameoname2" x="784" y="0" w="64" h="64"/>
+    <Cell name="tower_guname" x="656" y="0" w="64" h="64"/>
+    <Cell name="tower_guname2" x="848" y="0" w="64" h="64"/>
+    <Cell name="water" x="976" y="0" w="64" h="64"/>
+</TextureAtlas>
