@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import org.newdawn.slick.opengl.Texture;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -22,6 +23,7 @@ public class LoadSettings {
 	private static ArrayList<Element> towerElements = new ArrayList<Element>();
 	private static ArrayList<Element> settings = new ArrayList<Element>();
 	private static ArrayList<Sprite> sprites = new ArrayList<Sprite>();
+	//private static ArrayList<Texture> spriteTexture = new ArrayList<Texture>();
 	private static Document document;
 	public static boolean isTexturesDone = false, isTexturePathsDone = false, isTowersDone = false,
 			isGameSettingsDone = false, isDone = false, isFileLoaded = false;
@@ -86,10 +88,13 @@ public class LoadSettings {
 		// Node textures = document.getElementById("textures");
 		//NodeList nList = document.getElementsByTagName("TexturePath");
 
-		for (Element texPath : texturePathElements) {
-			System.out.println(texPath.getAttribute("name") + " " + texPath.getAttribute("name"));
-			sprites.add(new Sprite(texPath.getAttribute("name"), texPath.getAttribute("path")));
-		}
+//		for (Element texPath : texturePathElements) {
+//			System.out.println(texPath.getAttribute("name") + " " + texPath.getAttribute("name"));
+//			sprites.add(new Sprite(texPath.getAttribute("name"), texPath.getAttribute("path")));
+//		}
+		
+		sprites = ImageTools.LoadAllSpriteTexturesFromSpriteSheet("In_Game");
+		
 		isTexturesDone = true;
 	}
 
@@ -165,6 +170,27 @@ public class LoadSettings {
 
 		return spritesheet;
 	}
+	
+	public static NodeList getSpriteSheetParsed(String path) {
+		NodeList nlist = null;
+		Document doc = null;
+		File file = new File(path);
+		
+		try{
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			
+			doc = builder.parse(file);
+			
+			nlist = doc.getElementsByTagName("Cell");
+			
+			
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
+
+		return nlist;
+	}
 
 	public static Element getSpriteFromExternalXML(String path, String name) {
 		Element e = null;
@@ -193,6 +219,36 @@ public class LoadSettings {
 		}
 
 		return e;
+
+	}
+	
+	public static NodeList getSpritesFromExternalXML(String path) {
+		NodeList nList = null;
+		Document doc = null;
+		File file = new File(path);
+		try {
+			DocumentBuilder builder = factory.newDocumentBuilder();
+
+			doc = builder.parse(file);
+
+			nList = doc.getElementsByTagName("Cell");
+
+//			for (int i = 0; i < nList.getLength(); i++) {
+//				Node node = nList.item(i);
+//				if (node.getNodeType() == Node.ELEMENT_NODE) {
+//					Element eElement = (Element) node;
+//					System.out.println(eElement.getAttribute("name"));
+//					if (eElement.getAttribute("name").equals(name)) {
+//						e = eElement;
+//					}
+//				}
+//			}
+
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+
+		return nList;
 
 	}
 

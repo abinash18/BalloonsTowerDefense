@@ -16,6 +16,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
+import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
@@ -25,6 +26,8 @@ import org.newdawn.slick.opengl.Texture;
 import org.newdawn.slick.util.BufferedImageUtil;
 import org.newdawn.slick.util.ResourceLoader;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 public class ImageTools {
 
@@ -41,7 +44,7 @@ public class ImageTools {
 		System.out.println(temp.getAttribute("XMLPath"));
 		spriteSheetPathFile = temp.getAttribute("ImagePath");
 		System.out.println(temp.getAttribute("ImagePath"));
-		
+
 		try {
 			spriteSheet = ImageIO.read(ResourceLoader.getResourceAsStream(spriteSheetPathFile));
 			tempSprite = LoadSettings.getSpriteFromExternalXML(spriteSheetPath, spriteName);
@@ -49,14 +52,69 @@ public class ImageTools {
 			subImage = spriteSheet.getSubimage(Integer.parseInt(tempSprite.getAttribute("x")),
 					Integer.parseInt(tempSprite.getAttribute("y")), Integer.parseInt(tempSprite.getAttribute("w")),
 					Integer.parseInt(tempSprite.getAttribute("h")));
-			//System.out.println(tempSprite.getAttribute("h"));
-			
+			// System.out.println(tempSprite.getAttribute("h"));
+
 			tex = BufferedImageUtil.getTexture("", subImage);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 		return tex;
+
+	}
+
+	public static ArrayList<Sprite> LoadAllSpriteTexturesFromSpriteSheet(String spriteSheetName) {
+		BufferedImage spriteSheet = null, subImage;
+		String spriteSheetPath, spriteSheetPathFile;
+		Texture tex = null;
+		Element temp = null, tempSprite;
+		NodeList tempSprites;
+		ArrayList<Sprite> tempList = new ArrayList<Sprite>();
+		int counter = 0;
+
+		temp = LoadSettings.getSpriteSheet(spriteSheetName);
+		spriteSheetPath = temp.getAttribute("XMLPath");
+		System.out.println(temp.getAttribute("XMLPath"));
+		spriteSheetPathFile = temp.getAttribute("ImagePath");
+		System.out.println(temp.getAttribute("ImagePath"));
+
+		tempSprites = LoadSettings.getSpriteSheetParsed(spriteSheetPath);
+
+		// NodeList nList = tempSprites.getElementsByTagName("Cell");
+
+		try {
+			spriteSheet = ImageIO.read(ResourceLoader.getResourceAsStream(spriteSheetPathFile));
+
+			// for (int i = 0; i < nList.getLength(); i++) {
+			//
+			// }
+
+			// tempSprites =
+			// LoadSettings.getSpritesFromExternalXML(spriteSheetPath);
+
+			for (int i = 0; i < tempSprites.getLength(); i++) {
+				Node node = tempSprites.item(i);
+				if (node.getNodeType() == Node.ELEMENT_NODE) {
+					tempSprite = (Element) node;
+					System.out.println(tempSprite.getAttribute("name"));
+					subImage = spriteSheet.getSubimage(Integer.parseInt(tempSprite.getAttribute("x")),
+							Integer.parseInt(tempSprite.getAttribute("y")),
+							Integer.parseInt(tempSprite.getAttribute("w")),
+							Integer.parseInt(tempSprite.getAttribute("h")));
+					tex = BufferedImageUtil.getTexture("", subImage);
+					tempList.add(new Sprite(tempSprite.getAttribute("name"), tex));
+					System.out.println(counter);
+					counter++;
+				}
+			}
+
+			// System.out.println(tempSprite.getAttribute("h"));
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return tempList;
 
 	}
 

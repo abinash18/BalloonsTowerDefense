@@ -61,10 +61,9 @@ public class SplashScreenLoading {
 					if (LoadSettings.isFileLoaded && !isFileLoadedcalled) {
 						tasksCompleted++;
 						isFileLoadedcalled = true;
-						barText = tasksCompleted + "/" + tasks + " Loading XML File...Done";
+						barText = tasksCompleted + "/" + tasks + " Loading XML File...";
 					} else if (!LoadSettings.isFileLoaded) {
 						LoadSettings.LoadFileXML();
-						barText = tasksCompleted + "/" + tasks + " Loading XML File..";
 					}
 					break;
 
@@ -72,20 +71,18 @@ public class SplashScreenLoading {
 					if (LoadSettings.isTexturePathsDone && !isTexturePathLoadedcalled) {
 						tasksCompleted++;
 						isTexturePathLoadedcalled = true;
-						barText = tasksCompleted + "/" + tasks + " Loading Textures...Done";
+						barText = tasksCompleted + "/" + tasks + " Loading Textures...";
 					} else if (!LoadSettings.isTexturePathsDone) {
 						LoadSettings.LoadTexturePathElementsIntoArray();
-						barText = tasksCompleted + "/" + tasks + " Loading Textures...";
 					}
 					break;
 				case 3:
 					if (LoadSettings.isTexturesDone && !isTexturesLoadedcalled) {
 						tasksCompleted++;
 						isTexturesLoadedcalled = true;
-						barText = tasksCompleted + "/" + tasks + " Creating Sprites...Done";
+						barText = tasksCompleted + "/" + tasks + " Creating Sprites...";
 					} else if (!LoadSettings.isTexturesDone) {
 						LoadSettings.LoadSpritesIntoArray();
-						barText = tasksCompleted + "/" + tasks + " Creating Sprites...";
 					}
 					break;
 				}
