@@ -24,7 +24,7 @@ public class SplashScreenLoading {
 	private LoadSettings settings;
 	private boolean isDone = false, isTexturePathLoadedcalled = false, isFileLoadedcalled = false,
 			isTexturesLoadedcalled = false;
-	private String barText;
+	public static String barText;
 
 	public SplashScreenLoading() {
 		this.tasks = 4;
@@ -48,7 +48,7 @@ public class SplashScreenLoading {
 		//if (loadingTime >= 5) {
 			loadingTime = 0;
 			if (tasksCompleted == tasks) {
-				StateManager.setState(GameState.MAINMENU);
+				StateManager.setState(GameState.TESTSCREEN);
 			} else {
 
 				barProgress = (float) (tasksCompleted * barWidth) / tasks;

@@ -11,6 +11,7 @@ import static org.lwjgl.opengl.GL11.glGenTextures;
 import static org.lwjgl.opengl.GL11.glTexImage2D;
 import static org.lwjgl.opengl.GL11.glTexParameteri;
 
+import java.awt.SplashScreen;
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -27,6 +28,8 @@ import org.newdawn.slick.util.ResourceLoader;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import balloonsTowerDefence.SplashScreenLoading;
 
 public class ImageTools {
 
@@ -96,7 +99,6 @@ public class ImageTools {
 				if (node.getNodeType() == Node.ELEMENT_NODE) {
 					tempSprite = (Element) node;
 					System.out.println(tempSprite.getAttribute("name"));
-
 					subImage = spriteSheet.getSubimage(Integer.parseInt(tempSprite.getAttribute("x")),
 							Integer.parseInt(tempSprite.getAttribute("y")),
 							Integer.parseInt(tempSprite.getAttribute("w")),

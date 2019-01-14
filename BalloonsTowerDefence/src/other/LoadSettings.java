@@ -23,7 +23,7 @@ public class LoadSettings {
 	private static ArrayList<Element> texturePathElements = new ArrayList<Element>();
 	private static ArrayList<Element> towerElements = new ArrayList<Element>();
 	private static ArrayList<Element> settings = new ArrayList<Element>();
-	private static ArrayList<Sprite> sprites = new ArrayList<Sprite>();
+	public static ArrayList<Sprite> sprites = new ArrayList<Sprite>();
 	// private static ArrayList<Texture> spriteTexture = new
 	// ArrayList<Texture>();
 	private static Document document;

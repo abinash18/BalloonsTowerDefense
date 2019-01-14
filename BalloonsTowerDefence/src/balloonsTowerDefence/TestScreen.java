@@ -1,6 +1,6 @@
 package balloonsTowerDefence;
 
-import static other.DrawInFrame.DrawQuadWithTexture;
+import static other.DrawInFrame.*;
 
 import org.newdawn.slick.opengl.Texture;
 
@@ -30,7 +30,7 @@ public class TestScreen {
 //		testSlider = test.getSlider("slider");
 		
 	//	LoadSettings.LoadFileXML();
-		sprite = ImageTools.LoadSpriteTextureFromSpriteSheet("DartMonkey", "In_Game_Custom");
+		sprite = getTexture("apprentice_avatar_dragon_breath_small");
 		spriteBg = ImageTools.LoadSpriteTextureFromSpriteSheet("red_tint", "In_Game_Custom");
 	}
 

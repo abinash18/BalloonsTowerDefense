@@ -26,6 +26,7 @@ import static org.lwjgl.opengl.GL11.glTranslatef;
 import static org.lwjgl.opengl.GL11.glVertex2f;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
@@ -78,8 +79,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad pre: none post: A Quad
-	 * has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad pre: none post: A
+	 * Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithTexture(Texture texture, float x, float y, float width, float height) {
 
@@ -116,8 +117,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad pre: none post: A Quad
-	 * has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad pre: none post: A
+	 * Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithColor(float red, float green, float blue, float x, float y, float width,
 			float height) {
@@ -157,8 +158,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad which has been rotated
-	 * pre: none post: A Rotated Quad has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad which has been
+	 * rotated pre: none post: A Rotated Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithRotatedTexture(Texture texture, float x, float y, float width, float height,
 			float angle) {
@@ -198,9 +199,10 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Checks if the object has collided with the other objects x and y positions
-	 * Provided for both objects including height and width pre: none post: true is
-	 * returned if the two objects have collided otherwise false is returned
+	 * Checks if the object has collided with the other objects x and y
+	 * positions Provided for both objects including height and width pre: none
+	 * post: true is returned if the two objects have collided otherwise false
+	 * is returned
 	 */
 	public static boolean isCollided(float xPos1, float yPos1, float width1, float height1, float xPos2, float yPos2,
 			float width2, float height2) {
@@ -225,8 +227,30 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Loads a texture from file pre: none post: the texture file is loaded provided
-	 * by the file name
+	 * This method returns a texture object matching the one supplied from the
+	 * public array in LoadSettings
+	 * 
+	 * @nameInXMLDataSheet the name for the texture
+	 */
+	public static Texture getTexture(String nameInXMLDataSheet) {
+
+		ArrayList<Sprite> tempSprites = null;
+		
+		tempSprites = LoadSettings.sprites;
+		
+		for (Sprite sprite : tempSprites){
+			if (sprite.getName().equals(nameInXMLDataSheet)){
+				return sprite.getTex();
+			}
+		}
+		
+		return null;
+
+	}
+
+	/**
+	 * Loads a texture from file pre: none post: the texture file is loaded
+	 * provided by the file name
 	 */
 	public static Texture LoadTexture(String name) {
 
