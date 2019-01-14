@@ -27,7 +27,7 @@ public class SplashScreenLoading {
 	private String barText;
 
 	public SplashScreenLoading() {
-		this.tasks = 3;
+		this.tasks = 4;
 		this.tasksCompleted = 0;
 		this.loadingBg = LoadTexture("red_tint");
 		this.loadingTime = 0;
@@ -48,13 +48,16 @@ public class SplashScreenLoading {
 		//if (loadingTime >= 5) {
 			loadingTime = 0;
 			if (tasksCompleted == tasks) {
-			//	StateManager.setState(GameState.MAINMENU);
+				StateManager.setState(GameState.MAINMENU);
 			} else {
 
 				barProgress = (float) (tasksCompleted * barWidth) / tasks;
 
 				switch (tasksCompleted) {
-				case 0:
+				
+				case 0: barText = tasksCompleted + "/" + tasks + " Loading..."; draw(); tasksCompleted++; break;
+				
+				case 1:
 					if (LoadSettings.isFileLoaded && !isFileLoadedcalled) {
 						tasksCompleted++;
 						isFileLoadedcalled = true;
@@ -65,7 +68,7 @@ public class SplashScreenLoading {
 					}
 					break;
 
-				case 1:
+				case 2:
 					if (LoadSettings.isTexturePathsDone && !isTexturePathLoadedcalled) {
 						tasksCompleted++;
 						isTexturePathLoadedcalled = true;
@@ -75,7 +78,7 @@ public class SplashScreenLoading {
 						barText = tasksCompleted + "/" + tasks + " Loading Textures...";
 					}
 					break;
-				case 2:
+				case 3:
 					if (LoadSettings.isTexturesDone && !isTexturesLoadedcalled) {
 						tasksCompleted++;
 						isTexturesLoadedcalled = true;
