@@ -106,6 +106,8 @@ public class LoadSettings {
 		 */
 		int endOfList = sprites.size();
 		sprites.addAll(endOfList, ImageTools.LoadAllSpriteTexturesFromSpriteSheet("In_Game_HUD"));
+		endOfList = sprites.size();
+		sprites.addAll(endOfList, ImageTools.LoadAllSpriteTexturesFromSpriteSheet("In_Game_Custom"));
 		System.out.println(endOfList);
 		
 		isTexturesDone = true;

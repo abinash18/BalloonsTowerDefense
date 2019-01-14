@@ -235,24 +235,84 @@ public class DrawInFrame {
 	public static Texture getTexture(String nameInXMLDataSheet) {
 
 		ArrayList<Sprite> tempSprites = null;
-		
+
 		tempSprites = LoadSettings.sprites;
-		
-		for (Sprite sprite : tempSprites){
-			if (sprite.getName().equals(nameInXMLDataSheet)){
+
+		for (Sprite sprite : tempSprites) {
+			if (sprite.getName().equals(nameInXMLDataSheet)) {
 				return sprite.getTex();
 			}
 		}
-		
+
 		return null;
+
+	}
+
+	/**
+	 * Draws a square in the frame other wise known as a quad pre: none post: A
+	 * Quad has been drawn on screen
+	 */
+	public static void DrawQuadWithTexture(Texture texture, float x, float y, float width, float height) {
+
+		// binds the texture to the matrix
+		texture.bind();
+		// translates the texture to one float value of the x and y provided
+		// this is the top left of the quad and point of origin for the rest of
+		// the
+		// process
+		glTranslatef(x, y, 0);
+		// begins drawing the square
+		glBegin(GL_QUADS);
+		if (mirror){
+			// the origin is the starting point of texture rendering
+			glTexCoord2f(0, 0);
+			// the vertex id set
+			glVertex2f(0, 0);
+			// the top right is set
+			glTexCoord2f(0, 1);
+			// the top right value is the width of the square
+			glVertex2f(0, width);
+			// the bottom right of the square is now being drawn
+			glTexCoord2f(1, 1);
+			// the bottom right is the width and the height
+			glVertex2f(height, width);
+			// the bottom left is now being drawn
+			glTexCoord2f(1, 0);
+			// the bottom right is the height value of the square
+			glVertex2f(height, 0);
+			// the drawing process has ended
+			glEnd();
+		} else {
+			// the origin is the starting point of texture rendering
+			glTexCoord2f(0, 0);
+			// the vertex id set
+			glVertex2f(0, 0);
+			// the top right is set
+			glTexCoord2f(1, 0);
+			// the top right value is the width of the square
+			glVertex2f(width, 0);
+			// the bottom right of the square is now being drawn
+			glTexCoord2f(1, 1);
+			// the bottom right is the width and the height
+			glVertex2f(width, height);
+			// the bottom left is now being drawn
+			glTexCoord2f(0, 1);
+			// the bottom right is the height value of the square
+			glVertex2f(0, height);
+			// the drawing process has ended
+			glEnd();
+		}
+		// Stops the screen from tearing
+		glLoadIdentity();
 
 	}
 
 	/**
 	 * Loads a texture from file pre: none post: the texture file is loaded
 	 * provided by the file name
+	 * 
 	 */
-	public static Texture LoadTexture(String name) {
+	public static Texture LoadTexture(String name, boolean mirror) {
 
 		// Declares a null texture VAR
 		Texture tempTexture = null;
