@@ -12,7 +12,6 @@ import static org.lwjgl.opengl.GL11.glTexImage2D;
 import static org.lwjgl.opengl.GL11.glTexParameteri;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
@@ -97,6 +96,7 @@ public class ImageTools {
 				if (node.getNodeType() == Node.ELEMENT_NODE) {
 					tempSprite = (Element) node;
 					System.out.println(tempSprite.getAttribute("name"));
+
 					subImage = spriteSheet.getSubimage(Integer.parseInt(tempSprite.getAttribute("x")),
 							Integer.parseInt(tempSprite.getAttribute("y")),
 							Integer.parseInt(tempSprite.getAttribute("w")),

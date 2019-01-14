@@ -6,6 +6,7 @@ package other;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -23,17 +24,18 @@ public class LoadSettings {
 	private static ArrayList<Element> towerElements = new ArrayList<Element>();
 	private static ArrayList<Element> settings = new ArrayList<Element>();
 	private static ArrayList<Sprite> sprites = new ArrayList<Sprite>();
-	//private static ArrayList<Texture> spriteTexture = new ArrayList<Texture>();
+	// private static ArrayList<Texture> spriteTexture = new
+	// ArrayList<Texture>();
 	private static Document document;
 	public static boolean isTexturesDone = false, isTexturePathsDone = false, isTowersDone = false,
 			isGameSettingsDone = false, isDone = false, isFileLoaded = false;
 	private static DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
-//	public LoadSettings() {
-//		texturePathElements = new ArrayList<Element>();
-//		towerElements = new ArrayList<Element>();
-//		settings = new ArrayList<Element>();
-//	}
+	// public LoadSettings() {
+	// texturePathElements = new ArrayList<Element>();
+	// towerElements = new ArrayList<Element>();
+	// settings = new ArrayList<Element>();
+	// }
 
 	public static void LoadFileXML() {
 
@@ -86,14 +88,25 @@ public class LoadSettings {
 		// Get all nodes for the settings
 		// Node main = document.getElementById("main");
 		// Node textures = document.getElementById("textures");
-		//NodeList nList = document.getElementsByTagName("TexturePath");
+		// NodeList nList = document.getElementsByTagName("TexturePath");
 
-//		for (Element texPath : texturePathElements) {
-//			System.out.println(texPath.getAttribute("name") + " " + texPath.getAttribute("name"));
-//			sprites.add(new Sprite(texPath.getAttribute("name"), texPath.getAttribute("path")));
-//		}
-		
+		// for (Element texPath : texturePathElements) {
+		// System.out.println(texPath.getAttribute("name") + " " +
+		// texPath.getAttribute("name"));
+		// sprites.add(new Sprite(texPath.getAttribute("name"),
+		// texPath.getAttribute("path")));
+		// }
+
 		sprites = ImageTools.LoadAllSpriteTexturesFromSpriteSheet("In_Game");
+
+		/*
+		 * This method i got from a stack overflow question
+		 * https://stackoverflow.com/questions/22610526/how-to-append-elements-
+		 * at-the-end-of-arraylist-in-java
+		 */
+		int endOfList = sprites.size();
+		sprites.addAll(endOfList, ImageTools.LoadAllSpriteTexturesFromSpriteSheet("In_Game_HUD"));
+		System.out.println(endOfList);
 		
 		isTexturesDone = true;
 	}
@@ -170,24 +183,22 @@ public class LoadSettings {
 
 		return spritesheet;
 	}
-	
+
 	public static NodeList getSpriteSheetParsed(String path) {
 		NodeList nlist = null;
 		Document doc = null;
 		File file = new File(path);
-		
-		try{
+
+		try {
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			
+
 			doc = builder.parse(file);
-			
+
 			nlist = doc.getElementsByTagName("Cell");
-			
-			
-		} catch (Exception e){
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 
 		return nlist;
 	}
@@ -221,7 +232,7 @@ public class LoadSettings {
 		return e;
 
 	}
-	
+
 	public static NodeList getSpritesFromExternalXML(String path) {
 		NodeList nList = null;
 		Document doc = null;
@@ -233,16 +244,16 @@ public class LoadSettings {
 
 			nList = doc.getElementsByTagName("Cell");
 
-//			for (int i = 0; i < nList.getLength(); i++) {
-//				Node node = nList.item(i);
-//				if (node.getNodeType() == Node.ELEMENT_NODE) {
-//					Element eElement = (Element) node;
-//					System.out.println(eElement.getAttribute("name"));
-//					if (eElement.getAttribute("name").equals(name)) {
-//						e = eElement;
-//					}
-//				}
-//			}
+			// for (int i = 0; i < nList.getLength(); i++) {
+			// Node node = nList.item(i);
+			// if (node.getNodeType() == Node.ELEMENT_NODE) {
+			// Element eElement = (Element) node;
+			// System.out.println(eElement.getAttribute("name"));
+			// if (eElement.getAttribute("name").equals(name)) {
+			// e = eElement;
+			// }
+			// }
+			// }
 
 		} catch (Exception e1) {
 			e1.printStackTrace();
