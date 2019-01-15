@@ -15,7 +15,7 @@ public class RoundManager {
 		this.spawnTime = spawnTime;
 		this.currentRound = null;
 		
-		this.balloonsThisRound = currentRoundNumber * balloonsPerRound * 2;
+		this.balloonsThisRound = currentRoundNumber * balloonsPerRound * 50;
 		
 		//newRound();
 

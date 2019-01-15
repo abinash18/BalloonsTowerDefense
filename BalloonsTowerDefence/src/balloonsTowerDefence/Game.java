@@ -9,6 +9,7 @@ import org.newdawn.slick.opengl.Texture;
 import other.DrawInFrame;
 import other.StateManager;
 import other.Timer;
+import userInterface.Label;
 import userInterface.UserInterface;
 import userInterface.UserInterface.Menu;
 
@@ -21,6 +22,7 @@ public class Game {
 	private Menu pickTowerMenu, playPauseMenu;
 	private Texture menuBg;
 	private Balloon[] balloonsInGame;
+	private Label fpsLabel;
 	public static final int MAX_BALLOON_TYPES = 2;
 
 	public Game(int[][] mapMatrix) {
@@ -54,6 +56,10 @@ public class Game {
 		gameUserInterface.createMenu("PickTower", 1280, 0, 192, 960, 2, 0);
 		gameUserInterface.createMenu("PlayPauseMenu", 1216, 0, 64, 64, 2, 0);
 
+		gameUserInterface.addLabel("fps", "oztype", 25, "", 0, 0, true);
+		
+		fpsLabel = gameUserInterface.getLabel("fps");
+		
 		playPauseMenu = gameUserInterface.getMenu("PlayPauseMenu");
 		playPauseMenu.addMenuButton("Play", "playpausefastforward", 90, 90);
 
@@ -68,13 +74,15 @@ public class Game {
 	private void tickUI() {
 		DrawQuadWithTexture(menuBg, 1280, 0, 255, 1025);
 
+		fpsLabel.setText(StateManager.framesInLastSecond + "fps");
+		
 		gameUserInterface.drawOnScreen();
 
 		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY(), "Lives: " + Player.LivesLeft);
 		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY() + 100, "Money: " + Player.Money);
 		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY() + 150,
 				"Round: " + roundManager.getCurrentRoundNumber());
-		gameUserInterface.drawString(0, 20, StateManager.framesInLastSecond + "fps");
+		//gameUserInterface.drawString(0, 20, StateManager.framesInLastSecond + "fps");
 		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY() + 250,
 				"Speed: x" + Timer.timeMultiplier);
 				// gameUserInterface.drawString(pickTowerMenu.getX() - 500,

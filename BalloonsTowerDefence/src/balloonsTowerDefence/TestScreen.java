@@ -30,7 +30,7 @@ public class TestScreen {
 //		testSlider = test.getSlider("slider");
 		
 	//	LoadSettings.LoadFileXML();
-		sprite = getTexture("DartMonkey");
+		sprite = getTexture("supermonkey");
 		spriteBg = ImageTools.LoadSpriteTextureFromSpriteSheet("red_tint", "In_Game_Custom");
 	}
 
@@ -45,7 +45,7 @@ public class TestScreen {
 
 	private void draw() {
 		DrawQuadWithTexture(spriteBg, 0, 0, DrawInFrame.WIDTH, DrawInFrame.HEIGHT);
-		DrawQuadWithTexture(sprite, 0, 0, sprite.getImageWidth(), sprite.getImageHeight());
+		DrawQuadWithTextureReflected(sprite, HEIGHT / 2, WIDTH / 2, sprite.getImageWidth(), sprite.getImageHeight(), true);
 		
 //		DrawQuadWithTexture(bg, 0, 0, WIDTH, HEIGHT);
 //		UI.drawString(0, 0, "Value: " + testSlider.getPointerValue());

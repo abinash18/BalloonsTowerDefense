@@ -79,8 +79,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad pre: none post: A Quad
-	 * has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad pre: none post: A
+	 * Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithTexture(Texture texture, float x, float y, float width, float height) {
 
@@ -117,8 +117,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad pre: none post: A Quad
-	 * has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad pre: none post: A
+	 * Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithColor(float red, float green, float blue, float x, float y, float width,
 			float height) {
@@ -158,8 +158,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad which has been rotated
-	 * pre: none post: A Rotated Quad has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad which has been
+	 * rotated pre: none post: A Rotated Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithRotatedTexture(Texture texture, float x, float y, float width, float height,
 			float angle) {
@@ -199,9 +199,10 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Checks if the object has collided with the other objects x and y positions
-	 * Provided for both objects including height and width pre: none post: true is
-	 * returned if the two objects have collided otherwise false is returned
+	 * Checks if the object has collided with the other objects x and y
+	 * positions Provided for both objects including height and width pre: none
+	 * post: true is returned if the two objects have collided otherwise false
+	 * is returned
 	 */
 	public static boolean isCollided(float xPos1, float yPos1, float width1, float height1, float xPos2, float yPos2,
 			float width2, float height2) {
@@ -248,8 +249,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Draws a square in the frame other wise known as a quad pre: none post: A Quad
-	 * has been drawn on screen
+	 * Draws a square in the frame other wise known as a quad pre: none post: A
+	 * Quad has been drawn on screen
 	 */
 	public static void DrawQuadWithTextureReflected(Texture texture, float x, float y, float width, float height,
 			boolean mirror) {
@@ -267,19 +268,19 @@ public class DrawInFrame {
 			// the origin is the starting point of texture rendering
 			glTexCoord2f(0, 0);
 			// the vertex id set
-			glVertex2f(0, 0);
+			glVertex2f(width, 0);
 			// the top right is set
-			glTexCoord2f(0, 1);
+			glTexCoord2f(1, 0);
 			// the top right value is the width of the square
-			glVertex2f(0, width);
+			glVertex2f(0, 0);
 			// the bottom right of the square is now being drawn
 			glTexCoord2f(1, 1);
 			// the bottom right is the width and the height
-			glVertex2f(height, width);
+			glVertex2f(0, height);
 			// the bottom left is now being drawn
-			glTexCoord2f(1, 0);
+			glTexCoord2f(0, 1);
 			// the bottom right is the height value of the square
-			glVertex2f(height, 0);
+			glVertex2f(width, 0);
 			// the drawing process has ended
 			glEnd();
 		} else {
@@ -308,8 +309,8 @@ public class DrawInFrame {
 	}
 
 	/**
-	 * Loads a texture from file pre: none post: the texture file is loaded provided
-	 * by the file name
+	 * Loads a texture from file pre: none post: the texture file is loaded
+	 * provided by the file name
 	 * 
 	 */
 	public static Texture LoadTexture(String name) {

@@ -10,19 +10,27 @@ import static other.DrawInFrame.HEIGHT;
 import static other.DrawInFrame.LoadTexture;
 
 import java.awt.Font;
+import java.awt.FontFormatException;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
+
+import javax.print.DocFlavor.INPUT_STREAM;
 
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.TrueTypeFont;
 import org.newdawn.slick.opengl.Texture;
+import org.newdawn.slick.util.ResourceLoader;
 
 public class UserInterface {
 	// Stores the instance of all buttons in the current interface
 	private ArrayList<Button> ListOfButtons;
 	private ArrayList<ProgressBar> ListOfProgressBars;
 	private ArrayList<Menu> ListOfMenus;
+	private ArrayList<Label> ListOfLabels;
 	private TrueTypeFont font;
-	private Font awtFont;
+	private Font awtFont, temp;
 
 	/**
 	 * Constructor pre: none post: ListOfButtons is initialized with an empty
@@ -31,8 +39,22 @@ public class UserInterface {
 	public UserInterface() {
 		ListOfButtons = new ArrayList<Button>();
 		ListOfMenus = new ArrayList<Menu>();
-		awtFont = new Font("Times New Roman", Font.BOLD, 24);
-		font = new TrueTypeFont(awtFont, false);
+		ListOfLabels = new ArrayList<Label>();
+		
+		InputStream in = ResourceLoader.getResourceAsStream("resources/fonts/oztype.ttf");
+		try {
+			temp = Font.createFont(Font.TRUETYPE_FONT, in);
+			System.out.println("done");
+		} catch (FontFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		awtFont = temp.deriveFont(Font.BOLD, 15);
+		this.font = new TrueTypeFont(awtFont, false);
+		
 	}
 
 	public void drawString(int x, int y, String text) {
@@ -46,6 +68,10 @@ public class UserInterface {
 	 */
 	public void addButton(String nameOfButton, String buttonTexture, int xPosition, int yPosition) {
 		ListOfButtons.add(new Button(LoadTexture(buttonTexture), nameOfButton, xPosition, yPosition));
+	}
+	
+	public void addLabel(String name, String fontName, int fontsize, String text, int x, int y, boolean bg){
+		ListOfLabels.add(new Label(name, fontName, fontsize, text, x, y, bg));
 	}
 
 	/**
@@ -120,6 +146,20 @@ public class UserInterface {
 		return null;
 	}
 
+	public Label getLabel(String nameOfLabel) {
+
+		// Loops through the Array list and trys to match the nameOfbutton with button
+		// name
+		for (Label lab : ListOfLabels) {
+			// If the name matches this returns the button
+			if (lab.getName().equals(nameOfLabel)) {
+				return lab;
+			}
+		}
+		// Returns Null
+		return null;
+	}
+	
 	public void createMenu(String name, int x, int y, int width, int height, int optionsWidth, int optionsHeight) {
 		ListOfMenus.add(new Menu(name, x, y, width, height, optionsWidth, optionsHeight));
 	}
@@ -147,6 +187,10 @@ public class UserInterface {
 
 		for (Menu menu : ListOfMenus) {
 			menu.draw();
+		}
+		
+		for (Label lab : ListOfLabels){
+			lab.tick();
 		}
 		
 //		for (ProgressBar prg : ListOfProgressBars) {

@@ -25,6 +25,7 @@ public class SplashScreenLoading {
 	private boolean isDone = false, isTexturePathLoadedcalled = false, isFileLoadedcalled = false,
 			isTexturesLoadedcalled = false;
 	public static String barText;
+	//private Thread taskThread;
 
 	public SplashScreenLoading() {
 		this.tasks = 4;
@@ -35,20 +36,30 @@ public class SplashScreenLoading {
 		this.barTex = LoadTexture("slider_bar");
 		this.barBorder = LoadTexture("progressBar_border");
 		this.UI = new UserInterface();
+		
+		UI.addLabel("name", "oztype", 25, "test", 90, 90, true);
 		// UI.addProgressBar("prgLoading", barTex, barBorder, loadingBg, 50, HEIGHT -
 		// HEIGHT / 8 + 4, barProgress * 90, 16);
-		LoadSettings.LoadFileXML();
+		
+//		taskThread = new Thread(new Runnable() {
+//			@Override
+//			public void run() {
+				LoadSettings.LoadFileXML();
+//			}
+//		});
+//		
+//		taskThread.start();
 
 	}
 
 	public void tick() {
-
+		UI.drawOnScreen();
 	//	loadingTime += Delta() * 100;
 	//	System.out.println(loadingTime);
 		//if (loadingTime >= 5) {
 			loadingTime = 0;
 			if (tasksCompleted == tasks) {
-				StateManager.setState(GameState.TESTSCREEN);
+				StateManager.setState(GameState.MAINMENU);
 			} else {
 
 				barProgress = (float) (tasksCompleted * barWidth) / tasks;
@@ -63,7 +74,13 @@ public class SplashScreenLoading {
 						isFileLoadedcalled = true;
 						barText = tasksCompleted + "/" + tasks + " Loading XML File...";
 					} else if (!LoadSettings.isFileLoaded) {
-						LoadSettings.LoadFileXML();
+						//taskThread = new Thread(new Runnable() {
+						//	@Override
+					//		public void run() {
+								LoadSettings.LoadFileXML();
+					//		}
+					//	});
+					//	taskThread.start();
 					}
 					break;
 
@@ -82,7 +99,13 @@ public class SplashScreenLoading {
 						isTexturesLoadedcalled = true;
 						barText = tasksCompleted + "/" + tasks + " Creating Sprites...";
 					} else if (!LoadSettings.isTexturesDone) {
-						LoadSettings.LoadSpritesIntoArray();
+//						taskThread = new Thread(new Runnable() {
+//							@Override
+//							public void run() {
+								LoadSettings.LoadSpritesIntoArray();
+//							}
+//						});
+//						taskThread.start();
 					}
 					break;
 				}
