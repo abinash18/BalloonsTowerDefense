@@ -30,7 +30,7 @@ public class TestScreen {
 //		testSlider = test.getSlider("slider");
 		
 	//	LoadSettings.LoadFileXML();
-		sprite = getTexture("apprentice_avatar_dragon_breath_small");
+		sprite = getTexture("DartMonkey");
 		spriteBg = ImageTools.LoadSpriteTextureFromSpriteSheet("red_tint", "In_Game_Custom");
 	}
 
