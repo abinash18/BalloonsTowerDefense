@@ -268,7 +268,7 @@ public class DrawInFrame {
 			// the origin is the starting point of texture rendering
 			glTexCoord2f(0, 0);
 			// the vertex id set
-			glVertex2f(width, 0);
+			glVertex2f(width / 2, 0);
 			// the top right is set
 			glTexCoord2f(1, 0);
 			// the top right value is the width of the square
@@ -280,7 +280,7 @@ public class DrawInFrame {
 			// the bottom left is now being drawn
 			glTexCoord2f(0, 1);
 			// the bottom right is the height value of the square
-			glVertex2f(width, 0);
+			glVertex2f(width / 2, height);
 			// the drawing process has ended
 			glEnd();
 		} else {

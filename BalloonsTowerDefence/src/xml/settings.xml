@@ -15,23 +15,17 @@
 				XMLPath="src/resources/sprite_sheets/Custom_Textures/In_Game_Custom.xml" />
 		</SpriteSheets>
 		<Textures id="textures">
-			<TexturePath name="RedBalloon"
-				path="balloon_red" />
-			<TexturePath name="BlueBalloon"
-				path="balloon_red" />
-			<TexturePath name="DartMonkey"
-				path="balloon_red" />
-			<TexturePath name="NinjaMonkey"
-				path="balloon_red" />
-			<TexturePath name="MenuBackGround"
-				path="balloon_red" />
-			<TexturePath name="NinjaMonkey"
-				path="NinjaMonkey" />
-			<TexturePath name="NinjaMonkey_ninjaStar_Normal"
-				path="NinjaMonkey_starNormal" />
+			<TexturePath name="RedBalloon" path="balloon_red" />
+			<TexturePath name="SuperMonkey" path="supermonkey" ImagePath="resources/supermonkey.png" />
+			<TexturePath name="BlueBalloon" path="balloon_red" />
+			<TexturePath name="DartMonkey" path="balloon_red" />
+			<TexturePath name="NinjaMonkey" path="balloon_red" />
+			<TexturePath name="MenuBackGround" path="balloon_red" />
+			<TexturePath name="NinjaMonkey" path="NinjaMonkey" />
+			<TexturePath name="NinjaMonkey_ninjaStar_Normal" path="NinjaMonkey_starNormal" />
 		</Textures>
 		<GameSettings>
-			<FPS id="fps">200</FPS>
+			<Setting fps="20" />
 		</GameSettings>
 		<Towers>
 			<Tower name="DartMonkey" TextureName="DartMonkey" />

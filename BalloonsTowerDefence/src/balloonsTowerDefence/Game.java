@@ -68,6 +68,7 @@ public class Game {
 		pickTowerMenu.addMenuButton("DartMonkey", "DartMonkey");
 		pickTowerMenu.addMenuButton("IceMonkey", "cannonBlueFull");
 		pickTowerMenu.addMenuButton("NinjaMonkey", "NinjaMonkey");
+		pickTowerMenu.addMenuButton("SuperMonkey", "SuperMonkey");
 
 	}
 

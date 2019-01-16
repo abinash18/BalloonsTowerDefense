@@ -33,11 +33,11 @@ public class SplashScreenLoading {
 		this.loadingBg = LoadTexture("red_tint");
 		this.loadingTime = 0;
 		this.barWidth = 1350;
-		this.barTex = LoadTexture("slider_bar");
-		this.barBorder = LoadTexture("progressBar_border");
+		this.barTex = LoadTexture("LoadingBarRedFill");
+		this.barBorder = LoadTexture("LoadingBarDashedBorder");
 		this.UI = new UserInterface();
 		
-		UI.addLabel("name", "oztype", 25, "test", 90, 90, true);
+		//UI.addLabel("name", "oztype", 25, "test", 90, 90, true);
 		// UI.addProgressBar("prgLoading", barTex, barBorder, loadingBg, 50, HEIGHT -
 		// HEIGHT / 8 + 4, barProgress * 90, 16);
 		
@@ -45,6 +45,9 @@ public class SplashScreenLoading {
 //			@Override
 //			public void run() {
 				LoadSettings.LoadFileXML();
+				
+				
+				
 //			}
 //		});
 //		
@@ -59,7 +62,7 @@ public class SplashScreenLoading {
 		//if (loadingTime >= 5) {
 			loadingTime = 0;
 			if (tasksCompleted == tasks) {
-				StateManager.setState(GameState.MAINMENU);
+				StateManager.setState(GameState.TESTSCREEN);
 			} else {
 
 				barProgress = (float) (tasksCompleted * barWidth) / tasks;
@@ -98,6 +101,7 @@ public class SplashScreenLoading {
 						tasksCompleted++;
 						isTexturesLoadedcalled = true;
 						barText = tasksCompleted + "/" + tasks + " Creating Sprites...";
+					//	MakeFrame.setFps(Integer.parseInt(LoadSettings.getGameSetting("fps").getNodeValue()));
 					} else if (!LoadSettings.isTexturesDone) {
 //						taskThread = new Thread(new Runnable() {
 //							@Override
@@ -124,9 +128,9 @@ public class SplashScreenLoading {
 
 	private void draw() {
 		DrawQuadWithTexture(loadingBg, 0, 0, WIDTH, HEIGHT);
-		DrawQuadWithTexture(barBorder, 50, HEIGHT - HEIGHT / 8, 1350, 25);
-		DrawQuadWithTexture(barTex, 50, HEIGHT - HEIGHT / 8 + 4, (float) barProgress, 16);
-		UI.drawString(50, 50, barText);
+		DrawQuadWithTexture(barBorder, 50, HEIGHT / 2, 1350, 25);
+		DrawQuadWithTexture(barTex, 50, HEIGHT / 2 + 4, (float) barProgress, 16);
+		UI.drawString(WIDTH / 2 - 125, HEIGHT / 2 + 4, barText);
 	}
 
 }

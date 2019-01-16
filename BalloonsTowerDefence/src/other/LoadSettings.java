@@ -110,6 +110,17 @@ public class LoadSettings {
 		sprites.addAll(endOfList, ImageTools.LoadAllSpriteTexturesFromSpriteSheet("In_Game_Custom"));
 		System.out.println(endOfList);
 		
+		for (Element el : texturePathElements){
+			
+			try {
+				sprites.add(new Sprite(el.getAttribute("name"), el.getAttribute("path")));
+			} catch (Exception e){
+				e.printStackTrace();
+			}
+			
+			
+		}
+		
 		isTexturesDone = true;
 	}
 
@@ -138,10 +149,10 @@ public class LoadSettings {
 		}
 	}
 
-	public static Element getGameSetting(String settingTagName) {
+	public static Element getGameSetting(String settingAttName) {
 		Element settingElement = null;
 		for (Element sett : settings) {
-			if (sett.getTagName().equals(settingTagName)) {
+			if (sett.getAttribute(settingAttName).equals(settingAttName)) {
 				settingElement = sett;
 			}
 		}

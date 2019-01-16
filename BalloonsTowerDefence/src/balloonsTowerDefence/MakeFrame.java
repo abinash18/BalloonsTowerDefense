@@ -8,18 +8,20 @@ import static other.DrawInFrame.InitializeGL;
 
 import org.lwjgl.opengl.Display;
 
+import other.LoadSettings;
 import other.StateManager;
 import other.Timer;
 
 public class MakeFrame {
-
-	public static final int MAX_FRAMERATE = 200;
+	
+	private static int fps = 200;
 	
 	/**
 	 * Constructor pre: none post: The main game loop updates every thing in it
 	 * every frame
 	 */
-	public MakeFrame() {
+	public MakeFrame() {	
+		
 		// initializes Graphics rendering
 		InitializeGL();
 		// A grid is defined
@@ -30,9 +32,16 @@ public class MakeFrame {
 			StateManager.tick();
 			Display.update();
 			// Sync the frame rate to 60
-			Display.sync(MAX_FRAMERATE);
+			Display.sync(fps);
 		}
 
+	}
+	
+	public static int getFps() {
+		return fps;
+	}
+	public static void setFps(int fps) {
+		MakeFrame.fps = fps;
 	}
 
 }
