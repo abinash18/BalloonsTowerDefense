@@ -33,9 +33,8 @@ public class Timer {
 	}
 
 	/**
-	 * Returns the delta to move everything pre: none post: If the game var
-	 * isPaused is not true then the Delta is returned Otherwise delta is
-	 * returned
+	 * Returns the delta to move everything pre: none post: If the game var isPaused
+	 * is not true then the Delta is returned Otherwise delta is returned
 	 */
 	public static float Delta() {
 		if (GamePaused) {
@@ -74,13 +73,13 @@ public class Timer {
 	}
 
 	/**
-	 * Sets the timeMultiplier pre: none post: the timeMultiplier is changed to
-	 * the one supplied
+	 * Sets the timeMultiplier pre: none post: the timeMultiplier is changed to the
+	 * one supplied
 	 */
 	public static void setTimeMultiplier(float changeInMult) {
 		/*
-		 * Checks if the change is less than 10 and not equal to zero or -1 and
-		 * is less than that
+		 * Checks if the change is less than 10 and not equal to zero or -1 and is less
+		 * than that
 		 */
 		if ((timeMultiplier + changeInMult) < -1 && (timeMultiplier + changeInMult) > 10) {
 			// Magic
@@ -90,8 +89,8 @@ public class Timer {
 	}
 
 	/**
-	 * Sets the timeMultiplier pre: none post: if the time multiplier is 1 then
-	 * it is set to 3 and visa versa
+	 * Sets the timeMultiplier pre: none post: if the time multiplier is 1 then it
+	 * is set to 3 and visa versa
 	 */
 	public static void setGameFastforward() {
 
@@ -103,8 +102,8 @@ public class Timer {
 	}
 
 	/**
-	 * Sets the game to a paused or un paused state pre: none post: paused is
-	 * set to true if is false or vice versa
+	 * Sets the game to a paused or un paused state pre: none post: paused is set to
+	 * true if is false or vice versa
 	 */
 	public static void setGamePaused() {
 		if (GamePaused) {

@@ -8,15 +8,13 @@ import static other.DrawInFrame.DrawQuadWithTexture;
 import static other.DrawInFrame.GRID_SQUARE_SIZE;
 import static other.DrawInFrame.HEIGHT;
 import static other.DrawInFrame.LoadTexture;
+import static other.DrawInFrame.getTexture;
 
 import java.awt.Font;
 import java.awt.FontFormatException;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-
-import javax.print.DocFlavor.INPUT_STREAM;
 
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.TrueTypeFont;
@@ -40,7 +38,7 @@ public class UserInterface {
 		ListOfButtons = new ArrayList<Button>();
 		ListOfMenus = new ArrayList<Menu>();
 		ListOfLabels = new ArrayList<Label>();
-		
+
 		InputStream in = ResourceLoader.getResourceAsStream("resources/fonts/oztype.ttf");
 		try {
 			temp = Font.createFont(Font.TRUETYPE_FONT, in);
@@ -54,7 +52,7 @@ public class UserInterface {
 		}
 		awtFont = temp.deriveFont(Font.BOLD, 15);
 		this.font = new TrueTypeFont(awtFont, false);
-		
+
 	}
 
 	public void drawString(int x, int y, String text) {
@@ -69,8 +67,8 @@ public class UserInterface {
 	public void addButton(String nameOfButton, String buttonTexture, int xPosition, int yPosition) {
 		ListOfButtons.add(new Button(LoadTexture(buttonTexture), nameOfButton, xPosition, yPosition));
 	}
-	
-	public void addLabel(String name, String fontName, int fontsize, String text, int x, int y, boolean bg){
+
+	public void addLabel(String name, String fontName, int fontsize, String text, int x, int y, boolean bg) {
 		ListOfLabels.add(new Label(name, fontName, fontsize, text, x, y, bg));
 	}
 
@@ -84,10 +82,11 @@ public class UserInterface {
 		ListOfButtons.add(new Button(buttonTexture, nameOfButton, xPosition, yPosition, width, height));
 	}
 
-	public void addProgressBar(String name, Texture prgTex, Texture prgBorederTex, Texture prgBgTex, int x, int y, float width, float height){
+	public void addProgressBar(String name, Texture prgTex, Texture prgBorederTex, Texture prgBgTex, int x, int y,
+			float width, float height) {
 		ListOfProgressBars.add(new ProgressBar(name, prgTex, prgBorederTex, prgBgTex, x, y, width, height));
 	}
-	
+
 	public ProgressBar getProgressBar(String nameOfPrg) {
 
 		// Loops through the Array list and trys to match the nameOfbutton with button
@@ -101,7 +100,7 @@ public class UserInterface {
 		// Returns Null
 		return null;
 	}
-	
+
 	/**
 	 * Checks if the button has been clicked by the user by tracking the mouse pre:
 	 * none; post: true is returned if the button has been clicked Otherwise false
@@ -159,7 +158,7 @@ public class UserInterface {
 		// Returns Null
 		return null;
 	}
-	
+
 	public void createMenu(String name, int x, int y, int width, int height, int optionsWidth, int optionsHeight) {
 		ListOfMenus.add(new Menu(name, x, y, width, height, optionsWidth, optionsHeight));
 	}
@@ -188,11 +187,11 @@ public class UserInterface {
 		for (Menu menu : ListOfMenus) {
 			menu.draw();
 		}
-		
-		for (Label lab : ListOfLabels){
+
+		for (Label lab : ListOfLabels) {
 			lab.tick();
 		}
-		
+
 //		for (ProgressBar prg : ListOfProgressBars) {
 //			prg.tick();
 //		}
@@ -229,7 +228,7 @@ public class UserInterface {
 			Button b = new Button(LoadTexture(texName), buttonName, 0, 0);
 			setButton(b);
 		}
-		
+
 		public void addMenuButton(String buttonName, String texName, int width, int height) {
 			Button b = new Button(LoadTexture(texName), buttonName, 0, 0, width, height);
 			setButton(b);
@@ -245,7 +244,7 @@ public class UserInterface {
 			}
 			return null;
 		}
-		
+
 		private void setButton(Button b) {
 			if (elementsWidth != 0) {
 				b.setY(y + (buttonAmount / elementsWidth) * GRID_SQUARE_SIZE);

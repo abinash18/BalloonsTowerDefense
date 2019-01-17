@@ -1,14 +1,17 @@
 package balloonsTowerDefence;
 
-import static other.DrawInFrame.*;
+import static other.DrawInFrame.DrawQuadWithTexture;
+import static other.DrawInFrame.GRID_SQUARE_SIZE;
+import static other.DrawInFrame.HEIGHT;
+import static other.DrawInFrame.LoadTexture;
+import static other.DrawInFrame.WIDTH;
 
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.opengl.Texture;
 
 import other.StateManager;
-
-import static other.StateManager.*;
-import userInterface.*;
+import other.StateManager.GameState;
+import userInterface.UserInterface;
 import userInterface.UserInterface.Menu;
 
 public class MainMenu {

@@ -9,8 +9,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.newdawn.slick.opengl.Texture;
 
-import other.DrawInFrame;
-
 public abstract class MonkeyTower implements Entity {
 
 	private float x, y, timeSinceLastShot, firingSpeed, angle;

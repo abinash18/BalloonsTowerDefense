@@ -8,7 +8,6 @@ import static other.DrawInFrame.InitializeGL;
 
 import org.lwjgl.opengl.Display;
 
-import other.LoadSettings;
 import other.StateManager;
 import other.Timer;
 

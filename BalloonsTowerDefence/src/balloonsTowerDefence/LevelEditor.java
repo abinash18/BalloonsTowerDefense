@@ -1,7 +1,9 @@
 package balloonsTowerDefence;
 
-import static other.DrawInFrame.*;
+import static other.DrawInFrame.DrawQuadWithTexture;
+import static other.DrawInFrame.GRID_SQUARE_SIZE;
 import static other.DrawInFrame.HEIGHT;
+import static other.DrawInFrame.LoadTexture;
 import static other.LevelToolKit.LoadMap;
 import static other.LevelToolKit.saveMap;
 
@@ -9,7 +11,6 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.opengl.Texture;
 
-import other.DrawInFrame;
 import userInterface.UserInterface;
 import userInterface.UserInterface.Menu;
 

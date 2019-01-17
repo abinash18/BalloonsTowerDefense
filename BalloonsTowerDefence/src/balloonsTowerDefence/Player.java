@@ -5,6 +5,8 @@ import static other.DrawInFrame.HEIGHT;
 
 import java.util.ArrayList;
 
+import javax.xml.ws.Holder;
+
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 
@@ -61,7 +63,7 @@ public class Player {
 
 		// handle mouse input
 		if (Mouse.isButtonDown(0) && !MouseDownLeft) { // param takes mouse button 0 for leftclick and 1 for right
-														// click
+			// temporaryTower = null; // click
 //			Floor floor = grid.getFloor(Mouse.getX() / GRID_SQUARE_SIZE, (HEIGHT - Mouse.getY() - 1) / GRID_SQUARE_SIZE);
 //			if (floor.getFloorType().builds && changeMoneyAmount(-20)) {
 //				ListOfMonkeyTowers.add(new MonkeyTowerDartMonkey(MonkeyTowerType.DartMonkey, floor,
@@ -125,13 +127,17 @@ public class Player {
 	}
 
 	public void initialize() {
-		Money = 200;
+		Money = 100;
 		LivesLeft = 100;
 	}
 
 	public void pickTower(MonkeyTower t) {
 		temporaryTower = t;
-		holdingTower = true;
+		if (temporaryTower == null) {
+			holdingTower = false;
+		} else {
+			holdingTower = true;
+		}
 	}
 
 	public static boolean changeMoneyAmount(int amount) {

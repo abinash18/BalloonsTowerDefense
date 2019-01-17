@@ -1,8 +1,5 @@
 package balloonsTowerDefence;
 
-import static other.DrawInFrame.DrawQuadWithRotatedTexture;
-import static other.Timer.*;
-
 public class DartNinjaStar extends Dart {
 
 	public DartNinjaStar(DartType dartType, Balloon target, float x, float y, int width, int height) {

@@ -1,17 +1,11 @@
 package balloonsTowerDefence;
 
-import static other.DrawInFrame.DrawQuadWithRotatedTexture;
+import static other.DrawInFrame.*;
 
-public class DartNormal extends Dart {
+public class DartLazer extends Dart {
 
-	public DartNormal(DartType dartType, Balloon target, float x, float y, int width, int height) {
+	public DartLazer(DartType dartType, Balloon target, float x, float y, int width, int height) {
 		super(dartType, target, x, y, width, height);
-	}
-
-	@Override
-	public void damage() {
-		// super.setAlive(false);
-		super.damage();
 	}
 
 	private float calculateAngle() {
@@ -39,5 +33,5 @@ public class DartNormal extends Dart {
 		DrawQuadWithRotatedTexture(super.getTexture(), super.getX(), super.getY(), super.getWidth(), super.getHeight(),
 				angle);
 	}
-	
+
 }

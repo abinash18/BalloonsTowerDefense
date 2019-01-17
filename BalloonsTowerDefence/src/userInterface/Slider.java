@@ -6,8 +6,6 @@ import static other.DrawInFrame.HEIGHT;
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.opengl.Texture;
 
-import userInterface.UserInterface.Menu;
-
 public class Slider {
 
 	private int sliderBarX, sliderBarY, sliderPointerX, sliderPointerY, width, height, sliderBarWidth, min, max, step,

@@ -1,12 +1,15 @@
 package balloonsTowerDefence;
 
-import static other.DrawInFrame.*;
+import static other.DrawInFrame.DrawQuadWithTexture;
+import static other.DrawInFrame.DrawQuadWithTextureReflected;
+import static other.DrawInFrame.HEIGHT;
+import static other.DrawInFrame.WIDTH;
+import static other.DrawInFrame.getTexture;
 
 import org.newdawn.slick.opengl.Texture;
 
 import other.DrawInFrame;
 import other.ImageTools;
-import other.LoadSettings;
 import userInterface.Slider;
 import userInterface.UserInterface;
 import userInterface.UserInterface.Menu;
@@ -30,7 +33,7 @@ public class TestScreen {
 //		testSlider = test.getSlider("slider");
 		
 	//	LoadSettings.LoadFileXML();
-		sprite = getTexture("supermonkey");
+		sprite = getTexture("dart_monkey_dart");
 		spriteBg = ImageTools.LoadSpriteTextureFromSpriteSheet("red_tint", "In_Game_Custom");
 	}
 
