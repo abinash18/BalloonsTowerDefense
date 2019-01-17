@@ -71,6 +71,7 @@ public class Game {
 		gameUserInterface.addLabel("round", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 6, true);
 		gameUserInterface.addLabel("timeMultiplier", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 8, true);
 
+		
 		fpsLabel = gameUserInterface.getLabel("fps");
 		money = gameUserInterface.getLabel("money");
 		lives = gameUserInterface.getLabel("lives");
