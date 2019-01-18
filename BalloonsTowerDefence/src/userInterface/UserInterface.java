@@ -289,12 +289,25 @@ public class UserInterface {
 		}
 
 		public void addMenuButton(String buttonName, String texName) {
-			Button b = new Button(getTexture(texName), buttonName, 0, 0);
+			Texture t = getTexture(texName);
+			Button b = new Button(t, buttonName, 0, 0);
 			setButton(b);
 		}
 
 		public void addMenuButton(String buttonName, String texName, int width, int height) {
-			Button b = new Button(LoadTexture(texName), buttonName, 0, 0, width, height);
+			Texture t = null;
+			try {
+				t = getTexture(texName);
+			} catch (Exception e){
+				e.printStackTrace();
+				try {
+					t = LoadTexture(texName);
+				} catch (Exception e1){
+					e1.printStackTrace();
+				}
+			}
+			
+			Button b = new Button(t, buttonName, 0, 0, width, height);
 			setButton(b);
 		}
 

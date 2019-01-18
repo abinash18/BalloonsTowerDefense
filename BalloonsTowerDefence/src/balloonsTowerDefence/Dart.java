@@ -68,7 +68,7 @@ public abstract class Dart implements Entity {
 	public void tick() {
 		
 		if (alive) {
-			findDirection();
+			//findDirection();
 			x += xVelocity * Delta() * speed;
 			y += yVelocity * Delta() * speed;
 			if (isCollided(x, y, width, height, target.getX(), target.getY(), target.getWidth(), target.getHeight())) {

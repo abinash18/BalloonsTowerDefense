@@ -55,7 +55,7 @@ public class Game {
 	private void InitializeUserInterFace() {
 		gameUserInterface = new UserInterface();
 
-		gameUserInterface.createMenu("PickTower", 1280, 0, 192, 960, 2, 0);
+		gameUserInterface.createMenu("PickTower", 1280, 25, 192, 960, 2, 0);
 		gameUserInterface.createMenu("PlayPauseMenu", 1216, 0, 64, 64, 2, 0);
 		gameUserInterface.createMenu("UpgradeMenu", 0, 0, GRID_SQUARE_SIZE * 3, GRID_SQUARE_SIZE * 3,
 				getTexture("black-translucent"));
@@ -65,7 +65,7 @@ public class Game {
 		pickTowerMenu = gameUserInterface.getMenu("PickTower");
 
 		pickTowerMenu.addMenuButton("DartMonkey", "DartMonkey");
-		pickTowerMenu.addMenuButton("IceMonkey", "cannonBlueFull");
+		pickTowerMenu.addMenuButton("IceMonkey", "ice_tower_monkey");
 		pickTowerMenu.addMenuButton("NinjaMonkey", "NinjaMonkey");
 		pickTowerMenu.addMenuButton("SuperMonkey", "supermonkey_icon");
 		pickTowerMenu.setOpen(true);
@@ -73,7 +73,7 @@ public class Game {
 		playPauseMenu.addMenuButton("Play", "playpausefastforward", 90, 90);
 		playPauseMenu.setOpen(true);
 
-		upgradeMenu.addLabel("TowerName", "oztype", 10, "Test", upgradeMenu.getX() + 5, upgradeMenu.getY() + 5, true);
+		upgradeMenu.addLabel("TowerName", "oztype", 15, "Test", upgradeMenu.getX() + 5, upgradeMenu.getY() + 5, false);
 		upgradeMenu.addImage("TowerIcon", 25, 5, null);
 		
 		gameUserInterface.addLabel("fps", "oztype", 25, "", 0, 0, true);

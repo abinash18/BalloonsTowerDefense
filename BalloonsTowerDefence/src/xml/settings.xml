@@ -19,7 +19,7 @@
 			<TexturePath name="SuperMonkey" path="supermonkey" ImagePath="resources/supermonkey.png" />
 			<TexturePath name="BlueBalloon" path="balloon_red" />
 			<TexturePath name="DartMonkey" path="DartMonkey" />
-			<TexturePath name="NinjaMonkey" path="balloon_red" />
+			<TexturePath name="ice_monkey_base1" path="ice_monkey_base1" />
 			<TexturePath name="black" path="black" />
 			<TexturePath name="black-translucent" path="black-translucent" />
 			<TexturePath name="NinjaMonkey" path="NinjaMonkey" />

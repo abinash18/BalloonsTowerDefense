@@ -55,6 +55,11 @@ public class MainMenu {
 			if (menuUI.isButtonClicked("Exit")) {
 				System.exit(0);
 			}
+			
+			if (menuUI.isButtonClicked("Instructions")) {
+				handlers.Informal.showInstructions();
+			}
+			
 		}
 	}
 

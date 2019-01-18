@@ -8,7 +8,7 @@ public enum MonkeyTowerType {
 	DartMonkey(new Texture[] { LoadTexture("DartMonkey") }, DartType.NormalDart, 10, 271, 1, 50, getTexture("dart_monkey_avatar_small")), 
 	NinjaMonkey(new Texture[] { LoadTexture("NinjaMonkey") }, DartType.NinjaStar, 10, 271, 1, 200, getTexture("ninja_avatar_small")), 
 	SuperMonkey(new Texture[] { getTexture("SuperMonkey") }, DartType.Lazer, 10, 271, 0.1f, 3000, getTexture("supermonkey_avatar_small")),
-	IceMonkey(new Texture[] { getTexture("ice_tower_base_01"), getTexture("ice_tower_monkey") }, DartType.NormalDart, 0, 271, 0.8f, 500, getTexture("ice_avatar_small"));
+	IceMonkey(new Texture[] { getTexture("ice_monkey_base1"), getTexture("ice_tower_monkey") }, DartType.NormalDart, 0, 271, 0.8f, 500, getTexture("ice_avatar_small"));
 
 	Texture[] textures;
 	Texture icon;
