@@ -127,7 +127,7 @@ public class Player {
 	}
 
 	public void initialize() {
-		Money = 100;
+		Money = 99999;
 		LivesLeft = 100;
 	}
 
