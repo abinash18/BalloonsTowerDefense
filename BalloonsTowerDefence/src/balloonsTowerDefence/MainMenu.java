@@ -22,19 +22,19 @@ public class MainMenu {
 
 	public MainMenu() {
 		bg = LoadTexture("mainMenu_BackGround");
-		
+
 		menuUI = new UserInterface();
 		menuUI.createMenu("MainGameActions", GRID_SQUARE_SIZE / 2, GRID_SQUARE_SIZE / 4, 500, 500, 2, 2);
-		
-//		mainMenu = menuUI.getMenu("MainGameActions");
-//		mainMenu.addMenuButton("play", "button_play");
-//		
-//		mainMenu.addMenuButton("LevelEdit", "button_LevelEdit");
-//		mainMenu.addMenuButton("LeaderBoard", "button_LeaderBoard");
-//		mainMenu.addMenuButton("Options", "button_Options");
-//		mainMenu.addMenuButton("Exit", "button_Exit");
-//		mainMenu.addMenuButton("Instructions", "button_Instructions");
-		
+
+		// mainMenu = menuUI.getMenu("MainGameActions");
+		// mainMenu.addMenuButton("play", "button_play");
+		//
+		// mainMenu.addMenuButton("LevelEdit", "button_LevelEdit");
+		// mainMenu.addMenuButton("LeaderBoard", "button_LeaderBoard");
+		// mainMenu.addMenuButton("Options", "button_Options");
+		// mainMenu.addMenuButton("Exit", "button_Exit");
+		// mainMenu.addMenuButton("Instructions", "button_Instructions");
+
 		menuUI.addButton("play", "button_play", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.45f));
 		menuUI.addButton("LevelEdit", "button_LevelEdit", (int) (WIDTH / 2.9f), (int) (HEIGHT * 0.53f));
 		menuUI.addButton("LeaderBoard", "button_LeaderBoard", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.59f));
@@ -55,11 +55,18 @@ public class MainMenu {
 			if (menuUI.isButtonClicked("Exit")) {
 				System.exit(0);
 			}
-			
+
 			if (menuUI.isButtonClicked("Instructions")) {
-				handlers.Informal.showInstructions();
+				Thread t1 = new Thread(new Runnable() {
+
+					@Override
+					public void run() {
+						handlers.Informal.showInstructions();
+					}
+				});
+				t1.start();
 			}
-			
+
 		}
 	}
 
@@ -68,5 +75,5 @@ public class MainMenu {
 		menuUI.drawOnScreen();
 		checkClick();
 	}
-	
+
 }
