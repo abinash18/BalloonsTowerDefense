@@ -15,7 +15,7 @@ public class Label {
 
 	private TrueTypeFont font;
 	private Font awtFont, temp;
-	private int x, y;
+	private int x, y, xOffset = 0, yOffset = 0;
 	Texture bg = null;
 	private String text, name;
 
@@ -29,10 +29,8 @@ public class Label {
 			temp = Font.createFont(Font.TRUETYPE_FONT, in);
 			System.out.println("done");
 		} catch (FontFormatException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		awtFont = temp.deriveFont(Font.BOLD, fontsize);
@@ -60,16 +58,40 @@ public class Label {
 		awtFont = temp.deriveFont(Font.BOLD, fontsize);
 		this.font = new TrueTypeFont(awtFont, false);
 	}
+	
+	public Label(String name, String font, int fontsize, String text, int x, int y, int xOffset, int yOffset, boolean bg) {
+		this.text = text;
+		this.x = x;
+		this.y = y;
+		this.name = name;
+		this.xOffset = xOffset;
+		this.yOffset = yOffset;
+		if (bg) {
+			this.bg = DrawInFrame.LoadTexture("black");
+		}
 
-	public void tick() {		
+		InputStream in = ResourceLoader.getResourceAsStream("resources/fonts/" + font + ".ttf");
+		try {
+			temp = Font.createFont(Font.TRUETYPE_FONT, in);
+			System.out.println("done");
+		} catch (FontFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		awtFont = temp.deriveFont(Font.BOLD, fontsize);
+		this.font = new TrueTypeFont(awtFont, false);
+	}
+
+	public void tick() {
 		draw();
 	}
 
 	public void draw() {
-		if (bg != null){
-			DrawInFrame.DrawQuadWithTexture(bg, x, y, font.getWidth(text), font.getHeight());
+		if (bg != null) {
+			DrawInFrame.DrawQuadWithTexture(bg, x + xOffset, y + yOffset, font.getWidth(text), font.getHeight());
 		}
-		font.drawString(x, y, text);
+		font.drawString(x + xOffset, y + yOffset, text);
 	}
 
 	public String getName() {

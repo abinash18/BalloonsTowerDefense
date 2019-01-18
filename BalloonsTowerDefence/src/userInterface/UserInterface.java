@@ -21,6 +21,8 @@ import org.newdawn.slick.TrueTypeFont;
 import org.newdawn.slick.opengl.Texture;
 import org.newdawn.slick.util.ResourceLoader;
 
+import other.Sprite;
+
 public class UserInterface {
 	// Stores the instance of all buttons in the current interface
 	private ArrayList<Button> ListOfButtons;
@@ -61,8 +63,8 @@ public class UserInterface {
 
 	/**
 	 * AddButton adds a button object to the button array list pre: none post: A
-	 * button object is Created and added to the arrayList with the texture loaded
-	 * using LoadTexture
+	 * button object is Created and added to the arrayList with the texture
+	 * loaded using LoadTexture
 	 */
 	public void addButton(String nameOfButton, String buttonTexture, int xPosition, int yPosition) {
 		ListOfButtons.add(new Button(LoadTexture(buttonTexture), nameOfButton, xPosition, yPosition));
@@ -74,8 +76,8 @@ public class UserInterface {
 
 	/**
 	 * AddButton adds a button object to the button array list pre: none post: A
-	 * button object is Created and added to the arrayList with the texture loaded
-	 * using LoadTexture
+	 * button object is Created and added to the arrayList with the texture
+	 * loaded using LoadTexture
 	 */
 	public void addButton(String nameOfButton, Texture buttonTexture, int xPosition, int yPosition, int width,
 			int height) {
@@ -89,7 +91,8 @@ public class UserInterface {
 
 	public ProgressBar getProgressBar(String nameOfPrg) {
 
-		// Loops through the Array list and trys to match the nameOfbutton with button
+		// Loops through the Array list and trys to match the nameOfbutton with
+		// button
 		// name
 		for (ProgressBar prg : ListOfProgressBars) {
 			// If the name matches this returns the button
@@ -102,23 +105,28 @@ public class UserInterface {
 	}
 
 	/**
-	 * Checks if the button has been clicked by the user by tracking the mouse pre:
-	 * none; post: true is returned if the button has been clicked Otherwise false
-	 * is returned
+	 * Checks if the button has been clicked by the user by tracking the mouse
+	 * pre: none; post: true is returned if the button has been clicked
+	 * Otherwise false is returned
 	 */
 	public boolean isButtonClicked(String nameOfButton) {
 
 		Button button = getButton(nameOfButton);
-		float mouseY = HEIGHT - Mouse.getY() - 1; // Gets the y position of the mouse in the window subtracts 1 due to
-													// it giving the 1 greater value
+		float mouseY = HEIGHT - Mouse.getY() - 1; // Gets the y position of the
+													// mouse in the window
+													// subtracts 1 due to
+													// it giving the 1 greater
+													// value
 
 		// If the mouse x pos is greater than or to the right of the buttons x
 		if (Mouse.getX() > button.getX()
-				// If the X pos of mouse is less than the max of the buttonX plus width
+				// If the X pos of mouse is less than the max of the buttonX
+				// plus width
 				&& Mouse.getX() < button.getX() + button.getWidth()
 				// If the mouse y pos is grater than the button y pos
 				&& mouseY > button.getY()
-				// If the mouse pos y is less than the buttons y pos plus its height which is
+				// If the mouse pos y is less than the buttons y pos plus its
+				// height which is
 				// its Max
 				&& mouseY < button.getY() + button.getHeight()) {
 			return true;
@@ -127,13 +135,14 @@ public class UserInterface {
 	}
 
 	/**
-	 * Returns the button object that has the name in parameter pre: none post: The
-	 * button Object is Returned With the name Matching one provided otherwise null
-	 * has been returned
+	 * Returns the button object that has the name in parameter pre: none post:
+	 * The button Object is Returned With the name Matching one provided
+	 * otherwise null has been returned
 	 */
 	public Button getButton(String nameOfButton) {
 
-		// Loops through the Array list and trys to match the nameOfbutton with button
+		// Loops through the Array list and trys to match the nameOfbutton with
+		// button
 		// name
 		for (Button button : ListOfButtons) {
 			// If the name matches this returns the button
@@ -147,7 +156,8 @@ public class UserInterface {
 
 	public Label getLabel(String nameOfLabel) {
 
-		// Loops through the Array list and trys to match the nameOfbutton with button
+		// Loops through the Array list and trys to match the nameOfbutton with
+		// button
 		// name
 		for (Label lab : ListOfLabels) {
 			// If the name matches this returns the button
@@ -163,6 +173,14 @@ public class UserInterface {
 		ListOfMenus.add(new Menu(name, x, y, width, height, optionsWidth, optionsHeight));
 	}
 
+	public void createMenu(String name, int x, int y, int width, int height, Texture bgTex) {
+		ListOfMenus.add(new Menu(name, x, y, width, height, bgTex));
+	}
+
+	public void setMenuOpen(String name, boolean o) {
+		getMenu(name).setOpen(o);
+	}
+
 	public Menu getMenu(String name) {
 		for (Menu m : ListOfMenus) {
 			if (name.equals(m.getNameOfMenu())) {
@@ -173,8 +191,8 @@ public class UserInterface {
 	}
 
 	/**
-	 * Draws the buttons on screen using the DrawInFrame class pre: none post: the
-	 * button has been drawn on the screen
+	 * Draws the buttons on screen using the DrawInFrame class pre: none post:
+	 * the button has been drawn on the screen
 	 */
 	public void drawOnScreen() {
 
@@ -185,16 +203,16 @@ public class UserInterface {
 		}
 
 		for (Menu menu : ListOfMenus) {
-			menu.draw();
+			menu.tick();
 		}
 
 		for (Label lab : ListOfLabels) {
 			lab.tick();
 		}
 
-//		for (ProgressBar prg : ListOfProgressBars) {
-//			prg.tick();
-//		}
+		// for (ProgressBar prg : ListOfProgressBars) {
+		// prg.tick();
+		// }
 
 	}
 
@@ -202,8 +220,13 @@ public class UserInterface {
 
 		private ArrayList<Button> ListOfButtonsInMenu;
 		private ArrayList<Slider> ListOfSlidersInMenu;
+		private ArrayList<Label> ListOfLabelsInMenu;
+		private ArrayList<Image> ListOfImagesInMenu;
 		private int x, y, elementsWidth, elementsHeight, width, height, buttonAmount, padding, topPadding;
-		String nameOfMenu;
+		private String nameOfMenu;
+		private Texture bg;
+		private ArrayList<Sprite> images;
+		private boolean open;
 
 		public Menu(String nameOfMenu, int x, int y, int width, int height, int buttonsWidth, int buttonsHeight) {
 			this.ListOfButtonsInMenu = new ArrayList<Button>();
@@ -218,6 +241,47 @@ public class UserInterface {
 			this.width = width;
 			this.height = height;
 			this.buttonAmount = 0;
+			this.open = false;
+			this.images = new ArrayList<Sprite>();
+			this.ListOfLabelsInMenu = new ArrayList<Label>();
+			this.ListOfImagesInMenu = new ArrayList<Image>();
+		}
+
+		public Menu(String nameOfMenu, int x, int y, int width, int height, Texture bgTex) {
+			this.ListOfButtonsInMenu = new ArrayList<Button>();
+			this.ListOfSlidersInMenu = new ArrayList<Slider>();
+			this.x = x;
+			this.y = y;
+			this.nameOfMenu = nameOfMenu;
+			this.width = width;
+			this.height = height;
+			this.buttonAmount = 0;
+			this.bg = bgTex;
+			this.open = false;
+			this.images = new ArrayList<Sprite>();
+			this.ListOfLabelsInMenu = new ArrayList<Label>();
+			this.ListOfImagesInMenu = new ArrayList<Image>();
+		}
+
+		public void addLabel(String name, String fontName, int fontsize, String text, int xOffsetFromMenuOrigin,
+				int yOffsetFromMenuOrigin, boolean bg) {
+			ListOfLabelsInMenu.add(
+					new Label(name, fontName, fontsize, text, x, y, xOffsetFromMenuOrigin, yOffsetFromMenuOrigin, bg));
+		}
+
+		public void addImage(String name, int xOffsetFromMenuOrigin, int yOffsetFromMenuOrigin, int width, int height,
+				Texture tex) {
+			ListOfImagesInMenu
+					.add(new Image(name, tex, x, y, width, height, xOffsetFromMenuOrigin, yOffsetFromMenuOrigin));
+		}
+
+		public void addImage(String name, int xOffsetFromMenuOrigin, int yOffsetFromMenuOrigin, Texture tex) {
+			if (tex == null) {
+				ListOfImagesInMenu.add(new Image(name, tex, x, y, 0, 0, xOffsetFromMenuOrigin, yOffsetFromMenuOrigin));
+			} else {
+				ListOfImagesInMenu.add(new Image(name, tex, x, y, tex.getImageWidth(), tex.getImageHeight(),
+						xOffsetFromMenuOrigin, yOffsetFromMenuOrigin));
+			}
 		}
 
 		public void addMenuButton(Button b) {
@@ -225,7 +289,7 @@ public class UserInterface {
 		}
 
 		public void addMenuButton(String buttonName, String texName) {
-			Button b = new Button(LoadTexture(texName), buttonName, 0, 0);
+			Button b = new Button(getTexture(texName), buttonName, 0, 0);
 			setButton(b);
 		}
 
@@ -240,6 +304,28 @@ public class UserInterface {
 
 				if (b.getName().equals(name)) {
 					return b;
+				}
+			}
+			return null;
+		}
+
+		public Label getLabel(String name) {
+
+			for (Label l : ListOfLabelsInMenu) {
+
+				if (l.getName().equals(name)) {
+					return l;
+				}
+			}
+			return null;
+		}
+
+		public Image getImage(String name) {
+
+			for (Image i : ListOfImagesInMenu) {
+
+				if (i.getName().equals(name)) {
+					return i;
 				}
 			}
 			return null;
@@ -295,15 +381,50 @@ public class UserInterface {
 			return null;
 		}
 
+		public void tick() {
+			draw();
+		}
+
+		public void dynamiclyAlignItems() {
+			for (Label l : ListOfLabelsInMenu) {
+				l.setX(x);
+				l.setY(y);
+			}
+
+			for (Image i : ListOfImagesInMenu) {
+				i.setX(x);
+				i.setY(y);
+			}
+
+		}
+
 		public void draw() {
-			for (Button b : ListOfButtonsInMenu) {
-				DrawQuadWithTexture(b.getTexture(), b.getX(), b.getY(), b.getWidth(), b.getHeight());
-			}
+			dynamiclyAlignItems();
+			if (open) {
+				if (bg != null) {
+					DrawQuadWithTexture(bg, x, y, width, height);
+				}
+				for (Button b : ListOfButtonsInMenu) {
+					DrawQuadWithTexture(b.getTexture(), b.getX(), b.getY(), b.getWidth(), b.getHeight());
+				}
 
-			for (Slider s : ListOfSlidersInMenu) {
-				s.tick();
-			}
+				for (Slider s : ListOfSlidersInMenu) {
+					s.tick();
+				}
 
+				for (Label l : ListOfLabelsInMenu) {
+					l.tick();
+				}
+
+				for (Image i : ListOfImagesInMenu) {
+					i.tick();
+				}
+
+			}
+		}
+
+		public void setOpen(boolean o) {
+			open = o;
 		}
 
 		public ArrayList<Button> getListOfButtonsInMenu() {

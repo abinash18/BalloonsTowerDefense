@@ -11,6 +11,7 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 
 import other.Timer;
+import userInterface.Button;
 
 public class Player {
 
@@ -35,7 +36,8 @@ public class Player {
 		this.MouseDownRight = false;
 		this.holdingTower = false;
 		this.temporaryTower = null;
-		// The Player is created when the game is luanced which means they will have
+		// The Player is created when the game is luanced which means they will
+		// have
 		// lives and cash at the
 		// start but the game hasnt started so we need to put these at 0
 		Money = 0;
@@ -47,8 +49,8 @@ public class Player {
 		if (holdingTower) {
 			temporaryTower.setX(getFloorUnderMouse().getxPos());
 			temporaryTower.setY(getFloorUnderMouse().getyPos());
-//			tempTower.setX(Mouse.getX());
-//			tempTower.setY(Mouse.getY());
+			// tempTower.setX(Mouse.getX());
+			// tempTower.setY(Mouse.getY());
 			temporaryTower.draw();
 		}
 
@@ -62,26 +64,35 @@ public class Player {
 		}
 
 		// handle mouse input
-		if (Mouse.isButtonDown(0) && !MouseDownLeft) { // param takes mouse button 0 for leftclick and 1 for right
+		if (Mouse.isButtonDown(0) && !MouseDownLeft) { // param takes mouse
+														// button 0 for
+														// leftclick and 1 for
+														// right
 			// temporaryTower = null; // click
-//			Floor floor = grid.getFloor(Mouse.getX() / GRID_SQUARE_SIZE, (HEIGHT - Mouse.getY() - 1) / GRID_SQUARE_SIZE);
-//			if (floor.getFloorType().builds && changeMoneyAmount(-20)) {
-//				ListOfMonkeyTowers.add(new MonkeyTowerDartMonkey(MonkeyTowerType.DartMonkey, floor,
-//						roundManager.getCurrentRound().getBalloonsList()));
-//			} else {
-//				System.out.println("not buildable" + changeMoneyAmount(-20) );
-//			}
+			// Floor floor = grid.getFloor(Mouse.getX() / GRID_SQUARE_SIZE,
+			// (HEIGHT - Mouse.getY() - 1) / GRID_SQUARE_SIZE);
+			// if (floor.getFloorType().builds && changeMoneyAmount(-20)) {
+			// ListOfMonkeyTowers.add(new
+			// MonkeyTowerDartMonkey(MonkeyTowerType.DartMonkey, floor,
+			// roundManager.getCurrentRound().getBalloonsList()));
+			// } else {
+			// System.out.println("not buildable" + changeMoneyAmount(-20) );
+			// }
 
 			placeTower();
 
 		}
 
-		if (Mouse.isButtonDown(1) && !MouseDownRight) { // param takes mouse button 0 for leftclick and 1 for
+		if (Mouse.isButtonDown(1) && !MouseDownRight) { // param takes mouse
+														// button 0 for
+														// leftclick and 1 for
 
 		}
 
-		MouseDownRight = Mouse.isButtonDown(1); // these are here becouse the game ticks multiple times
-		// a second and you click fast enough to only click once every tick, this makes
+		MouseDownRight = Mouse.isButtonDown(1); // these are here becouse the
+												// game ticks multiple times
+		// a second and you click fast enough to only click once every tick,
+		// this makes
 		// sure that it only clicks once
 		MouseDownLeft = Mouse.isButtonDown(0);
 
@@ -114,8 +125,9 @@ public class Player {
 			Floor f = getFloorUnderMouse();
 			if (f.getFloorType().builds && !currentTile.isOccupied()
 					&& changeMoneyAmount(-temporaryTower.getType().cost)) {
-//				towerList
-//						.add(new TowerCannonBlue(TowerType.CannonBlue, t, waveManager.getCurrentWave().getEnemyList()));
+				// towerList
+				// .add(new TowerCannonBlue(TowerType.CannonBlue, t,
+				// waveManager.getCurrentWave().getEnemyList()));
 				ListOfMonkeyTowers.add(temporaryTower);
 				currentTile.setOccupied(true);
 				holdingTower = false;
@@ -131,7 +143,20 @@ public class Player {
 		LivesLeft = 100;
 	}
 
+	public MonkeyTower getTowerUnderMouse() {
+		float mouseY = HEIGHT - Mouse.getY() - 1;
+
+		for (MonkeyTower mt : ListOfMonkeyTowers) {
+			if (Mouse.getX() > mt.getX() && Mouse.getX() < mt.getX() + mt.getWidth() && mouseY > mt.getY()
+					&& mouseY < mt.getY() + mt.getHeight()) {
+				return mt;
+			}
+		}
+		return null;
+	}
+
 	public void pickTower(MonkeyTower t) {
+		System.out.println("Tower: " + t);
 		temporaryTower = t;
 		if (temporaryTower == null) {
 			holdingTower = false;
@@ -141,16 +166,19 @@ public class Player {
 	}
 
 	public static boolean changeMoneyAmount(int amount) {
-		if (Money + amount >= 0) { // checks the amount if it is greater o r equal to 0 then adds it
+		if (Money + amount >= 0) { // checks the amount if it is greater o r
+									// equal to 0 then adds it
 			Money += amount;
 			return true; // then returns true this is a check if
 			// the player has enough money to buy the MonkeyTower or upgrade
 		}
-		return false; // If not then false is returned and no MonkeyTower is placed
+		return false; // If not then false is returned and no MonkeyTower is
+						// placed
 	}
 
 	public static void changeLifeAmount(int amount) {
-		LivesLeft += amount; // This need no check if the the lives are less than 0 or 0
+		LivesLeft += amount; // This need no check if the the lives are less
+								// than 0 or 0
 		// than it ends the game in the next frame or tick
 	}
 

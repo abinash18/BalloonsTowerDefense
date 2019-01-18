@@ -1,7 +1,8 @@
 package balloonsTowerDefence;
 
 import static other.DrawInFrame.*;
-import static other.DrawInFrame.LoadTexture;
+
+import java.util.ArrayList;
 
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.opengl.Texture;
@@ -18,11 +19,13 @@ public class Game {
 	private Player player;
 	private RoundManager roundManager;
 	private UserInterface gameUserInterface;
-	private Menu pickTowerMenu, playPauseMenu;
+	private Menu pickTowerMenu, playPauseMenu, upgradeMenu;
 	private Texture menuBg;
+	private ArrayList<MonkeyTower> monkeys;
 	private Balloon[] balloonsInGame;
 	private Label fpsLabel, money, lives, round, timeMultiplier;
 	public static final int MAX_BALLOON_TYPES = 2;
+	public boolean upgradeMenuOpen;
 
 	public Game(int[][] mapMatrix) {
 		this.grid = new FloorGrid(mapMatrix);
@@ -32,7 +35,7 @@ public class Game {
 		this.roundManager = new RoundManager(balloonsInGame, 3, 3);
 		this.player = new Player(grid, roundManager);
 		this.player.initialize();
-
+		this.upgradeMenuOpen = false;
 		InitializeUserInterFace();
 	}
 
@@ -45,7 +48,7 @@ public class Game {
 		this.roundManager = new RoundManager(balloonsInGame, 3, 3);
 		this.player = new Player(grid, roundManager);
 		this.player.initialize();
-
+		this.upgradeMenuOpen = false;
 		InitializeUserInterFace();
 	}
 
@@ -54,24 +57,31 @@ public class Game {
 
 		gameUserInterface.createMenu("PickTower", 1280, 0, 192, 960, 2, 0);
 		gameUserInterface.createMenu("PlayPauseMenu", 1216, 0, 64, 64, 2, 0);
+		gameUserInterface.createMenu("UpgradeMenu", 0, 0, GRID_SQUARE_SIZE * 3, GRID_SQUARE_SIZE * 3,
+				getTexture("black-translucent"));
 
 		playPauseMenu = gameUserInterface.getMenu("PlayPauseMenu");
-		playPauseMenu.addMenuButton("Play", "playpausefastforward", 90, 90);
-
+		upgradeMenu = gameUserInterface.getMenu("UpgradeMenu");
 		pickTowerMenu = gameUserInterface.getMenu("PickTower");
 
 		pickTowerMenu.addMenuButton("DartMonkey", "DartMonkey");
 		pickTowerMenu.addMenuButton("IceMonkey", "cannonBlueFull");
 		pickTowerMenu.addMenuButton("NinjaMonkey", "NinjaMonkey");
-		pickTowerMenu.addMenuButton("SuperMonkey", "SuperMonkey");
+		pickTowerMenu.addMenuButton("SuperMonkey", "supermonkey_icon");
+		pickTowerMenu.setOpen(true);
 
+		playPauseMenu.addMenuButton("Play", "playpausefastforward", 90, 90);
+		playPauseMenu.setOpen(true);
+
+		upgradeMenu.addLabel("TowerName", "oztype", 10, "Test", upgradeMenu.getX() + 5, upgradeMenu.getY() + 5, true);
+		upgradeMenu.addImage("TowerIcon", 25, 5, null);
+		
 		gameUserInterface.addLabel("fps", "oztype", 25, "", 0, 0, true);
 		gameUserInterface.addLabel("money", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 2, true);
 		gameUserInterface.addLabel("lives", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 4, true);
 		gameUserInterface.addLabel("round", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 6, true);
 		gameUserInterface.addLabel("timeMultiplier", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 8, true);
 
-		
 		fpsLabel = gameUserInterface.getLabel("fps");
 		money = gameUserInterface.getLabel("money");
 		lives = gameUserInterface.getLabel("lives");
@@ -80,11 +90,15 @@ public class Game {
 
 	}
 
+	public void setOpenUpgradeMenu(boolean o) {
+		upgradeMenu.setOpen(o);
+	}
+
 	private void tickUI() {
 		DrawQuadWithTexture(menuBg, 1280, 0, 255, 1025);
 
 		fpsLabel.setText(StateManager.framesInLastSecond + "fps");
-
+		
 		money.setText("Money: " + Player.Money);
 		lives.setText("Lives: " + Player.LivesLeft);
 		round.setText("Round: " + roundManager.getCurrentRoundNumber());
@@ -92,23 +106,32 @@ public class Game {
 
 		gameUserInterface.drawOnScreen();
 
-//		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY(), "Lives: " + Player.LivesLeft);
-//		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY() + 100, "Money: " + Player.Money);
-//		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY() + 150,
-//				"Round: " + roundManager.getCurrentRoundNumber());
-		// gameUserInterface.drawString(0, 20, StateManager.framesInLastSecond + "fps");
-//		gameUserInterface.drawString(pickTowerMenu.getX(), pickTowerMenu.getY() + 250,
-//				"Speed: x" + Timer.timeMultiplier);
-
-		// gameUserInterface.drawString(pickTowerMenu.getX() - 500,
-		// pickTowerMenu.getY() + 275,
-		// "balloons this round: " +
-		// roundManager.getBalloonsThisRound());
-
 		// Handles Mouse input
+		MonkeyTower mt = null;
 		if (Mouse.next()) {
 			boolean mouseClicked = Mouse.isButtonDown(0);
 			if (mouseClicked) {
+				float mouseY = HEIGHT - Mouse.getY() - 1;
+				if (upgradeMenuOpen) {
+					upgradeMenuOpen = false;
+					upgradeMenu.setOpen(false);
+				} else {
+
+					mt = player.getTowerUnderMouse();
+
+					if (mt != null) {
+						upgradeMenuOpen = true;
+						upgradeMenu.setX((int)mt.getX() + GRID_SQUARE_SIZE / 2);
+						upgradeMenu.setY((int)mouseY + GRID_SQUARE_SIZE / 2);
+						upgradeMenu.getLabel("TowerName").setX(upgradeMenu.getX() + 5);
+						upgradeMenu.getLabel("TowerName").setY(upgradeMenu.getY() + 5);
+						upgradeMenu.getImage("TowerIcon").setTex(mt.getType().icon);
+						upgradeMenu.getImage("TowerIcon").setWidth(mt.getType().icon.getImageWidth());
+						upgradeMenu.getImage("TowerIcon").setHeight(mt.getType().icon.getImageHeight());
+						upgradeMenu.setOpen(true);
+					}
+
+				}
 				if (pickTowerMenu.isButtonClicked("DartMonkey")) {
 					if (roundManager.getCurrentRound() != null) {
 						player.pickTower(new MonkeyTowerDartMonkey(grid.getFloor(0, 0),
@@ -117,22 +140,19 @@ public class Game {
 						player.pickTower(new MonkeyTowerDartMonkey(grid.getFloor(0, 0), null));
 					}
 
-				} else {
-					player.pickTower(null);
-				}
+				} 
+				
 				if (pickTowerMenu.isButtonClicked("IceMonkey")) {
 					if (roundManager.getCurrentRound() != null) {
-						player.pickTower(new MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
+						player.pickTower(new MonkeyTowerIceMonkey(grid.getFloor(0, 0),
 								roundManager.getCurrentRound().getBalloonsList()));
 					} else {
 						player.pickTower(
-								new MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0), null));
+								new MonkeyTowerIceMonkey(grid.getFloor(0, 0), null));
 					}
-					player.pickTower(new MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
-							roundManager.getCurrentRound().getBalloonsList()));
-				} else {
-					player.pickTower(null);
-				}
+//					player.pickTower(new MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
+//							roundManager.getCurrentRound().getBalloonsList()));
+				} 
 				if (pickTowerMenu.isButtonClicked("NinjaMonkey")) {
 					if (roundManager.getCurrentRound() != null) {
 						player.pickTower(new MonkeyTowerNinjaMonkey(grid.getFloor(0, 0),
@@ -141,20 +161,17 @@ public class Game {
 						player.pickTower(new MonkeyTowerNinjaMonkey(grid.getFloor(0, 0), null));
 					}
 
-				} else {
-					player.pickTower(null);
 				}
+				
 				if (pickTowerMenu.isButtonClicked("SuperMonkey")) {
 					if (roundManager.getCurrentRound() != null) {
 						player.pickTower(new MonkeyTowerSuperMonkey(grid.getFloor(0, 0),
 								roundManager.getCurrentRound().getBalloonsList()));
 					} else {
-						player.pickTower(new MonkeyTowerNinjaMonkey(grid.getFloor(0, 0), null));
+						player.pickTower(new MonkeyTowerSuperMonkey(grid.getFloor(0, 0), null));
 					}
 
-				} else {
-					player.pickTower(null);
-				}
+				} 
 
 				// Buttons for play puase and fast forward
 				if (playPauseMenu.isButtonClicked("Play")) {
@@ -178,7 +195,7 @@ public class Game {
 		roundManager.tick();
 		player.tick();
 		tickUI();
-
+		monkeys = player.getListOfMonkeyTowers();
 		// DrawInFrame.DrawCicle(500, 500, 50);
 
 	}

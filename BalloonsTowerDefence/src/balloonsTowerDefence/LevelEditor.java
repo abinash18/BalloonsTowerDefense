@@ -44,7 +44,7 @@ public class LevelEditor {
 		pickTileMenu.addMenuButton("Grass", "grass");
 		pickTileMenu.addMenuButton("Path", "path");
 		pickTileMenu.addMenuButton("Water", "water");
-		
+		pickTileMenu.setOpen(true);
 	}
 	
 	public void tick() {
