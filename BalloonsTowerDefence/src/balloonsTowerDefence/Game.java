@@ -9,6 +9,8 @@ import org.newdawn.slick.opengl.Texture;
 
 import other.StateManager;
 import other.Timer;
+import userInterface.Button;
+import userInterface.Image;
 import userInterface.Label;
 import userInterface.UserInterface;
 import userInterface.UserInterface.Menu;
@@ -23,7 +25,9 @@ public class Game {
 	private Texture menuBg;
 	private ArrayList<MonkeyTower> monkeys;
 	private Balloon[] balloonsInGame;
-	private Label fpsLabel, money, lives, round, timeMultiplier;
+	private Label fpsLabel, money, lives, round, timeMultiplier, towerName, upgradeButtonLabel;
+	private Image towericon;
+	private Button upgradeButton;;
 	public static final int MAX_BALLOON_TYPES = 2;
 	public boolean upgradeMenuOpen;
 
@@ -51,7 +55,7 @@ public class Game {
 		this.upgradeMenuOpen = false;
 		InitializeUserInterFace();
 	}
-
+	
 	private void InitializeUserInterFace() {
 		gameUserInterface = new UserInterface();
 
@@ -75,8 +79,13 @@ public class Game {
 
 		upgradeMenu.addLabel("TowerName", "oztype", 15, "Test", upgradeMenu.getX() + 5, upgradeMenu.getY() + 5, false);
 		upgradeMenu.addLabel("Upgrade", "oztype", 15, "Test", upgradeMenu.getX() + 25, upgradeMenu.getY() + 25, false);
-		upgradeMenu.addImage("TowerIcon", 25, 5, null);
+		upgradeMenu.addImage("TowerIcon", 100, 5, null);
 		upgradeMenu.addMenuButton("Upgrade", "button_notClicked", 25, 25, 100, 50);
+		
+		towerName = upgradeMenu.getLabel("TowerName");
+		upgradeButtonLabel = upgradeMenu.getLabel("Upgrade");
+		towericon = upgradeMenu.getImage("TowerIcon");
+		upgradeButton = upgradeMenu.getButton("Upgrade");
 		
 		gameUserInterface.addLabel("fps", "oztype", 25, "", 0, 0, true);
 		gameUserInterface.addLabel("money", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 2, true);
@@ -101,15 +110,17 @@ public class Game {
 		upgradeMenuOpen = true;
 		upgradeMenu.setX((int)mt.getX() + GRID_SQUARE_SIZE / 2);
 		upgradeMenu.setY((int)mouseY + GRID_SQUARE_SIZE / 2);
-		upgradeMenu.getLabel("TowerName").setX(upgradeMenu.getX() + 5);
-		upgradeMenu.getLabel("TowerName").setY(upgradeMenu.getY() + 5);
-		upgradeMenu.getImage("TowerIcon").setTex(mt.getType().icon);
-		upgradeMenu.getImage("TowerIcon").setWidth(64);
-		upgradeMenu.getImage("TowerIcon").setHeight(64);
-		upgradeMenu.getButton("Upgrade").setX(upgradeMenu.getX() + 64);
-		upgradeMenu.getButton("Upgrade").setY(upgradeMenu.getY() + 64);
-		upgradeMenu.getLabel("Upgrade").setX(upgradeMenu.getX() + 64);
-		upgradeMenu.getLabel("Upgrade").setY(upgradeMenu.getY() + 64);
+		towerName.setxOffset(15);
+		towerName.setyOffset(5);
+		towerName.setText(mt.type.name());
+		towericon.setTex(mt.getType().icon);
+		towericon.setxOffset(GRID_SQUARE_SIZE * 2);
+		towericon.setWidth(64);
+		towericon.setHeight(64);
+		upgradeButton.setX(upgradeMenu.getX() + GRID_SQUARE_SIZE * 3 - 100);
+		upgradeButton.setY(upgradeMenu.getY() + GRID_SQUARE_SIZE * 3 - 50);
+		upgradeButtonLabel.setxOffset(GRID_SQUARE_SIZE * 2);
+		upgradeButtonLabel.setyOffset(GRID_SQUARE_SIZE * 2);
 		upgradeMenu.setOpen(true);
 	}
 	
@@ -131,7 +142,7 @@ public class Game {
 			boolean mouseClicked = Mouse.isButtonDown(0);
 			if (mouseClicked) {
 				float mouseY = HEIGHT - Mouse.getY() - 1;
-				if (upgradeMenuOpen) {
+				if (upgradeMenuOpen && !upgradeMenu.checkHover()) {
 					upgradeMenuOpen = false;
 					upgradeMenu.setOpen(false);
 				} else {
@@ -140,6 +151,10 @@ public class Game {
 
 					if (mt != null) {
 						updateUpgradeMenu(mt);
+					}
+					
+					if (upgradeMenu.isButtonClicked("Upgrade")) {
+						mt.upgrade();
 					}
 
 				}

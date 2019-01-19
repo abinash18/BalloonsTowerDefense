@@ -11,9 +11,16 @@ public class MonkeyTowerSuperMonkey extends MonkeyTower {
 	@Override
 	public void shoot(Balloon target) {
 		super.setAngle(super.getAngle());
-		super.darts.add(new DartNormal(super.type.dartType, super.Target, super.getX() - super.getWidth() / 2,
-				super.getY() - super.getHeight() / 2, super.type.dartType.texture.getImageWidth(),
-				super.type.dartType.texture.getImageHeight()));
+		if (super.currentTier == 1) {
+			super.darts.add(new DartLazer(super.dart, super.Target, super.getX() - super.getWidth() / 2,
+					super.getY() - super.getHeight() / 2, super.type.dartType.texture.getImageWidth(),
+					super.type.dartType.texture.getImageHeight()));
+		} else {
+			super.darts.add(new DartNormal(super.dart, super.Target, super.getX() - super.getWidth() / 2,
+					super.getY() - super.getHeight() / 2, super.type.dartType.texture.getImageWidth(),
+					super.type.dartType.texture.getImageHeight()));
+		}
+		
 		super.acquireTarget();
 	}
 

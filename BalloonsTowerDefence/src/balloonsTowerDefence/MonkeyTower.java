@@ -12,12 +12,13 @@ import org.newdawn.slick.opengl.Texture;
 public abstract class MonkeyTower implements Entity {
 
 	private float x, y, timeSinceLastShot, firingSpeed, angle;
-	private int width, height, damage, range;
+	public int width, height, damage, range, currentTier = 0;
 	public Balloon Target;
 	private Texture[] textures;
 	private CopyOnWriteArrayList<Balloon> balloons;
 	public ArrayList<Dart> darts;
 	public MonkeyTowerType type;
+	public DartType dart;
 	private boolean targeted;
 
 	public MonkeyTower(MonkeyTowerType type, Floor startingFloor, CopyOnWriteArrayList<Balloon> balloons) {
@@ -36,6 +37,7 @@ public abstract class MonkeyTower implements Entity {
 		this.firingSpeed = type.firingSpeed;
 		this.angle = 0f;
 		this.type = type;
+		this.dart = DartType.NormalDart;
 		System.out.println("Image: " + type.textures[0].getImageWidth() + " " + type.textures[0].getImageHeight());
 	}
 	
@@ -55,6 +57,7 @@ public abstract class MonkeyTower implements Entity {
 		this.firingSpeed = type.firingSpeed;
 		this.angle = 0f;
 		this.type = type;
+		this.dart = DartType.NormalDart;
 		System.out.println("Image: " + width + " " + height);
 	}
 	
@@ -121,6 +124,13 @@ public abstract class MonkeyTower implements Entity {
 
 	}
 
+	public void upgrade() {
+		if (Player.changeMoneyAmount(-2000)) {
+			currentTier = 1;
+			dart = DartType.Lazer;
+		}
+	}
+	
 	private boolean isInRange(Balloon balloon) {
 		float xDistance = Math.abs(balloon.getX() - x);
 		float yDistance = Math.abs(balloon.getY() - y);

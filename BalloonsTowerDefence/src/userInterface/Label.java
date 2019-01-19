@@ -94,6 +94,22 @@ public class Label {
 		font.drawString(x + xOffset, y + yOffset, text);
 	}
 
+	public int getxOffset() {
+		return xOffset;
+	}
+
+	public void setxOffset(int xOffset) {
+		this.xOffset = xOffset;
+	}
+
+	public int getyOffset() {
+		return yOffset;
+	}
+
+	public void setyOffset(int yOffset) {
+		this.yOffset = yOffset;
+	}
+
 	public String getName() {
 		return name;
 	}

@@ -1,21 +1,21 @@
 package userInterface;
 
+import static other.DrawInFrame.DrawQuadWithTexture;
+
 import org.newdawn.slick.opengl.Texture;
 
 public class Button {
-	
+
 	private Texture texture;
 	private String name;
-	private int x, y, width, height; // The Width and Height is taken from the texture it self
-	
+	private int x, y, width, height, xOffset = 0, yOffset = 0; // The Width and Height is taken from the texture it self
+
 	/**
-	 * Constructor
-	 * pre: none
-	 * post: This constructore takes a width and height just 
-	 * incase if the game ressolution is changed and the textures
-	 * are to big and need to resized
-	 * The texture is set along with the name of the button and x and y positions
-	 * The x and y are relative to the top left corner of the texture
+	 * Constructor pre: none post: This constructore takes a width and height just
+	 * incase if the game ressolution is changed and the textures are to big and
+	 * need to resized The texture is set along with the name of the button and x
+	 * and y positions The x and y are relative to the top left corner of the
+	 * texture
 	 */
 	public Button(Texture texture, String name, int x, int y, int width, int height) {
 		this.texture = texture;
@@ -27,12 +27,11 @@ public class Button {
 	}
 
 	/**
-	 * Constructor
-	 * pre: none
-	 * post: This constructore dose not take a width and height 
-	 * they are accuired straight from the teexture using methods provided in the slick-util liberary
-	 * The texture is set along with the name of the button and x and y positions
-	 * The x and y are relative to the top left corner of the texture
+	 * Constructor pre: none post: This constructore dose not take a width and
+	 * height they are accuired straight from the teexture using methods provided in
+	 * the slick-util liberary The texture is set along with the name of the button
+	 * and x and y positions The x and y are relative to the top left corner of the
+	 * texture
 	 */
 	public Button(Texture texture, String name, int x, int y) {
 		super();
@@ -45,13 +44,35 @@ public class Button {
 	}
 
 	/**
-	 * Generated Getters and Setters 
-	 * For all Variables 
-	 * Im just taking advantage of the great tools provided by Eclipse,
-	 * Not being Lazy 
-	 */	
+	 * Generated Getters and Setters For all Variables Im just taking advantage of
+	 * the great tools provided by Eclipse, Not being Lazy
+	 */
 	public Texture getTexture() {
 		return texture;
+	}
+
+	public void tick() {
+		draw();
+	}
+
+	private void draw() {
+		DrawQuadWithTexture(texture, x + xOffset, y + yOffset, width, height);
+	}
+
+	public int getxOffset() {
+		return xOffset;
+	}
+
+	public void setxOffset(int xOffset) {
+		this.xOffset = xOffset;
+	}
+
+	public int getyOffset() {
+		return yOffset;
+	}
+
+	public void setyOffset(int yOffset) {
+		this.yOffset = yOffset;
 	}
 
 	public void setTexture(Texture texture) {
@@ -97,5 +118,5 @@ public class Button {
 	public void setHeight(int height) {
 		this.height = height;
 	}
-	
+
 }

@@ -284,6 +284,19 @@ public class UserInterface {
 			}
 		}
 
+		public boolean checkHover() {
+			
+			float mouseY = HEIGHT - Mouse.getY() - 1;
+
+			if (Mouse.getX() > x && Mouse.getX() < x + width && mouseY > y
+					&& mouseY < y + height) {
+
+				return true;
+
+			}
+			return false;
+		}
+		
 		public void addMenuButton(Button b) {
 			setButton(b);
 		}
