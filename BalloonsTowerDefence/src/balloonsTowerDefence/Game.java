@@ -74,7 +74,9 @@ public class Game {
 		playPauseMenu.setOpen(true);
 
 		upgradeMenu.addLabel("TowerName", "oztype", 15, "Test", upgradeMenu.getX() + 5, upgradeMenu.getY() + 5, false);
+		upgradeMenu.addLabel("Upgrade", "oztype", 15, "Test", upgradeMenu.getX() + 25, upgradeMenu.getY() + 25, false);
 		upgradeMenu.addImage("TowerIcon", 25, 5, null);
+		upgradeMenu.addMenuButton("Upgrade", "button_notClicked", 25, 25, 100, 50);
 		
 		gameUserInterface.addLabel("fps", "oztype", 25, "", 0, 0, true);
 		gameUserInterface.addLabel("money", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 2, true);
@@ -94,6 +96,23 @@ public class Game {
 		upgradeMenu.setOpen(o);
 	}
 
+	private void updateUpgradeMenu(MonkeyTower mt) {
+		float mouseY = HEIGHT - Mouse.getY() - 1;
+		upgradeMenuOpen = true;
+		upgradeMenu.setX((int)mt.getX() + GRID_SQUARE_SIZE / 2);
+		upgradeMenu.setY((int)mouseY + GRID_SQUARE_SIZE / 2);
+		upgradeMenu.getLabel("TowerName").setX(upgradeMenu.getX() + 5);
+		upgradeMenu.getLabel("TowerName").setY(upgradeMenu.getY() + 5);
+		upgradeMenu.getImage("TowerIcon").setTex(mt.getType().icon);
+		upgradeMenu.getImage("TowerIcon").setWidth(64);
+		upgradeMenu.getImage("TowerIcon").setHeight(64);
+		upgradeMenu.getButton("Upgrade").setX(upgradeMenu.getX() + 64);
+		upgradeMenu.getButton("Upgrade").setY(upgradeMenu.getY() + 64);
+		upgradeMenu.getLabel("Upgrade").setX(upgradeMenu.getX() + 64);
+		upgradeMenu.getLabel("Upgrade").setY(upgradeMenu.getY() + 64);
+		upgradeMenu.setOpen(true);
+	}
+	
 	private void tickUI() {
 		DrawQuadWithTexture(menuBg, 1280, 0, 255, 1025);
 
@@ -120,15 +139,7 @@ public class Game {
 					mt = player.getTowerUnderMouse();
 
 					if (mt != null) {
-						upgradeMenuOpen = true;
-						upgradeMenu.setX((int)mt.getX() + GRID_SQUARE_SIZE / 2);
-						upgradeMenu.setY((int)mouseY + GRID_SQUARE_SIZE / 2);
-						upgradeMenu.getLabel("TowerName").setX(upgradeMenu.getX() + 5);
-						upgradeMenu.getLabel("TowerName").setY(upgradeMenu.getY() + 5);
-						upgradeMenu.getImage("TowerIcon").setTex(mt.getType().icon);
-						upgradeMenu.getImage("TowerIcon").setWidth(mt.getType().icon.getImageWidth());
-						upgradeMenu.getImage("TowerIcon").setHeight(mt.getType().icon.getImageHeight());
-						upgradeMenu.setOpen(true);
+						updateUpgradeMenu(mt);
 					}
 
 				}

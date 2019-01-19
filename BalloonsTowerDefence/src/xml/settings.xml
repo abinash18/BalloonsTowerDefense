@@ -17,7 +17,7 @@
 		<Textures id="textures">
 			<TexturePath name="RedBalloon" path="balloon_red" />
 			<TexturePath name="SuperMonkey" path="supermonkey" ImagePath="resources/supermonkey.png" />
-			<TexturePath name="BlueBalloon" path="balloon_red" />
+			<TexturePath name="button_notClicked" path="button_notClicked" />
 			<TexturePath name="DartMonkey" path="DartMonkey" />
 			<TexturePath name="ice_monkey_base1" path="ice_monkey_base1" />
 			<TexturePath name="black" path="black" />

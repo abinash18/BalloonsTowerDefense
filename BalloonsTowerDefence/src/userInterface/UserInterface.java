@@ -293,6 +293,12 @@ public class UserInterface {
 			Button b = new Button(t, buttonName, 0, 0);
 			setButton(b);
 		}
+		
+		public void addMenuButton(String buttonName, String texName, int xOffset, int yOffset, int width, int height) {
+			Texture t = getTexture(texName);
+			Button b = new Button(t, buttonName, x + xOffset, y + yOffset, t.getImageWidth(), t.getImageHeight());
+			ListOfButtonsInMenu.add(b);
+		}
 
 		public void addMenuButton(String buttonName, String texName, int width, int height) {
 			Texture t = null;
@@ -311,7 +317,7 @@ public class UserInterface {
 			setButton(b);
 		}
 
-		private Button getButton(String name) {
+		public Button getButton(String name) {
 
 			for (Button b : ListOfButtonsInMenu) {
 

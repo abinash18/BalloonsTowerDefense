@@ -44,29 +44,23 @@ public class MainMenu {
 	}
 
 	public void checkClick() {
-		if (Mouse.isButtonDown(0)) {
+		if (Mouse.next()) {
+			boolean mouseClicked = Mouse.isButtonDown(0);
+			if (mouseClicked) {
+				if (menuUI.isButtonClicked("play")) {
+					StateManager.setState(GameState.GAME);
+				}
+				if (menuUI.isButtonClicked("LevelEdit")) {
+					StateManager.setState(GameState.LEVEL_EDITOR);
+				}
+				if (menuUI.isButtonClicked("Exit")) {
+					System.exit(0);
+				}
 
-			if (menuUI.isButtonClicked("play")) {
-				StateManager.setState(GameState.GAME);
+				if (menuUI.isButtonClicked("Instructions")) {
+					handlers.Informal.showInstructions();
+				}
 			}
-			if (menuUI.isButtonClicked("LevelEdit")) {
-				StateManager.setState(GameState.LEVEL_EDITOR);
-			}
-			if (menuUI.isButtonClicked("Exit")) {
-				System.exit(0);
-			}
-
-			if (menuUI.isButtonClicked("Instructions")) {
-				Thread t1 = new Thread(new Runnable() {
-
-					@Override
-					public void run() {
-						handlers.Informal.showInstructions();
-					}
-				});
-				t1.start();
-			}
-
 		}
 	}
 
