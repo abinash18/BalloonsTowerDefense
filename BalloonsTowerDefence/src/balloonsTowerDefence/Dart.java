@@ -19,6 +19,7 @@ public abstract class Dart implements Entity {
 	private Texture texture;
 	// the entity interface requirements and this objects properties
 	private float x, y, speed, xVelocity, yVelocity;
+	public float angle;
 	private int damage, width, height;
 	// the balloon object this dart should be hitting and traveling too
 	private Balloon target;
@@ -45,6 +46,7 @@ public abstract class Dart implements Entity {
 		this.alive = true;
 		this.xVelocity = 0f; // the x axis movement
 		this.yVelocity = 0f; // the y axis movement
+		this.angle = calculateAngle();
 
 		// determines the direction the dart should be traveling
 		findDirection();
@@ -110,19 +112,21 @@ public abstract class Dart implements Entity {
 
 		// ensures that if the dart hasnt hit the target and leaves the frame it is not
 		// updated
-		if (x < 0 || x > WIDTH || y < 0 || y > HEIGHT) {
-			alive = false;
-		}
 
 		if (alive) {
-			//findDirection();
+			if (x < 0 || x > WIDTH || y < 0 || y > HEIGHT) {
+				alive = false;
+				System.out.println("ads");
+			}
+			// findDirection();
 			x += xVelocity * Delta() * speed;
 			y += yVelocity * Delta() * speed;
-			// if (target.isAlive()) {
-			if (isCollided(x, y, width, height, target.getX(), target.getY(), target.getWidth(), target.getHeight())) {
-				damage();
+			if (target.isAlive()) {
+				if (isCollided(x, y, width, height, target.getX(), target.getY(), target.getWidth(),
+						target.getHeight())) {
+					damage();
+				}
 			}
-			// }
 			draw();
 		}
 

@@ -28,9 +28,9 @@ public class DartNormal extends Dart {
 
 	@Override
 	public void draw() {
-		float angle = calculateAngle();
+		// float angle = calculateAngle();
 		DrawQuadWithRotatedTexture(super.getTexture(), super.getX(), super.getY(), super.getTexture().getImageWidth(),
-				super.getTexture().getImageHeight(), angle);
+				super.getTexture().getImageHeight(), super.angle);
 	}
 
 }
