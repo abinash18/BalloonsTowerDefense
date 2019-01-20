@@ -82,7 +82,7 @@ public class SplashScreenLoading {
 		// loadingTime = 0;
 		System.out.println(elaspedtime);
 		if (tasksCompleted == tasks && elaspedtime >= loadingTime) {
-			StateManager.setState(GameState.GAME);
+			StateManager.setState(GameState.MAP_SELECT_SCREEN);
 		} else {
 
 			barProgress = (float) (tasksCompleted * barWidth) / tasks;
@@ -105,6 +105,7 @@ public class SplashScreenLoading {
 					// @Override
 					// public void run() {
 					LoadSettings.LoadFileXML();
+					LoadSettings.LoadMapElementsIntoArray();
 					// }
 					// });
 					// taskThread.start();

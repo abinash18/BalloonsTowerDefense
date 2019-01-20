@@ -27,6 +27,7 @@ public class LoadSettings {
 	private static ArrayList<Element> towerElements = new ArrayList<Element>();
 	private static ArrayList<Element> settings = new ArrayList<Element>();
 	public static ArrayList<Sprite> sprites = new ArrayList<Sprite>();
+	public static ArrayList<Element> maps = new ArrayList<Element>();
 	// private static ArrayList<Texture> spriteTexture = new
 	// ArrayList<Texture>();
 	private static Document document;
@@ -151,6 +152,18 @@ public class LoadSettings {
 		}
 	}
 
+	public static void LoadMapElementsIntoArray() {
+		NodeList map = document.getElementsByTagName("Map");
+
+		for (int i = 0; i < map.getLength(); i++) {
+			Node node = map.item(i);
+			if (node.getNodeType() == Node.ELEMENT_NODE) {
+				Element eElement = (Element) node;
+				maps.add(eElement);
+			}
+		}
+	}
+	
 	/**
 	 * Loads game settings into the array
 	 */

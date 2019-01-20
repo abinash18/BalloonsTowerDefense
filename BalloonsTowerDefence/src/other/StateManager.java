@@ -6,7 +6,7 @@ package other;
 
 import static other.LevelToolKit.LoadMap;
 
-import balloonsTowerDefence.FloorGrid;
+import balloonsTowerDefence.*;
 import balloonsTowerDefence.Game;
 import balloonsTowerDefence.Leaderboard;
 import balloonsTowerDefence.LevelEditor;
@@ -21,7 +21,7 @@ public class StateManager {
 
 	// Public enum defined in this class because it dose not need Extra Variables
 	public static enum GameState {
-		SPLASHSCREEN_LOADING, MAINMENU, GAME, LEVEL_EDITOR, LEADERBOARD, OPTIONS, TESTSCREEN
+		SPLASHSCREEN_LOADING, MAINMENU, GAME, LEVEL_EDITOR, MAP_SELECT_SCREEN, LEADERBOARD, OPTIONS, TESTSCREEN
 	}
 
 	// Defines the default state of the game upon launch
@@ -33,13 +33,15 @@ public class StateManager {
 	public static Game game;
 	// The Level Editor
 	public static LevelEditor levelEditor;
-	
+
 	public static Leaderboard leaderBoard;
 
 	public static TestScreen testScreen;
 
 	public static SplashScreenLoading splashScreenLoading;
 	
+	public static MapSelectScreen mapSelectScreen;
+
 	public static FloorGrid map = LoadMap("dfg");
 
 	// Variables for fps figuring out
@@ -80,13 +82,13 @@ public class StateManager {
 			levelEditor.tick();
 			break;
 		case LEADERBOARD:
-			if (leaderBoard == null){
+			if (leaderBoard == null) {
 				leaderBoard = new Leaderboard();
 			}
 			leaderBoard.tick();
 			break;
 		case SPLASHSCREEN_LOADING:
-			if (splashScreenLoading == null){
+			if (splashScreenLoading == null) {
 				splashScreenLoading = new SplashScreenLoading();
 			}
 			splashScreenLoading.tick();
@@ -98,6 +100,12 @@ public class StateManager {
 				testScreen = new TestScreen();
 			}
 			testScreen.tick();
+			break;
+		case MAP_SELECT_SCREEN:
+			if (mapSelectScreen == null) {
+				mapSelectScreen = new MapSelectScreen();
+			}
+			mapSelectScreen.tick();
 			break;
 		default:
 			break;

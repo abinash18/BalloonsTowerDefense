@@ -11,6 +11,8 @@ import static other.DrawInFrame.LoadTexture;
 import static other.LevelToolKit.LoadMap;
 import static other.LevelToolKit.saveMap;
 
+import javax.swing.JOptionPane;
+
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.opengl.Texture;
@@ -46,6 +48,8 @@ public class LevelEditor {
 
 	}
 
+	
+	
 	/**
 	 * Initializes all the buttons and menus in the game
 	 */
@@ -91,7 +95,8 @@ public class LevelEditor {
 				moveIndex();
 			}
 			if (Keyboard.getEventKey() == Keyboard.KEY_S && Keyboard.getEventKeyState()) {
-				saveMap("dfg", grid);
+				String temp  = JOptionPane.showInputDialog("Map name to save as?");
+				saveMap(temp, grid);
 			}
 			if (Keyboard.getEventKey() == Keyboard.KEY_R && Keyboard.getEventKeyState()) {
 				grid = new FloorGrid();
