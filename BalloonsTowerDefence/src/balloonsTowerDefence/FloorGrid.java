@@ -84,6 +84,20 @@ public class FloorGrid {
 
 	}
 
+	public void drawGridOnScreenMapPreview(int floorSize) {
+
+		for (int y = 0; y < mapMatrix.length; y++) {
+			for (int x = 0; x < mapMatrix[y].length; x++) {
+
+				Floor temp = mapMatrix[y][x];
+				DrawQuadWithTexture(temp.getFloorTexture(), (temp.getxPos() / GRID_SQUARE_SIZE) * floorSize,
+						(temp.getyPos() / GRID_SQUARE_SIZE) * floorSize, floorSize, floorSize);
+
+			}
+		}
+
+	}
+
 	public int getSquaresWide() {
 		return squaresWide;
 	}

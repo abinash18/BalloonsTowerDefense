@@ -10,18 +10,19 @@ import org.newdawn.slick.opengl.Texture;
 
 import other.DrawInFrame;
 import other.ImageTools;
+import other.LevelToolKit;
 import userInterface.Slider;
 import userInterface.UserInterface;
 import userInterface.UserInterface.Menu;
 
 public class TestScreen {
 
-	
 	private UserInterface UI;
 	private Menu test;
 	private Slider testSlider;
 	private Texture sprite, spriteBg;
-	
+	private FloorGrid grid;
+
 	public TestScreen() {
 //		this.UI = new UserInterface();
 //		this.bg = LoadTexture("red_tint");
@@ -31,15 +32,16 @@ public class TestScreen {
 //		test.addMenuSlider("slider", "slider_bar", "slider_pointer", 0, 100, 1, 0);
 //		
 //		testSlider = test.getSlider("slider");
-		
-	//	LoadSettings.LoadFileXML();
+
+		// LoadSettings.LoadFileXML();
+		grid = LevelToolKit.LoadMap("dfg");
 		sprite = getTexture("dart_monkey_dart");
 		spriteBg = ImageTools.LoadSpriteTextureFromSpriteSheet("red_tint", "In_Game_Custom");
 	}
 
 	public void tick() {
 		draw();
-		
+		grid.drawGridOnScreenMapPreview(32);
 	}
 
 	private void updateTest() {
@@ -48,8 +50,9 @@ public class TestScreen {
 
 	private void draw() {
 		DrawQuadWithTexture(spriteBg, 0, 0, DrawInFrame.WIDTH, DrawInFrame.HEIGHT);
-		DrawQuadWithTextureReflected(sprite, HEIGHT / 2, WIDTH / 2, sprite.getImageWidth(), sprite.getImageHeight(), true);
-		
+		DrawQuadWithTextureReflected(sprite, HEIGHT / 2, WIDTH / 2, sprite.getImageWidth(), sprite.getImageHeight(),
+				true);
+
 //		DrawQuadWithTexture(bg, 0, 0, WIDTH, HEIGHT);
 //		UI.drawString(0, 0, "Value: " + testSlider.getPointerValue());
 //		UI.drawString(50, 0, "Position x: " + testSlider.getPointerPos());
