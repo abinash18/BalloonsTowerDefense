@@ -13,7 +13,9 @@ import org.newdawn.slick.opengl.Texture;
 
 public abstract class Dart implements Entity {
 
+	// Texture for the dart
 	private Texture texture;
+	// the entity interface requirements and this objects properties
 	private float x, y, speed, xVelocity, yVelocity;
 	private int damage, width, height;
 	private Balloon target;
