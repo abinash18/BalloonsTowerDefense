@@ -16,6 +16,7 @@
 		</SpriteSheets>
 		<Textures id="textures">
 			<TexturePath name="RedBalloon" path="balloon_red" />
+
 			<TexturePath name="SuperMonkey" path="supermonkey" ImagePath="resources/supermonkey.png" />
 			<TexturePath name="button_notClicked" path="button_notClicked" />
 			<TexturePath name="DartMonkey" path="DartMonkey" />

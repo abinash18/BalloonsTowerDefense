@@ -1,8 +1,17 @@
+/**
+ * Abinash Singh 
+ * Balloons Tower Defense MonkeyTowerType 
+ */
 package balloonsTowerDefence;
 
-import org.newdawn.slick.opengl.Texture;
-import static other.DrawInFrame.*;
+import static other.DrawInFrame.LoadTexture;
+import static other.DrawInFrame.getTexture;
 
+import org.newdawn.slick.opengl.Texture;
+
+/**
+ * This class outline the default variables for each monkey tower 
+ */
 public enum MonkeyTowerType {
 
 	DartMonkey(new Texture[] { LoadTexture("DartMonkey") }, DartType.NormalDart, 10, 271, 1, 50, getTexture("dart_monkey_avatar_small")), 

@@ -2,28 +2,30 @@ package balloonsTowerDefence;
 
 import java.io.Serializable;
 
+/**
+ * Unfinished class
+ */
 public class HighScore implements Serializable {
 
 	private String name, mapName;
 	private int score, round;
 	private float timeElasped;
-	
-	public HighScore(String name, String mapName, int round, float timeElasped){
-		
+
+	public HighScore(String name, String mapName, int round, float timeElasped) {
+
 		this.name = name;
 		this.mapName = mapName;
 		this.round = round;
 		this.timeElasped = timeElasped;
-		
+
 		calculateScore();
-		
-		
+
 	}
-	
-	private void calculateScore(){
-		
+
+	private void calculateScore() {
+
 		score = (int) (round * Math.floor(timeElasped));
-		
+
 	}
 
 	public String getName() {
@@ -65,5 +67,5 @@ public class HighScore implements Serializable {
 	public void setTimeElasped(float timeElasped) {
 		this.timeElasped = timeElasped;
 	}
-	
+
 }

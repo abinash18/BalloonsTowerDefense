@@ -322,6 +322,13 @@ public class DrawInFrame {
 
 		// Magic
 		try {
+
+		//	tempTexture = getTexture(name);
+
+//			if (tempTexture != null) {
+//				return tempTexture;
+//			}
+
 			tempTexture = TextureLoader.getTexture("png", in);
 			in.close();
 		} catch (Exception e) {

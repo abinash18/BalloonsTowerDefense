@@ -1,3 +1,7 @@
+/**
+ * Abinash Singh
+ * Balloons Tower Defense Main Menu 
+ */
 package balloonsTowerDefence;
 
 import static other.DrawInFrame.DrawQuadWithTexture;
@@ -14,12 +18,18 @@ import other.StateManager.GameState;
 import userInterface.UserInterface;
 import userInterface.UserInterface.Menu;
 
+/**
+ * Starting screen for the game
+ */
 public class MainMenu {
 
 	private Texture bg;
 	private UserInterface menuUI;
-	private Menu mainMenu;
+	// private Menu mainMenu;
 
+	/**
+	 * constructor Creates a main menu object and initializes default textures
+	 */
 	public MainMenu() {
 		bg = LoadTexture("mainMenu_BackGround");
 
@@ -43,6 +53,9 @@ public class MainMenu {
 		menuUI.addButton("Instructions", "button_Instructions", WIDTH / 180 - 20, (int) (HEIGHT * 0.88f));
 	}
 
+	/**
+	 * Called every time the game loops and checks if the user has clicked a button
+	 */
 	public void checkClick() {
 		if (Mouse.next()) {
 			boolean mouseClicked = Mouse.isButtonDown(0);
@@ -64,6 +77,9 @@ public class MainMenu {
 		}
 	}
 
+	/**
+	 * Called every time the game loops and dispatches events to update the menu
+	 */
 	public void tick() {
 		DrawQuadWithTexture(bg, 0, 0, 2500, 1024);
 		menuUI.drawOnScreen();

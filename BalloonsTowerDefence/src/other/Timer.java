@@ -10,12 +10,13 @@ public class Timer {
 
 	private static boolean GamePaused = false; // is the game paused
 	public static long lastGameFrame, totalTime;
-	public static float delt = 0, timeMultiplier = 1; // Time multiplier is for
-														// to fast forward the
-														// game it multiplies
-														// the delta and then
-														// that speeds up all
-														// the objects
+	public static float delt = 0, timeMultiplier = 1;
+	// Time multiplier is for
+	// to fast forward the
+	// game it multiplies
+	// the delta and then
+	// that speeds up all
+	// the objects
 
 	/**
 	 * The current time since the game started is calculated
@@ -23,11 +24,12 @@ public class Timer {
 	public static long GrabTime() {
 		long tempTime;
 		// Gets time from Sys package
-		tempTime = Sys.getTime() * 1000 / Sys.getTimerResolution(); // * 1000
-																	// becouse
-																	// time is
-																	// in
-																	// miliseconds
+		tempTime = Sys.getTime() * 1000 / Sys.getTimerResolution();
+		// * 1000
+		// becouse
+		// time is
+		// in
+		// miliseconds
 		// returns the time
 		return (tempTime);
 	}

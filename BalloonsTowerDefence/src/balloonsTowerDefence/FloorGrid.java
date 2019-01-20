@@ -7,11 +7,20 @@ package balloonsTowerDefence;
 import static other.DrawInFrame.DrawQuadWithTexture;
 import static other.DrawInFrame.GRID_SQUARE_SIZE;
 
+/**
+ * Handles the drawing of the floors on the screen
+ */
 public class FloorGrid {
 
+	// this array represents the map that is being drawn on the screen
 	public Floor[][] mapMatrix;
 	private int squaresWide, squaresHigh;
 
+	/**
+	 * constructor Fills the mapMatrix with the newMapMatrix parameter by reading
+	 * each number and corresponding it to the type of floor it represents also
+	 * creates a floor object that represents it and fills the mapMatrix with it
+	 */
 	public FloorGrid(int[][] newMapMatrix) {
 
 		this.squaresWide = newMapMatrix[0].length;
@@ -43,11 +52,18 @@ public class FloorGrid {
 		}
 	}
 
+	/**
+	 * Sets the floor where specified pre: none post: sets the floor where specified
+	 * by the x and y coord and the floortype
+	 */
 	public void setFloor(int xCoord, int yCoord, FloorType type) {
 		mapMatrix[xCoord][yCoord] = new Floor(type, xCoord * GRID_SQUARE_SIZE, yCoord * GRID_SQUARE_SIZE,
 				GRID_SQUARE_SIZE, GRID_SQUARE_SIZE);
 	}
 
+	/**
+	 * constructor Fills the entire matrix with grass floors
+	 */
 	public FloorGrid() {
 		this.squaresWide = 20;
 		this.squaresHigh = 15;
@@ -60,6 +76,10 @@ public class FloorGrid {
 		}
 	}
 
+	/**
+	 * Retrurns the floor object represented by the xCoord and the yCoord pre: none
+	 * post: A floor object is returned represented by the x and y coords
+	 */
 	public Floor getFloor(int xCoord, int yCoord) {
 
 		if (xCoord < squaresWide && yCoord < squaresHigh && xCoord > -1 && yCoord > -1) {
@@ -70,6 +90,10 @@ public class FloorGrid {
 
 	}
 
+	/**
+	 * Draws the grid matrix on the screen by looping throug the mapMatrix and
+	 * temporary mapping each floor to a temp floor object
+	 */
 	public void drawGridOnScreen() {
 
 		for (int y = 0; y < mapMatrix.length; y++) {
@@ -84,6 +108,9 @@ public class FloorGrid {
 
 	}
 
+	/**
+	 * Draws the mapMatrix on the screen with the specified floor size
+	 */
 	public void drawGridOnScreenMapPreview(int floorSize) {
 
 		for (int y = 0; y < mapMatrix.length; y++) {
@@ -98,6 +125,10 @@ public class FloorGrid {
 
 	}
 
+	/**
+	 * Generated Getters and Setters 
+	 */
+	
 	public int getSquaresWide() {
 		return squaresWide;
 	}

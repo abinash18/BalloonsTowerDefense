@@ -21,6 +21,10 @@ public abstract class MonkeyTower implements Entity {
 	public DartType dart;
 	private boolean targeted;
 
+	/**
+	 * constructor creates a tower object with the type startiing floor and target
+	 * list specified
+	 */
 	public MonkeyTower(MonkeyTowerType type, Floor startingFloor, CopyOnWriteArrayList<Balloon> balloons) {
 		this.x = startingFloor.getxPos();
 		this.y = startingFloor.getyPos();
@@ -40,8 +44,13 @@ public abstract class MonkeyTower implements Entity {
 		this.dart = DartType.NormalDart;
 		System.out.println("Image: " + type.textures[0].getImageWidth() + " " + type.textures[0].getImageHeight());
 	}
-	
-	public MonkeyTower(MonkeyTowerType type, Floor startingFloor, CopyOnWriteArrayList<Balloon> balloons, int width, int height) {
+
+	/**
+	 * constructor creates a tower object with the type startiing floor and target
+	 * list specified with height and width
+	 */
+	public MonkeyTower(MonkeyTowerType type, Floor startingFloor, CopyOnWriteArrayList<Balloon> balloons, int width,
+			int height) {
 		this.x = startingFloor.getxPos();
 		this.y = startingFloor.getyPos();
 		this.width = width;
@@ -60,7 +69,10 @@ public abstract class MonkeyTower implements Entity {
 		this.dart = DartType.NormalDart;
 		System.out.println("Image: " + width + " " + height);
 	}
-	
+
+	/**
+	 * updates the object every time the game loops
+	 */
 	public void tick() {
 
 		if (!targeted) {
@@ -83,6 +95,9 @@ public abstract class MonkeyTower implements Entity {
 		draw();
 	}
 
+	/**
+	 * draws the object on the screen with the texture and the other attributes
+	 */
 	public void draw() {
 
 //		if (textures.length > 1) {
@@ -99,12 +114,19 @@ public abstract class MonkeyTower implements Entity {
 //		
 	}
 
+	/**
+	 * Finds the distance between the target balloon and a float representing the
+	 * distance is returned
+	 */
 	private float findDistance(Balloon balloons) {
 		float xDistance = Math.abs(balloons.getX() - x);
 		float yDistance = Math.abs(balloons.getY() - y);
 		return xDistance + yDistance;
 	}
 
+	/**
+	 * Discovers the new target in range post a balloon is returned that is accuired
+	 */
 	public Balloon acquireTarget() {
 
 		Balloon closest = null;
@@ -130,7 +152,10 @@ public abstract class MonkeyTower implements Entity {
 			dart = DartType.Lazer;
 		}
 	}
-	
+
+	/**
+	 * if the the target is in range true is returned other wise false
+	 */
 	private boolean isInRange(Balloon balloon) {
 		float xDistance = Math.abs(balloon.getX() - x);
 		float yDistance = Math.abs(balloon.getY() - y);
@@ -141,22 +166,37 @@ public abstract class MonkeyTower implements Entity {
 		return false;
 	}
 
+	/**
+	 *  
+	 */
 	public abstract void shoot(Balloon target);
 
+	/**
+	 * re updates the target list pre none post the copyonwritearraylist is re
+	 * assigned
+	 */
 	public void reUpdateTargetList(CopyOnWriteArrayList<Balloon> newList) {
 		balloons = newList;
 	}
 
+	/**
+	 * Returns a float representing the angle
+	 */
 	private float calculateAngle() {
 
-		double angleTemp = Math.atan2(Target.getY() - y, Target.getX() - x); // I needed to use wikipedia to get this i
-																				// did not learn this in math and needed
-																				// to use a couplle youtube tutorials to
-																				// find out how to do the math in java
-																				// aswell thank fully one had the exact
-																				// way of doing this
+		double angleTemp = Math.atan2(Target.getY() - y, Target.getX() - x);
+		// I needed to use wikipedia to get this i
+		// did not learn this in math and needed
+		// to use a couplle youtube tutorials to
+		// find out how to do the math in java
+		// aswell thank fully one had the exact
+		// way of doing this
 		return (float) Math.toDegrees(angleTemp) + 90;
 	}
+
+	/**
+	 * Generated Getters and Setters
+	 */
 
 	public float getX() {
 		return x;

@@ -17,6 +17,9 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+/**
+ * This class loads settings from a External XML data sheet
+ */
 public class LoadSettings {
 
 	private static final String SETTINGS_FILE_NAME = "src/xml/settings.xml";
@@ -37,6 +40,9 @@ public class LoadSettings {
 	// settings = new ArrayList<Element>();
 	// }
 
+	/**
+	 * Initialy loads the setting file from the file system
+	 */
 	public static void LoadFileXML() {
 
 		try {
@@ -65,6 +71,9 @@ public class LoadSettings {
 		}
 	}
 
+	/**
+	 * Loads all tag elements from data sheet that match the tag name Texture Path
+	 */
 	public static void LoadTexturePathElementsIntoArray() {
 		// Get all nodes for the settings
 		// Node main = document.getElementById("main");
@@ -84,6 +93,10 @@ public class LoadSettings {
 		isTexturePathsDone = true;
 	}
 
+	/**
+	 * Laods all the sprites in to the sprites array using all the external data
+	 * sheets
+	 */
 	public static void LoadSpritesIntoArray() {
 		// Get all nodes for the settings
 		// Node main = document.getElementById("main");
@@ -109,21 +122,23 @@ public class LoadSettings {
 		endOfList = sprites.size();
 		sprites.addAll(endOfList, ImageTools.LoadAllSpriteTexturesFromSpriteSheet("In_Game_Custom"));
 		System.out.println(endOfList);
-		
-		for (Element el : texturePathElements){
-			
+
+		for (Element el : texturePathElements) {
+
 			try {
 				sprites.add(new Sprite(el.getAttribute("name"), el.getAttribute("path")));
-			} catch (Exception e){
+			} catch (Exception e) {
 				e.printStackTrace();
 			}
-			
-			
+
 		}
-		
+
 		isTexturesDone = true;
 	}
 
+	/**
+	 * Loads tower elements into the array
+	 */
 	public static void LoadTowerElementsIntoArray() {
 		NodeList towers = document.getElementsByTagName("Tower");
 
@@ -136,6 +151,9 @@ public class LoadSettings {
 		}
 	}
 
+	/**
+	 * Loads game settings into the array
+	 */
 	public static void LoadSettingsIntoArray() {
 		// Node gameSettings = document.getElementById("GameSettings");
 		NodeList settingsNodeList = document.getElementsByTagName("Setting");
@@ -149,6 +167,12 @@ public class LoadSettings {
 		}
 	}
 
+	/**
+	 * Gets the game setting corresponding to settingAttName
+	 * 
+	 * @param settingAttName
+	 * @return Element
+	 */
 	public static Element getGameSetting(String settingAttName) {
 		Element settingElement = null;
 		for (Element sett : settings) {
@@ -159,6 +183,12 @@ public class LoadSettings {
 		return settingElement;
 	}
 
+	/**
+	 * gets the towers info correseponding to towerTagName
+	 * 
+	 * @param towerTagName
+	 * @return Element
+	 */
 	public static Element getTowerInfo(String towerTagName) {
 		Element settingElement = null;
 		for (Element tower : settings) {
@@ -169,6 +199,12 @@ public class LoadSettings {
 		return settingElement;
 	}
 
+	/**
+	 * gets the texture element using textureName
+	 * 
+	 * @param textureName
+	 * @return Element
+	 */
 	public static Element getTextureElement(String textureName) {
 		Element textureElement = null;
 		for (Element tex : settings) {
@@ -179,6 +215,12 @@ public class LoadSettings {
 		return textureElement;
 	}
 
+	/**
+	 * gets a sprite sheet element by the name
+	 * 
+	 * @param name
+	 * @return Element
+	 */
 	public static Element getSpriteSheet(String name) {
 		Element spritesheet = null;
 		NodeList nlist = document.getElementsByTagName("ExternalSpriteSheet");
@@ -197,6 +239,12 @@ public class LoadSettings {
 		return spritesheet;
 	}
 
+	/**
+	 * gets the sprite sheet parsed and returns all the nodes in a list
+	 * 
+	 * @param path
+	 * @return NodeList
+	 */
 	public static NodeList getSpriteSheetParsed(String path) {
 		NodeList nlist = null;
 		Document doc = null;
@@ -216,6 +264,13 @@ public class LoadSettings {
 		return nlist;
 	}
 
+	/**
+	 * Gets a sprite sheet from a external path from the initial data sheet
+	 * 
+	 * @param path
+	 * @param name
+	 * @return Element
+	 */
 	public static Element getSpriteFromExternalXML(String path, String name) {
 		Element e = null;
 		Document doc = null;
@@ -246,6 +301,13 @@ public class LoadSettings {
 
 	}
 
+	/**
+	 * Gets all the sprite declarations from an external sprite sheet that is
+	 * predefined in the initial data sheet
+	 * 
+	 * @param path
+	 * @return NodeList
+	 */
 	public static NodeList getSpritesFromExternalXML(String path) {
 		NodeList nList = null;
 		Document doc = null;
@@ -276,18 +338,30 @@ public class LoadSettings {
 
 	}
 
+	/**
+	 * @return
+	 */
 	public static ArrayList<Element> getTexturePathElements() {
 		return texturePathElements;
 	}
 
+	/**
+	 * @return
+	 */
 	public static ArrayList<Element> getTowerElements() {
 		return towerElements;
 	}
 
+	/**
+	 * @return
+	 */
 	public static ArrayList<Element> getSettings() {
 		return settings;
 	}
 
+	/**
+	 * @return
+	 */
 	public static boolean isTexturesDone() {
 		return isTexturesDone;
 	}
@@ -304,6 +378,9 @@ public class LoadSettings {
 		return isDone;
 	}
 
+	/**
+	 * @return
+	 */
 	public static boolean isFileLoaded() {
 		return isFileLoaded;
 	}

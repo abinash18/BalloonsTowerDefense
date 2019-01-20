@@ -15,6 +15,9 @@ import userInterface.Slider;
 import userInterface.UserInterface;
 import userInterface.UserInterface.Menu;
 
+/**
+ * Test class 
+ */
 public class TestScreen {
 
 	private UserInterface UI;
@@ -35,7 +38,7 @@ public class TestScreen {
 
 		// LoadSettings.LoadFileXML();
 		grid = LevelToolKit.LoadMap("dfg");
-		sprite = getTexture("dart_monkey_dart");
+		sprite = getTexture("grass");
 		spriteBg = ImageTools.LoadSpriteTextureFromSpriteSheet("red_tint", "In_Game_Custom");
 	}
 
@@ -50,8 +53,7 @@ public class TestScreen {
 
 	private void draw() {
 		DrawQuadWithTexture(spriteBg, 0, 0, DrawInFrame.WIDTH, DrawInFrame.HEIGHT);
-		DrawQuadWithTextureReflected(sprite, HEIGHT / 2, WIDTH / 2, sprite.getImageWidth(), sprite.getImageHeight(),
-				true);
+		DrawQuadWithTexture(sprite, HEIGHT / 2, WIDTH / 2, sprite.getImageWidth(), sprite.getImageHeight());
 
 //		DrawQuadWithTexture(bg, 0, 0, WIDTH, HEIGHT);
 //		UI.drawString(0, 0, "Value: " + testSlider.getPointerValue());

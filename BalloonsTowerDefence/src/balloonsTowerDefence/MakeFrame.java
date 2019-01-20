@@ -11,16 +11,19 @@ import org.lwjgl.opengl.Display;
 import other.StateManager;
 import other.Timer;
 
+/**
+ * Creates the game frame and initializes graphics
+ */
 public class MakeFrame {
-	
+
 	private static int fps = 200;
-	
+
 	/**
 	 * Constructor pre: none post: The main game loop updates every thing in it
 	 * every frame
 	 */
-	public MakeFrame() {	
-		
+	public MakeFrame() {
+
 		// initializes Graphics rendering
 		InitializeGL();
 		// A grid is defined
@@ -35,10 +38,11 @@ public class MakeFrame {
 		}
 
 	}
-	
+
 	public static int getFps() {
 		return fps;
 	}
+
 	public static void setFps(int fps) {
 		MakeFrame.fps = fps;
 	}

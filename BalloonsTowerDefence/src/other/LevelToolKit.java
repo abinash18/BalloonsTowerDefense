@@ -20,6 +20,10 @@ import balloonsTowerDefence.FloorType;
  */
 public class LevelToolKit {
 
+	/**
+	 * Saves the map to a file with the map name and uses the floorgrid to apply the
+	 * matrix
+	 */
 	public static void saveMap(String mapName, FloorGrid grid) {
 		String map = "";
 
@@ -38,6 +42,9 @@ public class LevelToolKit {
 		}
 	}
 
+	/**
+	 * Loads a map from the map file specified 
+	 */
 	public static FloorGrid LoadMap(String mapName) {
 
 		FloorGrid grid = new FloorGrid();
@@ -69,6 +76,9 @@ public class LevelToolKit {
 
 	}
 
+	/**
+	 * Returns a floor type corresponding to the string ID  
+	 */
 	public static FloorType getFloorType(String ID) {
 
 		FloorType type = FloorType.Null;
@@ -91,6 +101,9 @@ public class LevelToolKit {
 
 	}
 
+	/**
+	 * Returns a string representing the Floor Type 
+	 */
 	public static String getFloorID(Floor f) {
 
 		String ID = "E";

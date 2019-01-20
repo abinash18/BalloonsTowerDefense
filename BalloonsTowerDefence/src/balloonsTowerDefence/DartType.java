@@ -1,10 +1,20 @@
+/**
+ * Abinash Singh
+ * Balloons Tower Defense Dart Types
+ */
 package balloonsTowerDefence;
 
-import org.newdawn.slick.opengl.Texture;
-import static other.DrawInFrame.*;
+import static other.DrawInFrame.LoadTexture;
+import static other.DrawInFrame.getTexture;
 
+import org.newdawn.slick.opengl.Texture;
+
+/**
+ * This class contains default values for all dart types
+ */
 public enum DartType {
-	NormalDart(getTexture("dart_monkey_dart"), 3, 1200, 0), NinjaStar(LoadTexture("ninjaMonkey_starNormal"), 3, 1200, 2),
+	NormalDart(getTexture("dart_monkey_dart"), 3, 1200, 0),
+	NinjaStar(LoadTexture("ninjaMonkey_starNormal"), 3, 1200, 2),
 	Lazer(getTexture("supermonkey_laser_vision_projectile"), 10, 1200, 0);
 
 	Texture texture;

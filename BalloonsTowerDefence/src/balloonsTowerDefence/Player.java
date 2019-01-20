@@ -22,8 +22,13 @@ public class Player {
 	private ArrayList<MonkeyTower> ListOfMonkeyTowers;
 	private boolean MouseDownLeft, MouseDownRight, holdingTower;
 	private FloorType[] typesOfFloors;
+	// temoporary tower if the player has chosen to place one
 	private MonkeyTower temporaryTower;
 
+	/**
+	 * constructor Creates a player object with the floor grid (map) and the round
+	 * manager to update
+	 */
 	public Player(FloorGrid grid, RoundManager roundManager) {
 		this.grid = grid;
 		this.typesOfFloors = new FloorType[3];
@@ -44,6 +49,10 @@ public class Player {
 		LivesLeft = 0;
 	}
 
+	/**
+	 * Updates the player object and at the same time checking if the player has
+	 * chosen a tower to place or has started the round or not
+	 */
 	public void tick() {
 
 		if (holdingTower) {
@@ -115,10 +124,17 @@ public class Player {
 
 	}
 
+	/**
+	 * Returns the floor object on the mouse position
+	 */
 	private Floor getFloorUnderMouse() {
 		return grid.getFloor(Mouse.getX() / GRID_SQUARE_SIZE, (HEIGHT - Mouse.getY() - 1) / GRID_SQUARE_SIZE);
 	}
 
+	/**
+	 * Places the tower under the players mouse position by using the temporary
+	 * tower variabele
+	 */
 	private void placeTower() {
 		Floor currentTile = getFloorUnderMouse();
 		if (holdingTower) {
@@ -138,11 +154,18 @@ public class Player {
 		}
 	}
 
+	/**
+	 * initializes the player money and life count
+	 */
 	public void initialize() {
 		Money = 99999;
 		LivesLeft = 100;
 	}
 
+	/**
+	 * Returns the tower under the mouse by looping through the list of towers and
+	 * find the tower matching the x and y position of the floor under the mouse
+	 */
 	public MonkeyTower getTowerUnderMouse() {
 		float mouseY = HEIGHT - Mouse.getY() - 1;
 
@@ -155,6 +178,10 @@ public class Player {
 		return null;
 	}
 
+	/**
+	 * Picks the tower for the player to place and to draw it where the mouse isand
+	 * sets the holding tower to true and the temporary tower to the tower selected
+	 */
 	public void pickTower(MonkeyTower t) {
 		System.out.println("Tower: " + t);
 		temporaryTower = t;
@@ -165,6 +192,11 @@ public class Player {
 		}
 	}
 
+	/**
+	 * Static method changes the amount of money the player has if the money can be
+	 * infact altered with out causeing it to go int to the negatives then it is
+	 * aletered and true is returned other wise false
+	 */
 	public static boolean changeMoneyAmount(int amount) {
 		if (Money + amount >= 0) { // checks the amount if it is greater o r
 									// equal to 0 then adds it
@@ -176,11 +208,18 @@ public class Player {
 						// placed
 	}
 
+	/**
+	 * Static method changes the amount of lives the player has
+	 */
 	public static void changeLifeAmount(int amount) {
 		LivesLeft += amount; // This need no check if the the lives are less
 								// than 0 or 0
 		// than it ends the game in the next frame or tick
 	}
+
+	/**
+	 * Generated Getters And Setters
+	 */
 
 	public static int getMoney() {
 		return Money;

@@ -1,3 +1,7 @@
+/**
+ * Abinash Singh 
+ * Balloons Tower Defense Splash Screen Loading 
+ */
 package balloonsTowerDefence;
 
 import static other.DrawInFrame.DrawQuadWithTexture;
@@ -23,7 +27,7 @@ public class SplashScreenLoading {
 	private double barProgress, barWidth;
 	private long elaspedtime;
 	private UserInterface UI;
-	private Label progress;
+	private Label progress, credits;
 	private ProgressBar prgLoading;
 	private LoadSettings settings;
 	private boolean isDone = false, isTexturePathLoadedcalled = false, isFileLoadedcalled = false,
@@ -31,6 +35,9 @@ public class SplashScreenLoading {
 	public static String barText;
 	// private Thread taskThread;
 
+	/**
+	 * constructor Creates a
+	 */
 	public SplashScreenLoading() {
 		this.tasks = 4;
 		this.elaspedtime = 0;
@@ -44,7 +51,10 @@ public class SplashScreenLoading {
 		this.UI = new UserInterface();
 
 		UI.addLabel("prog", "oztype", 25, "", 50, HEIGHT - HEIGHT / 8 - 30, false);
+		UI.addLabel("cred", "oztype", 45, "Created by Abinash Singh and A lot of Youtube tutorials", 50,
+				HEIGHT - HEIGHT / 2 - 30, false);
 		progress = UI.getLabel("prog");
+		credits = UI.getLabel("cred");
 		// UI.addProgressBar("prgLoading", barTex, barBorder, loadingBg, 50, HEIGHT -
 		// HEIGHT / 8 + 4, barProgress * 90, 16);
 
@@ -60,6 +70,10 @@ public class SplashScreenLoading {
 
 	}
 
+	/**
+	 * Updates the loading screen and the progress bar and checks for the tasks to
+	 * be completed
+	 */
 	public void tick() {
 		// UI.drawOnScreen();
 		// loadingTime += Delta() * 100;
@@ -140,12 +154,19 @@ public class SplashScreenLoading {
 
 	}
 
+	/**
+	 * Updates the UI 
+	 */
 	private void tickUI() {
 		// UI.drawString(50, 50, "progress: " + barProgress);
 		progress.setText(barText);
+		credits.tick();
 		UI.drawOnScreen();
 	}
 
+	/**
+	 * Draws the screen 
+	 */
 	private void draw() {
 
 		DrawQuadWithTexture(loadingBg, 0, 0, WIDTH, HEIGHT);

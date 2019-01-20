@@ -85,6 +85,10 @@ public abstract class Dart implements Entity {
 
 	}
 
+	/**
+	 * returns a float that represents an angle pre: none post: a float is returned
+	 * that represents a angle
+	 */
 	private float calculateAngle() {
 		// Ineededtusewikipedia to get this i
 		// did not learn this in math and needed
@@ -108,6 +112,9 @@ public abstract class Dart implements Entity {
 		// }
 	}
 
+	/**
+	 * Called every time the game loops to update the dart objects atributes
+	 */
 	public void tick() {
 
 		// ensures that if the dart hasnt hit the target and leaves the frame it is not
@@ -132,10 +139,17 @@ public abstract class Dart implements Entity {
 
 	}
 
+	/**
+	 * Draws the object represented by the texture and other attributes 
+	 */
 	public void draw() {
 		DrawQuadWithTexture(texture, x, y, width, height);
 	}
 
+	/**
+	 * Generated Getters and Setters 
+	 */
+	
 	public Texture getTexture() {
 		return texture;
 	}

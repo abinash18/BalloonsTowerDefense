@@ -35,6 +35,10 @@ public class ImageTools {
 
 	// private static BufferedImage spriteSheet;
 
+	/**
+	 * Loads an induvidual texture from a sprite sheet specified
+	 * post: a texture is returned 
+	 */
 	public static Texture LoadSpriteTextureFromSpriteSheet(String spriteName, String spriteSheetName) {
 		BufferedImage spriteSheet = null, subImage;
 		String spriteSheetPath, spriteSheetPathFile;
@@ -65,6 +69,10 @@ public class ImageTools {
 
 	}
 
+	/**
+	 * Loads all sprites from a specified sprite sheet using the xml data sheet
+	 * post: a texture corresponding to the name specified is returned
+	 */
 	public static ArrayList<Sprite> LoadAllSpriteTexturesFromSpriteSheet(String spriteSheetName) {
 		BufferedImage spriteSheet = null, subImage;
 		String spriteSheetPath, spriteSheetPathFile;
@@ -120,6 +128,9 @@ public class ImageTools {
 
 	}
 
+	/**
+	 * Open gl texture laoding 
+	 */
 	public static int glLoadTextureLinear(String location) {
 
 		int texture = glGenTextures();

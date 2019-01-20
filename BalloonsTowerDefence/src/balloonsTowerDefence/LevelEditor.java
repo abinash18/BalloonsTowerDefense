@@ -1,3 +1,7 @@
+/**
+ * Abinash Singh
+ * Balloons Tower Defense Level Editor 
+ */
 package balloonsTowerDefence;
 
 import static other.DrawInFrame.DrawQuadWithTexture;
@@ -14,6 +18,9 @@ import org.newdawn.slick.opengl.Texture;
 import userInterface.UserInterface;
 import userInterface.UserInterface.Menu;
 
+/**
+ * The level editor screen
+ */
 public class LevelEditor {
 
 	private FloorGrid grid;
@@ -23,6 +30,9 @@ public class LevelEditor {
 	private Menu pickTileMenu;
 	private Texture menuBg;
 
+	/**
+	 * constructor Loads the saved map file and displays it for editing
+	 */
 	public LevelEditor() {
 		this.grid = LoadMap("dfg");
 		this.index = 0;
@@ -31,22 +41,29 @@ public class LevelEditor {
 		this.types[1] = FloorType.Path;
 		this.types[2] = FloorType.Water;
 		this.menuBg = LoadTexture("inGame_TowerPickerMenu");
-		
+
 		setUpUI();
-		
+
 	}
 
+	/**
+	 * Initializes all the buttons and menus in the game
+	 */
 	private void setUpUI() {
 		editorUserInterFace = new UserInterface();
 		editorUserInterFace.createMenu("PickTileMenu", 1280, 0, 192, 960, 2, 0);
-		
+
 		pickTileMenu = editorUserInterFace.getMenu("PickTileMenu");
 		pickTileMenu.addMenuButton("Grass", "grass");
 		pickTileMenu.addMenuButton("Path", "path");
 		pickTileMenu.addMenuButton("Water", "water");
 		pickTileMenu.setOpen(true);
 	}
-	
+
+	/**
+	 * Updates the screen and draws the objects as well as checking for updates in
+	 * the grid and checkinf for clicked buttons
+	 */
 	public void tick() {
 		draw();
 
@@ -62,10 +79,10 @@ public class LevelEditor {
 					index = 2;
 				} else {
 					if (((int) Math.floor(Mouse.getX() / GRID_SQUARE_SIZE) < grid.getSquaresWide())) {
-						setFloor();	
-					}					
+						setFloor();
+					}
 				}
-			} 
+			}
 		}
 
 		// Handle keyboard input
@@ -84,12 +101,15 @@ public class LevelEditor {
 
 	}
 
+	/**
+	 * Draws the screen
+	 */
 	private void draw() {
 		DrawQuadWithTexture(menuBg, 1280, 0, 252, 1025);
 		editorUserInterFace.drawOnScreen();
 		grid.drawGridOnScreen();
 	}
-	
+
 	private void moveIndex() {
 		index++;
 		if (index > types.length - 1) {
@@ -97,6 +117,9 @@ public class LevelEditor {
 		}
 	}
 
+	/**
+	 * Sets the floor to which the user clicked on
+	 */
 	public void setFloor() {
 		grid.setFloor((int) Math.floor(Mouse.getX() / GRID_SQUARE_SIZE),
 				(int) Math.floor((HEIGHT - Mouse.getY() - 1) / GRID_SQUARE_SIZE), types[index]);

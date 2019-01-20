@@ -1,3 +1,7 @@
+/**
+ * Abinash Singh 
+ * Balloons Tower Defense Round 
+ */
 package balloonsTowerDefence;
 
 import static other.DrawInFrame.GRID_SQUARE_SIZE;
@@ -5,6 +9,9 @@ import static other.Timer.Delta;
 
 import java.util.concurrent.CopyOnWriteArrayList;
 
+/**
+ * Controls the balloons in the current round
+ */
 public class Round {
 
 	private float timeSinceLastSpawn, spawnTime;
@@ -14,11 +21,15 @@ public class Round {
 	private float speedForBalloon;
 	private boolean roundCompleted;
 
+	/**
+	 * constructor Creates a round object that loops for as long as all balloons
+	 * have been popped
+	 */
 	public Round(Balloon[] balloonTypes, float spawnTime, int balloonsPerWave) {
 		this.balloonTypes = balloonTypes;
 		this.spawnTime = spawnTime;
 		this.balloonsPerWave = balloonsPerWave;
-		//this.speedForBalloon = balloonTypes.getSpeed();
+		// this.speedForBalloon = balloonTypes.getSpeed();
 		this.balloonsList = new CopyOnWriteArrayList<Balloon>();
 		this.balloonsSpawned = 0;
 		this.timeSinceLastSpawn = 0;
@@ -26,6 +37,9 @@ public class Round {
 		spawn();
 	}
 
+	/**
+	 * Updates the game every time it loops
+	 */
 	public void tick() {
 		boolean allBalloonsPopped = true; // set by default to true every time it is called
 		if (balloonsSpawned < balloonsPerWave) {
@@ -38,7 +52,7 @@ public class Round {
 		for (Balloon balloon : balloonsList) {
 			if (balloon.isAlive()) {
 				allBalloonsPopped = false; // even if one enemy is alive then is set to false and if none are alivve it
-										// stays true
+											// stays true
 				balloon.tick();
 				balloon.draw();
 			} else {
@@ -52,18 +66,26 @@ public class Round {
 		}
 	}
 
+	/**
+	 * Spawns a new balloon object and stores it in an array to update
+	 */
 	private void spawn() {
-		
+
 		int randomBalloonIndex;
-		
-		randomBalloonIndex = (int)(Game.MAX_BALLOON_TYPES * Math.random() + 0);
-		
+
+		randomBalloonIndex = (int) (Game.MAX_BALLOON_TYPES * Math.random() + 0);
+
 		// Apocalypse mode setting just for testing
-		balloonsList
-				.add(new Balloon(balloonTypes[randomBalloonIndex].getInstanceTexture(), balloonTypes[randomBalloonIndex].getStartTile(), balloonTypes[1].getGrid(),
-						GRID_SQUARE_SIZE, GRID_SQUARE_SIZE, balloonTypes[randomBalloonIndex].getSpeed(), balloonTypes[randomBalloonIndex].getHealth()));
+		balloonsList.add(new Balloon(balloonTypes[randomBalloonIndex].getInstanceTexture(),
+				balloonTypes[randomBalloonIndex].getStartTile(), balloonTypes[1].getGrid(), GRID_SQUARE_SIZE,
+				GRID_SQUARE_SIZE, balloonTypes[randomBalloonIndex].getSpeed(),
+				balloonTypes[randomBalloonIndex].getHealth()));
 		balloonsSpawned++;
 	}
+
+	/**
+	 * Generated Getters and Setters
+	 */
 
 	public float getTimeSinceLastSpawn() {
 		return timeSinceLastSpawn;
