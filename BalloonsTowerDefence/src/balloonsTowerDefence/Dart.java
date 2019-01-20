@@ -116,7 +116,7 @@ public abstract class Dart implements Entity {
 		if (alive) {
 			if (x < 0 || x > WIDTH || y < 0 || y > HEIGHT) {
 				alive = false;
-				System.out.println("ads");
+				// System.out.println("ads");
 			}
 			// findDirection();
 			x += xVelocity * Delta() * speed;
