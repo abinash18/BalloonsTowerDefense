@@ -4,8 +4,8 @@ import static other.DrawInFrame.*;
 
 public class DartLazer extends Dart {
 
-	public DartLazer(DartType dartType, Balloon target, float x, float y, int width, int height) {
-		super(dartType, target, x, y, width, height);
+	public DartLazer(DartType dartType, Balloon target, float x, float y) {
+		super(dartType, target, x, y);
 	}
 
 	private float calculateAngle() {

@@ -2,8 +2,8 @@ package balloonsTowerDefence;
 
 public class DartNinjaStar extends Dart {
 
-	public DartNinjaStar(DartType dartType, Balloon target, float x, float y, int width, int height) {
-		super(dartType, target, x, y, width, height);
+	public DartNinjaStar(DartType dartType, Balloon target, float x, float y) {
+		super(dartType, target, x, y);
 	}
 
 //	@Override

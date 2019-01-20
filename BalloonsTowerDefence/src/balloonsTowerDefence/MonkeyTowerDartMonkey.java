@@ -11,6 +11,6 @@ public class MonkeyTowerDartMonkey extends MonkeyTower {
 	@Override
 	public void shoot(Balloon target) {
 		super.darts
-				.add(new DartNormal(super.type.dartType, super.Target, super.getX(), super.getY(), 32, 32));
+				.add(new DartNormal(super.type.dartType, super.Target, super.getX(), super.getY()));
 	}
 }
