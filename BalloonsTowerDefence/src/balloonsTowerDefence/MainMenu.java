@@ -60,7 +60,7 @@ public class MainMenu {
 			boolean mouseClicked = Mouse.isButtonDown(0);
 			if (mouseClicked) {
 				if (menuUI.isButtonClicked("play")) {
-					StateManager.setState(GameState.GAME);
+					StateManager.setState(GameState.MAP_SELECT_SCREEN);
 				}
 				if (menuUI.isButtonClicked("LevelEdit")) {
 					StateManager.setState(GameState.LEVEL_EDITOR);

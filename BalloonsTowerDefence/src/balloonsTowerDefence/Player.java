@@ -46,8 +46,8 @@ public class Player {
 		// have
 		// lives and cash at the
 		// start but the game hasnt started so we need to put these at 0
-		Money = 0;
-		LivesLeft = 0;
+		Money = 200;
+		LivesLeft = 100;
 	}
 
 	/**

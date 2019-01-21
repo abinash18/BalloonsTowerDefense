@@ -52,6 +52,7 @@ public class Game {
 	public static final int MAX_BALLOON_TYPES = 2;
 	// if the upgrade menu is open or not
 	public boolean upgradeMenuOpen;
+	public int gamemode;
 
 	/**
 	 * constructor Creates a game object with the specified mapMatrix
@@ -69,9 +70,11 @@ public class Game {
 	}
 
 	/**
-	 * constructor Creates a game object with a predefined and calculated floor grid
+	 * constructor Creates a game object with a predefined and calculated floor
+	 * grid
 	 */
-	public Game(FloorGrid grid) {
+	public Game(FloorGrid grid, int gm) {
+
 		this.grid = grid;
 		this.menuBg = LoadTexture("inGame_TowerPickerMenu");
 		this.balloonsInGame = new Balloon[MAX_BALLOON_TYPES];
@@ -81,13 +84,21 @@ public class Game {
 		this.player = new Player(grid, roundManager);
 		this.player.initialize();
 		this.upgradeMenuOpen = false;
+		gamemode = gm;
+		if (gm == 2) {
+			roundManager.setTimeBetweenRounds(0);
+			player.setMoney(2000);
+		}
+
+		
+		
 		InitializeUserInterFace();
 	}
 
 	/**
-	 * Initializes the user interface objects on the screen pre: none post: a user
-	 * interface is initialized and labels buttons and menus are initialized to
-	 * default values and are set to objects representing them
+	 * Initializes the user interface objects on the screen pre: none post: a
+	 * user interface is initialized and labels buttons and menus are
+	 * initialized to default values and are set to objects representing them
 	 */
 	private void InitializeUserInterFace() {
 		gameUserInterface = new UserInterface();
@@ -135,8 +146,8 @@ public class Game {
 	}
 
 	/**
-	 * sets the upgrade menu open or closed depending on what the current state of
-	 * it is
+	 * sets the upgrade menu open or closed depending on what the current state
+	 * of it is
 	 */
 	public void setOpenUpgradeMenu(boolean o) {
 		upgradeMenu.setOpen(o);
@@ -165,8 +176,8 @@ public class Game {
 	}
 
 	/**
-	 * Updates the game ui and labels and buttons that are not in a menu aswell as
-	 * menus
+	 * Updates the game ui and labels and buttons that are not in a menu aswell
+	 * as menus
 	 */
 	private void tickUI() {
 		DrawQuadWithTexture(menuBg, 1280, 0, 255, 1025);
@@ -181,11 +192,11 @@ public class Game {
 		gameUserInterface.drawOnScreen();
 
 		// handles game end
-		if (player.LivesLeft <= 0) {
+		if (Player.LivesLeft <= 0) {
 			Informal.message("Sorry You Loose!");
-			StateManager.setState(GameState.MAINMENU);
+			// StateManager.setState(GameState.MAINMENU);
 		}
-		
+
 		// Handles Mouse input
 		MonkeyTower mt = null;
 		if (Mouse.next()) {
@@ -205,7 +216,7 @@ public class Game {
 
 					if (upgradeMenu.isButtonClicked("Upgrade")) {
 						System.out.println(mt);
-					//	mt.upgrade();
+						// mt.upgrade();
 					}
 
 				}
@@ -226,8 +237,10 @@ public class Game {
 					} else {
 						player.pickTower(new MonkeyTowerIceMonkey(grid.getFloor(0, 0), null));
 					}
-//					player.pickTower(new MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey, grid.getFloor(0, 0),
-//							roundManager.getCurrentRound().getBalloonsList()));
+					// player.pickTower(new
+					// MonkeyTowerIceMonkey(MonkeyTowerType.DartMonkey,
+					// grid.getFloor(0, 0),
+					// roundManager.getCurrentRound().getBalloonsList()));
 				}
 				if (pickTowerMenu.isButtonClicked("NinjaMonkey")) {
 					if (roundManager.getCurrentRound() != null) {
@@ -250,6 +263,7 @@ public class Game {
 				}
 
 				// Buttons for play puase and fast forward
+				// if (gm == 1) {
 				if (playPauseMenu.isButtonClicked("Play")) {
 					// if (Timer.isGamePaused()) {
 					if (roundManager.getCurrentRound() == null || roundManager.getCurrentRound().isRoundCompleted()) {
@@ -260,6 +274,7 @@ public class Game {
 
 					// }
 				}
+				// }
 
 			}
 		}

@@ -23,7 +23,7 @@
 			<TexturePath name="black" path="black" />
 			<TexturePath name="black-translucent" path="black-translucent" />
 			<TexturePath name="NinjaMonkey" path="NinjaMonkey" />
-			<TexturePath name="NinjaMonkey_ninjaStar_Normal" path="NinjaMonkey_starNormal" />
+			<!--  <TexturePath name="NinjaMonkey_ninjaStar_Normal" path="NinjaMonkey_starNormal" /> -->
 		</Textures>
 		<GameSettings>
 			<Setting fps="20" />
@@ -31,6 +31,13 @@
 		<Maps>
 			<Map name="dfg" path="dfg.txt" />
 			<Map name="dfg2" path="dfg2.txt" />
+			<Map name="asdasda" path="asdasda.txt" />
+			<Map name="map3" path="map3.txt" />
+			<Map name="broccoli" path="broccoli.txt" />
+			<Map name="mindBender" path="mindBender.txt" />
+			<Map name="broccoli" path="broccoli.txt" />
+			<Map name="null" path="null.txt" />
+			<Map name="water" path="water.txt" />
 		</Maps>
 		<Towers>
 			<Tower name="DartMonkey" TextureName="DartMonkey" />

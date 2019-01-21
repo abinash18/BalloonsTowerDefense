@@ -85,7 +85,7 @@ public class SplashScreenLoading {
 		// loadingTime = 0;
 		System.out.println(elaspedtime);
 		if (tasksCompleted == tasks && elaspedtime >= loadingTime) {
-			StateManager.setState(GameState.MAP_SELECT_SCREEN);
+			StateManager.setState(GameState.MAINMENU);
 		} else {
 
 			barProgress = (float) (tasksCompleted * barWidth) / tasks;

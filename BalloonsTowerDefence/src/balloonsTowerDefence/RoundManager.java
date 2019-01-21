@@ -16,8 +16,8 @@ public class RoundManager {
 	private Round currentRound;
 
 	/**
-	 * constructor Creates a round manager object with the types of balloons that
-	 * can be in the round and the initial balloon amount and spawn time
+	 * constructor Creates a round manager object with the types of balloons
+	 * that can be in the round and the initial balloon amount and spawn time
 	 */
 	public RoundManager(Balloon[] balloonTypes, int balloonsPerRound, float spawnTime) {
 		this.balloonTypes = balloonTypes;
@@ -44,10 +44,17 @@ public class RoundManager {
 	 * Updates the current round every time the game loops
 	 */
 	public void tick() {
+		if (currentRound != null) {
+
+		}
 
 		// if (!currentRound.isRoundCompleted()) {
 		if (currentRound != null) {
-			currentRound.tick();
+			if (currentRound.isRoundCompleted() && timeBetweenRounds <= 0) {
+				newRound();
+			} else {
+				currentRound.tick();
+			}
 		}
 		// else {
 		// newRound(); // Right when the last wave ends the new wave is created

@@ -47,7 +47,7 @@ public class StateManager {
 	// Variables for fps figuring out
 	public static long nextSecond = System.currentTimeMillis() + 1000;
 	public static int framesInLastSecond = 0;
-	public static int framesInCurrentSecond = 0;
+	public static int framesInCurrentSecond = 0, gm = 1;
 
 	/**
 	 * Executes every time the game ticks
@@ -68,7 +68,7 @@ public class StateManager {
 			// If there is not already a game instance that exists
 			if (game == null) {
 				// Create a new game Instance
-				game = new Game(map);
+				game = new Game(map, gm);
 			}
 			// Every time the state manager ticks it also ticks the current game state
 			game.tick();
@@ -131,4 +131,13 @@ public class StateManager {
 	public static void setState(GameState state) {
 		gameState = state;
 	}
+	
+	public static void changeMap(FloorGrid newMap){
+		map = newMap;
+	}
+	
+	public static void setGameMode(int gamemode){
+		gm = gamemode;
+	}
+	
 }
