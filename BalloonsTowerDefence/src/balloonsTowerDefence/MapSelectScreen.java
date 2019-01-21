@@ -34,7 +34,7 @@ public class MapSelectScreen {
 	private void draw() {
 		DrawQuadWithTexture(bg, 0, 0, WIDTH, HEIGHT);
 		//for (int i = 0; i < grid.length; i++) {
-			grid[0].drawGridOnScreenMapPreview(25, 0, 0);
+			grid[1].drawGridOnScreenMapPreview(25, 0, 0);
 		//}
 		UI.drawOnScreen();
 		
