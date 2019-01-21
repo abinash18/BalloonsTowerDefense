@@ -60,7 +60,7 @@ public class LoadSettings {
 			// LoadTexturePathElementsIntoArray();
 			// LoadSettingsIntoArray();
 			// LoadTowerElementsIntoArray();
-
+			LoadMapElementsIntoArray();
 			// the root node
 			// Element root = document.getDocumentElement();
 			// System.out.println(root.getNodeName());
