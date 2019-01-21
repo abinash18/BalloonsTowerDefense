@@ -13,6 +13,10 @@ import static other.Timer.Delta;
 
 import org.newdawn.slick.opengl.Texture;
 
+/**
+ * This class is the super class to all dart objects it contains neccesary
+ * methods for all darts to function
+ */
 public abstract class Dart implements Entity {
 
 	// Texture for the dart
@@ -140,16 +144,16 @@ public abstract class Dart implements Entity {
 	}
 
 	/**
-	 * Draws the object represented by the texture and other attributes 
+	 * Draws the object represented by the texture and other attributes
 	 */
 	public void draw() {
 		DrawQuadWithTexture(texture, x, y, width, height);
 	}
 
 	/**
-	 * Generated Getters and Setters 
+	 * Generated Getters and Setters
 	 */
-	
+
 	public Texture getTexture() {
 		return texture;
 	}

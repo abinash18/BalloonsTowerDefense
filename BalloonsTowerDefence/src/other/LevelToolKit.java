@@ -43,7 +43,7 @@ public class LevelToolKit {
 	}
 
 	/**
-	 * Loads a map from the map file specified 
+	 * Loads a map from the map file specified
 	 */
 	public static FloorGrid LoadMap(String mapName) {
 
@@ -77,7 +77,7 @@ public class LevelToolKit {
 	}
 
 	/**
-	 * Returns a floor type corresponding to the string ID  
+	 * Returns a floor type corresponding to the string ID
 	 */
 	public static FloorType getFloorType(String ID) {
 
@@ -102,7 +102,7 @@ public class LevelToolKit {
 	}
 
 	/**
-	 * Returns a string representing the Floor Type 
+	 * Returns a string representing the Floor Type
 	 */
 	public static String getFloorID(Floor f) {
 

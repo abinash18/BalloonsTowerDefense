@@ -16,7 +16,6 @@ import org.newdawn.slick.opengl.Texture;
 import other.StateManager;
 import other.StateManager.GameState;
 import userInterface.UserInterface;
-import userInterface.UserInterface.Menu;
 
 /**
  * Starting screen for the game

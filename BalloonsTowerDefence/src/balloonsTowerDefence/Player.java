@@ -5,14 +5,15 @@ import static other.DrawInFrame.HEIGHT;
 
 import java.util.ArrayList;
 
-import javax.xml.ws.Holder;
-
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 
 import other.Timer;
-import userInterface.Button;
 
+/**
+ * represents the user and houses all the ways to interact with the game and
+ * variables for the player
+ */
 public class Player {
 
 	public static int Money, LivesLeft;
@@ -158,7 +159,7 @@ public class Player {
 	 * initializes the player money and life count
 	 */
 	public void initialize() {
-		Money = 99999;
+		Money = 200;
 		LivesLeft = 100;
 	}
 

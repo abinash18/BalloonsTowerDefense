@@ -9,6 +9,10 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.newdawn.slick.opengl.Texture;
 
+/**
+ * This is the super class to all others that extend it and has the base frame
+ * work for the towers
+ */
 public abstract class MonkeyTower implements Entity {
 
 	private float x, y, timeSinceLastShot, firingSpeed, angle;
@@ -147,10 +151,11 @@ public abstract class MonkeyTower implements Entity {
 	}
 
 	public void upgrade() {
-		if (Player.changeMoneyAmount(-2000)) {
-			currentTier = 1;
-			dart = DartType.Lazer;
-		}
+		System.out.println("  " + this);
+//		if (Player.changeMoneyAmount(-2000)) {
+//			currentTier = 1;
+//			dart = DartType.Lazer;
+//		}
 	}
 
 	/**

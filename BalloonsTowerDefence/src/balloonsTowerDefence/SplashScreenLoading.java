@@ -51,8 +51,8 @@ public class SplashScreenLoading {
 		this.UI = new UserInterface();
 
 		UI.addLabel("prog", "oztype", 25, "", 50, HEIGHT - HEIGHT / 8 - 30, false);
-		UI.addLabel("cred", "oztype", 45, "Created by Abinash Singh and A lot of Youtube tutorials", 50,
-				HEIGHT - HEIGHT / 2 - 30, false);
+		UI.addLabel("cred", "oztype", 45, "Created by Abinash Singh", 50, HEIGHT - HEIGHT / 2 - 30, false);
+		UI.addLabel("cred", "oztype", 45, "And a lot of youtube tuttorials", 50, HEIGHT - HEIGHT / 3 - 30, false);
 		progress = UI.getLabel("prog");
 		credits = UI.getLabel("cred");
 		// UI.addProgressBar("prgLoading", barTex, barBorder, loadingBg, 50, HEIGHT -
@@ -82,7 +82,7 @@ public class SplashScreenLoading {
 		// loadingTime = 0;
 		System.out.println(elaspedtime);
 		if (tasksCompleted == tasks && elaspedtime >= loadingTime) {
-			StateManager.setState(GameState.MAP_SELECT_SCREEN);
+			StateManager.setState(GameState.GAME);
 		} else {
 
 			barProgress = (float) (tasksCompleted * barWidth) / tasks;
@@ -105,7 +105,6 @@ public class SplashScreenLoading {
 					// @Override
 					// public void run() {
 					LoadSettings.LoadFileXML();
-					LoadSettings.LoadMapElementsIntoArray();
 					// }
 					// });
 					// taskThread.start();
@@ -156,7 +155,7 @@ public class SplashScreenLoading {
 	}
 
 	/**
-	 * Updates the UI 
+	 * Updates the UI
 	 */
 	private void tickUI() {
 		// UI.drawString(50, 50, "progress: " + barProgress);
@@ -166,7 +165,7 @@ public class SplashScreenLoading {
 	}
 
 	/**
-	 * Draws the screen 
+	 * Draws the screen
 	 */
 	private void draw() {
 

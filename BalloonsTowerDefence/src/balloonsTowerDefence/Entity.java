@@ -5,7 +5,7 @@
 package balloonsTowerDefence;
 
 /**
- * This interface contains needed methods for a object to move on the screen
+ * This interface contains needed methods for an object to move on the screen
  */
 public interface Entity {
 	public float getX();

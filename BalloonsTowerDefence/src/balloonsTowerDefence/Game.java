@@ -13,7 +13,9 @@ import static other.DrawInFrame.getTexture;
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.opengl.Texture;
 
+import handlers.Informal;
 import other.StateManager;
+import other.StateManager.GameState;
 import other.Timer;
 import userInterface.Button;
 import userInterface.Image;
@@ -119,7 +121,7 @@ public class Game {
 		upgradeButton = upgradeMenu.getButton("Upgrade");
 
 		gameUserInterface.addLabel("fps", "oztype", 25, "", 0, 0, true);
-		gameUserInterface.addLabel("money", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 2, true);
+		gameUserInterface.addLabel("money", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 3, true);
 		gameUserInterface.addLabel("lives", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 4, true);
 		gameUserInterface.addLabel("round", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 6, true);
 		gameUserInterface.addLabel("timeMultiplier", "oztype", 25, "", pickTowerMenu.getX(), HEIGHT - HEIGHT / 8, true);
@@ -178,6 +180,12 @@ public class Game {
 
 		gameUserInterface.drawOnScreen();
 
+		// handles game end
+		if (player.LivesLeft <= 0) {
+			Informal.message("Sorry You Loose!");
+			StateManager.setState(GameState.MAINMENU);
+		}
+		
 		// Handles Mouse input
 		MonkeyTower mt = null;
 		if (Mouse.next()) {
@@ -196,7 +204,8 @@ public class Game {
 					}
 
 					if (upgradeMenu.isButtonClicked("Upgrade")) {
-						mt.upgrade();
+						System.out.println(mt);
+					//	mt.upgrade();
 					}
 
 				}

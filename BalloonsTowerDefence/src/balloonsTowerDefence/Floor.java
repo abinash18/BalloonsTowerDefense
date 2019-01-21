@@ -6,7 +6,7 @@ package balloonsTowerDefence;
 
 import static other.DrawInFrame.DrawQuadWithTexture;
 import static other.DrawInFrame.GRID_SQUARE_SIZE;
-import static other.DrawInFrame.*;
+import static other.DrawInFrame.LoadTexture;
 
 import org.newdawn.slick.opengl.Texture;
 

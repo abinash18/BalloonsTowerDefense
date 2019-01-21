@@ -11,7 +11,6 @@ import static org.lwjgl.opengl.GL11.glGenTextures;
 import static org.lwjgl.opengl.GL11.glTexImage2D;
 import static org.lwjgl.opengl.GL11.glTexParameteri;
 
-import java.awt.SplashScreen;
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -29,15 +28,17 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import balloonsTowerDefence.SplashScreenLoading;
-
+/**
+ * image tools is used to extract smaller sprite from bigger sprite sheets using
+ * XML data sheets
+ */
 public class ImageTools {
 
 	// private static BufferedImage spriteSheet;
 
 	/**
-	 * Loads an induvidual texture from a sprite sheet specified
-	 * post: a texture is returned 
+	 * Loads an induvidual texture from a sprite sheet specified post: a texture is
+	 * returned
 	 */
 	public static Texture LoadSpriteTextureFromSpriteSheet(String spriteName, String spriteSheetName) {
 		BufferedImage spriteSheet = null, subImage;
@@ -129,7 +130,7 @@ public class ImageTools {
 	}
 
 	/**
-	 * Open gl texture laoding 
+	 * Open gl texture laoding
 	 */
 	public static int glLoadTextureLinear(String location) {
 
