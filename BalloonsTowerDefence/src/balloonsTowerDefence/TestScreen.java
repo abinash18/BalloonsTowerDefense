@@ -44,7 +44,7 @@ public class TestScreen {
 
 	public void tick() {
 		draw();
-		grid.drawGridOnScreenMapPreview(32);
+		//grid.drawGridOnScreenMapPreview(32);
 	}
 
 	private void updateTest() {

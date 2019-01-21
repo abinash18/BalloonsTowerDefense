@@ -49,7 +49,7 @@ public class LevelToolKit {
 
 		FloorGrid grid = new FloorGrid();
 
-		if (new File("test.txt").exists()) {
+		if (new File(mapName + ".txt").exists()) {
 			try {
 				BufferedReader br = new BufferedReader(new FileReader(mapName + ".txt"));
 				String data = br.readLine();

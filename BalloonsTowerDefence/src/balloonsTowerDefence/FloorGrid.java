@@ -111,14 +111,14 @@ public class FloorGrid {
 	/**
 	 * Draws the mapMatrix on the screen with the specified floor size
 	 */
-	public void drawGridOnScreenMapPreview(int floorSize) {
+	public void drawGridOnScreenMapPreview(int floorSize, int xOffset, int yOffset) {
 
 		for (int y = 0; y < mapMatrix.length; y++) {
 			for (int x = 0; x < mapMatrix[y].length; x++) {
 
 				Floor temp = mapMatrix[y][x];
-				DrawQuadWithTexture(temp.getFloorTexture(), (temp.getxPos() / GRID_SQUARE_SIZE) * floorSize,
-						(temp.getyPos() / GRID_SQUARE_SIZE) * floorSize, floorSize, floorSize);
+				DrawQuadWithTexture(temp.getFloorTexture(), (temp.getxPos() / GRID_SQUARE_SIZE) * floorSize + xOffset,
+						(temp.getyPos() / GRID_SQUARE_SIZE) * floorSize + yOffset, floorSize, floorSize);
 
 			}
 		}
@@ -126,9 +126,9 @@ public class FloorGrid {
 	}
 
 	/**
-	 * Generated Getters and Setters 
+	 * Generated Getters and Setters
 	 */
-	
+
 	public int getSquaresWide() {
 		return squaresWide;
 	}

@@ -47,7 +47,7 @@ public class SplashScreenLoading {
 		this.tasksCompleted = 0;
 		this.loadingBg = LoadTexture("red_tint");
 		// Just to show off all the cool textures i just loaded in
-		this.loadingTime = 5000;
+		this.loadingTime = 500;
 		this.barWidth = 1350;
 		this.barTex = LoadTexture("LoadingBarRedFill");
 		this.barBorder = LoadTexture("LoadingBarDashedBorder");
@@ -85,7 +85,7 @@ public class SplashScreenLoading {
 		// loadingTime = 0;
 		System.out.println(elaspedtime);
 		if (tasksCompleted == tasks && elaspedtime >= loadingTime) {
-			StateManager.setState(GameState.GAME);
+			StateManager.setState(GameState.MAP_SELECT_SCREEN);
 		} else {
 
 			barProgress = (float) (tasksCompleted * barWidth) / tasks;
