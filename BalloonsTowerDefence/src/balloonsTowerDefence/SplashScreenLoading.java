@@ -20,6 +20,9 @@ import userInterface.Label;
 import userInterface.ProgressBar;
 import userInterface.UserInterface;
 
+/**
+ * Controls the main loading screen
+ */
 public class SplashScreenLoading {
 
 	private Texture loadingBg, barTex, barBorder;

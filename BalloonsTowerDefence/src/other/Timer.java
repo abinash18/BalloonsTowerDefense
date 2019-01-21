@@ -6,6 +6,10 @@ package other;
 
 import org.lwjgl.Sys;
 
+/**
+ * The timer is used as a clock for resolving delta every game loop and moving
+ * objects relative to delta and their speed
+ */
 public class Timer {
 
 	private static boolean GamePaused = false; // is the game paused
