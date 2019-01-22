@@ -28,6 +28,8 @@ import static org.lwjgl.opengl.GL11.glVertex2f;
 import java.io.InputStream;
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
@@ -334,6 +336,7 @@ public class DrawInFrame {
 		} catch (Exception e) {
 			e.printStackTrace();
 			tempTexture = LoadTexture("ErrorNullTexture");
+			JOptionPane.showMessageDialog(null, e.getMessage(), "Error Loading Texture", JOptionPane.ERROR_MESSAGE);
 		}
 		// Returns the temporary texture Variable
 		return (tempTexture);
