@@ -20,7 +20,7 @@ import org.w3c.dom.NodeList;
  */
 public class LoadSettings {
 
-	private static final String SETTINGS_FILE_NAME = "src/xml/settings.xml";
+	private static final String SETTINGS_FILE_NAME = "settings.xml";
 	private static ArrayList<Element> texturePathElements = new ArrayList<Element>();
 	private static ArrayList<Element> towerElements = new ArrayList<Element>();
 	private static ArrayList<Element> settings = new ArrayList<Element>();

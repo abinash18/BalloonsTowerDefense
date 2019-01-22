@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Abinash Singh settings.xml I Made this to store native texture paths 
+	tower upgrade tiers and External sprite sheets also game settings -->
+<Settings>
+	<Main id="main">
+		<SpriteSheets>
+			<ExternalSpriteSheet name="In_Game"
+				ImagePath="src/resources/sprite_sheets/InGame_BTD/InGame.png"
+				XMLPath="src/resources/sprite_sheets/InGame_BTD/InGame.xml" />
+			<ExternalSpriteSheet name="In_Game_HUD"
+				ImagePath="src/resources/sprite_sheets/InGame_BTD/in_game_hud.png"
+				XMLPath="src/resources/sprite_sheets/InGame_BTD/in_game_hud.xml" />
+			<ExternalSpriteSheet name="In_Game_Custom"
+				ImagePath="src/resources/sprite_sheets/Custom_Textures/InGameCustom.png"
+				XMLPath="src/resources/sprite_sheets/Custom_Textures/In_Game_Custom.xml" />
+		</SpriteSheets>
+		<Textures id="textures">
+			<TexturePath name="RedBalloon" path="balloon_red" />
+			<TexturePath name="SuperMonkey" path="supermonkey"
+				ImagePath="resources/supermonkey.png" />
+			<TexturePath name="button_notClicked"
+				path="button_notClicked" />
+			<TexturePath name="DartMonkey" path="DartMonkey" />
+			<TexturePath name="ice_monkey_base1"
+				path="ice_monkey_base1" />
+			<TexturePath name="black" path="black" />
+			<TexturePath name="black-translucent"
+				path="black-translucent" />
+			<TexturePath name="NinjaMonkey" path="NinjaMonkey" />
+			<!-- <TexturePath name="NinjaMonkey_ninjaStar_Normal" path="NinjaMonkey_starNormal" 
+				/> -->
+		</Textures>
+		<GameSettings>
+			<Setting fps="20" />
+		</GameSettings>
+		<Maps>
+			<Map name="dfg" path="dfg.txt" />
+			<Map name="dfg2" path="dfg2.txt" />
+			<Map name="map3" path="map3.txt" />
+			<Map name="mindBender" path="mindBender.txt" />
+			<Map name="water" path="water.txt" />
+		</Maps>
+		<Towers>
+			<Tower name="DartMonkey" TextureName="DartMonkey" />
+			<Tower name="NinjaMonkey" TextureName="NinjaMonkey" />
+		</Towers>
+	</Main>
+</Settings>
