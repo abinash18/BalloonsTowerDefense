@@ -335,8 +335,9 @@ public class DrawInFrame {
 			in.close();
 		} catch (Exception e) {
 			e.printStackTrace();
-			tempTexture = LoadTexture("ErrorNullTexture");
 			JOptionPane.showMessageDialog(null, e.getMessage(), "Error Loading Texture", JOptionPane.ERROR_MESSAGE);
+			tempTexture = LoadTexture("ErrorNullTexture");
+			
 		}
 		// Returns the temporary texture Variable
 		return (tempTexture);

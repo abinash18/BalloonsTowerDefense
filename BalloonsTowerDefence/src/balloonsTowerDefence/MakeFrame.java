@@ -6,6 +6,8 @@ package balloonsTowerDefence;
 
 import static other.DrawInFrame.InitializeGL;
 
+import javax.swing.JOptionPane;
+
 import org.lwjgl.opengl.Display;
 
 import other.StateManager;
@@ -30,11 +32,17 @@ public class MakeFrame {
 		// FloorGrid floor = new FloorGrid(StartGame.testMap);
 		// A loop is started to keep the display alive
 		while (!Display.isCloseRequested()) {
+			// try {
 			Timer.Tick();
 			StateManager.tick();
 			Display.update();
 			// Sync the frame rate to 60
 			Display.sync(fps);
+			// } catch (Exception e) {
+			// JOptionPane.showMessageDialog(null, e.getMessage(), "Error",
+			// JOptionPane.ERROR_MESSAGE);
+			// }
+
 		}
 
 	}
