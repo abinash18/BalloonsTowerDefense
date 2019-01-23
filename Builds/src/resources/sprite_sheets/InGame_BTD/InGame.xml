@@ -1,0 +1,1625 @@
+<SpriteInformation>
+<FrameInformation name="InGame" texw="2024" texh="1996" type="png">
+<Animation name="banana_farm_chimney">
+<Cell name="banana_farm_chimney_01" x="677" y="1945" w="36" h="49" ax="1" ay="0" aw="38" ah="49"/>
+<Cell name="banana_farm_chimney_02" x="576" y="1948" w="38" h="44" ax="0" ay="5" aw="38" ah="49"/>
+</Animation>
+<Animation name="banana_farm_smoke">
+<Cell name="banana_farm_smoke_01" x="1123" y="1970" w="27" h="19" ax="7" ay="6" aw="40" ah="26"/>
+<Cell name="banana_farm_smoke_02" x="1604" y="1280" w="31" h="21" ax="4" ay="5" aw="40" ah="26"/>
+<Cell name="banana_farm_smoke_03" x="1334" y="1228" w="37" h="24" ax="2" ay="2" aw="40" ah="26"/>
+<Cell name="banana_farm_smoke_04" x="469" y="1963" w="40" h="26" ax="0" ay="0" aw="40" ah="26"/>
+</Animation>
+<Animation name="banana_farm_window">
+<Cell name="banana_farm_window_01" x="365" y="171" w="66" h="5" ax="0" ay="0" aw="66" ah="5"/>
+<Cell name="banana_farm_window_02" x="434" y="171" w="66" h="5" ax="0" ay="0" aw="66" ah="5"/>
+<Cell name="banana_farm_window_03" x="621" y="490" w="66" h="5" ax="0" ay="0" aw="66" ah="5"/>
+</Animation>
+<Animation name="bfb_tail">
+<Cell name="bfb_tail_01" x="193" y="1082" w="60" h="72" ax="0" ay="0" aw="140" ah="72"/>
+<Cell name="bfb_tail_02" x="1907" y="824" w="61" h="72" ax="79" ay="0" aw="140" ah="72"/>
+</Animation>
+<Animation name="black_ninja_arm">
+<Cell name="black_ninja_arm_01" x="1936" y="970" w="27" h="22" ax="0" ay="6" aw="32" ah="31"/>
+<Cell name="black_ninja_arm_02" x="1368" y="1786" w="25" h="26" ax="3" ay="2" aw="32" ah="29"/>
+<Cell name="black_ninja_arm_03" x="1604" y="1911" w="17" h="30" ax="15" ay="0" aw="32" ah="31"/>
+</Animation>
+<Animation name="blimp_damage">
+<Cell name="blimp_damage_01" x="866" y="173" w="135" h="155" ax="0" ay="0" aw="136" ah="155"/>
+<Cell name="blimp_damage_02" x="728" y="1" w="175" h="169" ax="0" ay="1" aw="175" ah="172"/>
+</Animation>
+<Animation name="bloonsday_pro_pulsing_beam">
+<Cell name="bloonsday_pro_pulsing_beam_01" x="1136" y="1011" w="16" h="6" ax="22" ay="0" aw="60" ah="6"/>
+<Cell name="bloonsday_pro_pulsing_beam_02" x="674" y="1415" w="30" h="6" ax="15" ay="0" aw="60" ah="6"/>
+</Animation>
+<Animation name="bloonsday_pro_pulsing_core">
+<Cell name="bloonsday_pro_pulsing_core_01" x="1492" y="1801" w="22" h="43" ax="19" ay="0" aw="60" ah="60"/>
+<Cell name="bloonsday_pro_pulsing_core_02" x="1203" y="1264" w="40" h="51" ax="10" ay="0" aw="60" ah="60"/>
+</Animation>
+<Animation name="bloonsday_pulsing_beam">
+<Cell name="bloonsday_pulsing_beam_01" x="526" y="1798" w="16" h="6" ax="22" ay="0" aw="60" ah="6"/>
+<Cell name="bloonsday_pulsing_beam_02" x="762" y="1420" w="30" h="6" ax="15" ay="0" aw="60" ah="6"/>
+<Cell name="bloonsday_pulsing_beam_03" x="456" y="822" w="34" h="6" ax="13" ay="0" aw="60" ah="6"/>
+</Animation>
+<Animation name="bloonsday_pulsing_core">
+<Cell name="bloonsday_pulsing_core_01" x="1421" y="1874" w="22" h="43" ax="19" ay="0" aw="60" ah="60"/>
+<Cell name="bloonsday_pulsing_core_02" x="1139" y="1332" w="40" h="51" ax="10" ay="0" aw="60" ah="60"/>
+<Cell name="bloonsday_pulsing_core_03" x="1048" y="1340" w="42" h="52" ax="9" ay="0" aw="60" ah="60"/>
+</Animation>
+<Animation name="bomb_tower">
+<Cell name="bomb_tower_01" x="1666" y="1765" w="18" h="62" ax="3" ay="3" aw="21" ah="65"/>
+<Cell name="bomb_tower_02" x="1255" y="1720" w="19" h="57" ax="2" ay="8" aw="21" ah="65"/>
+<Cell name="bomb_tower_03" x="1158" y="855" w="21" h="52" ax="0" ay="13" aw="21" ah="65"/>
+<Cell name="bomb_tower_04" x="1516" y="1916" w="18" h="65" ax="3" ay="0" aw="21" ah="65"/>
+</Animation>
+<Animation name="bomb_tower_bomb">
+<Cell name="bomb_tower_bomb_01" x="718" y="1824" w="38" h="41" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="bomb_tower_bomb_02" x="760" y="1786" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="bomb_tower_bomb_03" x="811" y="1713" w="38" h="48" ax="0" ay="0" aw="38" ah="51"/>
+</Animation>
+<Animation name="bomb_tower_bomb_red">
+<Cell name="bomb_tower_bomb_red_01" x="896" y="1646" w="38" h="41" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="bomb_tower_bomb_red_02" x="1410" y="1143" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="bomb_tower_bomb_red_03" x="1136" y="1386" w="38" h="48" ax="0" ay="0" aw="38" ah="51"/>
+</Animation>
+<Animation name="bomb_tower_cluster">
+<Cell name="bomb_tower_cluster_01" x="1338" y="1846" w="24" h="81" ax="4" ay="6" aw="28" ah="87"/>
+<Cell name="bomb_tower_cluster_02" x="1514" y="1509" w="27" h="75" ax="1" ay="12" aw="28" ah="87"/>
+<Cell name="bomb_tower_cluster_03" x="1418" y="1610" w="27" h="65" ax="1" ay="22" aw="28" ah="87"/>
+<Cell name="bomb_tower_cluster_04" x="1772" y="1502" w="22" h="87" ax="6" ay="0" aw="28" ah="87"/>
+</Animation>
+<Animation name="bomb_tower_frag">
+<Cell name="bomb_tower_frag_01" x="1796" y="1860" w="11" h="37" ax="2" ay="3" aw="13" ah="40"/>
+<Cell name="bomb_tower_frag_02" x="1454" y="154" w="12" h="32" ax="1" ay="8" aw="13" ah="40"/>
+<Cell name="bomb_tower_frag_03" x="1873" y="1740" w="13" h="27" ax="0" ay="13" aw="13" ah="40"/>
+<Cell name="bomb_tower_frag_04" x="2010" y="532" w="11" h="40" ax="2" ay="0" aw="13" ah="40"/>
+</Animation>
+<Animation name="bomb_tower_impact">
+<Cell name="bomb_tower_impact_01" x="1643" y="1542" w="24" h="81" ax="4" ay="6" aw="28" ah="87"/>
+<Cell name="bomb_tower_impact_02" x="1249" y="1780" w="27" h="75" ax="1" ay="12" aw="28" ah="87"/>
+<Cell name="bomb_tower_impact_03" x="1380" y="1645" w="27" h="65" ax="1" ay="22" aw="28" ah="87"/>
+<Cell name="bomb_tower_impact_04" x="1955" y="1324" w="22" h="87" ax="6" ay="0" aw="28" ah="87"/>
+</Animation>
+<Animation name="bomb_tower_missile">
+<Cell name="bomb_tower_missile_01" x="1960" y="1238" w="16" h="23" ax="1" ay="17" aw="17" ah="56"/>
+<Cell name="bomb_tower_missile_02" x="2007" y="830" w="14" h="44" ax="3" ay="6" aw="17" ah="56"/>
+<Cell name="bomb_tower_missile_03" x="1815" y="1647" w="17" h="55" ax="0" ay="0" aw="17" ah="56"/>
+</Animation>
+<Animation name="bomb_tower_muzzle_smoke">
+<Cell name="bomb_tower_muzzle_smoke_01" x="112" y="1984" w="34" h="10" ax="8" ay="24" aw="49" ah="34"/>
+<Cell name="bomb_tower_muzzle_smoke_02" x="1203" y="1239" w="41" h="22" ax="4" ay="11" aw="49" ah="34"/>
+<Cell name="bomb_tower_muzzle_smoke_03" x="1084" y="1011" w="49" h="31" ax="0" ay="0" aw="49" ah="34"/>
+<Cell name="bomb_tower_muzzle_smoke_04" x="679" y="845" w="43" h="27" ax="3" ay="1" aw="49" ah="34"/>
+</Animation>
+<Animation name="bomb_tower_red_ring">
+<Cell name="bomb_tower_red_ring_01" x="1888" y="1779" w="11" h="22" ax="2" ay="1" aw="13" ah="23"/>
+<Cell name="bomb_tower_red_ring_02" x="1963" y="1689" w="12" h="19" ax="1" ay="4" aw="13" ah="23"/>
+<Cell name="bomb_tower_red_ring_03" x="1799" y="1680" w="13" h="16" ax="0" ay="7" aw="13" ah="23"/>
+<Cell name="bomb_tower_red_ring_04" x="1102" y="1629" w="10" h="23" ax="3" ay="0" aw="13" ah="23"/>
+</Animation>
+<Animation name="bomb_tower_silo_doors">
+<Cell name="bomb_tower_silo_doors_01" x="1348" y="1611" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+<Cell name="bomb_tower_silo_doors_02" x="1860" y="1100" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+<Cell name="bomb_tower_silo_doors_03" x="1968" y="995" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+<Cell name="bomb_tower_silo_doors_04" x="1223" y="1720" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+<Cell name="bomb_tower_silo_doors_05" x="1712" y="1250" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+<Cell name="bomb_tower_silo_doors_06" x="1895" y="1070" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+</Animation>
+<Animation name="bomb_tower_silo_doors_green">
+<Cell name="bomb_tower_silo_doors_green_01" x="1597" y="1366" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+<Cell name="bomb_tower_silo_doors_green_02" x="1120" y="1846" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+<Cell name="bomb_tower_silo_doors_green_03" x="1186" y="1777" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+<Cell name="bomb_tower_silo_doors_green_04" x="1672" y="1290" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+<Cell name="bomb_tower_silo_doors_green_05" x="1315" y="1654" w="29" h="57" ax="0" ay="0" aw="29" ah="57"/>
+</Animation>
+<Animation name="bomb_tower_silo_doors_square">
+<Cell name="bomb_tower_silo_doors_square_01" x="1584" y="1451" w="27" h="54" ax="18" ay="18" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_doors_square_02" x="1834" y="1444" w="22" h="54" ax="18" ay="18" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_doors_square_03" x="1733" y="1741" w="17" h="54" ax="18" ay="18" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_doors_square_04" x="1908" y="1724" w="12" h="54" ax="18" ay="18" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_doors_square_05" x="866" y="450" w="7" h="54" ax="18" ay="18" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_doors_square_06" x="246" y="1480" w="2" h="54" ax="18" ay="18" aw="45" ah="90"/>
+</Animation>
+<Animation name="bomb_tower_silo_doors_square_green">
+<Cell name="bomb_tower_silo_doors_square_green_01" x="1153" y="1891" w="27" h="54" ax="18" ay="18" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_doors_square_green_02" x="1696" y="1589" w="22" h="54" ax="18" ay="18" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_doors_square_green_03" x="1756" y="1719" w="17" h="54" ax="18" ay="18" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_doors_square_green_04" x="1734" y="1899" w="12" h="54" ax="18" ay="18" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_doors_square_green_05" x="241" y="1540" w="7" h="54" ax="18" ay="18" aw="45" ah="90"/>
+</Animation>
+<Animation name="boomerang_arm">
+<Cell name="boomerang_arm_01" x="1750" y="1886" w="12" h="31" ax="0" ay="0" aw="24" ah="34"/>
+<Cell name="boomerang_arm_02" x="1755" y="1365" w="23" h="13" ax="0" ay="20" aw="24" ah="34"/>
+<Cell name="boomerang_arm_03" x="1012" y="1980" w="24" h="14" ax="0" ay="20" aw="24" ah="34"/>
+</Animation>
+<Animation name="boomerang_bionic_arm">
+<Cell name="boomerang_bionic_arm_01" x="1275" y="1870" w="25" h="48" ax="0" ay="0" aw="25" ah="48"/>
+<Cell name="boomerang_bionic_arm_02" x="1582" y="1568" w="25" h="45" ax="0" ay="3" aw="25" ah="48"/>
+</Animation>
+<Animation name="boomerang_glaive_riccochet_arm">
+<Cell name="boomerang_glaive_riccochet_arm_01" x="1805" y="1824" w="12" h="31" ax="0" ay="0" aw="24" ah="34"/>
+<Cell name="boomerang_glaive_riccochet_arm_02" x="1271" y="1981" w="23" h="13" ax="0" ay="20" aw="24" ah="34"/>
+<Cell name="boomerang_glaive_riccochet_arm_03" x="1494" y="1731" w="24" h="14" ax="0" ay="20" aw="24" ah="34"/>
+</Animation>
+<Animation name="boomerang_glaive_thrower_arm">
+<Cell name="boomerang_glaive_thrower_arm_01" x="1680" y="1957" w="12" h="31" ax="0" ay="0" aw="24" ah="34"/>
+<Cell name="boomerang_glaive_thrower_arm_02" x="1520" y="1759" w="23" h="13" ax="0" ay="20" aw="24" ah="34"/>
+<Cell name="boomerang_glaive_thrower_arm_03" x="1813" y="1425" w="24" h="14" ax="0" ay="20" aw="24" ah="34"/>
+</Animation>
+<Animation name="buccaneer_cannon">
+<Cell name="buccaneer_cannon_01" x="452" y="1729" w="21" h="37" ax="2" ay="2" aw="25" ah="39"/>
+<Cell name="buccaneer_cannon_02" x="1959" y="1287" w="23" h="34" ax="1" ay="5" aw="25" ah="39"/>
+<Cell name="buccaneer_cannon_03" x="1477" y="1676" w="25" h="31" ax="0" ay="8" aw="25" ah="39"/>
+<Cell name="buccaneer_cannon_04" x="2000" y="1012" w="21" h="39" ax="2" ay="0" aw="25" ah="39"/>
+</Animation>
+<Animation name="buccaneer_destroyer">
+<Cell name="buccaneer_destroyer_01" x="1153" y="1765" w="30" h="35" ax="0" ay="3" aw="34" ah="41"/>
+<Cell name="buccaneer_destroyer_02" x="917" y="1897" w="33" h="41" ax="1" ay="0" aw="34" ah="41"/>
+</Animation>
+<Animation name="buccaneer_fast_shooting_flag">
+<Cell name="buccaneer_fast_shooting_flag_01" x="235" y="1757" w="52" h="52" ax="1" ay="1" aw="55" ah="54"/>
+<Cell name="buccaneer_fast_shooting_flag_02" x="749" y="1062" w="55" h="51" ax="0" ay="3" aw="55" ah="54"/>
+<Cell name="buccaneer_fast_shooting_flag_03" x="863" y="1118" w="52" h="54" ax="3" ay="0" aw="55" ah="54"/>
+<Cell name="buccaneer_fast_shooting_flag_04" x="59" y="1867" w="53" h="52" ax="2" ay="2" aw="55" ah="54"/>
+</Animation>
+<Animation name="buccaneer_monkey_pirates_sail">
+<Cell name="buccaneer_monkey_pirates_sail_01" x="579" y="1653" w="47" h="40" ax="0" ay="1" aw="47" ah="41"/>
+<Cell name="buccaneer_monkey_pirates_sail_02" x="651" y="1556" w="47" h="41" ax="0" ay="0" aw="47" ah="41"/>
+</Animation>
+<Animation name="buccaneer_sail">
+<Cell name="buccaneer_sail_01" x="839" y="1388" w="47" h="40" ax="0" ay="1" aw="47" ah="41"/>
+<Cell name="buccaneer_sail_02" x="271" y="1947" w="47" h="41" ax="0" ay="0" aw="47" ah="41"/>
+</Animation>
+<Animation name="ceramic">
+<Cell name="ceramic_01" x="1326" y="1116" w="40" h="54" ax="0" ay="0" aw="40" ah="54"/>
+<Cell name="ceramic_02" x="723" y="1724" w="40" h="54" ax="0" ay="0" aw="40" ah="54"/>
+<Cell name="ceramic_03" x="1249" y="1200" w="40" h="54" ax="0" ay="0" aw="40" ah="54"/>
+<Cell name="ceramic_04" x="900" y="1549" w="40" h="54" ax="0" ay="0" aw="40" ah="54"/>
+<Cell name="ceramic_05" x="533" y="1924" w="40" h="54" ax="0" ay="0" aw="40" ah="54"/>
+</Animation>
+<Animation name="ceramic_regen">
+<Cell name="ceramic_regen_01" x="256" y="1091" w="60" h="57" ax="0" ay="0" aw="60" ah="57"/>
+<Cell name="ceramic_regen_02" x="192" y="1157" w="60" h="57" ax="0" ay="0" aw="60" ah="57"/>
+<Cell name="ceramic_regen_03" x="128" y="1230" w="60" h="57" ax="0" ay="0" aw="60" ah="57"/>
+<Cell name="ceramic_regen_04" x="1" y="1382" w="60" h="57" ax="0" ay="0" aw="60" ah="57"/>
+<Cell name="ceramic_regen_05" x="383" y="1016" w="60" h="57" ax="0" ay="0" aw="60" ah="57"/>
+</Animation>
+<Animation name="dart_monkey_arm">
+<Cell name="dart_monkey_arm_01" x="1208" y="1482" w="12" h="32" ax="38" ay="0" aw="62" ah="58"/>
+<Cell name="dart_monkey_arm_02" x="1391" y="1885" w="23" h="13" ax="38" ay="20" aw="62" ah="58"/>
+<Cell name="dart_monkey_arm_03" x="1570" y="1658" w="24" h="15" ax="38" ay="20" aw="62" ah="58"/>
+</Animation>
+<Animation name="dart_monkey_medieval_arm">
+<Cell name="dart_monkey_medieval_arm_01" x="1892" y="1702" w="13" h="31" ax="38" ay="6" aw="62" ah="67"/>
+<Cell name="dart_monkey_medieval_arm_02" x="1449" y="1830" w="23" h="14" ax="38" ay="24" aw="62" ah="67"/>
+<Cell name="dart_monkey_medieval_arm_03" x="1299" y="1930" w="24" h="15" ax="38" ay="25" aw="62" ah="67"/>
+</Animation>
+<Animation name="dart_monkey_medieval_gold_arm">
+<Cell name="dart_monkey_medieval_gold_arm_01" x="1963" y="1629" w="13" h="31" ax="38" ay="6" aw="62" ah="67"/>
+<Cell name="dart_monkey_medieval_gold_arm_02" x="1807" y="1471" w="23" h="14" ax="38" ay="24" aw="62" ah="67"/>
+<Cell name="dart_monkey_medieval_gold_arm_03" x="1670" y="1563" w="24" h="15" ax="38" ay="25" aw="62" ah="67"/>
+</Animation>
+<Animation name="dartling_gun_bads_barrel">
+<Cell name="dartling_gun_bads_barrel_01" x="83" y="1985" w="18" h="9" ax="0" ay="0" aw="18" ah="9"/>
+<Cell name="dartling_gun_bads_barrel_02" x="1131" y="1277" w="18" h="9" ax="0" ay="0" aw="18" ah="9"/>
+</Animation>
+<Animation name="dartling_gun_barrel">
+<Cell name="dartling_gun_barrel_01" x="1376" y="516" w="12" h="59" ax="0" ay="0" aw="12" ah="59"/>
+<Cell name="dartling_gun_barrel_02" x="1713" y="1913" w="12" h="59" ax="0" ay="0" aw="12" ah="59"/>
+</Animation>
+<Animation name="dartling_gun_doom_ray_beam">
+<Cell name="dartling_gun_doom_ray_beam_02" x="1480" y="980" w="16" h="6" ax="22" ay="0" aw="60" ah="6"/>
+</Animation>
+<Animation name="dartling_gun_doom_ray_beam_pulsing">
+<Cell name="dartling_gun_doom_ray_beam_pulsing_01" x="762" y="1429" w="30" h="6" ax="15" ay="0" aw="60" ah="6"/>
+<Cell name="dartling_gun_doom_ray_beam_pulsing_02" x="493" y="822" w="34" h="6" ax="13" ay="0" aw="60" ah="6"/>
+</Animation>
+<Animation name="dartling_gun_doom_ray_core">
+<Cell name="dartling_gun_doom_ray_core_02" x="1807" y="1488" w="22" h="43" ax="19" ay="0" aw="60" ah="60"/>
+</Animation>
+<Animation name="dartling_gun_doom_ray_core_pulsing">
+<Cell name="dartling_gun_doom_ray_core_pulsing_01" x="577" y="1894" w="40" h="51" ax="10" ay="0" aw="60" ah="60"/>
+<Cell name="dartling_gun_doom_ray_core_pulsing_02" x="1000" y="1389" w="42" h="52" ax="9" ay="0" aw="60" ah="60"/>
+</Animation>
+<Animation name="dartling_gun_hydra_barrel">
+<Cell name="dartling_gun_hydra_barrel_01" x="1845" y="1179" w="12" h="24" ax="0" ay="0" aw="12" ah="24"/>
+<Cell name="dartling_gun_hydra_barrel_02" x="2009" y="1180" w="12" h="24" ax="0" ay="0" aw="12" ah="24"/>
+</Animation>
+<Animation name="dartling_gun_muzzle_smoke">
+<Cell name="dartling_gun_muzzle_smoke_01" x="1117" y="1522" w="9" h="10" ax="7" ay="16" aw="23" ah="26"/>
+<Cell name="dartling_gun_muzzle_smoke_02" x="2011" y="1629" w="10" h="16" ax="6" ay="10" aw="23" ah="26"/>
+<Cell name="dartling_gun_muzzle_smoke_03" x="1541" y="1823" w="20" h="24" ax="1" ay="2" aw="23" ah="26"/>
+<Cell name="dartling_gun_muzzle_smoke_04" x="1808" y="1442" w="23" h="26" ax="0" ay="0" aw="23" ah="26"/>
+</Animation>
+<Animation name="evil_monkey_temple_projectile">
+<Cell name="evil_monkey_temple_projectile_01" x="1469" y="98" w="96" h="92" ax="1" ay="2" aw="100" ah="100"/>
+<Cell name="evil_monkey_temple_projectile_02" x="1224" y="234" w="99" h="91" ax="1" ay="2" aw="100" ah="100"/>
+<Cell name="evil_monkey_temple_projectile_03" x="1469" y="1" w="100" h="94" ax="0" ay="2" aw="100" ah="100"/>
+<Cell name="evil_monkey_temple_projectile_04" x="1104" y="365" w="98" h="94" ax="0" ay="2" aw="100" ah="100"/>
+<Cell name="evil_monkey_temple_projectile_05" x="1224" y="328" w="97" h="96" ax="3" ay="2" aw="100" ah="100"/>
+</Animation>
+<Animation name="explosion">
+<Cell name="explosion_01" x="1670" y="1581" w="23" h="25" ax="0" ay="0" aw="23" ah="25"/>
+<Cell name="explosion_02" x="803" y="1174" w="52" h="55" ax="0" ay="0" aw="52" ah="55"/>
+<Cell name="explosion_05" x="1140" y="1" w="109" h="112" ax="0" ay="0" aw="109" ah="112"/>
+<Cell name="explosion_06" x="1599" y="289" w="77" h="92" ax="0" ay="0" aw="77" ah="92"/>
+</Animation>
+<Animation name="glue_gunner_basic">
+<Cell name="glue_gunner_basic_01" x="1960" y="1057" w="28" h="61" ax="4" ay="1" aw="35" ah="62"/>
+<Cell name="glue_gunner_basic_02" x="1936" y="995" w="29" h="59" ax="3" ay="3" aw="35" ah="62"/>
+<Cell name="glue_gunner_basic_03" x="1489" y="1287" w="34" h="56" ax="1" ay="6" aw="35" ah="62"/>
+<Cell name="glue_gunner_basic_04" x="1244" y="1600" w="32" h="54" ax="0" ay="8" aw="35" ah="62"/>
+<Cell name="glue_gunner_basic_05" x="1483" y="1532" w="28" h="62" ax="4" ay="0" aw="35" ah="62"/>
+</Animation>
+<Animation name="glue_gunner_glue_hose">
+<Cell name="glue_gunner_glue_hose_01" x="1676" y="1100" w="34" h="66" ax="2" ay="1" aw="39" ah="67"/>
+<Cell name="glue_gunner_glue_hose_02" x="1451" y="1136" w="37" h="64" ax="2" ay="3" aw="39" ah="67"/>
+<Cell name="glue_gunner_glue_hose_03" x="840" y="1805" w="36" h="61" ax="1" ay="6" aw="39" ah="67"/>
+<Cell name="glue_gunner_glue_hose_04" x="1024" y="1611" w="36" h="60" ax="0" ay="7" aw="39" ah="67"/>
+<Cell name="glue_gunner_glue_hose_05" x="1370" y="1255" w="36" h="67" ax="0" ay="0" aw="39" ah="67"/>
+</Animation>
+<Animation name="glue_splatter_green">
+<Cell name="glue_splatter_green_01" x="1" y="1442" w="60" h="54" ax="33" ay="41" aw="126" ah="135"/>
+<Cell name="glue_splatter_green_02" x="605" y="715" w="118" h="127" ax="2" ay="3" aw="126" ah="135"/>
+<Cell name="glue_splatter_green_03" x="621" y="510" w="126" h="135" ax="0" ay="0" aw="126" ah="135"/>
+</Animation>
+<Animation name="glue_splatter_monkey_temple">
+<Cell name="glue_splatter_monkey_temple_01" x="1197" y="600" w="85" h="77" ax="47" ay="61" aw="180" ah="193"/>
+<Cell name="glue_splatter_monkey_temple_02" x="1" y="490" w="167" h="183" ax="4" ay="6" aw="180" ah="193"/>
+<Cell name="glue_splatter_monkey_temple_03" x="547" y="1" w="178" h="192" ax="0" ay="0" aw="180" ah="193"/>
+</Animation>
+<Animation name="ice_explosion">
+<Cell name="ice_explosion_01" x="1521" y="1731" w="23" h="25" ax="0" ay="0" aw="23" ah="25"/>
+<Cell name="ice_explosion_02" x="734" y="1295" w="50" h="53" ax="0" ay="0" aw="50" ah="53"/>
+<Cell name="ice_explosion_03" x="911" y="897" w="83" h="91" ax="0" ay="0" aw="83" ah="91"/>
+<Cell name="ice_explosion_04" x="1247" y="116" w="104" h="115" ax="0" ay="0" aw="104" ah="115"/>
+<Cell name="ice_explosion_05" x="1354" y="154" w="97" h="108" ax="0" ay="0" aw="97" ah="108"/>
+</Animation>
+<Animation name="ice_tower_arm">
+<Cell name="ice_tower_arm_01" x="1597" y="1733" w="21" h="23" ax="0" ay="25" aw="40" ah="48"/>
+<Cell name="ice_tower_arm_02" x="1778" y="1681" w="18" h="17" ax="2" ay="15" aw="40" ah="48"/>
+<Cell name="ice_tower_arm_03" x="1700" y="1477" w="16" h="24" ax="12" ay="4" aw="40" ah="48"/>
+<Cell name="ice_tower_arm_04" x="1326" y="234" w="25" h="28" ax="15" ay="0" aw="40" ah="48"/>
+</Animation>
+<Animation name="juggernaut_ball">
+<Cell name="juggernaut_ball_01" x="1876" y="274" w="70" h="70" ax="0" ay="0" aw="70" ah="70"/>
+<Cell name="juggernaut_ball_02" x="1265" y="888" w="70" h="70" ax="0" ay="0" aw="70" ah="70"/>
+</Animation>
+<Animation name="moab_tail">
+<Cell name="moab_tail_01" x="1292" y="1199" w="39" h="59" ax="1" ay="0" aw="80" ah="59"/>
+<Cell name="moab_tail_02" x="1422" y="1074" w="39" h="59" ax="1" ay="0" aw="80" ah="59"/>
+</Animation>
+<Animation name="monkey_ace_large_prop">
+<Cell name="monkey_ace_large_prop_01" x="285" y="171" w="77" h="9" ax="0" ay="0" aw="77" ah="9"/>
+<Cell name="monkey_ace_large_prop_02" x="457" y="345" w="55" h="9" ax="11" ay="0" aw="77" ah="9"/>
+<Cell name="monkey_ace_large_prop_03" x="503" y="171" w="35" h="9" ax="21" ay="0" aw="77" ah="9"/>
+<Cell name="monkey_ace_large_prop_04" x="45" y="1985" w="35" h="9" ax="21" ay="0" aw="77" ah="9"/>
+<Cell name="monkey_ace_large_prop_05" x="621" y="498" w="55" h="9" ax="11" ay="0" aw="77" ah="9"/>
+</Animation>
+<Animation name="monkey_ace_scarf">
+<Cell name="monkey_ace_scarf_01" x="1798" y="1738" w="16" h="29" ax="0" ay="0" aw="16" ah="29"/>
+<Cell name="monkey_ace_scarf_02" x="1864" y="1673" w="16" h="26" ax="0" ay="3" aw="16" ah="29"/>
+<Cell name="monkey_ace_scarf_03" x="1681" y="1859" w="16" h="23" ax="0" ay="6" aw="16" ah="29"/>
+</Animation>
+<Animation name="monkey_apprentice_arm">
+<Cell name="monkey_apprentice_arm_01" x="1991" y="1540" w="16" h="31" ax="1" ay="5" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_02" x="1707" y="1787" w="17" h="32" ax="1" ay="2" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_03" x="1735" y="1707" w="18" h="31" ax="0" ay="0" aw="18" ah="36"/>
+</Animation>
+<Animation name="monkey_apprentice_arm_blue">
+<Cell name="monkey_apprentice_arm_blue_01" x="1627" y="1904" w="16" h="31" ax="1" ay="5" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_blue_02" x="1607" y="1876" w="17" h="32" ax="1" ay="2" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_blue_03" x="1690" y="1753" w="18" h="31" ax="0" ay="0" aw="18" ah="36"/>
+</Animation>
+<Animation name="monkey_apprentice_arm_dblue">
+<Cell name="monkey_apprentice_arm_dblue_01" x="1661" y="1870" w="16" h="31" ax="1" ay="5" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_dblue_02" x="1838" y="1720" w="15" h="31" ax="2" ay="2" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_dblue_03" x="1798" y="1705" w="17" h="30" ax="0" ay="0" aw="18" ah="36"/>
+</Animation>
+<Animation name="monkey_apprentice_arm_dred">
+<Cell name="monkey_apprentice_arm_dred_01" x="1727" y="1798" w="16" h="31" ax="1" ay="5" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_dred_02" x="1700" y="1859" w="15" h="31" ax="2" ay="2" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_dred_03" x="1579" y="1938" w="17" h="30" ax="0" ay="0" aw="18" ah="36"/>
+</Animation>
+<Animation name="monkey_apprentice_arm_purple">
+<Cell name="monkey_apprentice_arm_purple_01" x="1946" y="1582" w="16" h="31" ax="1" ay="5" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_purple_02" x="1727" y="1832" w="15" h="31" ax="2" ay="2" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_purple_03" x="1818" y="1705" w="17" h="30" ax="0" ay="0" aw="18" ah="36"/>
+</Animation>
+<Animation name="monkey_apprentice_arm_red">
+<Cell name="monkey_apprentice_arm_red_01" x="1753" y="1776" w="16" h="31" ax="1" ay="5" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_red_02" x="1559" y="1933" w="17" h="32" ax="1" ay="2" aw="18" ah="36"/>
+<Cell name="monkey_apprentice_arm_red_03" x="1538" y="1905" w="18" h="31" ax="0" ay="0" aw="18" ah="36"/>
+</Animation>
+<Animation name="monkey_apprentice_fireball">
+<Cell name="monkey_apprentice_fireball_01" x="1303" y="1886" w="24" h="41" ax="0" ay="0" aw="24" ah="42"/>
+<Cell name="monkey_apprentice_fireball_02" x="1813" y="1381" w="24" h="41" ax="0" ay="0" aw="24" ah="42"/>
+<Cell name="monkey_apprentice_fireball_03" x="1754" y="1435" w="24" h="42" ax="0" ay="0" aw="24" ah="42"/>
+<Cell name="monkey_apprentice_fireball_04" x="1671" y="1518" w="24" h="42" ax="0" ay="0" aw="24" ah="42"/>
+</Animation>
+<Animation name="monkey_apprentice_magic_tail">
+<Cell name="monkey_apprentice_magic_tail_01" x="1424" y="1775" w="12" h="15" ax="0" ay="0" aw="12" ah="15"/>
+<Cell name="monkey_apprentice_magic_tail_02" x="308" y="813" w="8" h="15" ax="2" ay="0" aw="12" ah="15"/>
+<Cell name="monkey_apprentice_magic_tail_03" x="495" y="1339" w="8" h="15" ax="2" ay="0" aw="12" ah="15"/>
+<Cell name="monkey_apprentice_magic_tail_04" x="1779" y="1662" w="12" h="15" ax="0" ay="0" aw="12" ah="15"/>
+</Animation>
+<Animation name="monkey_apprentice_phoenix_wings">
+<Cell name="monkey_apprentice_phoenix_wings_01" x="330" y="523" w="148" h="91" ax="0" ay="2" aw="153" ah="109"/>
+<Cell name="monkey_apprentice_phoenix_wings_02" x="403" y="383" w="145" h="68" ax="6" ay="18" aw="153" ah="109"/>
+<Cell name="monkey_apprentice_phoenix_wings_03" x="618" y="648" w="123" h="64" ax="27" ay="17" aw="153" ah="109"/>
+<Cell name="monkey_apprentice_phoenix_wings_04" x="844" y="811" w="89" h="62" ax="62" ay="17" aw="153" ah="109"/>
+<Cell name="monkey_apprentice_phoenix_wings_05" x="1568" y="123" w="87" h="75" ax="64" ay="18" aw="153" ah="109"/>
+<Cell name="monkey_apprentice_phoenix_wings_06" x="146" y="925" w="124" h="90" ax="27" ay="17" aw="153" ah="109"/>
+<Cell name="monkey_apprentice_phoenix_wings_07" x="481" y="490" w="137" h="99" ax="15" ay="10" aw="153" ah="109"/>
+<Cell name="monkey_apprentice_phoenix_wings_08" x="1" y="917" w="142" h="102" ax="9" ay="0" aw="153" ah="109"/>
+<Cell name="monkey_apprentice_phoenix_wings_09" x="167" y="682" w="149" h="99" ax="4" ay="0" aw="153" ah="109"/>
+</Animation>
+<Animation name="monkey_apprentice_summon_phoenix_fire">
+<Cell name="monkey_apprentice_summon_phoenix_fire_01" x="2007" y="877" w="14" h="19" ax="0" ay="0" aw="14" ah="19"/>
+<Cell name="monkey_apprentice_summon_phoenix_fire_02" x="1905" y="1224" w="14" h="19" ax="0" ay="0" aw="14" ah="19"/>
+<Cell name="monkey_apprentice_summon_phoenix_fire_03" x="1673" y="1459" w="14" h="19" ax="0" ay="0" aw="14" ah="19"/>
+<Cell name="monkey_apprentice_summon_phoenix_fire_04" x="1423" y="1964" w="14" h="19" ax="0" ay="0" aw="14" ah="19"/>
+</Animation>
+<Animation name="monkey_temple_main_projectile">
+<Cell name="monkey_temple_main_projectile_01" x="1636" y="201" w="83" h="79" ax="7" ay="9" aw="100" ah="100"/>
+<Cell name="monkey_temple_main_projectile_02" x="1302" y="427" w="86" h="86" ax="7" ay="3" aw="100" ah="100"/>
+<Cell name="monkey_temple_main_projectile_03" x="986" y="697" w="87" h="83" ax="5" ay="9" aw="100" ah="100"/>
+<Cell name="monkey_temple_main_projectile_04" x="936" y="811" w="86" h="83" ax="5" ay="8" aw="100" ah="100"/>
+<Cell name="monkey_temple_main_projectile_05" x="1424" y="315" w="85" h="84" ax="7" ay="9" aw="100" ah="100"/>
+</Animation>
+<Animation name="monkey_temple_trap_door">
+<Cell name="monkey_temple_trap_door_01" x="1991" y="595" w="30" h="60" ax="0" ay="0" aw="30" ah="60"/>
+<Cell name="monkey_temple_trap_door_02" x="1190" y="1687" w="30" h="60" ax="0" ay="0" aw="30" ah="60"/>
+<Cell name="monkey_temple_trap_door_03" x="1244" y="1657" w="30" h="60" ax="0" ay="0" aw="30" ah="60"/>
+<Cell name="monkey_temple_trap_door_04" x="1862" y="1037" w="30" h="60" ax="0" ay="0" aw="30" ah="60"/>
+<Cell name="monkey_temple_trap_door_05" x="992" y="1912" w="30" h="60" ax="0" ay="0" aw="30" ah="60"/>
+<Cell name="monkey_temple_trap_door_06" x="1639" y="1267" w="30" h="60" ax="0" ay="0" aw="30" ah="60"/>
+</Animation>
+<Animation name="monkey_village_eye_diagonal">
+<Cell name="monkey_village_eye_diagonal_01" x="1332" y="1024" w="43" h="43" ax="0" ay="0" aw="43" ah="43"/>
+<Cell name="monkey_village_eye_diagonal_02" x="546" y="1798" w="43" h="43" ax="0" ay="0" aw="43" ah="43"/>
+</Animation>
+<Animation name="monkey_village_eye_side">
+<Cell name="monkey_village_eye_side_01" x="954" y="1401" w="43" h="43" ax="0" ay="0" aw="43" ah="43"/>
+<Cell name="monkey_village_eye_side_02" x="859" y="1502" w="43" h="43" ax="0" ay="0" aw="43" ah="43"/>
+</Animation>
+<Animation name="monkey_village_eye_straight">
+<Cell name="monkey_village_eye_straight_01" x="621" y="1749" w="43" h="43" ax="0" ay="0" aw="43" ah="43"/>
+<Cell name="monkey_village_eye_straight_02" x="809" y="1563" w="43" h="43" ax="0" ay="0" aw="43" ah="43"/>
+</Animation>
+<Animation name="monkey_village_fire">
+<Cell name="monkey_village_fire_01" x="1482" y="1597" w="27" h="32" ax="0" ay="0" aw="27" ah="32"/>
+<Cell name="monkey_village_fire_02" x="1448" y="1629" w="27" h="32" ax="0" ay="0" aw="27" ah="32"/>
+<Cell name="monkey_village_fire_03" x="1958" y="1121" w="27" h="32" ax="0" ay="0" aw="27" ah="32"/>
+<Cell name="monkey_village_fire_04" x="1279" y="1803" w="27" h="32" ax="0" ay="0" aw="27" ah="32"/>
+</Animation>
+<Animation name="napalm">
+<Cell name="napalm_01" x="757" y="1953" w="35" h="40" ax="0" ay="0" aw="35" ah="40"/>
+<Cell name="napalm_02" x="1062" y="1714" w="34" h="40" ax="0" ay="0" aw="35" ah="40"/>
+<Cell name="napalm_03" x="1408" y="1369" w="34" h="38" ax="0" ay="2" aw="35" ah="40"/>
+<Cell name="napalm_04" x="1448" y="1328" w="34" h="38" ax="0" ay="2" aw="35" ah="40"/>
+</Animation>
+<Animation name="napalm_explosion">
+<Cell name="napalm_explosion_01" x="1986" y="1263" w="23" h="25" ax="0" ay="0" aw="23" ah="25"/>
+<Cell name="napalm_explosion_02" x="295" y="1671" w="52" h="55" ax="0" ay="0" aw="52" ah="55"/>
+<Cell name="napalm_explosion_03" x="1670" y="92" w="85" h="87" ax="0" ay="0" aw="85" ah="87"/>
+<Cell name="napalm_explosion_04" x="906" y="1" w="116" h="122" ax="0" ay="0" aw="116" ah="122"/>
+<Cell name="napalm_explosion_05" x="1004" y="227" w="109" h="112" ax="0" ay="0" aw="109" ah="112"/>
+</Animation>
+<Animation name="ninja_arm">
+<Cell name="ninja_arm_01" x="1543" y="1587" w="26" h="21" ax="0" ay="7" aw="32" ah="29"/>
+<Cell name="ninja_arm_02" x="1891" y="1426" w="22" h="26" ax="6" ay="2" aw="32" ah="29"/>
+<Cell name="ninja_arm_03" x="977" y="991" w="17" h="29" ax="15" ay="0" aw="32" ah="29"/>
+</Animation>
+<Animation name="rad_egg_dust">
+<Cell name="rad_egg_dust_01" x="1474" y="1847" w="22" h="23" ax="1" ay="0" aw="24" ah="24"/>
+<Cell name="rad_egg_dust_02" x="1515" y="980" w="39" h="40" ax="1" ay="1" aw="41" ah="42"/>
+<Cell name="rad_egg_dust_03" x="631" y="1019" w="57" h="58" ax="1" ay="1" aw="59" ah="60"/>
+<Cell name="rad_egg_dust_04" x="319" y="1180" w="59" h="63" ax="1" ay="1" aw="60" ah="65"/>
+</Animation>
+<Animation name="smoke">
+<Cell name="smoke_01" x="1664" y="1350" w="28" h="31" ax="0" ay="0" aw="28" ah="31"/>
+<Cell name="smoke_02" x="1395" y="1851" w="23" h="31" ax="0" ay="0" aw="23" ah="31"/>
+<Cell name="smoke_03" x="1190" y="1650" w="14" h="21" ax="0" ay="0" aw="14" ah="21"/>
+</Animation>
+<Animation name="sniper_arm">
+<Cell name="sniper_arm_01" x="1338" y="1483" w="11" h="26" ax="0" ay="2" aw="11" ah="28"/>
+<Cell name="sniper_arm_02" x="1810" y="1858" w="11" h="22" ax="0" ay="2" aw="11" ah="28"/>
+<Cell name="sniper_arm_03" x="1139" y="1650" w="11" h="20" ax="0" ay="0" aw="11" ah="28"/>
+<Cell name="sniper_arm_04" x="1749" y="1920" w="11" h="21" ax="0" ay="3" aw="11" ah="28"/>
+<Cell name="sniper_arm_05" x="1765" y="1905" w="11" h="20" ax="0" ay="7" aw="11" ah="28"/>
+</Animation>
+<Animation name="sniper_casing">
+<Cell name="sniper_casing_01" x="158" y="891" w="6" h="9" ax="16" ay="0" aw="22" ah="9"/>
+<Cell name="sniper_casing_02" x="1843" y="127" w="5" h="9" ax="10" ay="0" aw="22" ah="9"/>
+<Cell name="sniper_casing_03" x="598" y="817" w="4" h="7" ax="5" ay="1" aw="22" ah="9"/>
+<Cell name="sniper_casing_04" x="478" y="959" w="4" h="5" ax="0" ay="3" aw="22" ah="9"/>
+</Animation>
+<Animation name="spike_factory_cog">
+<Cell name="spike_factory_cog_01" x="1840" y="1418" w="23" h="23" ax="0" ay="0" aw="23" ah="23"/>
+<Cell name="spike_factory_cog_02" x="1466" y="1794" w="23" h="23" ax="0" ay="0" aw="23" ah="23"/>
+</Animation>
+<Animation name="spike_factory_fins">
+<Cell name="spike_factory_fins_01" x="1421" y="1480" w="18" h="36" ax="0" ay="0" aw="18" ah="36"/>
+<Cell name="spike_factory_fins_02" x="1698" y="1518" w="18" h="36" ax="0" ay="0" aw="18" ah="36"/>
+</Animation>
+<Animation name="spike_factory_iris">
+<Cell name="spike_factory_iris_01" x="1168" y="1521" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+<Cell name="spike_factory_iris_02" x="1370" y="1325" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+<Cell name="spike_factory_iris_03" x="1676" y="1009" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+</Animation>
+<Animation name="spike_factory_moab_shredr">
+<Cell name="spike_factory_moab_shredr_01" x="976" y="1740" w="35" h="35" ax="1" ay="1" aw="37" ah="37"/>
+<Cell name="spike_factory_moab_shredr_02" x="1115" y="1612" w="35" h="35" ax="1" ay="1" aw="37" ah="37"/>
+<Cell name="spike_factory_moab_shredr_03" x="1168" y="1560" w="35" h="35" ax="1" ay="1" aw="37" ah="37"/>
+<Cell name="spike_factory_moab_shredr_04" x="1207" y="1521" w="35" h="35" ax="1" ay="1" aw="37" ah="37"/>
+</Animation>
+<Animation name="spike_factory_spiked_mines">
+<Cell name="spike_factory_spiked_mines_01" x="1794" y="1642" w="18" h="35" ax="1" ay="1" aw="19" ah="37"/>
+<Cell name="spike_factory_spiked_mines_02" x="1644" y="1793" w="18" h="35" ax="1" ay="1" aw="19" ah="37"/>
+<Cell name="spike_factory_spiked_mines_03" x="1757" y="1681" w="18" h="35" ax="1" ay="1" aw="19" ah="37"/>
+<Cell name="spike_factory_spiked_mines_04" x="1928" y="1511" w="18" h="35" ax="1" ay="1" aw="19" ah="37"/>
+</Animation>
+<Animation name="spike_factory_storm">
+<Cell name="spike_factory_storm_01" x="1530" y="1199" w="35" h="35" ax="1" ay="1" aw="37" ah="37"/>
+<Cell name="spike_factory_storm_02" x="1370" y="1364" w="35" h="35" ax="1" ay="1" aw="37" ah="37"/>
+<Cell name="spike_factory_storm_03" x="1024" y="1713" w="35" h="35" ax="1" ay="1" aw="37" ah="37"/>
+<Cell name="spike_factory_storm_04" x="1637" y="1101" w="35" h="35" ax="1" ay="1" aw="37" ah="37"/>
+</Animation>
+<Animation name="supermonkey_arm">
+<Cell name="supermonkey_arm_01" x="1723" y="1562" w="22" h="49" ax="0" ay="0" aw="22" ah="49"/>
+<Cell name="supermonkey_arm_02" x="1454" y="591" w="21" h="47" ax="1" ay="1" aw="22" ah="49"/>
+</Animation>
+<Animation name="supermonkey_tech_terror_arm">
+<Cell name="supermonkey_tech_terror_arm_01" x="1865" y="974" w="32" h="60" ax="0" ay="0" aw="32" ah="60"/>
+<Cell name="supermonkey_tech_terror_arm_02" x="992" y="1849" w="32" h="60" ax="0" ay="0" aw="32" ah="60"/>
+</Animation>
+<Animation name="tack_shooter_blade_maelstrom">
+<Cell name="tack_shooter_blade_maelstrom_01" x="549" y="1451" w="51" h="51" ax="0" ay="0" aw="51" ah="51"/>
+<Cell name="tack_shooter_blade_maelstrom_02" x="977" y="1023" w="51" h="51" ax="0" ay="0" aw="51" ah="51"/>
+</Animation>
+<Animation name="tack_shooter_blades">
+<Cell name="tack_shooter_blades_01" x="1079" y="934" w="74" h="74" ax="0" ay="0" aw="74" ah="74"/>
+<Cell name="tack_shooter_blades_02" x="1935" y="83" w="74" h="74" ax="0" ay="0" aw="74" ah="74"/>
+</Animation>
+<Animation name="tack_shooter_faster_firing">
+<Cell name="tack_shooter_faster_firing_01" x="1024" y="1674" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+<Cell name="tack_shooter_faster_firing_02" x="917" y="1860" w="34" h="34" ax="2" ay="2" aw="36" ah="36"/>
+</Animation>
+<Animation name="tack_shooter_firing">
+<Cell name="tack_shooter_firing_01" x="932" y="1761" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+<Cell name="tack_shooter_firing_02" x="1607" y="1172" w="34" h="34" ax="2" ay="2" aw="36" ah="36"/>
+</Animation>
+<Animation name="tack_shooter_ring_of_fire">
+<Cell name="tack_shooter_ring_of_fire_01" x="937" y="1687" w="36" h="71" ax="0" ay="0" aw="36" ah="71"/>
+<Cell name="tack_shooter_ring_of_fire_02" x="893" y="1731" w="36" h="71" ax="0" ay="0" aw="36" ah="71"/>
+<Cell name="tack_shooter_ring_of_fire_03" x="1637" y="993" w="36" h="71" ax="0" ay="0" aw="36" ah="71"/>
+</Animation>
+<Animation name="tack_shooter_ring_of_fire_flame">
+<Cell name="tack_shooter_ring_of_fire_flame_01" x="1063" y="1181" w="8" h="11" ax="0" ay="0" aw="8" ah="11"/>
+<Cell name="tack_shooter_ring_of_fire_flame_02" x="1554" y="842" w="8" h="10" ax="0" ay="1" aw="8" ah="11"/>
+<Cell name="tack_shooter_ring_of_fire_flame_03" x="495" y="1357" w="8" h="6" ax="0" ay="4" aw="8" ah="11"/>
+</Animation>
+<Animation name="tack_shooter_sprayer">
+<Cell name="tack_shooter_sprayer_01" x="1450" y="1251" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+<Cell name="tack_shooter_sprayer_02" x="1972" y="793" w="34" h="34" ax="2" ay="2" aw="36" ah="36"/>
+</Animation>
+<Animation name="tacks">
+<Cell name="tacks_01" x="129" y="1022" w="61" h="46" ax="0" ay="0" aw="61" ah="46"/>
+<Cell name="tacks_02" x="1" y="1152" w="61" h="46" ax="0" ay="0" aw="61" ah="46"/>
+<Cell name="tacks_03" x="129" y="1071" w="61" h="46" ax="0" ay="0" aw="61" ah="46"/>
+<Cell name="tacks_04" x="173" y="1817" w="52" h="46" ax="9" ay="0" aw="61" ah="46"/>
+<Cell name="tacks_05" x="424" y="1567" w="52" h="46" ax="9" ay="0" aw="61" ah="46"/>
+<Cell name="tacks_06" x="1048" y="1291" w="43" h="46" ax="9" ay="0" aw="61" ah="46"/>
+<Cell name="tacks_07" x="1387" y="1489" w="31" h="46" ax="9" ay="0" aw="61" ah="46"/>
+<Cell name="tacks_08" x="1386" y="1538" w="30" h="32" ax="9" ay="0" aw="61" ah="46"/>
+<Cell name="tacks_09" x="1813" y="1264" w="27" h="32" ax="12" ay="0" aw="61" ah="46"/>
+<Cell name="tacks_10" x="1829" y="1773" w="13" h="29" ax="12" ay="3" aw="61" ah="46"/>
+</Animation>
+<Animation name="tempest_tornado">
+<Cell name="tempest_tornado_01" x="1" y="676" w="163" h="155" ax="0" ay="0" aw="164" ah="156"/>
+<Cell name="tempest_tornado_02" x="171" y="523" w="156" h="156" ax="8" ay="0" aw="164" ah="156"/>
+<Cell name="tempest_tornado_03" x="236" y="364" w="164" h="156" ax="0" ay="0" aw="164" ah="156"/>
+</Animation>
+<Animation name="whirlwind">
+<Cell name="whirlwind_01" x="876" y="450" w="117" h="112" ax="0" ay="0" aw="117" ah="112"/>
+<Cell name="whirlwind_02" x="1025" y="1" w="112" h="112" ax="5" ay="0" aw="117" ah="112"/>
+<Cell name="whirlwind_03" x="750" y="639" w="117" h="112" ax="0" ay="0" aw="117" ah="112"/>
+</Animation>
+<Animation name="white_ninja_arm">
+<Cell name="white_ninja_arm_01" x="532" y="945" w="26" h="22" ax="0" ay="7" aw="32" ah="30"/>
+<Cell name="white_ninja_arm_02" x="1093" y="1877" w="24" h="26" ax="3" ay="2" aw="32" ah="29"/>
+<Cell name="white_ninja_arm_03" x="1906" y="1602" w="17" h="30" ax="15" ay="0" aw="32" ah="30"/>
+</Animation>
+<Animation name="zomg_nose">
+<Cell name="zomg_nose_01" x="906" y="126" w="93" h="43" ax="33" ay="0" aw="159" ah="43"/>
+<Cell name="zomg_nose_02" x="478" y="972" w="93" h="43" ax="33" ay="0" aw="159" ah="43"/>
+</Animation>
+<Animation name="zomg_skull">
+<Cell name="zomg_skull_01" x="1472" y="1046" w="38" h="82" ax="0" ay="0" aw="76" ah="82"/>
+<Cell name="zomg_skull_02" x="1369" y="1143" w="38" h="82" ax="38" ay="0" aw="76" ah="82"/>
+</Animation>
+<Animation name="zomg_tail">
+<Cell name="zomg_tail_01" x="1565" y="735" w="67" h="80" ax="0" ay="0" aw="155" ah="80"/>
+<Cell name="zomg_tail_02" x="1872" y="500" w="67" h="75" ax="88" ay="0" aw="155" ah="80"/>
+<Cell name="zomg_tail_03" x="1635" y="735" w="67" h="79" ax="0" ay="0" aw="155" ah="79"/>
+<Cell name="zomg_tail_04" x="1565" y="818" w="67" h="73" ax="88" ay="0" aw="155" ah="79"/>
+</Animation>
+<Cell name="absolute_zero_wind_01" x="273" y="961" w="103" h="50" ax="0" ay="0" aw="103" ah="50"/>
+<Cell name="apprentice_seeking_core" x="1036" y="1571" w="37" h="37" ax="0" ay="0" aw="37" ah="37"/>
+<Cell name="apprentice_seeking_flame_01" x="1450" y="1203" w="36" h="45" ax="0" ay="0" aw="36" ah="45"/>
+<Cell name="apprentice_seeking_flame_02" x="918" y="1805" w="35" h="52" ax="0" ay="0" aw="35" ah="52"/>
+<Cell name="banana_box" x="732" y="1351" w="49" h="58" ax="0" ay="0" aw="49" ah="58"/>
+<Cell name="banana_farm_bank" x="529" y="1653" w="47" h="71" ax="0" ay="0" aw="47" ah="71"/>
+<Cell name="banana_farm_bank_text" x="1025" y="881" w="42" h="10" ax="0" ay="0" aw="42" ah="10"/>
+<Cell name="banana_farm_brick_base" x="963" y="1182" w="47" h="94" ax="0" ay="0" aw="47" ah="94"/>
+<Cell name="banana_farm_earth_base" x="1205" y="427" w="94" h="94" ax="0" ay="0" aw="94" ah="94"/>
+<Cell name="banana_farm_enclosure" x="1679" y="283" w="40" h="84" ax="0" ay="1" aw="40" ah="85"/>
+<Cell name="banana_farm_investment" x="392" y="1842" w="46" h="99" ax="0" ay="0" aw="46" ah="99"/>
+<Cell name="banana_farm_investment_text" x="1658" y="182" w="42" h="14" ax="0" ay="0" aw="42" ah="14"/>
+<Cell name="banana_farm_more_bananas" x="1013" y="1232" w="46" h="45" ax="0" ay="0" aw="46" ah="45"/>
+<Cell name="banana_farm_plantation" x="1557" y="485" w="73" h="67" ax="0" ay="0" aw="73" ah="67"/>
+<Cell name="banana_farm_republic" x="348" y="1734" w="49" h="100" ax="0" ay="0" aw="49" ah="100"/>
+<Cell name="banana_farm_research_facility" x="1326" y="265" w="95" h="98" ax="0" ay="0" aw="95" ah="98"/>
+<Cell name="banana_farm_tree" x="381" y="1184" w="58" h="68" ax="0" ay="0" aw="58" ah="68"/>
+<Cell name="banana_farm_tree_bananas" x="1158" y="1200" w="43" h="36" ax="0" ay="0" aw="43" ah="36"/>
+<Cell name="bananas" x="112" y="1943" w="50" h="38" ax="0" ay="0" aw="50" ah="38"/>
+<Cell name="barrel1_01" x="1725" y="1343" w="27" h="35" ax="18" ay="19" aw="64" ah="96"/>
+<Cell name="barrel1_02" x="1991" y="1098" w="27" h="32" ax="18" ay="22" aw="64" ah="96"/>
+<Cell name="barrel1_03" x="1875" y="1215" w="27" h="29" ax="18" ay="25" aw="64" ah="96"/>
+<Cell name="barrel1_04" x="1660" y="1430" w="27" h="26" ax="18" ay="28" aw="64" ah="96"/>
+<Cell name="barrel2_01" x="1695" y="1350" w="27" h="45" ax="18" ay="9" aw="64" ah="96"/>
+<Cell name="barrel2_02" x="1660" y="1384" w="27" h="43" ax="18" ay="11" aw="64" ah="96"/>
+<Cell name="barrel2_03" x="1185" y="1863" w="27" h="40" ax="18" ay="14" aw="64" ah="96"/>
+<Cell name="barrel2_04" x="1279" y="1762" w="27" h="38" ax="18" ay="16" aw="64" ah="96"/>
+<Cell name="barrel3_01" x="1690" y="1421" w="26" h="53" ax="18" ay="1" aw="64" ah="96"/>
+<Cell name="barrel3_02" x="1813" y="1299" w="26" h="51" ax="18" ay="3" aw="64" ah="96"/>
+<Cell name="barrel3_03" x="1369" y="1735" w="26" h="48" ax="18" ay="6" aw="64" ah="96"/>
+<Cell name="barrel3_04" x="1153" y="1948" w="26" h="46" ax="18" ay="8" aw="64" ah="96"/>
+<Cell name="barrel4_01" x="1892" y="1153" w="27" h="45" ax="18" ay="9" aw="64" ah="96"/>
+<Cell name="barrel4_02" x="1991" y="1055" w="27" h="40" ax="18" ay="14" aw="64" ah="96"/>
+<Cell name="barrel4_03" x="1614" y="1451" w="27" h="36" ax="18" ay="18" aw="64" ah="96"/>
+<Cell name="barrel4_04" x="1216" y="1847" w="27" h="36" ax="18" ay="18" aw="64" ah="96"/>
+<Cell name="base_01" x="126" y="1474" w="58" h="59" ax="3" ay="36" aw="64" ah="96"/>
+<Cell name="base_02" x="317" y="1281" w="58" h="60" ax="3" ay="36" aw="64" ah="96"/>
+<Cell name="base_04" x="1986" y="659" w="35" h="68" ax="0" ay="0" aw="35" ah="68"/>
+<Cell name="base_05" x="117" y="1773" w="53" h="113" ax="6" ay="0" aw="59" ah="113"/>
+<Cell name="base_06" x="328" y="1900" w="46" h="90" ax="0" ay="0" aw="46" ah="90"/>
+<Cell name="bazooka_dartling_gun_gas_mask" x="1866" y="1426" w="22" h="32" ax="0" ay="0" aw="22" ah="32"/>
+<Cell name="bazooka_dartling_gun_goggles" x="486" y="945" w="43" h="19" ax="3" ay="0" aw="49" ah="40"/>
+<Cell name="bazooka_dartling_gun_helmet_black" x="1272" y="1921" w="24" h="39" ax="2" ay="1" aw="26" ah="40"/>
+<Cell name="bazooka_dartling_gun_helmet_blue" x="1874" y="1323" w="24" h="39" ax="2" ay="1" aw="26" ah="40"/>
+<Cell name="bazooka_dartling_gun_helmet_circles" x="1703" y="182" w="16" h="16" ax="1" ay="1" aw="17" ah="17"/>
+<Cell name="bazooka_dartling_gun_helmet_green" x="1932" y="1266" w="24" h="39" ax="2" ay="1" aw="26" ah="40"/>
+<Cell name="bazooka_dartling_gun_helmet_purple" x="1571" y="1616" w="24" h="39" ax="2" ay="1" aw="26" ah="40"/>
+<Cell name="bazooka_dartling_gun_helmet_red" x="1368" y="1833" w="24" h="39" ax="2" ay="1" aw="26" ah="40"/>
+<Cell name="bazooza_dartling_gun_black_laser" x="1263" y="1343" w="21" h="111" ax="1" ay="1" aw="22" ah="112"/>
+<Cell name="bazooza_dartling_gun_black_launcher" x="1610" y="1569" w="24" h="109" ax="2" ay="0" aw="26" ah="110"/>
+<Cell name="bazooza_dartling_gun_blue" x="1821" y="1534" w="20" h="110" ax="2" ay="0" aw="22" ah="111"/>
+<Cell name="bazooza_dartling_gun_glow_green" x="512" y="1981" w="36" h="12" ax="0" ay="0" aw="36" ah="12"/>
+<Cell name="bazooza_dartling_gun_glow_red" x="1110" y="1277" w="18" h="11" ax="0" ay="0" aw="18" ah="11"/>
+<Cell name="bazooza_dartling_gun_green" x="2003" y="1375" w="18" h="104" ax="2" ay="1" aw="20" ah="105"/>
+<Cell name="bazooza_dartling_gun_green_basic" x="1844" y="1527" w="19" h="104" ax="1" ay="1" aw="20" ah="105"/>
+<Cell name="bazooza_dartling_gun_purple" x="1980" y="1375" w="20" h="109" ax="2" ay="1" aw="22" ah="110"/>
+<Cell name="bazooza_dartling_gun_red_laser" x="2000" y="899" w="21" h="110" ax="1" ay="0" aw="22" ah="111"/>
+<Cell name="bazooza_dartling_gun_red_launcher" x="1748" y="1551" w="21" h="109" ax="1" ay="1" aw="22" ah="110"/>
+<Cell name="bazooza_dartling_gun_tube" x="1416" y="1920" w="21" h="41" ax="0" ay="0" aw="21" ah="41"/>
+<Cell name="bfb_band" x="1265" y="694" w="75" h="44" ax="1" ay="0" aw="76" ah="44"/>
+<Cell name="bfb_band_left" x="997" y="897" w="79" h="44" ax="1" ay="0" aw="152" ah="44"/>
+<Cell name="bfb_band_right" x="574" y="972" w="82" h="44" ax="69" ay="0" aw="152" ah="44"/>
+<Cell name="bfb_eating_01" x="1" y="183" w="263" h="178" ax="0" ay="0" aw="263" ah="178"/>
+<Cell name="bfb_eating_02" x="285" y="6" w="259" h="162" ax="0" ay="0" aw="259" ah="162"/>
+<Cell name="bfb_eating_03" x="267" y="183" w="249" h="159" ax="0" ay="0" aw="249" ah="159"/>
+<Cell name="bfb_eating_04" x="1" y="364" w="232" h="123" ax="0" ay="0" aw="232" ah="123"/>
+<Cell name="bfb_eating_05" x="438" y="832" w="120" h="110" ax="0" ay="0" aw="120" ah="110"/>
+<Cell name="bfb_engine" x="1265" y="741" w="74" h="79" ax="0" ay="0" aw="74" ah="79"/>
+<Cell name="bfb_eye" x="622" y="1284" w="53" h="61" ax="0" ay="0" aw="53" ah="61"/>
+<Cell name="bfb_logo" x="1252" y="1" w="109" h="109" ax="0" ay="0" aw="109" ah="109"/>
+<Cell name="bfb_nose" x="1478" y="406" w="78" h="73" ax="0" ay="0" aw="78" ah="73"/>
+<Cell name="bfb_nose_left" x="1093" y="657" w="86" h="73" ax="0" ay="0" aw="156" ah="73"/>
+<Cell name="bfb_nose_right" x="1199" y="524" w="87" h="73" ax="69" ay="0" aw="156" ah="73"/>
+<Cell name="bfb_undamaged" x="1722" y="182" w="76" h="305" ax="0" ay="0" aw="76" ah="305"/>
+<Cell name="black_bandana" x="1" y="1977" w="41" h="13" ax="0" ay="0" aw="41" ah="14"/>
+<Cell name="black_smoke_01" x="954" y="1447" w="42" h="43" ax="0" ay="0" aw="42" ah="43"/>
+<Cell name="black_smoke_02" x="1935" y="1" w="76" h="79" ax="0" ay="0" aw="76" ah="79"/>
+<Cell name="black_smoke_03" x="679" y="881" w="113" h="115" ax="0" ay="0" aw="113" ah="115"/>
+<Cell name="black_smoke_04" x="561" y="845" w="115" h="124" ax="0" ay="0" aw="115" ah="124"/>
+<Cell name="blimp_broken_rotor" x="403" y="488" w="75" h="27" ax="0" ay="0" aw="75" ah="27"/>
+<Cell name="bloonchipper_base" x="896" y="1690" w="38" h="38" ax="0" ay="0" aw="38" ah="38"/>
+<Cell name="bloonchipper_blimp_fragments" x="158" y="914" w="6" h="7" ax="0" ay="0" aw="6" ah="7"/>
+<Cell name="bloonchipper_exhaust_blue" x="1377" y="1952" w="21" h="23" ax="0" ay="0" aw="21" ah="23"/>
+<Cell name="bloonchipper_exhaust_grey" x="1859" y="1486" w="21" h="23" ax="0" ay="0" aw="21" ah="23"/>
+<Cell name="bloonchipper_expulsion_pipe" x="1922" y="1191" w="26" h="43" ax="0" ay="0" aw="26" ah="43"/>
+<Cell name="bloonchipper_expulsion_vent" x="512" y="1963" w="18" h="10" ax="0" ay="0" aw="18" ah="10"/>
+<Cell name="bloonchipper_flame_overlay" x="1757" y="1663" w="19" h="15" ax="0" ay="0" aw="19" ah="15"/>
+<Cell name="bloonchipper_funnel_drop_shadow" x="1875" y="1702" w="14" h="35" ax="0" ay="0" aw="14" ah="35"/>
+<Cell name="bloonchipper_glow" x="1376" y="591" w="75" h="75" ax="0" ay="0" aw="75" ah="75"/>
+<Cell name="bloonchipper_hook" x="1904" y="1673" w="14" h="19" ax="0" ay="0" aw="14" ah="19"/>
+<Cell name="bloonchipper_intake_pipe" x="1513" y="1093" w="37" h="49" ax="0" ay="0" aw="37" ah="49"/>
+<Cell name="bloonchipper_intake_pipe_large" x="710" y="1443" w="48" h="49" ax="0" ay="0" aw="48" ah="49"/>
+<Cell name="bloonchipper_intake_vent" x="637" y="1795" w="29" h="15" ax="0" ay="0" aw="29" ah="15"/>
+<Cell name="bloonchipper_intake_vent_large" x="1280" y="1181" w="40" h="15" ax="0" ay="0" aw="40" ah="15"/>
+<Cell name="bloonchipper_large_stripes" x="1445" y="1369" w="33" h="37" ax="0" ay="0" aw="33" ah="37"/>
+<Cell name="bloonchipper_large_stripes_long" x="809" y="1524" w="44" h="36" ax="0" ay="0" aw="44" ah="36"/>
+<Cell name="bloonchipper_particle" x="1926" y="1602" w="17" h="16" ax="0" ay="0" aw="17" ah="16"/>
+<Cell name="bloonchipper_small_wheel" x="1350" y="1980" w="22" h="14" ax="0" ay="0" aw="22" ah="14"/>
+<Cell name="bloonchipper_thin_stripes" x="479" y="1600" w="30" h="11" ax="0" ay="0" aw="30" ah="11"/>
+<Cell name="bloonchipper_thin_stripes_long" x="1679" y="370" w="39" h="11" ax="0" ay="0" aw="39" ah="11"/>
+<Cell name="bloonchipper_vent_flare" x="1281" y="1531" w="33" h="57" ax="0" ay="0" aw="33" ah="57"/>
+<Cell name="bloonchipper_wheel" x="1750" y="1857" w="13" h="26" ax="0" ay="0" aw="13" ah="26"/>
+<Cell name="bloonchipper_wheel_arch" x="1857" y="1702" w="15" h="27" ax="0" ay="0" aw="15" ah="27"/>
+<Cell name="bloonchipper_wind" x="1543" y="1611" w="25" h="31" ax="0" ay="0" aw="25" ah="31"/>
+<Cell name="bloonsday_laser_flare_01" x="441" y="1877" w="44" h="82" ax="11" ay="15" aw="55" ah="98"/>
+<Cell name="blue_bandana" x="1843" y="142" w="41" h="13" ax="0" ay="0" aw="41" ah="14"/>
+<Cell name="bomb_tower_missile" x="1597" y="1759" w="20" h="75" ax="0" ay="0" aw="20" ah="75"/>
+<Cell name="bomb_tower_missile_full" x="768" y="1656" w="40" h="75" ax="0" ay="0" aw="40" ah="75"/>
+<Cell name="bomb_tower_moab_assassin" x="1370" y="1402" w="34" h="84" ax="0" ay="0" aw="34" ah="84"/>
+<Cell name="bomb_tower_moab_assassin_full" x="1338" y="900" w="68" h="84" ax="0" ay="0" aw="68" ah="84"/>
+<Cell name="bomb_tower_moab_mauler" x="1218" y="1780" w="28" h="64" ax="0" ay="0" aw="28" ah="64"/>
+<Cell name="bomb_tower_moab_mauler_full" x="1" y="1726" w="55" h="64" ax="0" ay="0" aw="55" ah="64"/>
+<Cell name="bomb_tower_propellent_blue" x="971" y="1778" w="35" h="31" ax="0" ay="0" aw="35" ah="31"/>
+<Cell name="bomb_tower_propellent_purple" x="1263" y="1497" w="35" h="31" ax="0" ay="0" aw="35" ah="31"/>
+<Cell name="bomb_tower_silo" x="856" y="1548" w="41" h="82" ax="0" ay="0" aw="41" ah="82"/>
+<Cell name="bomb_tower_silo_black" x="674" y="1730" w="41" h="82" ax="0" ay="0" aw="41" ah="82"/>
+<Cell name="bomb_tower_silo_green" x="1428" y="989" w="41" h="82" ax="0" ay="0" aw="41" ah="82"/>
+<Cell name="bomb_tower_silo_square" x="811" y="1431" w="45" h="90" ax="0" ay="0" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_square_black" x="1186" y="1069" w="45" h="90" ax="0" ay="0" aw="45" ah="90"/>
+<Cell name="bomb_tower_silo_square_green" x="710" y="1545" w="45" h="90" ax="0" ay="0" aw="45" ah="90"/>
+<Cell name="bomb_tower_special_ability_projectile" x="1564" y="1324" w="30" h="86" ax="0" ay="0" aw="30" ah="86"/>
+<Cell name="bomb_tower_special_ability_projectile_full" x="191" y="1277" w="59" h="86" ax="0" ay="0" aw="59" ah="86"/>
+<Cell name="bomb_tower_wheel" x="1680" y="1885" w="14" h="37" ax="0" ay="0" aw="14" ah="37"/>
+<Cell name="boomerang" x="1301" y="1460" w="35" h="20" ax="0" ay="0" aw="35" ah="20"/>
+<Cell name="boomerang_bionic_eye" x="581" y="1603" w="17" h="18" ax="0" ay="0" aw="17" ah="18"/>
+<Cell name="boomerang_body" x="181" y="1611" w="55" h="57" ax="0" ay="0" aw="55" ah="57"/>
+<Cell name="boomerang_chief_headdress" x="626" y="1195" w="55" h="46" ax="10" ay="15" aw="75" ah="70"/>
+<Cell name="boomerang_chieftain_mask" x="1705" y="769" w="65" h="65" ax="5" ay="0" aw="75" ah="70"/>
+<Cell name="boomerang_feather_band" x="866" y="999" w="42" h="22" ax="16" ay="19" aw="75" ah="70"/>
+<Cell name="boomerang_feather_headdress" x="445" y="1165" w="58" h="45" ax="8" ay="16" aw="75" ah="70"/>
+<Cell name="boomerang_feathers" x="1440" y="1921" w="20" h="29" ax="5" ay="37" aw="75" ah="70"/>
+<Cell name="boomerang_glaive_lord_cape" x="1351" y="1576" w="30" h="32" ax="0" ay="0" aw="30" ah="32"/>
+<Cell name="boomerang_glaive_lord_head" x="1424" y="265" w="27" h="46" ax="0" ay="0" aw="27" ah="46"/>
+<Cell name="boomerang_glaive_riccochet" x="373" y="1418" w="55" h="57" ax="0" ay="0" aw="55" ah="57"/>
+<Cell name="boomerang_glaive_thrower" x="435" y="1366" w="55" h="57" ax="0" ay="0" aw="55" ah="57"/>
+<Cell name="boomerang_horned_headdress" x="1954" y="160" w="67" h="41" ax="3" ay="18" aw="75" ah="70"/>
+<Cell name="boomerang_launcher" x="900" y="1606" w="39" h="37" ax="0" ay="0" aw="39" ah="37"/>
+<Cell name="boomerang_launcher_wire_01" x="364" y="1" w="31" h="2" ax="4" ay="9" aw="39" ah="37"/>
+<Cell name="boomerang_launcher_wire_02" x="1713" y="1144" w="32" h="22" ax="3" ay="9" aw="39" ah="37"/>
+<Cell name="boomerang_multi_target" x="1063" y="1629" w="36" h="29" ax="0" ay="0" aw="36" ah="29"/>
+<Cell name="boomerang_red" x="679" y="1815" w="36" h="20" ax="0" ay="0" aw="36" ah="20"/>
+<Cell name="boomerang_red_hot_rangs" x="1339" y="1456" w="28" h="24" ax="0" ay="0" aw="28" ah="24"/>
+<Cell name="boomerang_sonic_boom" x="1843" y="158" w="33" h="17" ax="0" ay="0" aw="33" ah="17"/>
+<Cell name="boomerang_sonic_boom_swoosh" x="689" y="1176" w="54" h="50" ax="0" ay="0" aw="54" ah="50"/>
+<Cell name="boomerang_thrower" x="909" y="1976" w="28" h="17" ax="0" ay="0" aw="28" ah="17"/>
+<Cell name="boomerang_tribal_arm_01" x="2009" y="793" w="12" h="32" ax="0" ay="0" aw="24" ah="34"/>
+<Cell name="boomerang_tribal_arm_02" x="1325" y="1956" w="23" h="13" ax="0" ay="19" aw="24" ah="34"/>
+<Cell name="boomerang_tribal_arm_03" x="1746" y="1480" w="24" h="15" ax="0" ay="19" aw="24" ah="34"/>
+<Cell name="boomerang_tribal_mask" x="221" y="1944" w="47" h="49" ax="14" ay="5" aw="75" ah="70"/>
+<Cell name="boomerang_triple_circle" x="1751" y="1108" w="32" h="22" ax="0" ay="0" aw="32" ah="22"/>
+<Cell name="boomerang_warpaint" x="127" y="1290" w="60" h="57" ax="6" ay="11" aw="75" ah="70"/>
+<Cell name="boomerang_witch_doctor_mask" x="1801" y="182" w="75" h="68" ax="0" ay="2" aw="75" ah="70"/>
+<Cell name="boomerang_zulu_band" x="1204" y="1200" w="42" h="35" ax="16" ay="19" aw="75" ah="70"/>
+<Cell name="bounty_green" x="1183" y="1906" w="27" h="23" ax="0" ay="0" aw="27" ah="23"/>
+<Cell name="bounty_white" x="1582" y="1508" w="27" h="23" ax="0" ay="0" aw="27" ah="23"/>
+<Cell name="bounty_white_2" x="949" y="1971" w="30" h="23" ax="0" ay="0" aw="30" ah="23"/>
+<Cell name="bounty_white_3" x="1185" y="1837" w="28" h="23" ax="0" ay="0" aw="28" ah="23"/>
+<Cell name="bounty_white_4" x="1374" y="1228" w="33" h="23" ax="0" ay="0" aw="33" ah="23"/>
+<Cell name="buccaneer_aircraft_carrier" x="1182" y="1332" w="38" h="147" ax="0" ay="0" aw="38" ah="147"/>
+<Cell name="buccaneer_aircraft_carrier_extension" x="1309" y="1714" w="27" h="85" ax="0" ay="0" aw="27" ah="85"/>
+<Cell name="buccaneer_basic_ship" x="1051" y="1788" w="32" h="86" ax="0" ay="0" aw="32" ah="86"/>
+<Cell name="buccaneer_cannon_ship" x="658" y="1424" w="49" h="129" ax="0" ay="0" aw="49" ah="129"/>
+<Cell name="buccaneer_crows_nest" x="228" y="1817" w="50" h="51" ax="0" ay="0" aw="50" ah="51"/>
+<Cell name="buccaneer_destroyer" x="255" y="1211" w="59" h="134" ax="0" ay="0" aw="59" ah="134"/>
+<Cell name="buccaneer_destroyer_radar" x="438" y="945" w="45" h="11" ax="0" ay="0" aw="45" ah="11"/>
+<Cell name="buccaneer_flag_pole" x="226" y="1871" w="49" h="44" ax="0" ay="0" aw="49" ah="44"/>
+<Cell name="buccaneer_grape_shot" x="1988" y="1133" w="26" h="22" ax="1" ay="1" aw="28" ah="24"/>
+<Cell name="buccaneer_hat" x="626" y="1244" w="54" h="37" ax="0" ay="0" aw="54" ah="37"/>
+<Cell name="buccaneer_larger_ship" x="290" y="1787" w="49" h="107" ax="0" ay="0" aw="49" ah="107"/>
+<Cell name="buccaneer_monkey_pirates" x="848" y="1232" w="49" h="153" ax="0" ay="0" aw="49" ah="153"/>
+<Cell name="buccaneer_monkey_pirates_harpoon" x="374" y="345" w="80" h="15" ax="0" ay="0" aw="80" ah="15"/>
+<Cell name="buccaneer_sailor" x="718" y="1781" w="39" h="40" ax="0" ay="0" aw="39" ah="40"/>
+<Cell name="camo_overlay" x="766" y="1734" w="39" h="49" ax="0" ay="0" aw="39" ah="49"/>
+<Cell name="camo_regen_overlay" x="189" y="1366" w="59" h="51" ax="0" ay="0" aw="59" ah="51"/>
+<Cell name="candy" x="1156" y="987" w="68" h="34" ax="0" ay="0" aw="68" ah="34"/>
+<Cell name="candy_base" x="1100" y="560" w="94" h="94" ax="0" ay="0" aw="94" ah="94"/>
+<Cell name="candy_box" x="477" y="1616" w="49" h="58" ax="0" ay="0" aw="49" ah="58"/>
+<Cell name="candy_castle" x="1773" y="831" w="62" h="136" ax="0" ay="0" aw="62" ah="136"/>
+<Cell name="candy_chimney_01" x="1676" y="1048" w="35" h="49" ax="2" ay="0" aw="38" ah="49"/>
+<Cell name="candy_chimney_02" x="1077" y="1530" w="37" h="44" ax="1" ay="5" aw="38" ah="49"/>
+<Cell name="candy_choco_base" x="476" y="1677" w="47" h="94" ax="0" ay="0" aw="47" ah="94"/>
+<Cell name="candy_factory" x="995" y="595" w="95" h="99" ax="0" ay="0" aw="95" ah="99"/>
+<Cell name="candy_fence_front" x="728" y="173" w="78" h="17" ax="9" ay="71" aw="94" ah="94"/>
+<Cell name="candy_gumball_machine" x="1690" y="1710" w="19" h="23" ax="0" ay="0" aw="19" ah="23"/>
+<Cell name="candy_house" x="787" y="1295" w="49" h="122" ax="1" ay="0" aw="50" ah="122"/>
+<Cell name="candy_lollies" x="1086" y="1852" w="30" h="22" ax="0" ay="0" aw="30" ah="22"/>
+<Cell name="candy_store" x="1025" y="803" w="48" h="75" ax="0" ay="0" aw="48" ah="90"/>
+<Cell name="candy_store_sign" x="1879" y="160" w="72" h="49" ax="0" ay="0" aw="72" ah="49"/>
+<Cell name="candy_tree" x="603" y="1479" w="49" h="70" ax="0" ay="0" aw="49" ah="70"/>
+<Cell name="candy_tree_large" x="65" y="1188" w="60" h="82" ax="0" ay="0" aw="60" ah="82"/>
+<Cell name="candy_window" x="1928" y="1493" w="19" h="15" ax="0" ay="0" aw="19" ah="15"/>
+<Cell name="chain_lightning" x="1946" y="418" w="67" h="111" ax="0" ay="0" aw="67" ah="111"/>
+<Cell name="cobra_arm_bab_01" x="1812" y="1792" w="13" h="29" ax="0" ay="0" aw="13" ah="29"/>
+<Cell name="cobra_arm_bab_02" x="1690" y="1398" w="27" h="20" ax="0" ay="0" aw="27" ah="20"/>
+<Cell name="cobra_arm_bare_01" x="1979" y="1629" w="13" h="28" ax="0" ay="0" aw="13" ah="28"/>
+<Cell name="cobra_arm_bare_02" x="1643" y="1490" w="26" h="19" ax="0" ay="0" aw="26" ah="19"/>
+<Cell name="cobra_arm_base_01" x="1789" y="1809" w="13" h="29" ax="0" ay="0" aw="13" ah="29"/>
+<Cell name="cobra_arm_base_02" x="1378" y="1713" w="27" h="19" ax="0" ay="0" aw="27" ah="19"/>
+<Cell name="cobra_arm_offensive_01" x="1680" y="1925" w="13" h="29" ax="0" ay="0" aw="13" ah="29"/>
+<Cell name="cobra_bluetooth" x="889" y="1388" w="8" h="14" ax="0" ay="0" aw="8" ah="14"/>
+<Cell name="cobra_briefcase" x="1921" y="1673" w="13" h="33" ax="0" ay="0" aw="13" ah="33"/>
+<Cell name="cobra_earpiece" x="1154" y="1580" w="11" h="14" ax="0" ay="0" aw="11" ah="14"/>
+<Cell name="cobra_gun_01" x="1972" y="767" w="11" h="23" ax="0" ay="0" aw="11" ah="23"/>
+<Cell name="cobra_gun_02" x="1874" y="1794" w="11" h="23" ax="0" ay="0" aw="11" ah="23"/>
+<Cell name="cobra_gun_03" x="1843" y="1820" w="11" h="24" ax="0" ay="0" aw="11" ah="24"/>
+<Cell name="cobra_gun_04" x="1781" y="1862" w="12" h="24" ax="0" ay="0" aw="12" ah="24"/>
+<Cell name="cobra_gun_05" x="2010" y="1656" w="11" h="24" ax="0" ay="0" aw="11" ah="24"/>
+<Cell name="cobra_head_01" x="808" y="1059" w="54" h="39" ax="0" ay="0" aw="54" ah="39"/>
+<Cell name="cobra_head_02" x="678" y="1288" w="53" h="39" ax="0" ay="0" aw="53" ah="39"/>
+<Cell name="cobra_head_03" x="310" y="1555" w="54" h="40" ax="0" ay="0" aw="54" ah="40"/>
+<Cell name="cobra_jacket_attrition" x="1084" y="1045" w="49" h="26" ax="0" ay="0" aw="49" ah="26"/>
+<Cell name="cobra_jacket_bab" x="400" y="1734" w="49" h="26" ax="0" ay="0" aw="49" ah="26"/>
+<Cell name="cobra_jacket_base" x="710" y="1415" w="49" h="25" ax="0" ay="0" aw="49" ah="25"/>
+<Cell name="cobra_jacket_offensive" x="677" y="1384" w="50" h="28" ax="0" ay="0" aw="50" ah="28"/>
+<Cell name="cobra_light_green" x="1100" y="434" w="1" h="19" ax="0" ay="0" aw="1" ah="19"/>
+<Cell name="cobra_light_red" x="1568" y="98" w="1" h="19" ax="0" ay="0" aw="1" ah="19"/>
+<Cell name="cobra_muzzle_flash" x="1637" y="1652" w="22" h="49" ax="0" ay="0" aw="22" ah="49"/>
+<Cell name="cobra_muzzle_flash_arm_01" x="1852" y="1754" w="13" h="29" ax="0" ay="0" aw="13" ah="29"/>
+<Cell name="cobra_muzzle_flash_arm_02" x="1981" y="1158" w="26" h="19" ax="0" ay="0" aw="26" ah="19"/>
+<Cell name="cobra_muzzle_flash_face_01" x="221" y="1922" w="49" h="19" ax="0" ay="0" aw="49" ah="19"/>
+<Cell name="cobra_muzzle_flash_face_02" x="1376" y="669" w="49" h="18" ax="0" ay="0" aw="49" ah="18"/>
+<Cell name="cobra_muzzle_flash_face_03" x="529" y="1603" w="49" h="18" ax="0" ay="0" aw="49" ah="18"/>
+<Cell name="cobra_phone" x="2005" y="1574" w="14" h="19" ax="0" ay="0" aw="14" ah="19"/>
+<Cell name="cobra_shadow" x="620" y="1394" w="51" h="27" ax="0" ay="0" aw="51" ah="27"/>
+<Cell name="confusion_star" x="1279" y="1838" w="26" h="29" ax="0" ay="0" aw="26" ah="29"/>
+<Cell name="dart_monkey_body" x="310" y="1495" w="55" h="57" ax="0" ay="1" aw="62" ah="58"/>
+<Cell name="dart_monkey_cape" x="317" y="1246" w="59" h="32" ax="0" ay="0" aw="59" ah="32"/>
+<Cell name="dart_monkey_catapult_01" x="2010" y="1158" w="11" h="16" ax="0" ay="0" aw="11" ah="16"/>
+<Cell name="dart_monkey_catapult_02" x="1516" y="1894" w="19" h="19" ax="0" ay="0" aw="19" ah="19"/>
+<Cell name="dart_monkey_catapult_body" x="750" y="999" w="55" h="60" ax="0" ay="0" aw="55" ah="60"/>
+<Cell name="dart_monkey_catapult_frame" x="1774" y="686" w="65" h="67" ax="0" ay="0" aw="65" ah="67"/>
+<Cell name="dart_monkey_catapult_frame_gold" x="1163" y="733" w="16" h="67" ax="0" ay="0" aw="65" ah="67"/>
+<Cell name="dart_monkey_catapult_frame_metal" x="1969" y="1559" w="16" h="67" ax="0" ay="0" aw="65" ah="67"/>
+<Cell name="dart_monkey_catapult_launcher_01" x="1814" y="1184" w="28" h="77" ax="0" ay="0" aw="28" ah="77"/>
+<Cell name="dart_monkey_catapult_launcher_02" x="1860" y="1160" w="28" h="52" ax="0" ay="0" aw="28" ah="52"/>
+<Cell name="dart_monkey_catapult_launcher_03" x="1347" y="1671" w="28" h="57" ax="0" ay="0" aw="28" ah="57"/>
+<Cell name="dart_monkey_dart" x="377" y="1900" w="12" h="40" ax="0" ay="0" aw="12" ah="40"/>
+<Cell name="dart_monkey_elf_arm_01" x="1845" y="1786" w="12" h="31" ax="38" ay="0" aw="62" ah="58"/>
+<Cell name="dart_monkey_elf_arm_02" x="1421" y="1857" w="23" h="14" ax="38" ay="20" aw="62" ah="58"/>
+<Cell name="dart_monkey_elf_arm_03" x="1396" y="1832" w="24" h="16" ax="38" ay="20" aw="62" ah="58"/>
+<Cell name="dart_monkey_elf_green" x="1" y="1606" w="58" h="57" ax="0" ay="1" aw="62" ah="58"/>
+<Cell name="dart_monkey_elf_red" x="189" y="1420" w="58" h="57" ax="0" ay="1" aw="62" ah="58"/>
+<Cell name="dart_monkey_medieval_01" x="1186" y="1024" w="47" h="42" ax="4" ay="8" aw="62" ah="58"/>
+<Cell name="dart_monkey_medieval_02" x="431" y="1426" w="55" h="36" ax="0" ay="15" aw="62" ah="67"/>
+<Cell name="dart_monkey_medieval_04" x="977" y="1077" w="50" h="45" ax="0" ay="0" aw="50" ah="45"/>
+<Cell name="dart_monkey_medieval_05" x="569" y="1133" w="56" h="49" ax="3" ay="1" aw="60" ah="64"/>
+<Cell name="dart_monkey_medieval_catapult_body" x="564" y="1248" w="55" h="49" ax="0" ay="0" aw="55" ah="64"/>
+<Cell name="dart_monkey_medieval_helmet" x="691" y="999" w="56" h="49" ax="0" ay="0" aw="62" ah="67"/>
+<Cell name="dart_monkey_medieval_plume_black" x="1595" y="1108" w="36" h="29" ax="18" ay="37" aw="62" ah="67"/>
+<Cell name="dart_monkey_medieval_plume_fanclub" x="1076" y="1577" w="36" h="49" ax="18" ay="17" aw="62" ah="67"/>
+<Cell name="dart_monkey_medieval_plume_green" x="1115" y="1580" w="36" h="29" ax="18" ay="37" aw="62" ah="67"/>
+<Cell name="dart_monkey_medieval_plume_red" x="840" y="1869" w="36" h="29" ax="18" ay="37" aw="62" ah="67"/>
+<Cell name="dart_monkey_plume_01" x="1753" y="1007" w="35" h="29" ax="19" ay="38" aw="62" ah="67"/>
+<Cell name="dart_monkey_plume_02" x="1607" y="1140" w="35" h="29" ax="19" ay="38" aw="62" ah="67"/>
+<Cell name="dart_monkey_rudolf" x="1855" y="578" w="66" h="62" ax="0" ay="1" aw="72" ah="68"/>
+<Cell name="dart_monkey_santa" x="508" y="1076" w="58" h="64" ax="6" ay="2" aw="67" ah="72"/>
+<Cell name="dart_monkey_snowmonkey" x="123" y="1597" w="55" h="68" ax="10" ay="0" aw="82" ah="78"/>
+<Cell name="dart_monkey_snowmonkey_arm_01" x="1728" y="1956" w="10" h="31" ax="39" ay="0" aw="62" ah="58"/>
+<Cell name="dart_monkey_snowmonkey_arm_02" x="1352" y="1930" w="23" h="13" ax="38" ay="20" aw="62" ah="58"/>
+<Cell name="dart_monkey_snowmonkey_arm_03" x="1271" y="1963" w="24" h="15" ax="38" ay="20" aw="62" ah="58"/>
+<Cell name="dart_monkey_snowmonkey_wooly_hat" x="183" y="1540" w="55" h="68" ax="10" ay="0" aw="82" ah="78"/>
+<Cell name="dart_monkey_xmas_catapult_frame" x="1966" y="899" w="31" h="93" ax="2" ay="0" aw="65" ah="97"/>
+<Cell name="dart_monkey_xmas_catapult_launcher_01" x="1857" y="1830" w="10" h="34" ax="9" ay="6" aw="28" ah="77"/>
+<Cell name="dart_monkey_xmas_catapult_launcher_02" x="2011" y="1291" w="10" h="23" ax="9" ay="5" aw="28" ah="52"/>
+<Cell name="dart_monkey_xmas_catapult_launcher_03" x="1622" y="894" w="10" h="24" ax="9" ay="30" aw="28" ah="57"/>
+<Cell name="dart_monkeycatapult_helmet" x="342" y="1837" w="47" h="60" ax="5" ay="4" aw="55" ah="64"/>
+<Cell name="dartling_gun_bads" x="1281" y="1591" w="31" h="70" ax="0" ay="0" aw="31" ah="70"/>
+<Cell name="dartling_gun_bads_hat" x="377" y="1944" w="44" h="36" ax="0" ay="0" aw="44" ah="36"/>
+<Cell name="dartling_gun_blue" x="1467" y="1719" w="24" h="72" ax="0" ay="0" aw="24" ah="72"/>
+<Cell name="dartling_gun_blue_beret" x="859" y="1431" w="45" h="33" ax="0" ay="0" aw="45" ah="33"/>
+<Cell name="dartling_gun_green_basic" x="1543" y="1645" w="24" h="72" ax="0" ay="0" aw="24" ah="72"/>
+<Cell name="dartling_gun_green_beret" x="1000" y="1280" w="45" h="33" ax="0" ay="0" aw="45" ah="33"/>
+<Cell name="dartling_gun_hydra" x="1902" y="1285" w="24" h="48" ax="0" ay="0" aw="24" ah="48"/>
+<Cell name="dartling_gun_laser" x="1869" y="1365" w="23" h="58" ax="0" ay="0" aw="23" ah="58"/>
+<Cell name="dartling_gun_monkey" x="121" y="1668" w="55" h="58" ax="0" ay="0" aw="55" ah="58"/>
+<Cell name="dartling_gun_purple" x="1842" y="1343" w="24" h="72" ax="0" ay="0" aw="24" ah="72"/>
+<Cell name="dartling_gun_purple_beret" x="629" y="1675" w="45" h="33" ax="0" ay="0" aw="45" ah="33"/>
+<Cell name="dartling_gun_ray_of_doom" x="1719" y="1460" w="24" h="99" ax="0" ay="0" aw="24" ah="99"/>
+<Cell name="dartling_gun_red_beret" x="1284" y="1024" w="45" h="33" ax="0" ay="0" aw="45" ah="33"/>
+<Cell name="dartling_gun_red_circles" x="1781" y="1889" w="11" h="22" ax="0" ay="0" aw="11" ah="22"/>
+<Cell name="dartling_gun_red_laser" x="1439" y="1747" w="24" h="80" ax="0" ay="0" aw="24" ah="80"/>
+<Cell name="dartling_gun_red_monkey" x="1" y="1793" w="55" h="58" ax="0" ay="0" aw="55" ah="58"/>
+<Cell name="dartling_gun_rocket" x="726" y="715" w="21" h="31" ax="0" ay="0" aw="21" ah="31"/>
+<Cell name="dr_monkey_engineer" x="570" y="1019" w="58" h="61" ax="0" ay="0" aw="58" ah="61"/>
+<Cell name="dr_monkey_engineer_antenna" x="1845" y="1215" w="27" h="35" ax="1" ay="0" aw="28" ah="35"/>
+<Cell name="dr_monkey_engineer_antenna_glow" x="1637" y="1626" w="23" h="23" ax="3" ay="2" aw="28" ah="35"/>
+<Cell name="dr_monkey_engineer_earpiece" x="479" y="1567" w="11" h="30" ax="0" ay="0" aw="11" ah="30"/>
+<Cell name="dr_monkey_engineer_foam_01" x="1599" y="1944" w="15" h="37" ax="0" ay="0" aw="15" ah="37"/>
+<Cell name="dr_monkey_engineer_foam_02" x="1688" y="1646" w="21" h="29" ax="0" ay="0" aw="21" ah="29"/>
+<Cell name="dr_monkey_engineer_foam_03" x="1644" y="1459" w="26" h="28" ax="0" ay="0" aw="26" ah="28"/>
+<Cell name="dr_monkey_engineer_foam_04" x="1789" y="1089" w="31" h="31" ax="0" ay="0" aw="31" ah="31"/>
+<Cell name="dr_monkey_engineer_foam_bubble" x="1985" y="1291" w="23" h="23" ax="0" ay="0" aw="23" ah="23"/>
+<Cell name="dr_monkey_engineer_foam_bubble_pop" x="1552" y="1445" w="29" h="26" ax="0" ay="0" aw="29" ah="26"/>
+<Cell name="dr_monkey_engineer_foam_dispenser" x="1553" y="1413" w="29" h="29" ax="0" ay="0" aw="29" ah="29"/>
+<Cell name="dr_monkey_engineer_foam_puddle" x="1874" y="347" w="69" h="79" ax="0" ay="0" aw="69" ah="79"/>
+<Cell name="dr_monkey_engineer_magnifying_glass" x="877" y="1976" w="29" h="18" ax="0" ay="0" aw="29" ah="18"/>
+<Cell name="dr_monkey_engineer_nail_gun_barrel" x="1950" y="1482" w="18" h="18" ax="0" ay="0" aw="18" ah="18"/>
+<Cell name="dr_monkey_engineer_nail_gun_blue" x="1994" y="1678" w="10" h="40" ax="2" ay="0" aw="12" ah="40"/>
+<Cell name="dr_monkey_engineer_nail_gun_green" x="1978" y="1694" w="10" h="40" ax="2" ay="0" aw="12" ah="40"/>
+<Cell name="dr_monkey_engineer_nail_gun_grey" x="1963" y="1711" w="10" h="40" ax="2" ay="0" aw="12" ah="40"/>
+<Cell name="dr_monkey_engineer_nail_gun_hazard" x="1866" y="1565" w="19" h="12" ax="1" ay="19" aw="21" ah="40"/>
+<Cell name="dr_monkey_engineer_nail_gun_mag" x="1887" y="1580" w="12" h="14" ax="0" ay="0" aw="12" ah="14"/>
+<Cell name="dr_monkey_engineer_nail_gun_orange" x="1824" y="1848" w="10" h="40" ax="2" ay="0" aw="12" ah="40"/>
+<Cell name="dr_monkey_engineer_nail_gun_red" x="1923" y="1752" w="10" h="40" ax="2" ay="0" aw="12" ah="40"/>
+<Cell name="dr_monkey_engineer_nail_gun_white" x="1837" y="1848" w="10" h="40" ax="2" ay="0" aw="12" ah="40"/>
+<Cell name="dr_monkey_engineer_nail_gun_yellow" x="1902" y="1781" w="10" h="40" ax="2" ay="0" aw="12" ah="40"/>
+<Cell name="dr_monkey_engineer_sentry_barrel_01" x="1857" y="1512" w="20" h="12" ax="0" ay="0" aw="20" ah="12"/>
+<Cell name="dr_monkey_engineer_sentry_barrel_02" x="1475" y="1820" w="14" h="12" ax="0" ay="0" aw="14" ah="12"/>
+<Cell name="dr_monkey_engineer_sentry_green" x="1002" y="126" w="20" h="41" ax="0" ay="0" aw="20" ah="41"/>
+<Cell name="dr_monkey_engineer_sentry_red" x="1916" y="1433" w="20" h="57" ax="0" ay="0" aw="20" ah="57"/>
+<Cell name="dr_monkey_engineer_trap" x="1902" y="970" w="31" h="61" ax="3" ay="3" aw="34" ah="67"/>
+<Cell name="dr_monkey_engineer_trap_foot" x="1507" y="1666" w="25" h="20" ax="0" ay="0" aw="25" ah="20"/>
+<Cell name="dr_monkey_engineer_trap_full" x="1086" y="1788" w="31" h="61" ax="3" ay="3" aw="34" ah="67"/>
+<Cell name="dr_monkey_engineer_trap_glow" x="956" y="1812" w="34" h="34" ax="0" ay="0" aw="34" ah="34"/>
+<Cell name="dr_monkey_engineer_trapdoor_left_01" x="1244" y="1945" w="24" h="44" ax="0" ay="0" aw="44" ah="44"/>
+<Cell name="dr_monkey_engineer_trapdoor_left_02" x="1939" y="1435" w="19" h="44" ax="0" ay="0" aw="44" ah="44"/>
+<Cell name="dr_monkey_engineer_trapdoor_left_03" x="1697" y="1893" w="13" h="40" ax="0" ay="2" aw="44" ah="44"/>
+<Cell name="dr_monkey_engineer_trapdoor_left_04" x="319" y="718" w="8" h="32" ax="0" ay="6" aw="44" ah="44"/>
+<Cell name="dr_monkey_engineer_trapdoor_right_01" x="1874" y="1276" w="25" h="44" ax="19" ay="0" aw="44" ah="44"/>
+<Cell name="dr_monkey_engineer_trapdoor_right_02" x="1668" y="1720" w="19" h="42" ax="25" ay="1" aw="44" ah="44"/>
+<Cell name="dr_monkey_engineer_trapdoor_right_03" x="1795" y="1770" w="14" h="36" ax="30" ay="4" aw="44" ah="44"/>
+<Cell name="dr_monkey_engineer_trapdoor_right_04" x="308" y="784" w="8" h="26" ax="36" ay="9" aw="44" ah="44"/>
+<Cell name="dr_monkey_engineer_wrench" x="1599" y="384" w="36" h="19" ax="0" ay="0" aw="36" ah="19"/>
+<Cell name="engineer_arm" x="795" y="1982" w="21" h="12" ax="0" ay="0" aw="21" ah="12"/>
+<Cell name="engineer_blue_hat" x="907" y="1404" w="44" h="35" ax="0" ay="0" aw="44" ah="35"/>
+<Cell name="engineer_foam_01" x="1886" y="1661" w="15" h="38" ax="0" ay="0" aw="15" ah="38"/>
+<Cell name="engineer_foam_02" x="1687" y="1678" w="20" h="29" ax="0" ay="0" aw="20" ah="29"/>
+<Cell name="engineer_foam_03" x="1643" y="1512" w="25" h="27" ax="0" ay="0" aw="25" ah="27"/>
+<Cell name="engineer_foam_04" x="1715" y="1169" w="31" h="30" ax="0" ay="0" aw="31" ah="30"/>
+<Cell name="engineer_foam_bubble" x="1326" y="1930" w="23" h="23" ax="0" ay="0" aw="23" ah="23"/>
+<Cell name="engineer_foam_bubble_pop" x="840" y="1938" w="34" h="37" ax="0" ay="0" aw="34" ah="37"/>
+<Cell name="engineer_foam_gun" x="1123" y="1906" w="27" h="61" ax="0" ay="0" aw="27" ah="61"/>
+<Cell name="engineer_foam_puddle" x="1554" y="894" w="65" h="75" ax="0" ay="0" aw="65" ah="75"/>
+<Cell name="engineer_green_hat" x="627" y="1711" w="44" h="35" ax="0" ay="0" aw="44" ah="35"/>
+<Cell name="engineer_grey_hat_red" x="498" y="1846" w="44" h="35" ax="0" ay="0" aw="44" ah="35"/>
+<Cell name="engineer_grey_hat_yellow" x="1284" y="1060" w="44" h="35" ax="0" ay="0" aw="44" ah="35"/>
+<Cell name="engineer_nail" x="1416" y="366" w="5" h="19" ax="0" ay="0" aw="5" ah="19"/>
+<Cell name="engineer_nail_gun" x="1541" y="1850" w="19" h="36" ax="0" ay="0" aw="19" ah="36"/>
+<Cell name="engineer_orange_hat" x="677" y="1638" w="44" h="35" ax="0" ay="0" aw="44" ah="35"/>
+<Cell name="engineer_red_hat" x="1182" y="1162" w="44" h="35" ax="0" ay="0" aw="44" ah="35"/>
+<Cell name="engineer_spanner" x="1407" y="1443" w="32" h="34" ax="0" ay="0" aw="32" ah="34"/>
+<Cell name="engineer_trap_box" x="1638" y="439" w="71" h="92" ax="0" ay="0" aw="71" ah="92"/>
+<Cell name="engineer_trap_box_full" x="1343" y="737" w="71" h="92" ax="0" ay="0" aw="71" ah="92"/>
+<Cell name="engineer_trap_door_01" x="1485" y="1941" w="18" h="52" ax="0" ay="0" aw="18" ah="52"/>
+<Cell name="engineer_trap_door_02" x="1784" y="490" w="14" h="52" ax="0" ay="0" aw="14" ah="52"/>
+<Cell name="engineer_trap_door_03" x="1658" y="123" w="9" h="52" ax="0" ay="0" aw="9" ah="52"/>
+<Cell name="engineer_trap_door_04" x="839" y="1290" w="5" h="52" ax="0" ay="0" aw="5" ah="52"/>
+<Cell name="engineer_trap_door_interior" x="273" y="925" w="32" h="32" ax="0" ay="0" aw="32" ah="32"/>
+<Cell name="engineer_trap_foot" x="617" y="1948" w="15" h="23" ax="0" ay="0" aw="15" ah="23"/>
+<Cell name="engineer_trap_glow" x="900" y="1235" w="48" h="55" ax="0" ay="0" aw="48" ah="55"/>
+<Cell name="engineer_white_hat_red" x="907" y="1442" w="44" h="35" ax="0" ay="0" aw="44" ah="35"/>
+<Cell name="engineer_white_hat_yellow" x="1111" y="1239" w="44" h="35" ax="0" ay="0" aw="44" ah="35"/>
+<Cell name="engineer_yellow_hat" x="1000" y="1351" w="44" h="35" ax="0" ay="0" aw="44" ah="35"/>
+<Cell name="evil_supermonkey" x="1715" y="1202" w="30" h="45" ax="2" ay="7" aw="32" ah="52"/>
+<Cell name="evil_supermonkey_arm_green" x="1635" y="1964" w="13" h="30" ax="0" ay="0" aw="13" ah="30"/>
+<Cell name="evil_supermonkey_arm_green_01" x="1927" y="1361" w="22" h="49" ax="0" ay="0" aw="22" ah="49"/>
+<Cell name="evil_supermonkey_arm_green_02" x="1391" y="1901" w="22" h="48" ax="0" ay="1" aw="22" ah="49"/>
+<Cell name="evil_supermonkey_arm_purple" x="1734" y="1866" w="13" h="30" ax="0" ay="0" aw="13" ah="30"/>
+<Cell name="evil_supermonkey_arm_red" x="2005" y="1596" w="13" h="30" ax="0" ay="0" aw="13" ah="30"/>
+<Cell name="evil_supermonkey_arm_red_01" x="1596" y="1681" w="22" h="49" ax="0" ay="0" aw="22" ah="49"/>
+<Cell name="evil_supermonkey_arm_red_02" x="1547" y="1746" w="22" h="47" ax="0" ay="1" aw="22" ah="49"/>
+<Cell name="evil_supermonkey_cape_green_01" x="63" y="1590" w="57" h="30" ax="2" ay="0" aw="63" ah="30"/>
+<Cell name="evil_supermonkey_cape_green_02" x="171" y="490" w="61" h="29" ax="1" ay="1" aw="63" ah="30"/>
+<Cell name="evil_supermonkey_cape_green_03" x="911" y="991" w="63" h="30" ax="0" ay="0" aw="63" ah="30"/>
+<Cell name="evil_supermonkey_cape_purple_01" x="442" y="1213" w="57" h="30" ax="2" ay="0" aw="63" ah="30"/>
+<Cell name="evil_supermonkey_cape_purple_02" x="193" y="1018" w="61" h="29" ax="1" ay="1" aw="63" ah="30"/>
+<Cell name="evil_supermonkey_cape_purple_03" x="532" y="800" w="63" h="29" ax="0" ay="1" aw="63" ah="30"/>
+<Cell name="evil_supermonkey_cape_red_01" x="317" y="1344" w="57" h="30" ax="2" ay="0" aw="63" ah="30"/>
+<Cell name="evil_supermonkey_cape_red_02" x="193" y="1050" w="61" h="29" ax="1" ay="1" aw="63" ah="30"/>
+<Cell name="evil_supermonkey_cape_red_03" x="1565" y="689" w="63" h="30" ax="0" ay="0" aw="63" ah="30"/>
+<Cell name="evil_supermonkey_demon" x="481" y="592" w="134" h="71" ax="0" ay="0" aw="134" ah="71"/>
+<Cell name="evil_supermonkey_demon_tail" x="1025" y="1945" w="29" h="32" ax="0" ay="0" aw="29" ah="32"/>
+<Cell name="evil_supermonkey_epic_range" x="529" y="1624" w="48" h="26" ax="0" ay="1" aw="48" ah="28"/>
+<Cell name="evil_supermonkey_evil_demon" x="319" y="758" w="134" h="71" ax="0" ay="0" aw="134" ah="71"/>
+<Cell name="evil_supermonkey_evil_lava_01" x="1537" y="1939" w="17" h="52" ax="0" ay="0" aw="52" ah="52"/>
+<Cell name="evil_supermonkey_evil_lava_02" x="617" y="1976" w="35" h="17" ax="17" ay="0" aw="52" ah="52"/>
+<Cell name="evil_supermonkey_evil_lava_03" x="1866" y="1601" w="17" h="69" ax="0" ay="0" aw="69" ah="69"/>
+<Cell name="evil_supermonkey_evil_lava_04" x="809" y="173" w="52" h="17" ax="17" ay="0" aw="69" ah="69"/>
+<Cell name="evil_supermonkey_eye_glow" x="1521" y="1871" w="17" h="13" ax="0" ay="0" aw="17" ah="13"/>
+<Cell name="evil_supermonkey_laser_vision" x="1134" y="1103" w="47" h="28" ax="0" ay="0" aw="47" ah="28"/>
+<Cell name="evil_supermonkey_lava_01" x="1687" y="1787" w="17" h="52" ax="0" ay="0" aw="52" ah="52"/>
+<Cell name="evil_supermonkey_lava_02" x="795" y="1962" w="35" h="17" ax="17" ay="0" aw="52" ah="52"/>
+<Cell name="evil_supermonkey_lava_03" x="1971" y="1487" w="17" h="69" ax="0" ay="0" aw="69" ah="69"/>
+<Cell name="evil_supermonkey_lava_04" x="986" y="783" w="52" h="17" ax="17" ay="0" aw="69" ah="69"/>
+<Cell name="evil_supermonkey_plasma_vision" x="759" y="1827" w="38" h="30" ax="0" ay="0" aw="38" ah="30"/>
+<Cell name="evil_supermonkey_robo_monkey" x="1520" y="1348" w="31" h="47" ax="1" ay="0" aw="32" ah="47"/>
+<Cell name="evil_supermonkey_robo_monkey_arm_01" x="350" y="1671" w="15" h="29" ax="0" ay="15" aw="15" ah="44"/>
+<Cell name="evil_supermonkey_robo_monkey_arm_02" x="1423" y="1805" w="13" h="20" ax="1" ay="0" aw="15" ah="44"/>
+<Cell name="evil_supermonkey_robo_monkey_reflection" x="605" y="1412" w="11" h="6" ax="15" ay="8" aw="62" ah="47"/>
+<Cell name="evil_supermonkey_storm_cape" x="442" y="1246" w="56" h="50" ax="0" ay="0" aw="56" ah="50"/>
+<Cell name="evil_supermonkey_tail" x="1645" y="1139" w="28" h="25" ax="0" ay="0" aw="28" ah="25"/>
+<Cell name="evil_supermonkey_tech_terror" x="943" y="1570" w="38" h="69" ax="2" ay="0" aw="40" ah="69"/>
+<Cell name="evil_supermonkey_tech_terror_arm" x="1568" y="1216" w="33" h="73" ax="0" ay="0" aw="33" ah="73"/>
+<Cell name="evil_supermonkey_tech_terror_arm_glow" x="377" y="1983" w="30" h="11" ax="0" ay="0" aw="30" ah="11"/>
+<Cell name="evil_supermonkey_tech_terror_eye_glow" x="1565" y="722" w="23" h="10" ax="0" ay="0" aw="23" ah="10"/>
+<Cell name="evil_temple_cloud" x="1100" y="462" w="96" h="95" ax="0" ay="0" aw="96" ah="95"/>
+<Cell name="explosion_boom" x="694" y="370" w="135" h="137" ax="0" ay="0" aw="135" ah="137"/>
+<Cell name="firework_flame" x="1715" y="1009" w="35" h="45" ax="0" ay="0" aw="35" ah="45"/>
+<Cell name="fireworks_base" x="1979" y="1208" w="24" h="52" ax="0" ay="0" aw="24" ah="52"/>
+<Cell name="fireworks_base_slice" x="1093" y="595" w="4" h="52" ax="0" ay="0" aw="4" ah="52"/>
+<Cell name="fireworks_circle_symbol" x="1662" y="1661" w="22" h="22" ax="12" ay="59" aw="48" ah="116"/>
+<Cell name="fireworks_cone_gold" x="844" y="754" w="23" h="50" ax="1" ay="0" aw="24" ah="116"/>
+<Cell name="fireworks_cone_gold_large" x="1489" y="1224" w="35" h="60" ax="1" ay="0" aw="36" ah="127"/>
+<Cell name="fireworks_cone_green" x="1986" y="730" w="35" h="60" ax="1" ay="0" aw="36" ah="127"/>
+<Cell name="fireworks_cone_orange" x="1156" y="934" w="23" h="50" ax="1" ay="0" aw="24" ah="116"/>
+<Cell name="fireworks_cone_purple" x="1929" y="1308" w="23" h="50" ax="1" ay="0" aw="24" ah="116"/>
+<Cell name="fireworks_cone_red" x="1494" y="1748" w="23" h="50" ax="1" ay="0" aw="24" ah="116"/>
+<Cell name="fireworks_cone_silver" x="1365" y="1875" w="23" h="50" ax="1" ay="0" aw="24" ah="116"/>
+<Cell name="fireworks_cone_silver_large" x="1569" y="1153" w="35" h="60" ax="1" ay="0" aw="36" ah="127"/>
+<Cell name="fireworks_cone_striped" x="1746" y="1498" w="23" h="50" ax="1" ay="0" aw="24" ah="116"/>
+<Cell name="fireworks_cylinder_gold" x="1712" y="1723" w="18" h="58" ax="6" ay="37" aw="24" ah="116"/>
+<Cell name="fireworks_cylinder_gold_large" x="1419" y="1538" w="29" h="69" ax="7" ay="38" aw="36" ah="127"/>
+<Cell name="fireworks_cylinder_orange" x="1520" y="1437" w="29" h="69" ax="7" ay="38" aw="36" ah="127"/>
+<Cell name="fireworks_cylinder_purple" x="1902" y="1530" w="18" h="58" ax="6" ay="38" aw="24" ah="116"/>
+<Cell name="fireworks_cylinder_red" x="1586" y="1837" w="18" h="59" ax="5" ay="37" aw="23" ah="116"/>
+<Cell name="fireworks_cylinder_silver" x="1620" y="1815" w="18" h="58" ax="6" ay="37" aw="24" ah="116"/>
+<Cell name="fireworks_cylinder_silver_large" x="1386" y="1573" w="29" h="69" ax="7" ay="38" aw="36" ah="127"/>
+<Cell name="fireworks_cylinder_white" x="1563" y="1871" w="18" h="59" ax="6" ay="37" aw="24" ah="116"/>
+<Cell name="fireworks_flame_symbol" x="1644" y="1208" w="32" h="34" ax="7" ay="40" aw="48" ah="116"/>
+<Cell name="fireworks_fuse" x="1963" y="1663" w="13" h="23" ax="18" ay="93" aw="45" ah="116"/>
+<Cell name="fireworks_hardhat" x="1572" y="1793" w="20" h="38" ax="8" ay="9" aw="28" ah="59"/>
+<Cell name="fireworks_hardhat_ear_protectors" x="1704" y="1310" w="28" h="30" ax="0" ay="13" aw="28" ah="59"/>
+<Cell name="fireworks_hardhat_stripes" x="1651" y="1964" w="10" h="30" ax="23" ay="16" aw="57" ah="59"/>
+<Cell name="fireworks_hardhat_visor" x="1401" y="1964" w="19" h="25" ax="9" ay="0" aw="28" ah="59"/>
+<Cell name="fireworks_radiation_symbol" x="1352" y="1489" w="32" h="31" ax="20" ay="65" aw="70" ah="127"/>
+<Cell name="fireworks_skull_symbol" x="1585" y="1426" w="28" h="22" ax="9" ay="59" aw="48" ah="116"/>
+<Cell name="fireworks_sparkle" x="900" y="1293" w="47" h="47" ax="0" ay="0" aw="47" ah="47"/>
+<Cell name="fireworks_stars_symbol_01" x="1680" y="1204" w="31" h="22" ax="8" ay="68" aw="48" ah="116"/>
+<Cell name="fireworks_stars_symbol_02" x="1639" y="1245" w="31" h="19" ax="8" ay="50" aw="48" ah="116"/>
+<Cell name="fireworks_stars_symbol_03" x="1407" y="1410" w="33" h="30" ax="8" ay="13" aw="48" ah="116"/>
+<Cell name="fireworks_stripes" x="1517" y="1821" w="21" h="47" ax="3" ay="2" aw="24" ah="116"/>
+<Cell name="fireworks_target" x="1776" y="1767" w="16" h="16" ax="0" ay="0" aw="16" ah="16"/>
+<Cell name="flare" x="1782" y="1216" w="28" h="223" ax="0" ay="0" aw="28" ah="223"/>
+<Cell name="flare_half" x="1946" y="1616" w="14" h="223" ax="14" ay="0" aw="28" ah="223"/>
+<Cell name="frag_shrapnel" x="1995" y="1656" w="12" h="19" ax="0" ay="0" aw="12" ah="19"/>
+<Cell name="frosted_corners" x="253" y="1348" w="58" h="58" ax="0" ay="0" aw="58" ah="58"/>
+<Cell name="general_shockwave_overlay" x="330" y="617" w="138" h="138" ax="0" ay="0" aw="138" ah="138"/>
+<Cell name="glaive" x="858" y="1175" w="50" h="53" ax="0" ay="0" aw="50" ah="53"/>
+<Cell name="glaive_red" x="173" y="1866" w="50" h="53" ax="0" ay="0" aw="50" ah="53"/>
+<Cell name="glue_effect_01" x="809" y="1609" w="41" h="44" ax="0" ay="0" aw="41" ah="44"/>
+<Cell name="glue_effect_02" x="1378" y="1039" w="41" h="44" ax="0" ay="0" aw="41" ah="44"/>
+<Cell name="glue_effect_regen_01" x="1" y="1201" w="61" h="42" ax="0" ay="0" aw="61" ah="42"/>
+<Cell name="glue_effect_regen_02" x="65" y="1143" w="61" h="42" ax="0" ay="0" aw="61" ah="42"/>
+<Cell name="glue_gunner_bloon_dissolver" x="239" y="1611" w="55" h="41" ax="0" ay="0" aw="55" ah="41"/>
+<Cell name="glue_gunner_bloon_dissolver_gauge" x="1557" y="1968" w="17" h="17" ax="0" ay="0" aw="17" ah="17"/>
+<Cell name="glue_gunner_bloon_liquefier" x="118" y="1729" w="55" h="41" ax="0" ay="0" aw="55" ah="41"/>
+<Cell name="glue_gunner_blue_arm" x="551" y="1981" w="21" h="13" ax="0" ay="0" aw="21" ah="13"/>
+<Cell name="glue_gunner_body_yellow" x="368" y="1478" w="55" h="41" ax="0" ay="0" aw="55" ah="41"/>
+<Cell name="glue_gunner_brown_arm" x="1446" y="1906" w="21" h="12" ax="0" ay="0" aw="21" ah="12"/>
+<Cell name="glue_gunner_corrosive_glue" x="179" y="1671" w="55" h="41" ax="0" ay="0" aw="55" ah="41"/>
+<Cell name="glue_gunner_glue_green" x="1087" y="1757" w="11" h="24" ax="0" ay="0" aw="11" ah="24"/>
+<Cell name="glue_gunner_glue_hose_tank" x="379" y="1255" w="58" h="34" ax="0" ay="0" aw="58" ah="34"/>
+<Cell name="glue_gunner_glue_splatter" x="1" y="1854" w="55" h="41" ax="0" ay="0" aw="55" ah="41"/>
+<Cell name="glue_gunner_glue_striker_tank" x="1111" y="1197" w="44" h="39" ax="0" ay="0" aw="44" ah="39"/>
+<Cell name="glue_gunner_glue_yellow" x="1888" y="1549" w="11" h="24" ax="0" ay="0" aw="11" ah="24"/>
+<Cell name="glue_gunner_green_tank" x="1751" y="1133" w="31" h="28" ax="0" ay="0" aw="31" ah="28"/>
+<Cell name="glue_gunner_grey_tank" x="1451" y="1533" w="29" h="27" ax="0" ay="2" aw="29" ah="29"/>
+<Cell name="glue_gunner_purple_arm" x="1662" y="1686" w="21" h="13" ax="0" ay="0" aw="21" ah="13"/>
+<Cell name="glue_gunner_red_arm" x="1377" y="1978" w="21" h="12" ax="0" ay="0" aw="21" ah="12"/>
+<Cell name="glue_gunner_yellow_arm" x="1645" y="1704" w="21" h="13" ax="0" ay="0" aw="21" ah="13"/>
+<Cell name="glue_gunner_yellow_tank" x="1928" y="1057" w="29" h="27" ax="0" ay="2" aw="29" ah="29"/>
+<Cell name="glue_splat" x="1483" y="912" w="66" h="65" ax="0" ay="0" aw="66" ah="65"/>
+<Cell name="glue_splat_green" x="1784" y="618" w="66" h="65" ax="0" ay="0" aw="66" ah="65"/>
+<Cell name="glue_storm" x="1879" y="212" w="71" h="59" ax="0" ay="0" aw="71" ah="59"/>
+<Cell name="gold_a_bomb_tower_bomb_01" x="1289" y="1261" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="gold_a_bomb_tower_bomb_02" x="852" y="1714" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="gold_a_bomb_tower_bomb_03" x="1043" y="1480" w="38" h="47" ax="0" ay="1" aw="38" ah="51"/>
+<Cell name="gold_a_juggernaut_ball_01" x="1409" y="919" w="68" h="67" ax="1" ay="2" aw="70" ah="70"/>
+<Cell name="gold_a_juggernaut_ball_02" x="1946" y="347" w="68" h="68" ax="1" ay="1" aw="70" ah="70"/>
+<Cell name="gold_bomb_tower_bomb_01" x="1036" y="1530" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="gold_bomb_tower_bomb_02" x="1129" y="1437" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="gold_bomb_tower_bomb_03" x="1557" y="972" w="38" h="47" ax="0" ay="1" aw="38" ah="51"/>
+<Cell name="gold_bomb_tower_missile" x="1712" y="1646" w="20" h="74" ax="0" ay="0" aw="20" ah="75"/>
+<Cell name="gold_bomb_tower_missile_01" x="1499" y="1847" w="15" h="22" ax="2" ay="18" aw="17" ah="56"/>
+<Cell name="gold_bomb_tower_missile_02" x="1746" y="1810" w="14" h="44" ax="3" ay="6" aw="17" ah="56"/>
+<Cell name="gold_bomb_tower_missile_03" x="1949" y="1524" w="17" h="55" ax="0" ay="0" aw="17" ah="56"/>
+<Cell name="gold_bomb_tower_missile_full" x="1000" y="1444" w="40" h="74" ax="0" ay="0" aw="40" ah="75"/>
+<Cell name="gold_bomb_tower_moab_assassin" x="1714" y="1057" w="34" h="84" ax="0" ay="0" aw="34" ah="84"/>
+<Cell name="gold_bomb_tower_moab_assassin_full" x="1412" y="832" w="68" h="84" ax="0" ay="0" aw="68" ah="84"/>
+<Cell name="gold_bomb_tower_moab_mauler" x="1451" y="1563" w="28" h="63" ax="0" ay="1" aw="28" ah="64"/>
+<Cell name="gold_bomb_tower_moab_mauler_full" x="377" y="1351" w="55" h="64" ax="0" ay="0" aw="55" ah="64"/>
+<Cell name="gold_bomb_tower_special_ability_projectile" x="1153" y="1803" w="29" h="85" ax="1" ay="0" aw="30" ah="86"/>
+<Cell name="gold_bomb_tower_special_ability_projectile_full" x="127" y="1350" w="59" h="86" ax="0" ay="0" aw="59" ah="86"/>
+<Cell name="gold_boomerang" x="1791" y="970" w="35" h="20" ax="0" ay="0" aw="35" ah="20"/>
+<Cell name="gold_boomerang_red" x="1530" y="1153" w="36" h="20" ax="0" ay="0" aw="36" ah="20"/>
+<Cell name="gold_dart_monkey_dart" x="620" y="1893" w="12" h="40" ax="0" ay="0" aw="12" ah="40"/>
+<Cell name="gold_dartling_gun_rocket" x="1797" y="1534" w="21" h="31" ax="0" ay="0" aw="21" ah="31"/>
+<Cell name="gold_engineer_nail" x="1199" y="462" w="3" h="18" ax="1" ay="1" aw="5" ah="19"/>
+<Cell name="gold_frag_shrapnel" x="2010" y="575" w="11" h="16" ax="0" ay="1" aw="12" ah="19"/>
+<Cell name="gold_glaive" x="169" y="1922" w="49" h="53" ax="1" ay="0" aw="50" ah="53"/>
+<Cell name="gold_glaive_red" x="549" y="1547" w="49" h="53" ax="1" ay="0" aw="50" ah="53"/>
+<Cell name="gold_juggernaut_ball_01" x="1483" y="842" w="68" h="67" ax="1" ay="2" aw="70" ah="70"/>
+<Cell name="gold_juggernaut_ball_02" x="1874" y="429" w="68" h="68" ax="1" ay="1" aw="70" ah="70"/>
+<Cell name="gold_monkey_temple_supermonkey_projectile" x="1169" y="1482" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+<Cell name="gold_mortar_big_one_bomb" x="1952" y="1156" w="26" h="41" ax="0" ay="0" aw="26" ah="41"/>
+<Cell name="gold_ninja_grenade" x="1182" y="657" w="12" h="20" ax="0" ay="0" aw="12" ah="21"/>
+<Cell name="gold_ninja_throwing_star" x="1981" y="1180" w="25" h="25" ax="0" ay="0" aw="25" ah="25"/>
+<Cell name="gold_pop_and_awe_bomb" x="1920" y="659" w="63" h="105" ax="0" ay="2" aw="64" ah="108"/>
+<Cell name="gold_pudding" x="1454" y="641" w="21" h="24" ax="3" ay="2" aw="26" ah="26"/>
+<Cell name="gold_pudding_juggernaut" x="922" y="1024" w="52" h="60" ax="9" ay="9" aw="70" ah="70"/>
+<Cell name="gold_red_hot_tack" x="471" y="617" w="7" h="21" ax="1" ay="2" aw="9" ah="23"/>
+<Cell name="gold_spectre_mortar_bomb" x="1584" y="1899" w="17" h="36" ax="1" ay="0" aw="18" ah="36"/>
+<Cell name="gold_spiked_mine_base" x="1604" y="1245" w="32" h="32" ax="0" ay="0" aw="32" ah="32"/>
+<Cell name="gold_spiked_mine_skull" x="1672" y="1490" w="25" h="25" ax="3" ay="3" aw="32" ah="32"/>
+<Cell name="gold_spiked_mine_spike" x="424" y="1944" w="14" h="15" ax="0" ay="0" aw="14" ah="16"/>
+<Cell name="gold_spikeopult_ball" x="1244" y="1917" w="25" h="25" ax="1" ay="1" aw="26" ah="26"/>
+<Cell name="gold_submarine_barbed_darts" x="679" y="498" w="12" h="6" ax="0" ay="0" aw="12" ah="6"/>
+<Cell name="gold_submarine_bmissile" x="1092" y="1910" w="28" h="73" ax="6" ay="2" aw="40" ah="75"/>
+<Cell name="gold_submarine_dart" x="1924" y="1709" w="12" h="40" ax="0" ay="0" aw="12" ah="40"/>
+<Cell name="gold_submarine_first_strike_missile" x="179" y="1715" w="53" h="99" ax="0" ay="0" aw="53" ah="99"/>
+<Cell name="gold_tack_shooter_tack" x="471" y="641" w="7" h="21" ax="1" ay="2" aw="9" ah="23"/>
+<Cell name="grape" x="1617" y="1968" w="14" h="18" ax="0" ay="0" aw="14" ah="18"/>
+<Cell name="green_bandana" x="1887" y="142" w="41" h="13" ax="0" ay="0" aw="41" ah="14"/>
+<Cell name="grilled_pineapple" x="1" y="1898" w="53" h="76" ax="0" ay="0" aw="53" ah="76"/>
+<Cell name="ground_zero_explosion_03" x="1763" y="1" w="85" h="87" ax="0" ay="0" aw="85" ah="87"/>
+<Cell name="ground_zero_explosion_04" x="876" y="565" w="116" h="122" ax="0" ay="0" aw="116" ah="122"/>
+<Cell name="ground_zero_scorched_earth" x="278" y="1897" w="47" h="47" ax="0" ay="0" aw="47" ah="47"/>
+<Cell name="ground_zero_shockwave" x="308" y="832" w="127" h="126" ax="0" ay="1" aw="127" ah="127"/>
+<Cell name="helicopter_black_body" x="1153" y="1612" w="34" h="150" ax="0" ay="0" aw="34" ah="150"/>
+<Cell name="helicopter_black_engine" x="450" y="1774" w="46" h="34" ax="0" ay="0" aw="46" ah="34"/>
+<Cell name="helicopter_black_red_engine" x="651" y="1600" w="46" h="34" ax="0" ay="0" aw="46" ah="34"/>
+<Cell name="helicopter_blue_rotor" x="456" y="800" w="73" h="19" ax="0" ay="0" aw="73" ah="19"/>
+<Cell name="helicopter_blue_tail_stripes" x="1924" y="578" w="15" h="11" ax="0" ay="0" aw="15" ah="11"/>
+<Cell name="helicopter_cannons" x="549" y="1379" w="12" h="30" ax="0" ay="0" aw="12" ah="30"/>
+<Cell name="helicopter_chinook_body" x="368" y="1522" w="53" h="179" ax="0" ay="0" aw="53" ah="179"/>
+<Cell name="helicopter_green_body" x="1330" y="1261" w="37" h="155" ax="0" ay="0" aw="37" ah="155"/>
+<Cell name="helicopter_green_engine" x="1227" y="987" w="35" h="34" ax="0" ay="0" aw="35" ah="34"/>
+<Cell name="helicopter_green_yellow_engine" x="1409" y="1332" w="35" h="34" ax="0" ay="0" aw="35" ah="34"/>
+<Cell name="helicopter_grey_blue_engine" x="840" y="1901" w="35" h="34" ax="0" ay="0" aw="35" ah="34"/>
+<Cell name="helicopter_grey_body" x="1287" y="1302" w="37" h="155" ax="0" ay="0" aw="37" ah="155"/>
+<Cell name="helicopter_grey_engine" x="1753" y="970" w="35" h="34" ax="0" ay="0" aw="35" ah="34"/>
+<Cell name="helicopter_grey_red_engine" x="1263" y="1460" w="35" h="34" ax="0" ay="0" aw="35" ah="34"/>
+<Cell name="helicopter_grey_yellow_engine" x="1327" y="1419" w="35" h="34" ax="0" ay="0" aw="35" ah="34"/>
+<Cell name="helicopter_missile" x="1797" y="1568" w="20" h="34" ax="0" ay="0" aw="20" ah="34"/>
+<Cell name="helicopter_red_rotor" x="1772" y="1786" w="14" h="73" ax="0" ay="0" aw="14" ah="73"/>
+<Cell name="helicopter_red_tail_stripes" x="1215" y="1318" w="15" h="11" ax="0" ay="0" aw="15" ah="11"/>
+<Cell name="helicopter_rotor_middle" x="1735" y="1685" w="19" h="19" ax="0" ay="0" aw="19" ah="19"/>
+<Cell name="helicopter_yellow_rotor" x="403" y="363" w="72" h="13" ax="0" ay="0" aw="72" ah="13"/>
+<Cell name="helicopter_yellow_tail_stripes" x="1154" y="1598" w="15" h="11" ax="0" ay="0" aw="15" ah="11"/>
+<Cell name="helipad" x="1409" y="1293" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+<Cell name="helipad_h" x="1572" y="1746" w="22" h="26" ax="0" ay="0" aw="22" ah="26"/>
+<Cell name="helipad_h_small" x="403" y="1704" w="18" h="21" ax="0" ay="0" aw="18" ah="21"/>
+<Cell name="helipad_small" x="1895" y="1037" w="30" h="30" ax="0" ay="0" aw="30" ah="30"/>
+<Cell name="ice_effect" x="1063" y="1196" w="45" h="57" ax="0" ay="0" aw="45" ah="57"/>
+<Cell name="ice_effect_regen" x="1942" y="532" w="65" h="60" ax="0" ay="0" aw="65" ah="60"/>
+<Cell name="ice_shard" x="297" y="1603" w="10" h="40" ax="0" ay="0" aw="10" ah="40"/>
+<Cell name="ice_shockwave" x="167" y="784" w="138" h="138" ax="0" ay="0" aw="138" ah="138"/>
+<Cell name="ice_tower_absolute_zero_coat" x="569" y="1083" w="57" h="47" ax="0" ay="0" aw="57" ah="47"/>
+<Cell name="ice_tower_absolute_zero_monkey" x="564" y="1363" w="53" h="46" ax="0" ay="0" aw="53" ah="47"/>
+<Cell name="ice_tower_animated_blizzard" x="911" y="876" w="22" h="10" ax="0" ay="0" aw="22" ah="10"/>
+<Cell name="ice_tower_animated_snowflake_01" x="1607" y="1209" w="33" h="33" ax="0" ay="0" aw="33" ah="33"/>
+<Cell name="ice_tower_animated_snowflake_02" x="1158" y="910" w="21" h="21" ax="0" ay="0" aw="21" ah="21"/>
+<Cell name="ice_tower_arm" x="655" y="1976" w="19" h="16" ax="0" ay="0" aw="19" ah="16"/>
+<Cell name="ice_tower_base_01" x="1443" y="1410" w="32" h="32" ax="0" ay="0" aw="32" ah="32"/>
+<Cell name="ice_tower_base_02" x="914" y="1941" w="32" h="32" ax="0" ay="0" aw="32" ah="32"/>
+<Cell name="ice_tower_base_03" x="1013" y="1182" w="47" h="47" ax="0" ay="0" aw="47" ah="47"/>
+<Cell name="ice_tower_base_04" x="761" y="1443" w="47" h="47" ax="0" ay="0" aw="47" ah="47"/>
+<Cell name="ice_tower_monkey" x="59" y="1745" w="55" h="57" ax="0" ay="0" aw="55" ah="57"/>
+<Cell name="ice_tower_snowflake_logo" x="1474" y="1873" w="21" h="21" ax="0" ay="0" aw="21" ah="21"/>
+<Cell name="ice_tower_steam" x="1791" y="993" w="34" h="24" ax="0" ay="0" aw="34" ah="24"/>
+<Cell name="ice_tower_viral_frost_monkey" x="1" y="1499" w="59" h="58" ax="0" ay="0" aw="59" ah="58"/>
+<Cell name="juggerlanche" x="1774" y="756" w="64" h="72" ax="0" ay="0" aw="64" ah="72"/>
+<Cell name="kidnap_heli" x="801" y="1805" w="36" h="154" ax="0" ay="0" aw="36" ah="154"/>
+<Cell name="kidnap_rotor" x="1664" y="1904" w="13" h="72" ax="0" ay="0" aw="13" ah="72"/>
+<Cell name="kidnap_rotor_middle" x="1735" y="1663" w="19" h="19" ax="0" ay="0" aw="19" ah="19"/>
+<Cell name="kidnap_smoke_01" x="1622" y="926" w="63" h="64" ax="54" ay="61" aw="172" ah="184"/>
+<Cell name="kidnap_smoke_02" x="870" y="690" w="113" h="118" ax="29" ay="35" aw="172" ah="184"/>
+<Cell name="kidnap_smoke_03" x="694" y="196" w="169" h="171" ax="2" ay="8" aw="172" ah="184"/>
+<Cell name="kidnap_smoke_04" x="519" y="196" w="172" h="184" ax="0" ay="0" aw="172" ah="184"/>
+<Cell name="lead" x="1093" y="1365" w="40" h="54" ax="0" ay="0" aw="40" ah="54"/>
+<Cell name="lead_regen" x="64" y="1337" w="60" h="57" ax="0" ay="0" aw="60" ah="57"/>
+<Cell name="lightning_bolt" x="1801" y="253" w="72" h="69" ax="0" ay="0" aw="72" ah="69"/>
+<Cell name="maelstrom_spiral" x="1025" y="116" w="110" h="108" ax="2" ay="4" aw="112" ah="112"/>
+<Cell name="mechanical_tackshooter_base_orange" x="1309" y="1802" w="26" h="53" ax="2" ay="0" aw="28" ah="53"/>
+<Cell name="mechanical_tackshooter_base_pink" x="1754" y="1381" w="25" h="51" ax="3" ay="1" aw="28" ah="53"/>
+<Cell name="mechanical_tackshooter_blades_orange" x="1301" y="1514" w="13" h="13" ax="0" ay="0" aw="13" ah="13"/>
+<Cell name="mechanical_tackshooter_blades_pink" x="1669" y="1702" w="13" h="13" ax="0" ay="0" aw="13" ah="13"/>
+<Cell name="mechanical_tackshooter_chain" x="870" y="639" w="3" h="31" ax="0" ay="0" aw="3" ah="31"/>
+<Cell name="mechanical_tackshooter_cog_01" x="1547" y="1720" w="23" h="23" ax="0" ay="0" aw="23" ah="23"/>
+<Cell name="mechanical_tackshooter_cog_02" x="1396" y="1805" w="24" h="24" ax="0" ay="0" aw="24" ah="24"/>
+<Cell name="mechanical_tackshooter_cylinder" x="1995" y="1629" w="13" h="24" ax="0" ay="0" aw="13" ah="24"/>
+<Cell name="mechanical_tackshooter_cylinder_mount" x="1416" y="388" w="5" h="11" ax="0" ay="0" aw="5" ah="11"/>
+<Cell name="mechanical_tackshooter_fan" x="1859" y="1461" w="22" h="22" ax="0" ay="0" aw="22" ah="22"/>
+<Cell name="mechanical_tackshooter_fan_belt" x="1927" y="1413" w="22" h="17" ax="0" ay="0" aw="22" ah="17"/>
+<Cell name="mechanical_tackshooter_fan_wheel" x="1039" y="1980" w="14" h="14" ax="0" ay="0" aw="14" ah="14"/>
+<Cell name="mechanical_tackshooter_key_01" x="2012" y="129" w="9" h="27" ax="8" ay="0" aw="27" ah="27"/>
+<Cell name="mechanical_tackshooter_key_02" x="1423" y="1830" w="23" h="24" ax="2" ay="2" aw="27" ah="27"/>
+<Cell name="mechanical_tackshooter_key_03" x="795" y="1420" w="27" h="6" ax="0" ay="10" aw="27" ah="27"/>
+<Cell name="mechanical_tackshooter_key_base" x="410" y="1983" w="10" h="9" ax="5" ay="9" aw="27" ah="27"/>
+<Cell name="mechanical_tackshooter_pipes" x="1644" y="1172" w="33" h="33" ax="0" ay="0" aw="33" ah="33"/>
+<Cell name="mechanical_tackshooter_piston_bolt" x="825" y="1420" w="8" h="8" ax="0" ay="0" aw="8" ah="8"/>
+<Cell name="mechanical_tackshooter_piston_inner" x="911" y="889" w="20" h="5" ax="0" ay="0" aw="20" ah="5"/>
+<Cell name="mechanical_tackshooter_piston_outer" x="612" y="1882" w="18" h="8" ax="0" ay="0" aw="18" ah="8"/>
+<Cell name="mechanical_tackshooter_rotary_inner" x="1884" y="1461" w="21" h="22" ax="0" ay="0" aw="21" ah="22"/>
+<Cell name="mechanical_tackshooter_rotary_outer" x="1961" y="1435" w="16" h="33" ax="2" ay="0" aw="18" ah="33"/>
+<Cell name="mechanical_tackshooter_tube_1.1" x="1856" y="1732" w="14" h="18" ax="0" ay="0" aw="14" ah="18"/>
+<Cell name="mechanical_tackshooter_tube_1.2" x="1812" y="1773" w="14" h="16" ax="0" ay="2" aw="14" ah="18"/>
+<Cell name="mechanical_tackshooter_tube_2.1" x="1753" y="949" w="17" h="18" ax="0" ay="0" aw="17" ah="18"/>
+<Cell name="mechanical_tackshooter_tube_2.2" x="1707" y="1822" w="17" h="16" ax="0" ay="2" aw="17" ah="18"/>
+<Cell name="mechanical_tackshooter_tube_3" x="1635" y="1942" w="14" h="19" ax="0" ay="0" aw="14" ah="19"/>
+<Cell name="moab_band" x="747" y="1116" w="55" h="34" ax="1" ay="0" aw="56" ah="34"/>
+<Cell name="moab_band_left" x="64" y="1397" w="60" h="34" ax="1" ay="0" aw="112" ah="34"/>
+<Cell name="moab_band_right" x="319" y="1143" w="60" h="34" ax="51" ay="0" aw="112" ah="34"/>
+<Cell name="moab_eating_01" x="1116" y="227" w="105" h="135" ax="0" ay="0" aw="105" ah="135"/>
+<Cell name="moab_eating_02" x="750" y="510" w="123" h="126" ax="0" ay="0" aw="123" ah="127"/>
+<Cell name="moab_eating_03" x="866" y="331" w="127" h="116" ax="0" ay="0" aw="127" ah="116"/>
+<Cell name="moab_eating_04" x="1" y="834" w="154" h="80" ax="0" ay="0" aw="154" ah="80"/>
+<Cell name="moab_eating_05" x="1324" y="366" w="89" h="52" ax="0" ay="0" aw="89" ah="52"/>
+<Cell name="moab_nose" x="62" y="1623" w="56" h="54" ax="1" ay="0" aw="57" ah="54"/>
+<Cell name="moab_nose_left" x="1907" y="767" w="62" h="54" ax="1" ay="0" aw="114" ah="54"/>
+<Cell name="moab_nose_right" x="65" y="1086" w="61" h="54" ax="53" ay="0" aw="114" ah="54"/>
+<Cell name="moab_undamaged" x="493" y="1379" w="53" h="218" ax="0" ay="0" aw="53" ah="218"/>
+<Cell name="monkey_ace_biplane" x="129" y="1120" w="60" h="107" ax="1" ay="0" aw="61" ah="107"/>
+<Cell name="monkey_ace_ground_zero" x="1420" y="690" w="70" h="133" ax="0" ay="0" aw="70" ah="133"/>
+<Cell name="monkey_ace_neva_miss_targeting" x="1137" y="1684" w="13" h="89" ax="0" ay="0" aw="13" ah="89"/>
+<Cell name="monkey_ace_operation_dart_storm" x="1801" y="325" w="70" h="133" ax="0" ay="0" aw="70" ah="133"/>
+<Cell name="monkey_ace_rapid_fire" x="1607" y="1837" w="10" h="35" ax="0" ay="0" aw="23" ah="35"/>
+<Cell name="monkey_ace_runway" x="403" y="454" w="116" h="31" ax="0" ay="0" aw="116" ah="31"/>
+<Cell name="monkey_ace_runway_light" x="1866" y="1580" w="18" h="18" ax="1" ay="1" aw="20" ah="20"/>
+<Cell name="monkey_ace_sharper_darts" x="1838" y="864" w="61" h="107" ax="0" ay="0" aw="61" ah="107"/>
+<Cell name="monkey_ace_spectre" x="1364" y="1" w="102" h="150" ax="0" ay="0" aw="102" ah="150"/>
+<Cell name="monkey_apprentice" x="1315" y="1596" w="30" h="55" ax="0" ay="0" aw="30" ah="55"/>
+<Cell name="monkey_apprentice_bearded_wizard" x="1902" y="899" w="61" h="68" ax="0" ay="0" aw="62" ah="68"/>
+<Cell name="monkey_apprentice_blue_staff_glow" x="1060" y="1877" w="30" h="30" ax="0" ay="0" aw="30" ah="30"/>
+<Cell name="monkey_apprentice_cloak" x="383" y="1076" w="60" h="36" ax="0" ay="0" aw="60" ah="36"/>
+<Cell name="monkey_apprentice_cloud" x="995" y="1521" w="38" h="72" ax="0" ay="0" aw="38" ah="72"/>
+<Cell name="monkey_apprentice_dragon_breath" x="1120" y="1785" w="30" h="58" ax="0" ay="0" aw="30" ah="58"/>
+<Cell name="monkey_apprentice_dragon_breath_01" x="677" y="1840" w="38" h="61" ax="0" ay="0" aw="38" ah="61"/>
+<Cell name="monkey_apprentice_dragon_breath_02" x="1688" y="949" w="62" h="57" ax="0" ay="0" aw="62" ah="57"/>
+<Cell name="monkey_apprentice_dragon_breath_03" x="1953" y="212" w="68" h="54" ax="0" ay="0" aw="68" ah="54"/>
+<Cell name="monkey_apprentice_dragon_breath_04" x="684" y="1229" w="53" h="56" ax="0" ay="0" aw="53" ah="56"/>
+<Cell name="monkey_apprentice_dragon_breath_05" x="921" y="1087" w="51" h="36" ax="0" ay="0" aw="51" ah="36"/>
+<Cell name="monkey_apprentice_dragon_breath_flicker_large" x="241" y="1597" w="7" h="11" ax="0" ay="0" aw="7" ah="11"/>
+<Cell name="monkey_apprentice_dragon_breath_flicker_small" x="996" y="331" w="5" h="8" ax="0" ay="0" aw="5" ah="8"/>
+<Cell name="monkey_apprentice_dragon_breath_staff" x="1718" y="1866" w="13" h="44" ax="0" ay="0" aw="13" ah="44"/>
+<Cell name="monkey_apprentice_fire_staff_01" x="1844" y="1634" w="17" h="48" ax="0" ay="0" aw="17" ah="48"/>
+<Cell name="monkey_apprentice_fire_staff_02" x="1778" y="1701" w="17" h="48" ax="0" ay="0" aw="17" ah="48"/>
+<Cell name="monkey_apprentice_hat_pattern" x="1781" y="1442" w="24" h="23" ax="0" ay="0" aw="24" ah="23"/>
+<Cell name="monkey_apprentice_hooded_wizard" x="63" y="1523" w="58" h="64" ax="0" ay="0" aw="59" ah="64"/>
+<Cell name="monkey_apprentice_intense_magic" x="1749" y="1164" w="30" h="55" ax="0" ay="0" aw="30" ah="55"/>
+<Cell name="monkey_apprentice_intense_magic_core_blue" x="1782" y="1184" w="29" h="29" ax="0" ay="0" aw="29" ah="29"/>
+<Cell name="monkey_apprentice_intense_magic_core_yellow" x="1748" y="1222" w="29" h="29" ax="0" ay="0" aw="29" ah="29"/>
+<Cell name="monkey_apprentice_intense_magic_rotating_halo_blue" x="295" y="1729" w="50" h="55" ax="0" ay="0" aw="50" ah="55"/>
+<Cell name="monkey_apprentice_intense_magic_rotating_halo_yellow" x="795" y="1232" w="50" h="55" ax="0" ay="0" aw="50" ah="55"/>
+<Cell name="monkey_apprentice_lightning" x="267" y="345" w="104" h="15" ax="0" ay="0" aw="104" ah="15"/>
+<Cell name="monkey_apprentice_lightning_bolt" x="1679" y="1229" w="30" h="58" ax="0" ay="0" aw="30" ah="58"/>
+<Cell name="monkey_apprentice_magic_core" x="1697" y="1563" w="23" h="23" ax="0" ay="0" aw="23" ah="23"/>
+<Cell name="monkey_apprentice_magic_hand_glow" x="1325" y="1972" w="22" h="22" ax="0" ay="0" aw="22" ah="22"/>
+<Cell name="monkey_apprentice_magic_rotating_halo" x="1234" y="1093" w="44" h="42" ax="0" ay="0" aw="44" ah="42"/>
+<Cell name="monkey_apprentice_phoenix_body" x="832" y="370" w="31" h="136" ax="0" ay="0" aw="31" ah="136"/>
+<Cell name="monkey_apprentice_red_staff_glow" x="1025" y="1912" w="30" h="30" ax="0" ay="0" aw="30" ah="30"/>
+<Cell name="monkey_apprentice_star_staff_01" x="1923" y="1549" w="17" h="50" ax="0" ay="0" aw="17" ah="50"/>
+<Cell name="monkey_apprentice_star_staff_02" x="1991" y="1487" w="17" h="50" ax="0" ay="0" aw="17" ah="50"/>
+<Cell name="monkey_apprentice_summon_phoenix" x="508" y="1018" w="59" h="55" ax="0" ay="0" aw="59" ah="55"/>
+<Cell name="monkey_apprentice_summon_phoenix_base" x="1129" y="1478" w="37" h="37" ax="0" ay="0" aw="37" ah="37"/>
+<Cell name="monkey_apprentice_summon_phoenix_staff" x="2006" y="1208" w="15" h="45" ax="0" ay="0" aw="15" ah="45"/>
+<Cell name="monkey_apprentice_summon_whirlwind" x="1786" y="1123" w="30" h="58" ax="0" ay="0" aw="30" ah="58"/>
+<Cell name="monkey_apprentice_summon_whirlwind_staff" x="605" y="666" w="10" h="45" ax="0" ay="0" aw="10" ah="45"/>
+<Cell name="monkey_apprentice_tempest_tornado" x="446" y="1107" w="59" h="55" ax="0" ay="0" aw="59" ah="55"/>
+<Cell name="monkey_apprentice_tempest_tornado_staff" x="1926" y="1621" w="15" h="45" ax="0" ay="0" aw="15" ah="45"/>
+<Cell name="monkey_apprentice_turban" x="1074" y="1153" w="47" h="40" ax="4" ay="7" aw="62" ah="58"/>
+<Cell name="monkey_apprentice_turban_cap" x="710" y="1495" w="47" h="47" ax="4" ay="5" aw="62" ah="58"/>
+<Cell name="monkey_apprentice_turban_hat" x="1023" y="1125" w="48" h="53" ax="3" ay="5" aw="62" ah="58"/>
+<Cell name="monkey_apprentice_wizard" x="808" y="999" w="55" h="57" ax="2" ay="1" aw="60" ah="58"/>
+<Cell name="monkey_apprentice_wizard_horned" x="1339" y="832" w="70" h="65" ax="0" ay="0" aw="72" ah="72"/>
+<Cell name="monkey_farmer_fork" x="591" y="1847" w="41" h="32" ax="0" ay="0" aw="41" ah="32"/>
+<Cell name="monkey_farmer_hat" x="1922" y="1153" w="27" h="35" ax="0" ay="0" aw="27" ah="35"/>
+<Cell name="monkey_farmer_pro_banana" x="866" y="1024" w="53" h="27" ax="0" ay="0" aw="53" ah="27"/>
+<Cell name="monkey_tail" x="1598" y="972" w="21" h="17" ax="0" ay="0" aw="21" ah="17"/>
+<Cell name="monkey_temple" x="1289" y="524" w="84" h="167" ax="0" ay="0" aw="84" ah="167"/>
+<Cell name="monkey_temple_bomb_tower_projectile" x="1599" y="1304" w="30" h="59" ax="0" ay="0" aw="30" ah="59"/>
+<Cell name="monkey_temple_evil" x="1391" y="421" w="84" h="167" ax="0" ay="0" aw="84" ah="167"/>
+<Cell name="monkey_temple_glue_tower_projectile" x="659" y="972" w="17" h="38" ax="0" ay="0" aw="17" ah="38"/>
+<Cell name="monkey_temple_head" x="310" y="1598" w="53" h="70" ax="0" ay="0" aw="53" ah="70"/>
+<Cell name="monkey_temple_head_evil" x="807" y="1101" w="53" h="70" ax="0" ay="0" aw="53" ah="70"/>
+<Cell name="monkey_temple_head_shadow" x="854" y="1633" w="39" h="78" ax="1" ay="1" aw="40" ah="80"/>
+<Cell name="monkey_temple_ice_tower_projectile" x="1129" y="1518" w="36" h="59" ax="0" ay="0" aw="36" ah="59"/>
+<Cell name="monkey_temple_lightning" x="1" y="6" w="281" h="174" ax="0" ay="0" aw="281" ah="174"/>
+<Cell name="monkey_temple_supermonkey_projectile" x="1491" y="1185" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+<Cell name="monkey_village" x="1045" y="1395" w="40" h="82" ax="0" ay="0" aw="40" ah="82"/>
+<Cell name="monkey_village_beacon" x="1246" y="1858" w="26" h="56" ax="0" ay="0" aw="26" ah="56"/>
+<Cell name="monkey_village_beacon_dish" x="522" y="454" w="26" h="31" ax="0" ay="0" aw="26" ah="31"/>
+<Cell name="monkey_village_energy_beacon_dish" x="1582" y="1534" w="26" h="31" ax="0" ay="0" aw="26" ah="31"/>
+<Cell name="monkey_village_eye_closed" x="1234" y="1138" w="43" h="43" ax="0" ay="0" aw="43" ah="43"/>
+<Cell name="monkey_village_fire_pit_stones" x="1190" y="1750" w="30" h="24" ax="0" ay="0" aw="30" ah="24"/>
+<Cell name="monkey_village_fort" x="879" y="1844" w="35" h="60" ax="0" ay="0" aw="35" ah="60"/>
+<Cell name="monkey_village_intel_bureau" x="1088" y="1422" w="38" h="97" ax="0" ay="0" aw="38" ah="97"/>
+<Cell name="monkey_village_jungle_drums" x="1475" y="1500" w="29" h="29" ax="0" ay="0" aw="29" ah="29"/>
+<Cell name="monkey_village_town" x="1631" y="607" w="68" h="125" ax="0" ay="0" aw="68" ah="125"/>
+<Cell name="mortar_artillery_monkey" x="691" y="1051" w="55" h="62" ax="0" ay="0" aw="55" ah="62"/>
+<Cell name="mortar_big_one_bomb" x="1478" y="1632" w="26" h="41" ax="0" ay="0" aw="26" ah="41"/>
+<Cell name="mortar_double_green_base" x="379" y="961" w="96" h="52" ax="0" ay="0" aw="96" ah="52"/>
+<Cell name="mortar_double_yellow_stripe" x="1564" y="1292" w="32" h="29" ax="0" ay="0" aw="32" ah="29"/>
+<Cell name="mortar_flames" x="1317" y="1514" w="32" h="45" ax="0" ay="0" aw="32" ah="45"/>
+<Cell name="mortar_green_barrel" x="718" y="1901" w="36" h="86" ax="0" ay="0" aw="36" ah="86"/>
+<Cell name="mortar_green_base" x="424" y="1616" w="50" h="52" ax="0" ay="0" aw="50" ah="52"/>
+<Cell name="mortar_highlight" x="1714" y="384" w="5" h="71" ax="0" ay="0" aw="17" ah="71"/>
+<Cell name="mortar_large_reticule" x="997" y="944" w="76" h="76" ax="1" ay="1" aw="154" ah="154"/>
+<Cell name="mortar_monkey" x="60" y="1680" w="55" h="62" ax="0" ay="0" aw="55" ah="62"/>
+<Cell name="mortar_red_circle" x="1446" y="1881" w="22" h="22" ax="0" ay="0" aw="22" ah="22"/>
+<Cell name="mortar_small_reticule" x="1317" y="1562" w="31" h="31" ax="0" ay="0" aw="62" ah="62"/>
+<Cell name="mortar_star" x="1832" y="1501" w="22" h="21" ax="0" ay="0" aw="22" ah="21"/>
+<Cell name="mortar_tower_muzzle_flash" x="257" y="1018" w="60" h="70" ax="0" ay="0" aw="60" ah="70"/>
+<Cell name="mortar_white_barrel" x="1556" y="1064" w="36" h="86" ax="0" ay="0" aw="36" ah="86"/>
+<Cell name="mortar_white_base" x="605" y="1424" w="50" h="52" ax="0" ay="0" aw="50" ah="52"/>
+<Cell name="mortar_yellow_barrel" x="64" y="1434" w="59" h="86" ax="0" ay="0" aw="59" ah="86"/>
+<Cell name="mortar_yellow_base" x="1638" y="384" w="73" h="52" ax="0" ay="0" aw="73" ah="52"/>
+<Cell name="mortar_yellow_monkey" x="310" y="1430" w="55" h="62" ax="0" ay="0" aw="55" ah="62"/>
+<Cell name="mortar_yellow_stripe" x="1041" y="783" w="32" h="14" ax="0" ay="0" aw="32" ah="14"/>
+<Cell name="muzzle_flash" x="637" y="1815" w="39" h="22" ax="0" ay="0" aw="39" ah="22"/>
+<Cell name="navy_admiral_cap_peak" x="1183" y="1318" w="29" h="11" ax="0" ay="0" aw="29" ah="11"/>
+<Cell name="navy_aircraft_carrier" x="251" y="1409" w="56" h="191" ax="0" ay="0" aw="56" ah="191"/>
+<Cell name="navy_bridge" x="1829" y="974" w="33" h="46" ax="12" ay="58" aw="45" ah="158"/>
+<Cell name="navy_dinghy" x="1277" y="1664" w="29" h="95" ax="1" ay="0" aw="30" ah="95"/>
+<Cell name="navy_flag_1.1" x="1339" y="1731" w="27" h="33" ax="0" ay="0" aw="27" ah="35"/>
+<Cell name="navy_flag_1.2" x="1904" y="1247" w="25" h="35" ax="2" ay="0" aw="27" ah="35"/>
+<Cell name="navy_flag_1.3" x="1951" y="1200" w="25" h="35" ax="2" ay="0" aw="27" ah="35"/>
+<Cell name="navy_flag_2.1" x="1570" y="1676" w="23" h="35" ax="0" ay="0" aw="24" ah="35"/>
+<Cell name="navy_flag_2.2" x="1299" y="1948" w="23" h="34" ax="0" ay="0" aw="24" ah="35"/>
+<Cell name="navy_flag_2.3" x="499" y="1774" w="24" h="34" ax="0" ay="0" aw="24" ah="35"/>
+<Cell name="navy_flag_pole" x="724" y="1638" w="29" h="12" ax="0" ay="0" aw="29" ah="12"/>
+<Cell name="navy_gun_barrel_01" x="833" y="1978" w="27" h="16" ax="0" ay="0" aw="27" ah="16"/>
+<Cell name="navy_gun_barrel_02" x="1421" y="1519" w="18" h="16" ax="9" ay="0" aw="27" ah="16"/>
+<Cell name="navy_gun_barrel_03" x="1892" y="1736" w="13" h="16" ax="14" ay="0" aw="27" ah="16"/>
+<Cell name="navy_gun_barrel_04" x="209" y="1978" w="9" h="16" ax="18" ay="0" aw="27" ah="16"/>
+<Cell name="navy_gun_base" x="1591" y="722" w="22" h="10" ax="0" ay="0" aw="22" ah="10"/>
+<Cell name="navy_gun_base_mid" x="986" y="803" w="22" h="4" ax="0" ay="0" aw="22" ah="4"/>
+<Cell name="navy_gunboat" x="1207" y="1559" w="34" h="125" ax="0" ay="0" aw="34" ah="125"/>
+<Cell name="navy_harpoon" x="533" y="1894" w="41" h="27" ax="0" ay="0" aw="41" ah="27"/>
+<Cell name="navy_harpoon_boat" x="761" y="1493" w="45" h="158" ax="0" ay="0" aw="45" ah="158"/>
+<Cell name="navy_harpoon_gun" x="1396" y="1786" w="25" h="16" ax="0" ay="0" aw="25" ah="16"/>
+<Cell name="navy_hovercraft" x="635" y="1847" w="39" h="126" ax="1" ay="0" aw="40" ah="135"/>
+<Cell name="navy_hovercraft_prop" x="1755" y="1331" w="24" h="31" ax="0" ay="0" aw="24" ah="31"/>
+<Cell name="navy_hull_gradient" x="744" y="648" w="3" h="44" ax="0" ay="0" aw="3" ah="44"/>
+<Cell name="navy_large_guns" x="1527" y="1237" w="34" h="108" ax="0" ay="0" aw="34" ah="108"/>
+<Cell name="navy_radar" x="561" y="832" w="36" h="10" ax="0" ay="0" aw="36" ah="10"/>
+<Cell name="navy_radar_base" x="1573" y="1714" w="20" h="20" ax="7" ay="0" aw="36" ah="20"/>
+<Cell name="navy_sailor_hat" x="1637" y="1067" w="36" h="31" ax="0" ay="0" aw="36" ah="31"/>
+<Cell name="navy_speedboat" x="1101" y="1684" w="33" h="98" ax="1" ay="0" aw="34" ah="98"/>
+<Cell name="navy_window_reflection" x="297" y="1646" w="8" h="6" ax="0" ay="0" aw="8" ah="6"/>
+<Cell name="ninja" x="378" y="1292" w="56" h="56" ax="0" ay="0" aw="56" ah="56"/>
+<Cell name="ninja_bandana" x="1428" y="669" w="41" h="13" ax="0" ay="1" aw="41" ah="14"/>
+<Cell name="ninja_black" x="1" y="1666" w="56" h="57" ax="0" ay="0" aw="56" ah="57"/>
+<Cell name="ninja_bloonjitsu" x="124" y="1536" w="56" h="58" ax="0" ay="0" aw="56" ah="58"/>
+<Cell name="ninja_demon_mask" x="64" y="1273" w="60" h="61" ax="2" ay="1" aw="62" ah="68"/>
+<Cell name="ninja_grenade" x="1868" y="1770" w="12" h="21" ax="0" ay="0" aw="12" ah="21"/>
+<Cell name="ninja_hat_01" x="549" y="1412" w="53" h="36" ax="3" ay="9" aw="56" ah="56"/>
+<Cell name="ninja_hat_02" x="1" y="1560" w="59" h="43" ax="3" ay="8" aw="62" ah="57"/>
+<Cell name="ninja_helmet" x="865" y="1059" w="53" h="56" ax="0" ay="0" aw="56" ah="56"/>
+<Cell name="ninja_hood_mask" x="564" y="1300" w="54" h="60" ax="0" ay="0" aw="54" ah="60"/>
+<Cell name="ninja_kabuki_mask" x="900" y="1343" w="46" h="58" ax="6" ay="1" aw="56" ah="68"/>
+<Cell name="ninja_sabotage" x="1139" y="1289" w="41" h="40" ax="0" ay="0" aw="41" ah="40"/>
+<Cell name="ninja_samurai_helmet" x="689" y="1116" w="55" h="57" ax="0" ay="0" aw="56" ah="57"/>
+<Cell name="ninja_samurai_helmet_mask" x="568" y="1185" w="55" h="60" ax="0" ay="0" aw="56" ah="60"/>
+<Cell name="ninja_throwing_star" x="1813" y="1353" w="25" h="25" ax="0" ay="0" aw="25" ah="25"/>
+<Cell name="ninja_white" x="187" y="1480" w="56" h="57" ax="0" ay="0" aw="56" ah="57"/>
+<Cell name="phoenix_tail" x="759" y="1860" w="36" h="90" ax="0" ay="0" aw="36" ah="90"/>
+<Cell name="pineapple" x="747" y="1153" w="53" h="76" ax="0" ay="0" aw="53" ah="76"/>
+<Cell name="pineapple_armed" x="59" y="1805" w="54" h="59" ax="0" ay="23" aw="59" ah="82"/>
+<Cell name="pineapple_text_01" x="1494" y="1897" w="19" h="41" ax="0" ay="0" aw="19" ah="41"/>
+<Cell name="pineapple_text_02" x="1057" y="1947" w="28" h="39" ax="0" ay="0" aw="28" ah="39"/>
+<Cell name="pineapple_text_03" x="1505" y="1689" w="24" h="39" ax="0" ay="0" aw="24" ah="39"/>
+<Cell name="pirates_harpoon_pop" x="1712" y="490" w="69" h="138" ax="0" ay="0" aw="138" ah="138"/>
+<Cell name="plaster" x="1416" y="402" w="42" h="16" ax="0" ay="0" aw="42" ah="16"/>
+<Cell name="pop" x="1758" y="92" w="82" h="87" ax="3" ay="0" aw="85" ah="87"/>
+<Cell name="pop_and_awe_bomb" x="1853" y="643" w="64" h="108" ax="0" ay="0" aw="64" ah="108"/>
+<Cell name="pudding" x="1027" y="1838" w="21" h="24" ax="3" ay="2" aw="26" ah="26"/>
+<Cell name="pudding_juggernaut" x="740" y="1232" w="52" h="60" ax="9" ay="9" aw="70" ah="70"/>
+<Cell name="purge_wave" x="2007" y="1683" w="8" h="283" ax="0" ay="0" aw="8" ah="283"/>
+<Cell name="purple_bandana" x="165" y="1978" w="41" h="13" ax="0" ay="0" aw="41" ah="14"/>
+<Cell name="rainbow" x="1472" y="989" w="40" h="54" ax="0" ay="0" aw="40" ah="54"/>
+<Cell name="rainbow_regen" x="320" y="1083" w="60" h="57" ax="0" ay="0" aw="60" ah="57"/>
+<Cell name="red_bandana" x="724" y="1654" w="41" h="13" ax="0" ay="0" aw="41" ah="14"/>
+<Cell name="red_hot_tack" x="1354" y="113" w="7" h="21" ax="1" ay="2" aw="9" ah="23"/>
+<Cell name="ring_of_fire" x="1138" y="116" w="106" h="106" ax="0" ay="0" aw="106" ah="106"/>
+<Cell name="robo_farmer_arm_01" x="1979" y="1660" w="12" h="31" ax="38" ay="0" aw="62" ah="58"/>
+<Cell name="robo_farmer_arm_02" x="1368" y="1815" w="25" h="15" ax="37" ay="20" aw="62" ah="58"/>
+<Cell name="robo_farmer_body" x="1557" y="555" w="71" h="58" ax="0" ay="0" aw="71" ah="58"/>
+<Cell name="santa_hat" x="621" y="1348" w="53" h="43" ax="0" ay="0" aw="53" ah="43"/>
+<Cell name="sentry_barrel" x="1572" y="1775" w="21" h="15" ax="0" ay="0" aw="21" ah="15"/>
+<Cell name="sentry_barrel_red" x="1334" y="1196" w="32" h="23" ax="0" ay="0" aw="32" ah="23"/>
+<Cell name="sentry_muzzle" x="1789" y="1841" w="13" h="16" ax="0" ay="0" aw="13" ah="16"/>
+<Cell name="sentry_muzzle_red" x="1772" y="1592" w="20" h="45" ax="0" ay="0" aw="20" ah="45"/>
+<Cell name="sentry_tripod" x="508" y="1143" w="57" h="57" ax="0" ay="0" aw="57" ah="57"/>
+<Cell name="sentry_tripod_red" x="1548" y="201" w="85" h="85" ax="0" ay="0" aw="85" ah="85"/>
+<Cell name="sentry_turret" x="1051" y="1757" w="33" h="28" ax="0" ay="0" aw="33" ah="28"/>
+<Cell name="sentry_turret_red" x="1343" y="694" w="74" h="40" ax="0" ay="0" aw="74" ah="40"/>
+<Cell name="shield_01" x="601" y="1552" w="47" h="76" ax="0" ay="0" aw="47" ah="76"/>
+<Cell name="shield_02" x="1084" y="1074" w="47" h="76" ax="0" ay="0" aw="47" ah="76"/>
+<Cell name="shield_03" x="400" y="1763" w="47" h="76" ax="0" ay="0" aw="47" ah="76"/>
+<Cell name="shield_04" x="1136" y="1024" w="47" h="76" ax="0" ay="0" aw="47" ah="76"/>
+<Cell name="shield_05" x="718" y="1868" w="38" h="30" ax="9" ay="0" aw="47" ah="76"/>
+<Cell name="shield_06" x="982" y="1975" w="27" h="19" ax="15" ay="25" aw="47" ah="76"/>
+<Cell name="shield_07" x="852" y="1755" w="37" h="40" ax="10" ay="36" aw="47" ah="76"/>
+<Cell name="shield_08" x="1632" y="1330" w="29" h="37" ax="0" ay="17" aw="47" ah="76"/>
+<Cell name="sight" x="1559" y="406" w="76" h="76" ax="1" ay="1" aw="154" ah="154"/>
+<Cell name="silver_a_bomb_tower_bomb_01" x="808" y="1764" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="silver_a_bomb_tower_bomb_02" x="1556" y="1023" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="silver_a_bomb_tower_bomb_03" x="1515" y="1023" w="38" h="47" ax="0" ay="2" aw="38" ah="51"/>
+<Cell name="silver_a_juggernaut_ball_01" x="1702" y="631" w="68" h="67" ax="1" ay="2" aw="70" ah="70"/>
+<Cell name="silver_a_juggernaut_ball_02" x="1633" y="534" w="70" h="70" ax="0" ay="0" aw="70" ah="70"/>
+<Cell name="silver_bomb_tower_bomb_01" x="677" y="1904" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="silver_bomb_tower_bomb_02" x="937" y="1646" w="38" h="38" ax="0" ay="10" aw="38" ah="51"/>
+<Cell name="silver_bomb_tower_bomb_03" x="1246" y="1293" w="38" h="47" ax="0" ay="2" aw="38" ah="51"/>
+<Cell name="silver_bomb_tower_missile" x="1621" y="1738" w="20" h="74" ax="0" ay="0" aw="20" ah="75"/>
+<Cell name="silver_bomb_tower_missile_01" x="1577" y="1971" w="15" h="22" ax="2" ay="18" aw="17" ah="56"/>
+<Cell name="silver_bomb_tower_missile_02" x="1988" y="1574" w="14" h="44" ax="3" ay="6" aw="17" ah="56"/>
+<Cell name="silver_bomb_tower_missile_03" x="1641" y="1831" w="17" h="55" ax="0" ay="0" aw="17" ah="56"/>
+<Cell name="silver_bomb_tower_missile_full" x="952" y="1493" w="40" h="74" ax="0" ay="0" aw="40" ah="75"/>
+<Cell name="silver_bomb_tower_moab_assassin" x="1014" y="1751" w="34" h="84" ax="0" ay="0" aw="34" ah="84"/>
+<Cell name="silver_bomb_tower_moab_assassin_full" x="1801" y="461" w="68" h="84" ax="0" ay="0" aw="68" ah="84"/>
+<Cell name="silver_bomb_tower_moab_mauler" x="1927" y="1087" w="28" h="63" ax="0" ay="1" aw="28" ah="64"/>
+<Cell name="silver_bomb_tower_moab_mauler_full" x="437" y="1299" w="55" h="64" ax="0" ay="0" aw="55" ah="64"/>
+<Cell name="silver_bomb_tower_special_ability_projectile" x="1442" y="1445" w="30" h="85" ax="0" ay="0" aw="30" ah="86"/>
+<Cell name="silver_bomb_tower_special_ability_projectile_full" x="446" y="1018" w="59" h="86" ax="0" ay="0" aw="59" ah="86"/>
+<Cell name="silver_boomerang" x="1101" y="1661" w="35" h="20" ax="0" ay="0" aw="35" ah="20"/>
+<Cell name="silver_boomerang_red" x="1530" y="1176" w="36" h="20" ax="0" ay="0" aw="36" ah="20"/>
+<Cell name="silver_dart_monkey_dart" x="1696" y="1936" w="12" h="40" ax="0" ay="0" aw="12" ah="40"/>
+<Cell name="silver_dartling_gun_rocket" x="1621" y="1704" w="21" h="31" ax="0" ay="0" aw="21" ah="31"/>
+<Cell name="silver_engineer_nail" x="1199" y="483" w="3" h="18" ax="1" ay="1" aw="5" ah="19"/>
+<Cell name="silver_frag_shrapnel" x="863" y="1978" w="11" h="16" ax="0" ay="1" aw="12" ah="19"/>
+<Cell name="silver_glaive" x="911" y="1179" w="49" h="53" ax="1" ay="0" aw="50" ah="53"/>
+<Cell name="silver_glaive_red" x="971" y="1126" w="49" h="53" ax="1" ay="0" aw="50" ah="53"/>
+<Cell name="silver_juggernaut_ball_01" x="1784" y="548" w="68" h="67" ax="1" ay="2" aw="70" ah="70"/>
+<Cell name="silver_juggernaut_ball_02" x="1554" y="616" w="70" h="70" ax="0" ay="0" aw="70" ah="70"/>
+<Cell name="silver_monkey_temple_supermonkey_projectile" x="879" y="1805" w="36" h="36" ax="0" ay="0" aw="36" ah="36"/>
+<Cell name="silver_mortar_big_one_bomb" x="1183" y="1932" w="26" h="41" ax="0" ay="0" aw="26" ah="41"/>
+<Cell name="silver_ninja_grenade" x="1688" y="926" w="12" h="20" ax="0" ay="0" aw="12" ah="21"/>
+<Cell name="silver_ninja_throwing_star" x="1308" y="1858" w="25" h="25" ax="0" ay="0" aw="25" ah="25"/>
+<Cell name="silver_pop_and_awe_bomb" x="1841" y="756" w="63" h="105" ax="0" ay="2" aw="64" ah="108"/>
+<Cell name="silver_pudding" x="1545" y="1796" w="21" h="24" ax="3" ay="2" aw="26" ah="26"/>
+<Cell name="silver_pudding_juggernaut" x="57" y="1922" w="52" h="60" ax="9" ay="9" aw="70" ah="70"/>
+<Cell name="silver_red_hot_tack" x="2014" y="1" w="7" h="21" ax="1" ay="2" aw="9" ah="23"/>
+<Cell name="silver_spectre_mortar_bomb" x="1886" y="1601" w="17" h="36" ax="1" ay="0" aw="18" ah="36"/>
+<Cell name="silver_spiked_mine_base" x="1680" y="1169" w="32" h="32" ax="0" ay="0" aw="32" ah="32"/>
+<Cell name="silver_spiked_mine_skull" x="1439" y="1719" w="25" h="25" ax="3" ay="3" aw="32" ah="32"/>
+<Cell name="silver_spiked_mine_spike" x="1835" y="1754" w="14" h="15" ax="0" ay="0" aw="14" ah="16"/>
+<Cell name="silver_spikeopult_ball" x="1932" y="1238" w="25" h="25" ax="1" ay="1" aw="26" ah="26"/>
+<Cell name="silver_submarine_barbed_darts" x="295" y="1655" w="12" h="6" ax="0" ay="0" aw="12" ah="6"/>
+<Cell name="silver_submarine_bmissile" x="1629" y="1370" w="28" h="73" ax="6" ay="2" aw="40" ah="75"/>
+<Cell name="silver_submarine_dart" x="1828" y="1805" w="12" h="40" ax="0" ay="0" aw="12" ah="40"/>
+<Cell name="silver_submarine_first_strike_missile" x="239" y="1655" w="53" h="99" ax="0" ay="0" aw="53" ah="99"/>
+<Cell name="silver_tack_shooter_tack" x="2014" y="25" w="7" h="21" ax="1" ay="2" aw="9" ah="23"/>
+<Cell name="small_lightning" x="1670" y="1" w="90" h="88" ax="0" ay="0" aw="90" ah="88"/>
+<Cell name="sniper_arm" x="1959" y="1266" w="24" h="18" ax="0" ay="0" aw="24" ah="18"/>
+<Cell name="sniper_basic_rifle" x="951" y="1235" w="9" h="36" ax="0" ay="0" aw="9" ah="36"/>
+<Cell name="sniper_basic_rifle_muzzle" x="158" y="903" w="6" h="8" ax="0" ay="0" aw="6" ah="8"/>
+<Cell name="sniper_big_game_hunter" x="579" y="1696" w="45" h="50" ax="5" ay="6" aw="55" ah="58"/>
+<Cell name="sniper_blunderbus" x="1190" y="1598" w="14" h="49" ax="0" ay="0" aw="14" ah="49"/>
+<Cell name="sniper_bolt" x="1224" y="225" w="6" h="4" ax="0" ay="0" aw="6" ah="4"/>
+<Cell name="sniper_bolt_action" x="1233" y="225" w="6" h="4" ax="0" ay="0" aw="6" ah="4"/>
+<Cell name="sniper_camo_cap_blue" x="546" y="1844" w="42" h="47" ax="7" ay="9" aw="55" ah="58"/>
+<Cell name="sniper_camo_cap_green" x="592" y="1797" w="42" h="47" ax="7" ay="9" aw="55" ah="58"/>
+<Cell name="sniper_camo_cap_purple" x="1158" y="1239" w="42" h="47" ax="7" ay="9" aw="55" ah="58"/>
+<Cell name="sniper_camo_cap_red" x="1383" y="989" w="42" h="47" ax="7" ay="9" aw="55" ah="58"/>
+<Cell name="sniper_cripple_moab" x="1924" y="595" w="64" h="61" ax="0" ay="0" aw="64" ah="61"/>
+<Cell name="sniper_cripple_moab_muzzle" x="1172" y="1598" w="14" h="9" ax="0" ay="0" aw="14" ah="9"/>
+<Cell name="sniper_deadly_precision" x="1000" y="1316" w="45" h="32" ax="0" ay="0" aw="45" ah="32"/>
+<Cell name="sniper_deadly_precision_laser" x="487" y="1465" w="3" h="83" ax="0" ay="0" aw="3" ah="83"/>
+<Cell name="sniper_faster_firing" x="949" y="1366" w="45" h="32" ax="0" ay="0" aw="45" ah="32"/>
+<Cell name="sniper_full_metal_jacket" x="1062" y="1256" w="45" h="32" ax="0" ay="0" aw="45" ah="32"/>
+<Cell name="sniper_game_hunter" x="574" y="1749" w="44" h="45" ax="6" ay="6" aw="55" ah="58"/>
+<Cell name="sniper_goggles" x="478" y="357" w="38" h="17" ax="0" ay="0" aw="38" ah="17"/>
+<Cell name="sniper_goggles_brass" x="1513" y="1073" w="38" h="17" ax="0" ay="0" aw="38" ah="17"/>
+<Cell name="sniper_green_hat" x="1335" y="987" w="45" h="32" ax="0" ay="0" aw="45" ah="32"/>
+<Cell name="sniper_hunter_cap" x="1030" y="1077" w="49" h="41" ax="3" ay="8" aw="55" ah="58"/>
+<Cell name="sniper_hunter_hat" x="723" y="1676" w="42" h="45" ax="4" ay="7" aw="55" ah="58"/>
+<Cell name="sniper_hunter_muzzle" x="1233" y="1318" w="10" h="22" ax="0" ay="0" aw="10" ah="22"/>
+<Cell name="sniper_hunter_rifle" x="2011" y="1482" w="10" h="44" ax="2" ay="4" aw="14" ah="49"/>
+<Cell name="sniper_laser" x="1706" y="534" w="3" h="83" ax="0" ay="0" aw="3" ah="83"/>
+<Cell name="sniper_point_five_o" x="859" y="1467" w="45" h="32" ax="0" ay="0" aw="45" ah="32"/>
+<Cell name="sniper_semi_auto" x="629" y="1637" w="45" h="35" ax="0" ay="0" aw="45" ah="35"/>
+<Cell name="sniper_semi_auto_muzzle" x="1170" y="1437" w="9" h="18" ax="0" ay="0" aw="9" ah="18"/>
+<Cell name="sniper_shades" x="424" y="1962" w="42" h="25" ax="7" ay="1" aw="55" ah="58"/>
+<Cell name="sniper_sight" x="1866" y="1527" w="10" h="18" ax="2" ay="29" aw="14" ah="49"/>
+<Cell name="sniper_sight_brass" x="1616" y="1426" w="10" h="20" ax="2" ay="29" aw="14" ah="49"/>
+<Cell name="sniper_supply_drop" x="1265" y="961" w="67" h="60" ax="0" ay="0" aw="67" ah="60"/>
+<Cell name="snowball_01" x="1471" y="1897" w="20" h="14" ax="0" ay="0" aw="20" ah="14"/>
+<Cell name="snowball_02" x="1627" y="1889" w="17" h="12" ax="1" ay="0" aw="18" ah="12"/>
+<Cell name="snowball_03" x="1670" y="1609" w="23" h="15" ax="0" ay="0" aw="23" ah="15"/>
+<Cell name="snowball_04" x="1690" y="1736" w="19" h="14" ax="0" ay="0" aw="19" ah="14"/>
+<Cell name="snowball_05" x="1265" y="680" w="20" h="10" ax="0" ay="0" aw="20" ah="10"/>
+<Cell name="sparkle_shared" x="1772" y="1640" w="19" h="19" ax="0" ay="0" aw="19" ah="19"/>
+<Cell name="spectre_mortar_bomb" x="1004" y="170" w="18" h="36" ax="0" ay="0" aw="18" ah="36"/>
+<Cell name="spike_factory_base" x="878" y="1907" w="33" h="66" ax="0" ay="0" aw="33" ah="66"/>
+<Cell name="spike_factory_base_blue" x="1753" y="1039" w="33" h="66" ax="0" ay="0" aw="33" ah="66"/>
+<Cell name="spike_factory_base_green" x="1245" y="1531" w="33" h="66" ax="0" ay="0" aw="33" ah="66"/>
+<Cell name="spike_factory_base_orange" x="1971" y="830" w="33" h="66" ax="0" ay="0" aw="33" ah="66"/>
+<Cell name="spike_factory_base_purple" x="956" y="1849" w="33" h="66" ax="0" ay="0" aw="33" ah="66"/>
+<Cell name="spike_factory_feet_black" x="1514" y="1587" w="26" h="76" ax="0" ay="0" aw="38" ah="76"/>
+<Cell name="spike_factory_feet_blue" x="1215" y="1886" w="26" h="76" ax="0" ay="0" aw="38" ah="76"/>
+<Cell name="spike_factory_feet_purple" x="1614" y="1490" w="26" h="76" ax="0" ay="0" aw="38" ah="76"/>
+<Cell name="spike_factory_feet_red" x="1339" y="1767" w="26" h="76" ax="0" ay="0" aw="38" ah="76"/>
+<Cell name="spike_factory_feet_yellow" x="1725" y="1381" w="26" h="76" ax="0" ay="0" aw="38" ah="76"/>
+<Cell name="spike_factory_spiked_mines_pipes" x="1223" y="1687" w="18" h="29" ax="0" ay="0" aw="18" ah="29"/>
+<Cell name="spike_factory_white_hot_spikes_base" x="1791" y="1020" w="33" h="66" ax="0" ay="0" aw="33" ah="66"/>
+<Cell name="spike_storm" x="1265" y="823" w="71" h="62" ax="0" ay="0" aw="71" ah="62"/>
+<Cell name="spiked_mine_base" x="1827" y="1023" w="32" h="32" ax="0" ay="0" aw="32" ah="32"/>
+<Cell name="spiked_mine_skull" x="1212" y="1965" w="25" h="25" ax="3" ay="3" aw="32" ah="32"/>
+<Cell name="spiked_mine_spike" x="1461" y="402" w="14" h="16" ax="0" ay="0" aw="14" ah="16"/>
+<Cell name="spikeopult_ball" x="1875" y="1247" w="26" h="26" ax="0" ay="0" aw="26" ah="26"/>
+<Cell name="steampunk_sub_aerial" x="519" y="183" w="24" h="10" ax="0" ay="0" aw="24" ah="10"/>
+<Cell name="steampunk_sub_ballistic_barrel_01" x="1621" y="1681" w="13" h="17" ax="0" ay="0" aw="13" ah="17"/>
+<Cell name="steampunk_sub_ballistic_barrel_02" x="1908" y="1709" w="13" h="12" ax="0" ay="5" aw="13" ah="17"/>
+<Cell name="steampunk_sub_brass_bands_01" x="580" y="1631" w="25" h="18" ax="1" ay="16" aw="26" ah="84"/>
+<Cell name="steampunk_sub_brass_bands_02" x="1952" y="1414" w="20" h="18" ax="6" ay="60" aw="26" ah="84"/>
+<Cell name="steampunk_sub_bronze_bands_01" x="1182" y="1976" w="25" h="18" ax="1" ay="16" aw="26" ah="84"/>
+<Cell name="steampunk_sub_bronze_bands_02" x="1498" y="1873" w="20" h="18" ax="6" ay="60" aw="26" ah="84"/>
+<Cell name="steampunk_sub_engine" x="2005" y="1351" w="16" h="18" ax="0" ay="0" aw="16" ah="18"/>
+<Cell name="steampunk_sub_fin" x="1060" y="1910" w="29" h="34" ax="0" ay="0" aw="29" ah="34"/>
+<Cell name="steampunk_sub_goggles" x="1950" y="1503" w="18" h="18" ax="0" ay="0" aw="18" ah="18"/>
+<Cell name="steampunk_sub_gun_barrel_01" x="819" y="1982" w="11" h="12" ax="0" ay="0" aw="11" ah="12"/>
+<Cell name="steampunk_sub_gun_barrel_02" x="149" y="1984" w="11" h="10" ax="0" ay="2" aw="11" ah="12"/>
+<Cell name="steampunk_sub_gun_base" x="889" y="1405" w="8" h="13" ax="0" ay="0" aw="8" ah="13"/>
+<Cell name="steampunk_sub_gun_base_mid" x="424" y="1522" w="4" h="13" ax="0" ay="0" aw="4" ah="13"/>
+<Cell name="steampunk_sub_hatch" x="1817" y="1738" w="15" h="32" ax="1" ay="0" aw="16" ah="32"/>
+<Cell name="steampunk_sub_hull_01" x="1901" y="1336" w="23" h="84" ax="1" ay="0" aw="24" ah="84"/>
+<Cell name="steampunk_sub_hull_02" x="1410" y="1184" w="37" h="106" ax="1" ay="0" aw="38" ah="106"/>
+<Cell name="steampunk_sub_hull_03" x="1827" y="1058" w="30" h="118" ax="0" ay="0" aw="30" ah="118"/>
+<Cell name="steampunk_sub_hull_04" x="1485" y="1346" w="32" h="151" ax="0" ay="0" aw="32" ah="151"/>
+<Cell name="steampunk_sub_hull_05" x="506" y="1203" w="55" h="173" ax="1" ay="0" aw="56" ah="173"/>
+<Cell name="steampunk_sub_periscope" x="1906" y="1635" w="16" h="17" ax="0" ay="0" aw="16" ah="17"/>
+<Cell name="steampunk_sub_porthole" x="1661" y="1831" w="17" h="36" ax="0" ay="0" aw="17" ah="36"/>
+<Cell name="steampunk_sub_silo_01" x="495" y="1299" w="8" h="17" ax="0" ay="0" aw="8" ah="17"/>
+<Cell name="steampunk_sub_silo_02" x="158" y="834" w="6" h="17" ax="0" ay="0" aw="8" ah="17"/>
+<Cell name="steampunk_sub_silo_03" x="1843" y="91" w="5" h="15" ax="0" ay="1" aw="8" ah="17"/>
+<Cell name="steampunk_sub_silo_04" x="744" y="695" w="3" h="13" ax="0" ay="2" aw="8" ah="17"/>
+<Cell name="steampunk_sub_spike" x="319" y="682" w="8" h="33" ax="0" ay="0" aw="8" ah="33"/>
+<Cell name="steampunk_sub_tail_01" x="1892" y="1130" w="28" h="20" ax="0" ay="0" aw="28" ah="20"/>
+<Cell name="steampunk_sub_tail_03" x="1520" y="1398" w="30" h="36" ax="0" ay="0" aw="30" ah="36"/>
+<Cell name="steampunk_sub_tailfin" x="1860" y="1794" w="11" h="33" ax="0" ay="0" aw="11" ah="33"/>
+<Cell name="steampunk_sub_telescope" x="1076" y="697" w="14" h="26" ax="0" ay="0" aw="14" ah="26"/>
+<Cell name="stock_bloon" x="1376" y="1086" w="40" h="54" ax="0" ay="0" aw="40" ah="54"/>
+<Cell name="stock_bloon_highlight" x="993" y="1812" w="18" h="34" ax="0" ay="0" aw="18" ah="34"/>
+<Cell name="stock_regen_bloon" x="256" y="1151" w="60" h="57" ax="0" ay="0" aw="60" ah="57"/>
+<Cell name="stock_regen_bloon_highlight" x="350" y="1704" w="50" h="27" ax="0" ay="0" aw="50" ah="27"/>
+<Cell name="submarine_airburst" x="501" y="1246" w="2" h="24" ax="0" ay="0" aw="2" ah="24"/>
+<Cell name="submarine_antenna" x="158" y="854" w="6" h="17" ax="0" ay="0" aw="7" ah="17"/>
+<Cell name="submarine_ballistic_gun_01" x="1104" y="342" w="9" h="20" ax="0" ay="0" aw="9" ah="20"/>
+<Cell name="submarine_ballistic_gun_02" x="1024" y="1596" w="9" h="12" ax="0" ay="8" aw="9" ah="20"/>
+<Cell name="submarine_ballistic_gun_03" x="679" y="999" w="9" h="17" ax="0" ay="3" aw="9" ah="20"/>
+<Cell name="submarine_ballistic_missile" x="1552" y="1474" w="27" h="109" ax="0" ay="0" aw="27" ah="110"/>
+<Cell name="submarine_barbed_darts" x="1376" y="578" w="12" h="6" ax="0" ay="0" aw="12" ah="6"/>
+<Cell name="submarine_base" x="1845" y="1253" w="26" h="87" ax="0" ay="0" aw="26" ah="87"/>
+<Cell name="submarine_base_waves" x="1410" y="1678" w="26" h="94" ax="4" ay="0" aw="30" ah="95"/>
+<Cell name="submarine_bay_00" x="1170" y="1458" w="9" h="17" ax="0" ay="0" aw="9" ah="17"/>
+<Cell name="submarine_bay_01" x="495" y="1319" w="8" h="17" ax="0" ay="0" aw="9" ah="17"/>
+<Cell name="submarine_bay_02" x="1843" y="109" w="5" h="15" ax="0" ay="1" aw="9" ah="17"/>
+<Cell name="submarine_bay_03" x="870" y="673" w="2" h="11" ax="0" ay="3" aw="9" ah="17"/>
+<Cell name="submarine_binocs" x="608" y="1631" w="18" h="19" ax="0" ay="0" aw="18" ah="19"/>
+<Cell name="submarine_bloontonium_reactor" x="984" y="1596" w="37" h="141" ax="0" ay="0" aw="37" ah="141"/>
+<Cell name="submarine_bmissile" x="1744" y="1254" w="28" h="74" ax="6" ay="1" aw="40" ah="75"/>
+<Cell name="submarine_dart" x="1766" y="1862" w="12" h="40" ax="0" ay="0" aw="12" ah="40"/>
+<Cell name="submarine_dart_light" x="795" y="1429" w="11" h="11" ax="0" ay="0" aw="11" ah="11"/>
+<Cell name="submarine_first_strike" x="1223" y="1343" w="37" h="169" ax="0" ay="0" aw="37" ah="169"/>
+<Cell name="submarine_first_strike_missile" x="431" y="1465" w="53" h="99" ax="0" ay="0" aw="53" ah="99"/>
+<Cell name="submarine_gun_01" x="2014" y="49" w="7" h="15" ax="1" ay="1" aw="8" ah="16"/>
+<Cell name="submarine_gun_02" x="2014" y="67" w="7" h="10" ax="1" ay="6" aw="8" ah="16"/>
+<Cell name="submarine_gun_03" x="1354" y="137" w="7" h="12" ax="1" ay="4" aw="8" ah="16"/>
+<Cell name="submarine_hat_black" x="1880" y="1512" w="19" h="34" ax="0" ay="0" aw="19" ah="34"/>
+<Cell name="submarine_hat_blue" x="1440" y="1953" w="19" h="34" ax="0" ay="0" aw="19" ah="34"/>
+<Cell name="submarine_hat_connery" x="1163" y="803" w="16" h="41" ax="0" ay="0" aw="16" ah="41"/>
+<Cell name="submarine_hat_green" x="1644" y="1756" w="19" h="34" ax="0" ay="0" aw="19" ah="34"/>
+<Cell name="submarine_hat_red" x="1795" y="1605" w="19" h="34" ax="0" ay="0" aw="19" ah="34"/>
+<Cell name="submarine_hat_white" x="1564" y="1834" w="19" h="34" ax="0" ay="0" aw="19" ah="34"/>
+<Cell name="submarine_hat_yellow" x="1906" y="1493" w="19" h="34" ax="0" ay="0" aw="19" ah="34"/>
+<Cell name="submarine_improved_range" x="1646" y="1904" w="15" h="35" ax="0" ay="0" aw="15" ah="35"/>
+<Cell name="submarine_jet" x="1617" y="1944" w="15" h="21" ax="0" ay="0" aw="15" ah="21"/>
+<Cell name="submarine_light" x="1906" y="1655" w="15" h="15" ax="0" ay="0" aw="15" ah="15"/>
+<Cell name="submarine_missile" x="493" y="1366" w="10" h="10" ax="0" ay="0" aw="10" ah="10"/>
+<Cell name="submarine_missile_first_strike" x="1616" y="722" w="10" h="10" ax="0" ay="0" aw="10" ah="10"/>
+<Cell name="submarine_paint" x="1463" y="1921" w="19" h="69" ax="0" ay="0" aw="22" ah="69"/>
+<Cell name="submarine_periscope" x="158" y="874" w="6" h="14" ax="0" ay="1" aw="6" ah="16"/>
+<Cell name="submarine_portholes" x="2012" y="83" w="9" h="43" ax="0" ay="0" aw="9" ah="43"/>
+<Cell name="submarine_radar_pulse" x="918" y="1126" w="50" h="50" ax="0" ay="0" aw="50" ah="50"/>
+<Cell name="submarine_radar_scan" x="1063" y="1661" w="35" h="50" ax="0" ay="0" aw="35" ah="50"/>
+<Cell name="submarine_radiation" x="1031" y="1023" w="50" h="50" ax="0" ay="0" aw="50" ah="50"/>
+<Cell name="submarine_ripple" x="1883" y="1486" w="20" h="20" ax="0" ay="0" aw="20" ah="20"/>
+<Cell name="submarine_stripes" x="1980" y="1351" w="22" h="21" ax="0" ay="0" aw="22" ah="21"/>
+<Cell name="submarine_submerge" x="1598" y="993" w="36" h="112" ax="0" ay="0" aw="36" ah="112"/>
+<Cell name="submarine_twin_gun_01" x="1835" y="1685" w="17" h="15" ax="0" ay="0" aw="17" ah="15"/>
+<Cell name="submarine_twin_gun_02" x="1776" y="1752" w="17" h="12" ax="0" ay="3" aw="17" ah="15"/>
+<Cell name="submarine_twin_gun_03" x="1681" y="1842" w="17" h="14" ax="0" ay="1" aw="17" ah="15"/>
+<Cell name="supermonkey" x="953" y="1918" w="31" h="50" ax="0" ay="0" aw="31" ah="50"/>
+<Cell name="supermonkey_arm" x="2010" y="1317" w="11" h="29" ax="0" ay="0" aw="11" ah="29"/>
+<Cell name="supermonkey_arm_medieval" x="2010" y="1540" w="11" h="29" ax="0" ay="0" aw="11" ah="29"/>
+<Cell name="supermonkey_cape_christmas" x="1781" y="1468" w="23" h="31" ax="0" ay="0" aw="23" ah="31"/>
+<Cell name="supermonkey_cape_green" x="1449" y="1847" w="22" h="31" ax="0" ay="0" aw="22" ah="31"/>
+<Cell name="supermonkey_cape_logo" x="1866" y="1549" w="19" h="13" ax="0" ay="0" aw="19" ah="13"/>
+<Cell name="supermonkey_cape_logo_christmas" x="1004" y="209" w="18" h="13" ax="0" ay="0" aw="18" ah="13"/>
+<Cell name="supermonkey_cape_logo_medieval" x="1538" y="1889" w="19" h="13" ax="0" ay="0" aw="19" ah="13"/>
+<Cell name="supermonkey_cape_medieval" x="1663" y="1627" w="22" h="31" ax="0" ay="0" aw="22" ah="31"/>
+<Cell name="supermonkey_cape_purple" x="1352" y="1946" w="22" h="31" ax="0" ay="0" aw="22" ah="31"/>
+<Cell name="supermonkey_cape_red" x="1985" y="1317" w="22" h="31" ax="0" ay="0" aw="22" ah="31"/>
+<Cell name="supermonkey_epic_range" x="1326" y="1173" w="38" h="20" ax="0" ay="0" aw="38" ah="20"/>
+<Cell name="supermonkey_fanclub" x="320" y="1016" w="60" h="64" ax="0" ay="0" aw="60" ah="64"/>
+<Cell name="supermonkey_fanclub_cape" x="126" y="1439" w="59" h="32" ax="0" ay="0" aw="59" ah="32"/>
+<Cell name="supermonkey_laser_vision" x="1548" y="289" w="45" h="22" ax="0" ay="0" aw="45" ah="22"/>
+<Cell name="supermonkey_laser_vision_projectile" x="1491" y="1145" w="36" h="37" ax="0" ay="0" aw="36" ah="37"/>
+<Cell name="supermonkey_laser_vision_projectile_single" x="456" y="758" w="12" h="37" ax="0" ay="0" aw="12" ah="37"/>
+<Cell name="supermonkey_medieval" x="1352" y="1523" w="31" h="50" ax="0" ay="0" aw="31" ah="50"/>
+<Cell name="supermonkey_plasma_vision" x="1301" y="1483" w="34" h="28" ax="0" ay="0" aw="34" ah="28"/>
+<Cell name="supermonkey_plasma_vision_projectile" x="424" y="1671" w="49" h="55" ax="0" ay="0" aw="49" ah="55"/>
+<Cell name="supermonkey_robo_monkey" x="1" y="1022" w="61" h="63" ax="0" ay="0" aw="61" ah="63"/>
+<Cell name="supermonkey_robo_monkey_arm" x="1205" y="365" w="16" h="42" ax="0" ay="0" aw="16" ah="42"/>
+<Cell name="supermonkey_storm_cape" x="314" y="1377" w="56" h="50" ax="0" ay="0" aw="56" ah="50"/>
+<Cell name="supermonkey_storm_trail" x="1" y="1" w="360" h="2" ax="0" ay="0" aw="360" ah="2"/>
+<Cell name="supermonkey_sun_god" x="996" y="342" w="105" h="89" ax="0" ay="0" aw="105" ah="89"/>
+<Cell name="supermonkey_sun_god_projectile" x="498" y="1811" w="45" h="32" ax="0" ay="0" aw="45" ah="32"/>
+<Cell name="supermonkey_tech_terror" x="1079" y="855" w="76" h="76" ax="0" ay="0" aw="76" ah="76"/>
+<Cell name="supermonkey_tech_terror_projectile" x="383" y="1115" w="59" h="66" ax="0" ay="0" aw="59" ah="66"/>
+<Cell name="supply_drop_pulse" x="1" y="1088" w="61" h="61" ax="1" ay="1" aw="124" ah="124"/>
+<Cell name="supply_drop_radio" x="65" y="1022" w="61" h="61" ax="0" ay="0" aw="61" ah="61"/>
+<Cell name="tack_shooter_base" x="1448" y="1664" w="26" h="52" ax="0" ay="0" aw="26" ah="52"/>
+<Cell name="tack_shooter_blade_shooter_base" x="115" y="1889" w="51" h="51" ax="0" ay="0" aw="51" ah="51"/>
+<Cell name="tack_shooter_even_faster_logo" x="1027" y="1877" w="30" h="31" ax="0" ay="0" aw="30" ah="31"/>
+<Cell name="tack_shooter_tack" x="278" y="1871" w="9" h="23" ax="0" ay="0" aw="9" ah="23"/>
+<Cell name="tack_shooter_tack_logo" x="1855" y="548" w="14" h="26" ax="0" ay="0" aw="14" ah="26"/>
+<Cell name="tax" x="551" y="383" w="140" h="104" ax="2" ay="2" aw="144" ah="112"/>
+<Cell name="tech_terror_energy_ball" x="1949" y="274" w="69" h="69" ax="0" ay="0" aw="69" ah="69"/>
+<Cell name="tech_terror_energy_overlay" x="471" y="666" w="131" h="131" ax="0" ay="0" aw="131" ah="131"/>
+<Cell name="topgun_monkey_ace_bomber" x="996" y="434" w="101" h="158" ax="0" ay="0" aw="101" ah="158"/>
+<Cell name="topgun_monkey_ace_fighter" x="1478" y="564" w="73" h="123" ax="0" ay="0" aw="73" ah="123"/>
+<Cell name="topgun_monkey_ace_fighter_jet" x="1" y="1246" w="60" h="133" ax="0" ay="0" aw="60" ah="133"/>
+<Cell name="topgun_monkey_ace_gunship" x="1851" y="1" w="81" h="138" ax="0" ay="0" aw="81" ah="138"/>
+<Cell name="topgun_monkey_ace_jet" x="1635" y="817" w="65" h="106" ax="0" ay="0" aw="65" ah="106"/>
+<Cell name="topgun_monkey_ace_plane" x="1703" y="837" w="63" h="109" ax="0" ay="0" aw="63" ah="109"/>
+<Cell name="topgun_monkey_ace_stealth" x="1493" y="690" w="69" h="149" ax="0" ay="0" aw="69" ah="149"/>
+<Cell name="track_glue" x="677" y="1676" w="43" h="51" ax="0" ay="0" aw="43" ah="51"/>
+<Cell name="triple_darts_bandana" x="549" y="1505" w="50" h="39" ax="0" ay="0" aw="50" ah="39"/>
+<Cell name="turret1_01" x="526" y="1727" w="45" h="68" ax="0" ay="0" aw="45" ah="68"/>
+<Cell name="turret1_02" x="1236" y="1024" w="45" h="66" ax="0" ay="2" aw="45" ah="68"/>
+<Cell name="turret1_03" x="450" y="1811" w="45" h="63" ax="0" ay="5" aw="45" ah="68"/>
+<Cell name="turret1_04" x="1134" y="1134" w="45" h="60" ax="0" ay="8" aw="45" ah="68"/>
+<Cell name="turret2_01" x="1281" y="1098" w="42" h="80" ax="0" ay="0" aw="42" ah="80"/>
+<Cell name="turret2_02" x="488" y="1884" w="42" h="76" ax="0" ay="4" aw="42" ah="80"/>
+<Cell name="turret2_03" x="1094" y="1291" w="42" h="71" ax="0" ay="9" aw="42" ah="80"/>
+<Cell name="turret2_04" x="907" y="1480" w="42" h="66" ax="0" ay="14" aw="42" ah="80"/>
+<Cell name="ufo_base" x="631" y="1080" w="55" h="112" ax="1" ay="0" aw="56" ah="112"/>
+<Cell name="ufo_blade" x="1886" y="1640" w="17" h="18" ax="0" ay="0" aw="17" ah="18"/>
+<Cell name="ufo_cockpit" x="1520" y="1775" w="22" h="43" ax="34" ay="35" aw="56" ah="112"/>
+<Cell name="ufo_engine_base" x="1645" y="1720" w="20" h="33" ax="0" ay="0" aw="20" ah="42"/>
+<Cell name="ufo_engine_blue" x="1205" y="410" w="16" h="14" ax="2" ay="2" aw="20" ah="42"/>
+<Cell name="ufo_engine_red" x="1701" y="1842" w="16" h="14" ax="2" ay="2" aw="20" ah="42"/>
+<Cell name="ufo_engine_vent" x="591" y="1882" w="18" h="9" ax="1" ay="33" aw="20" ah="42"/>
+<Cell name="ufo_engine_yellow" x="1838" y="1703" w="16" h="14" ax="2" ay="2" aw="20" ah="42"/>
+<Cell name="ufo_gun_barrel" x="512" y="1600" w="14" h="13" ax="2" ay="0" aw="17" ah="36"/>
+<Cell name="ufo_gun_base" x="1183" y="1289" w="17" h="26" ax="0" ay="10" aw="17" ah="36"/>
+<Cell name="ufo_light" x="1070" y="881" w="6" h="6" ax="2" ay="2" aw="10" ah="10"/>
+<Cell name="ufo_light_blue" x="1048" y="1280" w="8" h="8" ax="1" ay="1" aw="10" ah="10"/>
+<Cell name="ufo_light_outer" x="598" y="800" w="4" h="14" ax="4" ay="4" aw="12" ah="21"/>
+<Cell name="ufo_light_outer_blue" x="1597" y="1658" w="10" h="19" ax="1" ay="1" aw="12" ah="21"/>
+<Cell name="ufo_light_outer_red" x="1889" y="1755" w="12" h="21" ax="0" ay="0" aw="12" ah="21"/>
+<Cell name="ufo_light_outer_yellow" x="1378" y="1928" w="10" h="19" ax="1" ay="1" aw="12" ah="21"/>
+<Cell name="ufo_light_red" x="1773" y="631" w="8" h="8" ax="1" ay="1" aw="10" ah="10"/>
+<Cell name="ufo_light_yellow" x="1554" y="855" w="8" h="8" ax="1" ay="1" aw="10" ah="10"/>
+<Cell name="ufo_pad" x="1450" y="1290" w="35" h="35" ax="1" ay="1" aw="36" ah="36"/>
+<Cell name="ufo_pilot" x="1247" y="1257" w="39" h="33" ax="0" ay="0" aw="39" ah="33"/>
+<Cell name="ufo_ring" x="1705" y="701" w="66" h="65" ax="0" ay="1" aw="66" ah="66"/>
+<Cell name="ufo_rivet" x="146" y="917" w="6" h="5" ax="0" ay="0" aw="6" ah="5"/>
+<Cell name="village_music_01" x="1721" y="1614" w="22" h="20" ax="0" ay="0" aw="22" ah="20"/>
+<Cell name="village_music_02" x="1905" y="1201" w="14" h="20" ax="0" ay="0" aw="14" ah="20"/>
+<Cell name="village_sonar" x="678" y="1330" w="51" h="51" ax="0" ay="0" aw="51" ah="51"/>
+<Cell name="white_bandana" x="1229" y="1184" w="41" h="13" ax="0" ay="0" aw="41" ah="14"/>
+<Cell name="white_smoke_01" x="1331" y="1070" w="42" h="43" ax="0" ay="0" aw="42" ah="43"/>
+<Cell name="white_smoke_02" x="1478" y="482" w="76" h="79" ax="0" ay="0" aw="76" ah="79"/>
+<Cell name="white_smoke_03" x="795" y="881" w="113" h="115" ax="0" ay="0" aw="113" ah="115"/>
+<Cell name="white_smoke_04" x="726" y="754" w="115" h="124" ax="0" ay="0" aw="115" ah="124"/>
+<Cell name="wizard_lord_lightning" x="951" y="1279" w="46" h="84" ax="0" ay="0" aw="46" ah="84"/>
+<Cell name="zebra" x="811" y="1656" w="40" h="54" ax="0" ay="0" aw="40" ah="54"/>
+<Cell name="zebra_regen" x="192" y="1217" w="60" h="57" ax="0" ay="0" aw="60" ah="57"/>
+<Cell name="zomg_engine" x="1512" y="315" w="84" h="88" ax="0" ay="0" aw="84" ah="88"/>
+<Cell name="zomg_nose" x="1076" y="733" w="84" h="119" ax="0" ay="0" aw="84" ah="119"/>
+<Cell name="zomg_nose_left" x="1454" y="193" w="91" h="119" ax="0" ay="0" aw="168" ah="119"/>
+<Cell name="zomg_nose_right" x="1572" y="1" w="95" h="119" ax="73" ay="0" aw="168" ah="119"/>
+<Cell name="zomg_undamaged" x="1182" y="680" w="80" h="304" ax="0" ay="0" aw="80" ah="304"/>
+</FrameInformation>
+</SpriteInformation>
