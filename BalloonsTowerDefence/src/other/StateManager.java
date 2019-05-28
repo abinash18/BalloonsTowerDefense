@@ -6,6 +6,9 @@ package other;
 
 import static other.LevelToolKit.LoadMap;
 
+import javax.swing.JOptionPane;
+
+import BTDOnlineToolKit.GameOnline;
 import balloonsTowerDefence.*;
 import balloonsTowerDefence.Game;
 import balloonsTowerDefence.Leaderboard;
@@ -21,7 +24,8 @@ public class StateManager {
 
 	// Public enum defined in this class because it dose not need Extra Variables
 	public static enum GameState {
-		SPLASHSCREEN_LOADING, MAINMENU, GAME, LEVEL_EDITOR, MAP_SELECT_SCREEN, LEADERBOARD, OPTIONS, TESTSCREEN
+		SPLASHSCREEN_LOADING, MAINMENU, GAME, LEVEL_EDITOR, MAP_SELECT_SCREEN, LEADERBOARD, OPTIONS, TESTSCREEN,
+		GAME_ONLINE
 	}
 
 	// Defines the default state of the game upon launch
@@ -31,6 +35,8 @@ public class StateManager {
 	public static MainMenu mainMenu;
 	// The Main Game
 	public static Game game;
+	// Online Game
+	public static GameOnline gameOnline;
 	// The Level Editor
 	public static LevelEditor levelEditor;
 
@@ -39,7 +45,7 @@ public class StateManager {
 	public static TestScreen testScreen;
 
 	public static SplashScreenLoading splashScreenLoading;
-	
+
 	public static MapSelectScreen mapSelectScreen;
 
 	public static FloorGrid map = LoadMap("dfg");
@@ -48,6 +54,9 @@ public class StateManager {
 	public static long nextSecond = System.currentTimeMillis() + 1000;
 	public static int framesInLastSecond = 0;
 	public static int framesInCurrentSecond = 0, gm = 1;
+
+	public static int portTCP, portUDP;
+	public static String ip, username, password;
 
 	/**
 	 * Executes every time the game ticks
@@ -72,6 +81,17 @@ public class StateManager {
 			}
 			// Every time the state manager ticks it also ticks the current game state
 			game.tick();
+			break;
+		case GAME_ONLINE:
+			if (gameOnline == null) {
+				// Create a new game Instance
+
+//				ip = JOptionPane.showInputDialog("Enter Server Ip");
+//				portTCP = Integer.parseInt(JOptionPane.showInputDialog("Enter TCP PORT"));
+//				portUDP = Integer.parseInt(JOptionPane.showInputDialog("Enter UDP PORT"));
+//				username = JOptionPane.showInputDialog("Enter Your username");
+				gameOnline = new GameOnline(username, ip, portUDP, portTCP);
+			}
 			break;
 		case LEVEL_EDITOR:
 			// If there is not already a Editor instance that exists
@@ -131,13 +151,45 @@ public class StateManager {
 	public static void setState(GameState state) {
 		gameState = state;
 	}
-	
-	public static void changeMap(FloorGrid newMap){
+
+	public static void changeMap(FloorGrid newMap) {
 		map = newMap;
 	}
-	
-	public static void setGameMode(int gamemode){
+
+	public static void setGameMode(int gamemode) {
 		gm = gamemode;
 	}
-	
+
+	public static int getPortTCP() {
+		return portTCP;
+	}
+
+	public static void setPortTCP(int portTCP) {
+		StateManager.portTCP = portTCP;
+	}
+
+	public static int getPortUDP() {
+		return portUDP;
+	}
+
+	public static void setPortUDP(int portUDP) {
+		StateManager.portUDP = portUDP;
+	}
+
+	public static String getIp() {
+		return ip;
+	}
+
+	public static void setIp(String ip) {
+		StateManager.ip = ip;
+	}
+
+	public static String getUsername() {
+		return username;
+	}
+
+	public static void setUsername(String username) {
+		StateManager.username = username;
+	}
+
 }

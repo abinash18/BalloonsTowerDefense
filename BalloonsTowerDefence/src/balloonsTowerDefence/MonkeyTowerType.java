@@ -20,7 +20,7 @@ public enum MonkeyTowerType {
 	IceMonkey(new Texture[] { getTexture("ice_monkey_base1"), getTexture("ice_tower_monkey") }, DartType.NormalDart, 0, 271, 0.8f, 500, getTexture("ice_avatar_small"));
 
 	Texture[] textures;
-	Texture icon;
+	private Texture icon;
 	DartType dartType;
 	int damage, range, cost;
 	float firingSpeed;
@@ -33,7 +33,15 @@ public enum MonkeyTowerType {
 		this.range = range;
 		this.firingSpeed = firingSpeed;
 		this.cost = cost;
-		this.icon = icon_tex;
+		this.setIcon(icon_tex);
+	}
+
+	public Texture getIcon() {
+		return icon;
+	}
+
+	public void setIcon(Texture icon) {
+		this.icon = icon;
 	}
 
 }

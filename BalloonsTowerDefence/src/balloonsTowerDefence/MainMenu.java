@@ -13,6 +13,7 @@ import static other.DrawInFrame.WIDTH;
 import org.lwjgl.input.Mouse;
 import org.newdawn.slick.opengl.Texture;
 
+import handlers.ServerExplorer;
 import other.StateManager;
 import other.StateManager.GameState;
 import userInterface.UserInterface;
@@ -44,12 +45,14 @@ public class MainMenu {
 		// mainMenu.addMenuButton("Exit", "button_Exit");
 		// mainMenu.addMenuButton("Instructions", "button_Instructions");
 
-		menuUI.addButton("play", "button_play", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.45f));
+		menuUI.addButton("play", "button_play", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.35f));
+		menuUI.addButton("playOnline", "button_play", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.45f));
 		menuUI.addButton("LevelEdit", "button_LevelEdit", (int) (WIDTH / 2.9f), (int) (HEIGHT * 0.53f));
 		menuUI.addButton("LeaderBoard", "button_LeaderBoard", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.59f));
 		menuUI.addButton("Options", "button_Options", (int) (WIDTH / 2.9f), (int) (HEIGHT * 0.66f));
 		menuUI.addButton("Exit", "button_Exit", (int) (WIDTH / 1.1), (int) (HEIGHT * 0.88f));
 		menuUI.addButton("Instructions", "button_Instructions", WIDTH / 180 - 20, (int) (HEIGHT * 0.88f));
+		
 	}
 
 	/**
@@ -62,13 +65,22 @@ public class MainMenu {
 				if (menuUI.isButtonClicked("play")) {
 					StateManager.setState(GameState.MAP_SELECT_SCREEN);
 				}
+				if (menuUI.isButtonClicked("playOnline")) {
+//					StateManager.setState(GameState.GAME_ONLINE);
+					new Thread(new Runnable() {
+						
+						@Override
+						public void run() {
+							ServerExplorer.start();
+						}
+					}).start();
+				}
 				if (menuUI.isButtonClicked("LevelEdit")) {
 					StateManager.setState(GameState.LEVEL_EDITOR);
 				}
 				if (menuUI.isButtonClicked("Exit")) {
 					System.exit(0);
 				}
-
 				if (menuUI.isButtonClicked("Instructions")) {
 					handlers.Informal.showInstructions();
 				}

@@ -164,7 +164,7 @@ public class Game {
 		towerName.setxOffset(15);
 		towerName.setyOffset(5);
 		towerName.setText(mt.type.name());
-		towericon.setTex(mt.getType().icon);
+		towericon.setTex(mt.getType().getIcon());
 		towericon.setxOffset(GRID_SQUARE_SIZE * 2);
 		towericon.setWidth(64);
 		towericon.setHeight(64);
