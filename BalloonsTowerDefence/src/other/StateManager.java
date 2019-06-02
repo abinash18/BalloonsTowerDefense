@@ -30,7 +30,7 @@ public class StateManager {
 
 	// Defines the default state of the game upon launch
 	public static GameState gameState = GameState.SPLASHSCREEN_LOADING;
-	// Defines all states of the game in different classes\
+	// Defines all states of the game in different classes
 	// MainMenu
 	public static MainMenu mainMenu;
 	// The Main Game

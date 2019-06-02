@@ -18,6 +18,7 @@ public class Label {
 	private int x, y, xOffset = 0, yOffset = 0;
 	Texture bg = null;
 	private String text, name;
+	private boolean hidden = false;
 
 	public Label(String name, String fontName, int fontsize, String text, int x, int y) {
 		this.text = text;
@@ -82,6 +83,54 @@ public class Label {
 		awtFont = temp.deriveFont(Font.BOLD, fontsize);
 		this.font = new TrueTypeFont(awtFont, false);
 	}
+	
+	public Label(String name, String font, int fontsize, String text, int x, int y, int xOffset, int yOffset, boolean bg, boolean hidden) {
+		this.text = text;
+		this.x = x;
+		this.y = y;
+		this.name = name;
+		this.xOffset = xOffset;
+		this.yOffset = yOffset;
+		this.hidden = hidden;
+		if (bg) {
+			this.bg = DrawInFrame.LoadTexture("black");
+		}
+
+		InputStream in = ResourceLoader.getResourceAsStream("resources/fonts/" + font + ".ttf");
+		try {
+			temp = Font.createFont(Font.TRUETYPE_FONT, in);
+			System.out.println("done");
+		} catch (FontFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		awtFont = temp.deriveFont(Font.BOLD, fontsize);
+		this.font = new TrueTypeFont(awtFont, false);
+	}
+	
+	public Label(String name, String font, int fontsize, String text, int x, int y, boolean bg, boolean hidden) {
+		this.text = text;
+		this.x = x;
+		this.y = y;
+		this.name = name;
+		this.hidden = hidden;
+		if (bg) {
+			this.bg = DrawInFrame.LoadTexture("black");
+		}
+
+		InputStream in = ResourceLoader.getResourceAsStream("resources/fonts/" + font + ".ttf");
+		try {
+			temp = Font.createFont(Font.TRUETYPE_FONT, in);
+			System.out.println("done");
+		} catch (FontFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		awtFont = temp.deriveFont(Font.BOLD, fontsize);
+		this.font = new TrueTypeFont(awtFont, false);
+	}
 
 	public void tick() {
 		draw();
@@ -92,6 +141,14 @@ public class Label {
 			DrawInFrame.DrawQuadWithTexture(bg, x + xOffset, y + yOffset, font.getWidth(text), font.getHeight());
 		}
 		font.drawString(x + xOffset, y + yOffset, text);
+	}
+
+	public boolean isHidden() {
+		return hidden;
+	}
+
+	public void setHidden(boolean hidden) {
+		this.hidden = hidden;
 	}
 
 	public int getxOffset() {

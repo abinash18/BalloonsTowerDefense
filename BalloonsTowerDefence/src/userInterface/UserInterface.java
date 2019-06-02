@@ -63,8 +63,8 @@ public class UserInterface {
 
 	/**
 	 * AddButton adds a button object to the button array list pre: none post: A
-	 * button object is Created and added to the arrayList with the texture
-	 * loaded using LoadTexture
+	 * button object is Created and added to the arrayList with the texture loaded
+	 * using LoadTexture
 	 */
 	public void addButton(String nameOfButton, String buttonTexture, int xPosition, int yPosition) {
 		ListOfButtons.add(new Button(LoadTexture(buttonTexture), nameOfButton, xPosition, yPosition));
@@ -74,10 +74,15 @@ public class UserInterface {
 		ListOfLabels.add(new Label(name, fontName, fontsize, text, x, y, bg));
 	}
 
+	public void addLabel(String name, String fontName, int fontsize, String text, int x, int y, boolean bg,
+			boolean hidden) {
+		ListOfLabels.add(new Label(name, fontName, fontsize, text, x, y, bg, hidden));
+	}
+
 	/**
 	 * AddButton adds a button object to the button array list pre: none post: A
-	 * button object is Created and added to the arrayList with the texture
-	 * loaded using LoadTexture
+	 * button object is Created and added to the arrayList with the texture loaded
+	 * using LoadTexture
 	 */
 	public void addButton(String nameOfButton, Texture buttonTexture, int xPosition, int yPosition, int width,
 			int height) {
@@ -105,39 +110,42 @@ public class UserInterface {
 	}
 
 	/**
-	 * Checks if the button has been clicked by the user by tracking the mouse
-	 * pre: none; post: true is returned if the button has been clicked
-	 * Otherwise false is returned
+	 * Checks if the button has been clicked by the user by tracking the mouse pre:
+	 * none; post: true is returned if the button has been clicked Otherwise false
+	 * is returned
 	 */
 	public boolean isButtonClicked(String nameOfButton) {
 
 		Button button = getButton(nameOfButton);
+
 		float mouseY = HEIGHT - Mouse.getY() - 1; // Gets the y position of the
 													// mouse in the window
 													// subtracts 1 due to
 													// it giving the 1 greater
 													// value
-
-		// If the mouse x pos is greater than or to the right of the buttons x
-		if (Mouse.getX() > button.getX()
-				// If the X pos of mouse is less than the max of the buttonX
-				// plus width
-				&& Mouse.getX() < button.getX() + button.getWidth()
-				// If the mouse y pos is grater than the button y pos
-				&& mouseY > button.getY()
-				// If the mouse pos y is less than the buttons y pos plus its
-				// height which is
-				// its Max
-				&& mouseY < button.getY() + button.getHeight()) {
-			return true;
+		// Only if a button exists check to see if it is clicked
+		if (button != null) {
+			// If the mouse x pos is greater than or to the right of the buttons x
+			if (Mouse.getX() > button.getX()
+					// If the X pos of mouse is less than the max of the buttonX
+					// plus width
+					&& Mouse.getX() < button.getX() + button.getWidth()
+					// If the mouse y pos is grater than the button y pos
+					&& mouseY > button.getY()
+					// If the mouse pos y is less than the buttons y pos plus its
+					// height which is
+					// its Max
+					&& mouseY < button.getY() + button.getHeight()) {
+				return true;
+			}
 		}
 		return false;
 	}
 
 	/**
-	 * Returns the button object that has the name in parameter pre: none post:
-	 * The button Object is Returned With the name Matching one provided
-	 * otherwise null has been returned
+	 * Returns the button object that has the name in parameter pre: none post: The
+	 * button Object is Returned With the name Matching one provided otherwise null
+	 * has been returned
 	 */
 	public Button getButton(String nameOfButton) {
 
@@ -191,8 +199,8 @@ public class UserInterface {
 	}
 
 	/**
-	 * Draws the buttons on screen using the DrawInFrame class pre: none post:
-	 * the button has been drawn on the screen
+	 * Draws the buttons on screen using the DrawInFrame class pre: none post: the
+	 * button has been drawn on the screen
 	 */
 	public void drawOnScreen() {
 
@@ -207,7 +215,9 @@ public class UserInterface {
 		}
 
 		for (Label lab : ListOfLabels) {
-			lab.tick();
+			if (!lab.isHidden()) {
+				lab.tick();
+			}
 		}
 
 		// for (ProgressBar prg : ListOfProgressBars) {
@@ -285,18 +295,17 @@ public class UserInterface {
 		}
 
 		public boolean checkHover() {
-			
+
 			float mouseY = HEIGHT - Mouse.getY() - 1;
 
-			if (Mouse.getX() > x && Mouse.getX() < x + width && mouseY > y
-					&& mouseY < y + height) {
+			if (Mouse.getX() > x && Mouse.getX() < x + width && mouseY > y && mouseY < y + height) {
 
 				return true;
 
 			}
 			return false;
 		}
-		
+
 		public void addMenuButton(Button b) {
 			setButton(b);
 		}
@@ -306,7 +315,7 @@ public class UserInterface {
 			Button b = new Button(t, buttonName, 0, 0);
 			setButton(b);
 		}
-		
+
 		public void addMenuButton(String buttonName, String texName, int xOffset, int yOffset, int width, int height) {
 			Texture t = getTexture(texName);
 			Button b = new Button(t, buttonName, x + xOffset, y + yOffset, t.getImageWidth(), t.getImageHeight());
@@ -317,15 +326,15 @@ public class UserInterface {
 			Texture t = null;
 			try {
 				t = getTexture(texName);
-			} catch (Exception e){
+			} catch (Exception e) {
 				e.printStackTrace();
 				try {
 					t = LoadTexture(texName);
-				} catch (Exception e1){
+				} catch (Exception e1) {
 					e1.printStackTrace();
 				}
 			}
-			
+
 			Button b = new Button(t, buttonName, 0, 0, width, height);
 			setButton(b);
 		}

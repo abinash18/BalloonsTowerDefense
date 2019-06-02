@@ -45,8 +45,8 @@ public class MainMenu {
 		// mainMenu.addMenuButton("Exit", "button_Exit");
 		// mainMenu.addMenuButton("Instructions", "button_Instructions");
 
-		menuUI.addButton("play", "button_play", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.35f));
-		menuUI.addButton("playOnline", "button_play", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.45f));
+		//menuUI.addButton("play", "button_play", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.35f));
+		menuUI.addButton("play", "button_play", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.45f));
 		menuUI.addButton("LevelEdit", "button_LevelEdit", (int) (WIDTH / 2.9f), (int) (HEIGHT * 0.53f));
 		menuUI.addButton("LeaderBoard", "button_LeaderBoard", (int) (WIDTH / 3.5f), (int) (HEIGHT * 0.59f));
 		menuUI.addButton("Options", "button_Options", (int) (WIDTH / 2.9f), (int) (HEIGHT * 0.66f));

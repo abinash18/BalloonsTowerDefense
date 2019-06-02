@@ -39,6 +39,7 @@
 			<Map name="map3" path="map3.txt" />
 			<Map name="mindBender" path="mindBender.txt" />
 			<Map name="water" path="water.txt" />
+			<Map name="usa" path="usa.txt" />
 		</Maps>
 		<Towers>
 			<Tower name="DartMonkey" TextureName="DartMonkey" />
