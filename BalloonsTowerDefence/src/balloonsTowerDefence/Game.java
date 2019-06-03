@@ -53,6 +53,7 @@ public class Game {
 	// if the upgrade menu is open or not
 	public boolean upgradeMenuOpen;
 	public int gamemode;
+	
 
 	/**
 	 * constructor Creates a game object with the specified mapMatrix
