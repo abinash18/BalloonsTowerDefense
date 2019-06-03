@@ -128,7 +128,6 @@ public class Player {
 	/**
 	 * Returns the floor object on the mouse position.
 	 */
-	
 	private Floor getFloorUnderMouse() {
 		return grid.getFloor(Mouse.getX() / GRID_SQUARE_SIZE, (HEIGHT - Mouse.getY() - 1) / GRID_SQUARE_SIZE);
 	}
